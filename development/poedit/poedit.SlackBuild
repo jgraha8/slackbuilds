@@ -3,7 +3,7 @@
 # Slackware build script for poedit
 
 # Copyright 2008  Niklas "Nille" Åkerström
-# Copyright 2014-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2014-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=poedit
-VERSION=${VERSION:-1.8.12}
+VERSION=${VERSION:-2.0.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -69,8 +69,6 @@ find -L . \
  -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-
-patch --verbose -p1 < $CWD/setvalue.diff
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
