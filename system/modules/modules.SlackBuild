@@ -78,6 +78,8 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man/ \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --with-tcl-ver=8.6 --with-tcl-lib=/usr/lib64 --with-tcl-inc=/usr/include \
+  --without-tclx \
   --build=$ARCH-slackware-linux
 
 make
