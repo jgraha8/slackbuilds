@@ -78,11 +78,9 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Restore support for tcpwrappers:
-cat $CWD/openssh-7.4p1-libwrap.patch | patch -p1 --verbose || exit 1
+zcat $CWD/openssh-7.4p1-libwrap.diff.gz | patch -p1
 autoreconf -vif
 
-# Compile package:
 CFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr/kerberos \
