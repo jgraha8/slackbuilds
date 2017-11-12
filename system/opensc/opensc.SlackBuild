@@ -40,7 +40,8 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-DOCFILES="README COPYING NEWS ChangeLog"
+#DOCFILES="README COPYING NEWS ChangeLog"
+DOCFILES="README COPYING NEWS"
 XSL_STYLESHEETS_VER=1.78.1
 
 # opensc now supports only one reader subsystem (pcsc-lite or openct)
