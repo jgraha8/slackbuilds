@@ -1,19 +1,25 @@
 Nextcloud is a safe home for all your data - community-driven, free & open
 source.  Nextcloud gives you access to all your files wherever you are.
 
-
-Optional dependency: postgresql can be used as the server's database.
+Optional dependencies:
+* php-pgsql for PostgreSQL support (requires postgresql)
+* php-apcu, php-memcached, or php-redis for enhanced server performance
+* php-imagick for preview generation
+* ffmpeg for preview generation
+* libreoffice for preview generation
 
 
 SlackBuild defaults
 
 This SlackBuild uses the following defaults:
 * DOCROOT=/srv/httpd/htdocs
-* PHPUSER=root
+* NCNAME=nextcloud
+* PHPUSER=apache
 * PHPGROUP=apache
 
 You can change the defaults at build time:
 # DOCROOT=/your/preferred/directory \
+  NCNAME=nextcloud.example.com \
   PHPUSER=youruser \
   PHPGROUP=yourgroup \
   ./nextcloud-server.SlackBuild
@@ -34,10 +40,22 @@ Configuration
       SetEnv HTTP_HOME "/srv/httpd/htdocs/nextcloud"
   </Directory>
 
-(2) In /etc/httpd/httpd.conf, enable mod_rewrite and PHP by uncommenting
-"LoadModule rewrite_module ..." and "Include /etc/httpd/mod_php.conf",
-then restart httpd.
+(2) Enable required apache modules in /etc/httpd/httpd.conf:
+    * mod_rewrite
+    * mod_php or mod_fcgi and mod_setenvif
 
-(3) You need to complete setup by visiting this page:
+(3) (Optional) Enable recommended apache modules in /etc/httpd/httpd.conf:
+    * mod_headers
+    * mod_env
+    * mod_dir
+    * mod_mime
+
+(4) If using authentication in a parent directory (e.g. "AuthType
+    Basic"), then add "Satisfy Any" to the <Directory> entry in the
+    configuration in (1).
+    
+(5) Restart apache
+
+(6) You need to complete setup by visiting this page:
 
   http://localhost/nextcloud/

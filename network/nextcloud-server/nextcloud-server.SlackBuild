@@ -31,23 +31,26 @@ TAG=${TAG:-_SBo}
 ARCH=noarch
 
 DOCROOT=${DOCROOT:-/srv/httpd/htdocs}
-PHPUSER=${PHPUSER:-root}
+NCNAME=${NCNAME:-$SRCNAM}
+PHPUSER=${PHPUSER:-apache}
 PHPGROUP=${PHPGROUP:-apache}
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
+NCROOT=${DOCROOT}/${NCNAME}
 
 set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 
-mkdir -p $PKG/$DOCROOT
-cd $PKG/$DOCROOT
-tar xvf $CWD/$SRCNAM-$VERSION.tar.?z*
-cd $SRCNAM
+mkdir -p $PKG/$NCROOT
+cd $PKG/$NCROOT
+tar xvf $CWD/$SRCNAM-$VERSION.tar.?z* --strip-components=1
+
+#cd $SRCNAM
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -55,11 +58,25 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir data
+mkdir -p data
 
-chown -R $PHPUSER:$PHPGROUP apps/ data/ config/
-chmod -R g+w apps/ data/ config/
-chmod -R o-rwx data/
+chown -R $PHPUSER:$PHPGROUP $PKG/$NCROOT
+
+find $PKG/$NCROOT -type f -exec chmod 0640 {} \;
+find $PKG/$NCROOT -type d -exec chmod 2750 {} \;
+
+chmod -R g+w $PKG/$NCROOT/{apps,config,data,themes,updater}/
+chmod ug+x $PKG/$NCROOT/occ
+
+if [ -f $PKG/$NCROOT/.htaccess ]
+then
+    chmod 0644 $PKG/$NCROOT/.htaccess
+fi
+
+if [ -f data/.htaccess ]
+then
+    chmod 0644 $PKG/$NCROOT/data/.htaccess
+fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS 3rdparty/'LICENSE INFO' 3rdparty/README.md \
