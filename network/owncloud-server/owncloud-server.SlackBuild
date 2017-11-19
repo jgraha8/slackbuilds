@@ -24,30 +24,32 @@
 
 PRGNAM=owncloud-server
 SRCNAM=owncloud
-VERSION=${VERSION:-8.2.11}
+VERSION=${VERSION:-10.0.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 ARCH=noarch
 
 DOCROOT=${DOCROOT:-/srv/httpd/htdocs}
-PHPUSER=${PHPUSER:-root}
+OCNAME=${OCNAME:-$SRCNAM}
+PHPUSER=${PHPUSER:-apache}
 PHPGROUP=${PHPGROUP:-apache}
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
+OCROOT=${DOCROOT}/${OCNAME}
 
 set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 
-mkdir -p $PKG/$DOCROOT
-cd $PKG/$DOCROOT
-tar xvf $CWD/$SRCNAM-$VERSION.tar.?z*
-cd $SRCNAM
+mkdir -p $PKG/$OCROOT
+cd $PKG/$OCROOT
+tar xvf $CWD/$SRCNAM-$VERSION.tar.?z* --strip-components=1
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -55,14 +57,31 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir data
+mkdir -p $PKG/$OCROOT/data
+mkdir -p $PKG/$OCROOT/themes
+mkdir -p $PKG/$OCROOT/updater
 
-chown -R $PHPUSER:$PHPGROUP apps/ data/ config/
-chmod -R g+w apps/ data/ config/
-chmod -R o-rwx data/
+find $PKG/$OCROOT -type f -exec chmod 0640 {} \;
+find $PKG/$OCROOT -type d -exec chmod 0750 {} \;
+
+chown -R root:$PHPGROUP $PKG/$OCROOT
+chown -R $PHPUSER:$PHPGROUP $PKG/$OCROOT/{apps,config,data,themes,updater}
+chmod +x $PKG/$OCROOT/occ
+
+if [ -f $PKG/$OCROOT/.htaccess ]
+then
+    chmod 0644 $PKG/$OCROOT/.htaccess
+    chown root:$PHPGROUP $PKG/$OCROOT/.htaccess
+fi
+
+if [ -f data/.htaccess ]
+then
+    chmod 0644 $PKG/$OCROOT/data/.htaccess
+    chown root:$PHPGROUP $PKG/$OCROOT/data/.htaccess
+fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS COPYING-AGPL 3rdparty/'LICENSE INFO' \
+cp -a AUTHORS CHANGELOG.md COPYING \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
