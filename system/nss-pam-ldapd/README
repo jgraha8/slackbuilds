@@ -1,5 +1,14 @@
 nss-pam-ldap is a Name Service Switch (NSS) module and Pluggable
 Authentication Module (PAM) that allows your LDAP server to provide
 user account, group, host name, alias, netgroup, and basically any
-other information that you would normally get from /etc flat files
-or NIS.  It also allows you to do authentication to an LDAP server.
+other information that you would normally get from /etc flat files or
+NIS.  It also allows you to do authentication to an LDAP server.
+
+The pam module is disabled since pam is not officially included in
+Slackware.
+
+You must have the 'nslcd' group and user to run this script, for
+example:
+
+  groupadd -r -g 331 nslcd
+  useradd -r -u 331 -d /var/run/nslcd -s /bin/false -c "User for nslcd daemon" -g nslcd nslcd
