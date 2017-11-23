@@ -135,26 +135,46 @@ find $PKG -type f -perm 4755 -exec chmod 4711 "{}" \;
 # Apply pam related installation (follows BLFS 8.1)
 #---------------------------------------------------------------------
 
-# Configure login.defs
-for FUNCTION in FAIL_DELAY               \
-                FAILLOG_ENAB             \
-                LASTLOG_ENAB             \
-                MAIL_CHECK_ENAB          \
-                OBSCURE_CHECKS_ENAB      \
-                PORTTIME_CHECKS_ENAB     \
-                QUOTAS_ENAB              \
-                CONSOLE MOTD_FILE        \
-                FTMP_FILE NOLOGINS_FILE  \
-                ENV_HZ PASS_MIN_LEN      \
-                SU_WHEEL_ONLY            \
-                CRACKLIB_DICTPATH        \
-                PASS_CHANGE_TRIES        \
-                PASS_ALWAYS_WARN         \
-                CHFN_AUTH ENCRYPT_METHOD \
-                ENVIRON_FILE
+
+for FUNCTION in FAILLOG_ENAB \
+		    LASTLOG_ENAB \
+		    MAIL_CHECK_ENAB \
+		    OBSCURE_CHECKS_ENAB \
+		    PORTTIME_CHECKS_ENAB \
+		    QUOTAS_ENAB \
+		    MOTD_FILE \
+		    FTMP_FILE \
+		    NOLOGINS_FILE \
+		    ENV_HZ \
+		    PASS_MIN_LEN \
+		    SU_WHEEL_ONLY \
+		    PASS_CHANGE_TRIES \
+		    PASS_ALWAYS_WARN \
+		    CHFN_AUTH
 do
     sed -i "s/^${FUNCTION}/# &/" $PKG/etc/login.defs
 done
+
+# # Configure login.defs
+# for FUNCTION in FAIL_DELAY               \
+#                 FAILLOG_ENAB             \
+#                 LASTLOG_ENAB             \
+#                 MAIL_CHECK_ENAB          \
+#                 OBSCURE_CHECKS_ENAB      \
+#                 PORTTIME_CHECKS_ENAB     \
+#                 QUOTAS_ENAB              \
+#                 CONSOLE MOTD_FILE        \
+#                 FTMP_FILE NOLOGINS_FILE  \
+#                 ENV_HZ PASS_MIN_LEN      \
+#                 SU_WHEEL_ONLY            \
+#                 CRACKLIB_DICTPATH        \
+#                 PASS_CHANGE_TRIES        \
+#                 PASS_ALWAYS_WARN         \
+#                 CHFN_AUTH ENCRYPT_METHOD \
+#                 ENVIRON_FILE
+# do
+#     sed -i "s/^${FUNCTION}/# &/" $PKG/etc/login.defs
+# done
 
 # Install pam configuration files
 mkdir -p $PKG/etc/pam.d/
