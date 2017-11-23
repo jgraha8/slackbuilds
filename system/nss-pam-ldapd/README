@@ -12,3 +12,7 @@ example:
 
   groupadd -r -g 331 nslcd
   useradd -r -u 331 -d /var/run/nslcd -s /bin/false -c "User for nslcd daemon" -g nslcd nslcd
+
+Optional packages:
+-----------------
+krb5 (auto-detected)
