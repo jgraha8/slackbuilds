@@ -1,0 +1,8 @@
+PRGNAM="shadow"
+VERSION="4.2.1"
+HOMEPAGE="http://pkg-shadow.alioth.debian.org/"
+DOWNLOAD="http://pkg-shadow.alioth.debian.org/releases/shadow-4.2.1.tar.xz"
+MD5SUM="2bfafe7d4962682d31b5eba65dba4fc8"
+REQUIRES="pam"
+MAINTAINER="Jason Graham"
+EMAIL="jgraha8@gmail.com"

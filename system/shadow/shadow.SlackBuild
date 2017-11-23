@@ -1,0 +1,216 @@
+#!/bin/sh
+
+# Slackware build script for shadow (with pam support)
+
+# Copyright 2017 Jason Graham, Baltimore, MD, USA
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+PRGNAM=shadow
+VERSION=${VERSION:-4.2.1}
+BUILD=${BUILD:-2}
+TAG=${TAG:-_SBo_pam}
+
+# Automatically determine the architecture we're building on:
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+    # Unless $ARCH is already set, use uname -m for all other archs:
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+CWD=$(pwd)
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+else
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+fi
+
+set -e 
+
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
+cd $PRGNAM-$VERSION
+chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+./configure \
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --build=$ARCH-slackware-linux \
+  --enable-subordinate-ids \
+  --disable-shared \
+  --with-libpam
+
+make
+make install DESTDIR=$PKG
+
+#---------------------------------------------------------------------
+# Apply core slackware shadow installation
+#---------------------------------------------------------------------
+# Fix user group = 100:
+cat $CWD/useradd > $PKG/etc/default/useradd
+
+# /bin/groups is provided by coreutils.
+rm -f $PKG/bin/groups
+find $PKG -name groups.1 -exec rm {} \;
+
+# Install a login.defs with unsurprising defaults:
+rm -f $PKG/etc/login.defs
+cat $CWD/login.defs > $PKG/etc/login.defs
+
+# I don't think this works well enough to recommend it.
+#mv $PKG/etc/limits $PKG/etc/limits.new
+rm -f $PKG/etc/limits
+
+# Add the friendly 'adduser' script:
+cat $CWD/adduser > $PKG/usr/sbin/adduser
+chmod 0755 $PKG/usr/sbin/adduser
+
+# Add sulogin to the package:
+cp -a src/sulogin $PKG/sbin
+( cd $PKG/bin ; ln -s ../sbin/sulogin )
+
+# Add the empty faillog log file:
+mkdir -p $PKG/var/log
+touch $PKG/var/log/faillog.new
+
+# Put some stuff back in "old" locations and make symlinks for compat
+( cd $PKG/usr/bin
+  mv faillog ../sbin
+  mv lastlog ../sbin
+  ln -s ../sbin/faillog
+  ln -s ../sbin/lastlog
+)
+
+# Use 4711 rather than 4755 permissions where setuid root is required:
+find $PKG -type f -perm 4755 -exec chmod 4711 "{}" \;
+#---------------------------------------------------------------------
+
+#---------------------------------------------------------------------
+# Apply pam related installation (follows BLFS 8.1)
+#---------------------------------------------------------------------
+
+# Configure login.defs
+for FUNCTION in FAIL_DELAY               \
+                FAILLOG_ENAB             \
+                LASTLOG_ENAB             \
+                MAIL_CHECK_ENAB          \
+                OBSCURE_CHECKS_ENAB      \
+                PORTTIME_CHECKS_ENAB     \
+                QUOTAS_ENAB              \
+                CONSOLE MOTD_FILE        \
+                FTMP_FILE NOLOGINS_FILE  \
+                ENV_HZ PASS_MIN_LEN      \
+                SU_WHEEL_ONLY            \
+                CRACKLIB_DICTPATH        \
+                PASS_CHANGE_TRIES        \
+                PASS_ALWAYS_WARN         \
+                CHFN_AUTH ENCRYPT_METHOD \
+                ENVIRON_FILE
+do
+    sed -i "s/^${FUNCTION}/# &/" $PKG/etc/login.defs
+done
+
+# Install pam configuration files
+mkdir -p $PKG/etc/pam.d/
+cat $CWD/pam.d/login  > $PKG/etc/pam.d/login
+cat $CWD/pam.d/passwd > $PKG/etc/pam.d/passwd
+cat $CWD/pam.d/su     > $PKG/etc/pam.d/su
+cat $CWD/pam.d/chage  > $PKG/etc/pam.d/chage
+
+for PROGRAM in chfn chgpasswd chpasswd chsh groupadd groupdel \
+               groupmems groupmod newusers useradd userdel usermod
+do
+    cat $PKG/etc/pam.d/chage > $PKG/etc/pam.d/${PROGRAM}
+    sed -i "s/chage/$PROGRAM/" $PKG/etc/pam.d/${PROGRAM}
+done
+
+# Access to the system is controlled using the pam_access.so module
+if [ -f $PKG/etc/login.access ]; then
+    rm -f $PKG/etc/login.access
+fi
+#---------------------------------------------------------------------
+
+# Strip binaries and libraries - this can be done with 'make install-strip'
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+# Compress man pages
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+
+# Copy program documentation into the package
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a \
+  COPYING* NEWS README* TODO doc/{README*,HOWTO,WISHLIST,*.txt} \
+  $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+# If there's a ChangeLog, installing at least part of the recent history
+# is useful, but don't let it get totally out of control:
+if [ -r ChangeLog ]; then
+  DOCSDIR=$(echo $PKG/usr/doc/${PRGNAM}-$VERSION)
+  cat ChangeLog | head -n 1000 > $DOCSDIR/ChangeLog
+  touch -r ChangeLog $DOCSDIR/ChangeLog
+fi
+
+# Copy the slack-desc (and a custom doinst.sh if necessary) into ./install
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
+# Don't clobber existing config files
+find $PKG/etc -type f -exec mv {} {}.new \;
+( cd $PKG
+  for i in $(find etc -type f -name "*.new") ; do
+      echo "config $i" >> $PKG/install/doinst.sh ;
+  done
+)
+
+# Make the package; be sure to leave it in $OUTPUT
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
