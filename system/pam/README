@@ -29,5 +29,5 @@ system setup and is at the discretion of the local system
 administrator.
 
 Build options:
-----------------------
-CRACKLIB={yes|no}	Enable/disable cracklib support (requires cracklib)
+-------------
+CRACKLIB=yes|no		Enable/disable cracklib support (requires cracklib)
