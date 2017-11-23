@@ -96,6 +96,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --with-pam-seclib-dir=/lib${LIBDIRSUFFIX}/security \
   --build=$ARCH-slackware-linux
 
 make
