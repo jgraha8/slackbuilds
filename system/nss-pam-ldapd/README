@@ -4,9 +4,6 @@ user account, group, host name, alias, netgroup, and basically any
 other information that you would normally get from /etc flat files or
 NIS.  It also allows you to do authentication to an LDAP server.
 
-The pam module is disabled since pam is not officially included in
-Slackware.
-
 You must have the 'nslcd' group and user to run this script, for
 example:
 
@@ -15,4 +12,5 @@ example:
 
 Optional packages:
 -----------------
-krb5 (auto-detected)
+pam		Enable pam support (auto-detected)
+krb5		Enable kerberos support (auto-detected)
