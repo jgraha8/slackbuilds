@@ -102,9 +102,10 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 # Copy program documentation into the package
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-   AUTHORS  ChangeLog  NEWS    README.md \
-   COPYING  INSTALL    README  TODO \
-  $PKG/usr/doc/$PRGNAM-$VERSION
+   ABOUT-NLS COPYING NEWS TODO AUTHORS INSTALL README \
+   $PKG/usr/doc/$PRGNAM-$VERSION
+gzip -c ChangeLog > $PKG/usr/doc/$PRGNAM-$VERSION/ChangeLog.gz
+gzip -c ChangeLog.git > $PKG/usr/doc/$PRGNAM-$VERSION/ChangeLog.git.gz
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Copy the slack-desc and doinst.sh into ./install
