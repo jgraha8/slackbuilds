@@ -65,6 +65,13 @@ rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 
+# Apply patches
+for p in $CWD/*.patch
+do
+    patch -p1 < $p
+done
+autoreconf -if
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -72,7 +79,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-autoreconf -if
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -84,6 +90,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux \
+  --with-pamdir=/lib${LIBDIRSUFFIX}/security \
   --with-ldap \
   --without-nss \
   --with-pcsclite
@@ -119,7 +126,7 @@ fi
 # pam_pkcs11 configuration
 #---------------------------------------------------------------------
 mkdir -p $PKG/etc/pam_pkcs11
-cat etc/pam_pkcs11.conf.example > $PKG/etc/pam_pkcs11.conf
+cat etc/pam_pkcs11.conf.example > $PKG/etc/pam_pkcs11/pam_pkcs11.conf
 #---------------------------------------------------------------------
 
 # Don't clobber existing config files

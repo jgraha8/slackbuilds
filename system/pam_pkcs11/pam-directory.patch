@@ -1,0 +1,34 @@
+Index: pam_pkcs11-0.6.9/configure.ac
+===================================================================
+--- pam_pkcs11-0.6.9.orig/configure.ac
++++ pam_pkcs11-0.6.9/configure.ac
+@@ -85,6 +85,16 @@ fi
+ AC_DEFINE_UNQUOTED(CONFDIR, "$confdir", [directory containing pam_pkcs11.conf (default /etc/pam_pkcs11)])
+ AC_SUBST(confdir)
+ 
++# Add argument for defining configuration directory
++AC_ARG_WITH(pamdir,
++AS_HELP_STRING([--with-pamdir=DIR],[directory containing pam modules (default /lib/security)]),
++	[pamdir="${with_pamdir}"], [pamdir=false])
++if test x${pamdir} = xfalse ; then
++	pamdir="/lib/security"
++fi
++AC_DEFINE_UNQUOTED(CONFDIR, "$pamdir", [directory containing pam modules (default /lib/security)])
++AC_SUBST(pamdir)
++
+ # Add argument for using ldap
+ AC_ARG_WITH(ldap,
+   AS_HELP_STRING([--with-ldap],[use ldap (default=yes)]))
+Index: pam_pkcs11-0.6.9/src/pam_pkcs11/Makefile.am
+===================================================================
+--- pam_pkcs11-0.6.9.orig/src/pam_pkcs11/Makefile.am
++++ pam_pkcs11-0.6.9/src/pam_pkcs11/Makefile.am
+@@ -5,7 +5,7 @@ MAINTAINERCLEANFILES = Makefile.in
+ AM_CFLAGS = -Wall -fno-strict-aliasing $(CRYPTO_CFLAGS)
+ AM_CPPFLAGS = -Wall -fno-strict-aliasing $(CRYPTO_CFLAGS)
+ 
+-pamdir=$(libdir)/security
++#pamdir=$(libdir)/security
+ 
+ pam_LTLIBRARIES = pam_pkcs11.la
+ noinst_LTLIBRARIES = libfinder.la
