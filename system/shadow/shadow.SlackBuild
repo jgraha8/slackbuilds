@@ -25,7 +25,7 @@
 PRGNAM=shadow
 VERSION=${VERSION:-4.2.1}
 BUILD=${BUILD:-2}
-TAG=${TAG:-_pam}
+TAG=${TAG:-_SBo}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
