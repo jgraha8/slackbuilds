@@ -31,7 +31,7 @@
 PRGNAM=cracklib
 VERSION=${VERSION:-2.9.6}
 BUILD=${BUILD:-2}
-TAG=${TAG:-_pam}
+TAG=${TAG:-_SBo}
 
 DICT=${DICT:-cracklib-words-$VERSION}
 
