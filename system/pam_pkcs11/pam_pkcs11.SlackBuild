@@ -119,7 +119,7 @@ fi
 # pam_pkcs11 configuration
 #---------------------------------------------------------------------
 mkdir -p $PKG/etc/pam_pkcs11
-cat $CWD/etc/pam_pkcs11.conf.example > $PKG/etc/pam_pkcs11.conf
+cat etc/pam_pkcs11.conf.example > $PKG/etc/pam_pkcs11.conf
 #---------------------------------------------------------------------
 
 # Don't clobber existing config files
