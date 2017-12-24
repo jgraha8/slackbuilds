@@ -5,9 +5,9 @@ excellent security. But what sets it apart is its flexibility;
 modularity is one of its core principles. Its tools help you build the
 versatile, structured content that dynamic web experiences need.
 
-SlackBuild defaults
 
-This SlackBuild uses the following defaults:
+SlackBuild defaults:
+
 * DOCROOT=/srv/httpd/htdocs
 * DRUPAL=drupal
 * PHPUSER=apache
@@ -18,5 +18,5 @@ You can change the defaults at build time:
   DRUPAL=drupal.example.com \
   PHPUSER=youruser \
   PHPGROUP=yourgroup \
-  ./nextcloud-server.SlackBuild
+  ./drupal.SlackBuild
 
