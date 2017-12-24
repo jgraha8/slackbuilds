@@ -30,7 +30,6 @@ TAG=${TAG:-_SBo}
 ARCH=noarch
 
 DOCROOT=${DOCROOT:-/srv/httpd/htdocs}
-PKGNAM=${PKGNAM:-$PRGNAM}
 DRUPAL=${DRUPAL:-$PRGNAM}
 PHPUSER=${PHPUSER:-apache}
 PHPGROUP=${PHPGROUP:-apache}
@@ -50,23 +49,21 @@ mkdir -p $PKG/$DRUPALROOT
 cd $PKG/$DRUPALROOT
 tar xvf $CWD/$PRGNAM-$VERSION.tar.?z* --strip-components=1
 
-chown -R root:root .
+chown -R $PHPUSER:$PHPGROUP .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-chown -R $PHPUSER:$PHPGROUP $PKG/$DRUPALROOT
-
-find $PKG/$DRUPALROOT -type f -exec chmod 0640 {} \;
-find $PKG/$DRUPALROOT -type d -exec chmod 2750 {} \;
+find . -type f -exec chmod 0640 {} \;
+find . -type d -exec chmod 2750 {} \;
 
 #chmod -R g+w $PKG/$DRUPALROOT/{apps,config,data,themes,updater}/
 
-if [ -f $PKG/$DRUPALROOT/.htaccess ]
+if [ -f .htaccess ]
 then
-    chmod 0644 $PKG/$DRUPALROOT/.htaccess
+    chmod 0644 .htaccess
 fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
@@ -83,4 +80,4 @@ mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

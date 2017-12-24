@@ -5,15 +5,15 @@
 # You must make exactly 11 lines for the formatting to be correct.  It's also
 # customary to leave one space after the ':' except on otherwise blank lines.
 
-                |-----handy-ruler------------------------------------------------------|
-nextcloud-server: drupal (open source CMS)
-nextcloud-server:
-nextcloud-server: Launch, manage, and scale ambitious digital experiences—with the 
-nextcloud-server: flexibility to build great websites or push beyond the browser. 
-nextcloud-server: Proudly open source.
-nextcloud-server:
-nextcloud-server: Homepage: https://www.drupal.org/
-nextcloud-server:
-nextcloud-server:
-nextcloud-server:
-nextcloud-server:
+      |-----handy-ruler------------------------------------------------------|
+drupal: drupal (open source CMS)
+drupal:
+drupal: Launch, manage, and scale ambitious digital experiences—with the 
+drupal: flexibility to build great websites or push beyond the browser. 
+drupal: Proudly open source.
+drupal:
+drupal: Homepage: https://www.drupal.org/
+drupal:
+drupal:
+drupal:
+drupal:
