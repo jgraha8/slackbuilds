@@ -87,12 +87,22 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+# Copy the pam configuration file (other pam files must be updated in order to enable pam support)
+mkdir -p $PKG/etc/pam.d/
+cat $CWD/pam.d/system-oath > $PKG/etc/pam.d/system-oath
 
+# Create default /etc/users.oath file
+echo > $PKG/etc/users.oath
+chmod 0600  $PKG/etc/users.oath
+
+# Move pam module to correct security directory
 mkdir -p $PKG/lib${LIBDIRSUFFIX}/security
 mv $PKG/usr/lib/security/pam_oath.* $PKG/lib${LIBDIRSUFFIX}/security/
 rm -rf $PKG/usr/lib/security
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
@@ -103,6 +113,14 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+
+# Don't clobber existing config files
+find $PKG/etc -type f -exec mv {} {}.new \;
+( cd $PKG
+  for i in $(find etc -type f -name "*.new") ; do
+      echo "config $i" >> $PKG/install/doinst.sh ;
+  done
+)
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
