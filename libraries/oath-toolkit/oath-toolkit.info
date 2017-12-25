@@ -5,6 +5,6 @@ DOWNLOAD="http://download.savannah.gnu.org/releases/oath-toolkit/oath-toolkit-2.
 MD5SUM="4a05cd4768764843bd5493609a6bdb17"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="xmlsec"
+REQUIRES="pam xmlsec"
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

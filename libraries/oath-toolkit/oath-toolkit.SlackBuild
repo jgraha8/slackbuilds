@@ -81,14 +81,18 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --disable-static \
-  --disable-pam \
+  --enable-pam \
   --build=$ARCH-slackware-linux
 
 make
 make install DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+mkdir -p $PKG/lib${LIBDIRSUFFIX}/security
+mv $PKG/usr/lib/security/pam_oath.* $PKG/lib${LIBDIRSUFFIX}/security/
+rm -rf $PKG/usr/lib/security
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
