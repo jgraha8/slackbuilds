@@ -47,4 +47,4 @@ if [ ! -r var/log/btmp ]; then
   ( cd var/log ; umask 077 ; touch btmp )
 fi
 
-config etc/pam.d/ssh.new
+config etc/pam.d/sshd.new
