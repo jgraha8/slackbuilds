@@ -91,9 +91,7 @@ make install DESTDIR=$PKG
 mkdir -p $PKG/etc/pam.d/
 cat $CWD/pam.d/system-oath > $PKG/etc/pam.d/system-oath
 
-# Create default /etc/users.oath file
-echo > $PKG/etc/users.oath
-chmod 0600  $PKG/etc/users.oath
+
 
 # Move pam module to correct security directory
 mkdir -p $PKG/lib${LIBDIRSUFFIX}/security
