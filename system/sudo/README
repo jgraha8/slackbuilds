@@ -1,0 +1,7 @@
+sudo (give limited root privileges to certain users - with PAM)
+
+'sudo' is a command that allows users to execute some commands as
+root.  The /etc/sudoers file (edited with 'visudo') specifies which
+users have access to sudo and which commands they can run.  'sudo'
+logs all its activities to /var/log/ so the system administrator can
+keep an eye on things.
