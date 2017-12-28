@@ -28,22 +28,21 @@ VERSION=${VERSION:-1.3.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
-# Automatically determine the architecture we're building on:
+# Automatically determine the architecture we're building on. For x86,
+# we force it to i386 since that is what arch the binary is.
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=i586 ;;
-    arm*) ARCH=arm ;;
-    # Unless $ARCH is already set, use uname -m for all other archs:
-       *) ARCH=$( uname -m ) ;;
+      i?86) ARCH=i386 ;;
+      x86_64) ARCH=x86_64 ;;
+      *) echo "$(uname -m) not supported" && exit 1;;
   esac
+else
+    if [ "$ARCH" != "i?86" ]; then
+	ARCH=i386
+    elif [ "$ARCH" != "x86_64" ]; then
+	echo "$ARCH not supported" && exit 1
+    fi
 fi
-
-if [ "$ARCH" == "arm" ]; then
-    echo "arm not supported"
-    exit 1
-fi
-
-[ "$ARCH" == "i586" ] && PKGARCH=i386 || PKGARCH=x86_64
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}	# For consistency's sake, use this
@@ -56,7 +55,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PKGNAM-$PKGARCH.tar.gz
+tar xvf $CWD/$PKGNAM-$ARCH.tar.gz
 cd $PRGNAM-$VERSION
 
 chown -R root:root .
@@ -69,21 +68,21 @@ find -L . \
 
 # Install binary files
 mkdir -p $PKG/usr/sbin
-install -Dm755 bin/pwrstat $PKG/usr/sbin/pwrstat
-install -Dm755 bin/pwrstatd $PKG/usr/sbin/pwrstatd
+install -D -m 0755 bin/pwrstat $PKG/usr/sbin/pwrstat
+install -D -m 0755 bin/pwrstatd $PKG/usr/sbin/pwrstatd
 
 # Install scripts
 mkdir -p $PKG/etc/powerpanel
 for f in script/*.sh
 do
-    install -Dm755 $f $PKG/etc/powerpanel/${f##*/}
+    install -D -m 0755 $f $PKG/etc/powerpanel/${f##*/}
 done
 # Making links since these are required to be in /etc (they are
-# actually hardcoded in pwrstatd...no seriously, they are)
+# actually hardcoded in pwrstatd...no seriously, they are). 
 ln -s /etc/powerpanel/shutdown.sh $PKG/etc/shutdown.sh
 ln -s /etc/powerpanel/hibernate.sh $PKG/etc/hibernate.sh
 
-# Update scripts configuration with email script
+# Update scripts configuration with updated email script location
 sed -i 's/\/etc\/pwrstatd-email.sh/\/etc\/powerpanel\/pwrstatd-email.sh/g' $PKG/etc/powerpanel/pwrstatd-lowbatt.sh
 sed -i 's/\/etc\/pwrstatd-email.sh/\/etc\/powerpanel\/pwrstatd-email.sh/g' $PKG/etc/powerpanel/pwrstatd-powerfail.sh
 
@@ -95,8 +94,8 @@ sed -i  's/\/etc\/pwrstatd-powerfail.sh/\/etc\/powerpanel\/pwrstatd-powerfail.sh
 
 # Install rc script
 mkdir -p $PKG/etc/rc.d
-sed 's/default_pwrstatd/rc.pwrstatd/g' script/default_pwrstatd > $PKG/etc/rc.d/rc.pwrstatd
-chmod a-x $PKG/etc/rc.d/rc.pwrstatd
+install -D -m 0644 script/default_pwrstatd $PKG/etc/rc.d/rc.pwrstatd
+sed -i 's/default_pwrstatd/rc.pwrstatd/g' $PKG/etc/rc.d/rc.pwrstatd
 
 # Install man pages
 mkdir -p $PKG/usr/man/man8
