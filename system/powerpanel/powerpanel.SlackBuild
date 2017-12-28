@@ -112,8 +112,8 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 # Copy program documentation into the package
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-   doc/LICENSE doc/README doc/deploy-guide doc/user-manual \
-  $PKG/usr/doc/$PRGNAM-$VERSION
+   doc/LICENSE doc/README doc/deploy-guide doc/user-manual $CWD/README.SLACKWARE \
+   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Copy the slack-desc (and a custom doinst.sh if necessary) into ./install
