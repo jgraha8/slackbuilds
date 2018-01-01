@@ -1,0 +1,12 @@
+     |-----handy-ruler------------------------------------------------------|
+emacs-no-x11: emacs-no-x11 (GNU Emacs -- No X11)
+emacs-no-x11:
+emacs-no-x11: Emacs is the extensible, customizable, self-documenting real-time
+emacs-no-x11: display editor. If this seems to be a bit of a mouthful, an
+emacs-no-x11: easier explanation is that Emacs is a text editor and more. At
+emacs-no-x11: its core is an interpreter for Emacs Lisp, a dialect of the Lisp
+emacs-no-x11: programming language with extensions to support text editing.
+emacs-no-x11:
+emacs-no-x11:
+emacs-no-x11: http://www.gnu.org/software/emacs/
+emacs-no-x11:
