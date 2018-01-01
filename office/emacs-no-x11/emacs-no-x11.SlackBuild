@@ -93,8 +93,8 @@ make install DESTDIR=$PKG
 
 ( cd $PKG/usr/bin
    rm emacs
-   mv emacs-${SRCDIRVER} emacs-${TARBALLVER}-no-x11
-   ln -sf emacs-${TARBALLVER}-no-x11 emacs
+   mv emacs-${VERSION} emacs-${VERSION}-no-x11
+   ln -sf emacs-${VERSION}-no-x11 emacs
 )
 
 # I don't care for broken permissions.
