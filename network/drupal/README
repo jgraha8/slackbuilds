@@ -1,0 +1,22 @@
+Drupal is content management software. It's used to make many of the
+websites and applications you use every day. Drupal has great standard
+features, like easy content authoring, reliable performance, and
+excellent security. But what sets it apart is its flexibility;
+modularity is one of its core principles. Its tools help you build the
+versatile, structured content that dynamic web experiences need.
+
+
+SlackBuild defaults:
+
+* DOCROOT=/srv/httpd/htdocs
+* DRUPAL=drupal
+* PHPUSER=apache
+* PHPGROUP=apache
+
+You can change the defaults at build time:
+# DOCROOT=/your/preferred/directory \
+  DRUPAL=drupal.example.com \
+  PHPUSER=youruser \
+  PHPGROUP=yourgroup \
+  ./drupal.SlackBuild
+
