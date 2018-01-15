@@ -6,6 +6,16 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+# 20180111 bkw:
+# - updated for 3.3.3.
+# - remove unneeded command history patch.
+
+# 20171225 bkw:
+# - updated for 3.3.2.
+# - add upstream patch (commit d857451) to fix a long-standing bug where
+#   youtube-viewer's command history wasn't being saved across sessions.
+#   NOTE TO SELF: remove this patch once 3.3.3 is released.
+
 # 20171219 bkw:
 # - updated for 3.3.1.
 
@@ -54,7 +64,7 @@
 # - Added support for gtk-youtube-viewer
 
 PRGNAM=youtube-viewer
-VERSION=${VERSION:-3.3.1}
+VERSION=${VERSION:-3.3.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 ARCH=noarch

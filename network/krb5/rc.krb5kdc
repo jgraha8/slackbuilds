@@ -30,7 +30,7 @@ krb5kdc_restart() {
 krb5kdc_status() {
     if [ ! -z "$(ps -e -o command | grep -E -w [/]usr/sbin/krb5kdc)" ]; then
 	echo "krb5kdc is running."
-    else 
+    else
 	echo "krb5kdc is stopped."
 	exit 1
     fi

@@ -1,5 +1,6 @@
-Nextcloud is a safe home for all your data - community-driven, free & open
-source.  Nextcloud gives you access to all your files wherever you are.
+Nextcloud is a safe home for all your data - community-driven, free and
+open source. Nextcloud gives you access to all your files wherever you
+are.
 
 Optional dependencies:
 * php-pgsql for PostgreSQL support (requires postgresql)
