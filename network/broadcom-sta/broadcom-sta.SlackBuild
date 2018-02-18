@@ -76,7 +76,9 @@ if [ -n "${KERNEL##[23].*}" -a -n "${KERNEL##4.[0-6].*}" ]; then
   sed -i.orig 's/IEEE80211_BAND_\([25]\)GHZ/NL80211_BAND_\1GHZ/g' \
     src/wl/sys/wl_cfg80211_hybrid.c
 fi
-patch -p1 < $CWD/linux48.patch
+zcat $CWD/linux48.patch.gz | patch -p1
+zcat $CWD/linux411.patch.gz | patch -p1
+zcat $CWD/linux412.patch.gz | patch -p1
 
 env -u ARCH make -C /lib/modules/$KERNEL/build M=$(pwd) clean
 env -u ARCH make -C /lib/modules/$KERNEL/build M=$(pwd)
