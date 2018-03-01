@@ -1,0 +1,27 @@
+The Authen::PAM module provides a Perl interface to the PAM
+library. The only difference with the standard PAM interface is that
+instead of passing a pam_conv struct which has an additional context
+parameter appdata_ptr, you must only give an address to a conversation
+function written in Perl (see below).
+
+If you want to pass a NULL pointer as a value of the $user in
+pam_start use undef or the two-argument version. Both in the two and
+the three-argument versions of pam_start a default conversation
+function is used (Authen::PAM::pam_default_conv).
+
+The $flags argument is optional for all functions which use it except
+for pam_setcred. The $pam_status argument is also optional for pam_end
+function. Both of these arguments will be set to 0 if not given.
+
+The names of some constants from the PAM library have changed over the
+time. You can use any of the known names for a given constant although
+it is advisable to use the latest one.
+
+When this module supports some of the additional features of the PAM
+library (e.g. pam_fail_delay) then the corresponding HAVE_PAM_XXX
+constant will have a value 1 otherwise it will return 0.
+
+For compatibility with older PAM libraries I have added the constant
+HAVE_PAM_ENV_FUNCTIONS which is true if your PAM library has the
+functions for handling environment variables (pam_putenv, pam_getenv,
+pam_getenvlist).
