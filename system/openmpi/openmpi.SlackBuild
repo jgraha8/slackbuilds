@@ -82,6 +82,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man/ \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --disable-static \
+  --enable-mpi-cxx \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --build=$ARCH-slackware-linux
 
