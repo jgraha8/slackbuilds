@@ -1,3 +1,1347 @@
+Sat Mar 10 00:12:40 UTC 2018
+academic/avogadro: Mirror download url.
+academic/papi: Fixed ownership.
+academic/tkgate: Mirror download url.
+academic/xflr5: Fix slack-desc, add doinst.sh.
+audio/hydrogen: Updated for version 0.9.7.
+audio/museeks: Updated for version 0.9.0.
+audio/opencore-amr: New maintainer
+audio/rplay: Mirror download url.
+audio/specimen: Mirror download url.
+business/stansoft: Updated for version 7.13.
+desktop/ClipboardViewer: Mirror download url.
+desktop/aero-mouse-theme: Added (Aero cursor theme).
+desktop/afterstep: Mirror download url.
+desktop/crystal: Mirror download url.
+desktop/flatpak: Updated for version 0.11.3.
+desktop/kde44-oxygen-molecule: Mirror download url.
+desktop/numix-sx-theme: Mirror download url.
+desktop/oomox: Updated for version 1.5.0.5.
+desktop/pekwm: Mirror download url.
+desktop/plasma-adjustable-clock: Mirror download url.
+desktop/plasma-eyasdp: Mirror download url.
+desktop/qt5ct: Updated for version 0.35.
+desktop/quickaccess: Mirror download url.
+desktop/rootactions_servicemenu: Mirror download url.
+desktop/skulpture: Mirror download url.
+development/beautysh: Updated for version 3.8.
+development/bluefish: Mirror download url.
+development/cim: Mirror download url.
+development/diffoscope: Updated for version 91.
+development/gnome-inform7: Mirror download url.
+development/kforth: Mirror download url.
+development/libxbgi: Mirror download url.
+development/likepython: Mirror download url.
+development/mcu8051ide: Mirror download url.
+development/ne: Fix .info.
+development/nedit: Mirror download url.
+development/newlisp: Mirror download url.
+development/nodejs6: Updated for version 6.13.1.
+development/nodejs: Updated for version 8.10.0.
+development/omniORBpy: Mirror download url.
+development/pasdoc: Mirror download url.
+development/phpDocumentor: Mirror download url.
+development/psycopg2: Add Python 3 support.
+development/qconf: Mirror download url.
+development/regina-rexx: Mirror download url.
+development/rstudio-desktop: Updated for version 1.1.423.
+development/rust: Note tmp build requirements in README.
+development/sassc: Updated for version 3.5.0.
+development/sdcc: Mirror download url.
+development/shed: Mirror download url.
+development/splint: Mirror download url.
+development/sqliteman: Mirror download url.
+development/tiled: Updated for version 1.1.3.
+development/vile: Mirror download url.
+development/vscode: Updated for version 1.21.0.
+development/xvile: Mirror download url.
+development/yarn: Updated for version 1.5.1.
+games/SameBoy-libretro: Removed (replaced by SameBoy).
+games/SameBoy: Added (Gameboy and Gameboy Color emulator).
+games/abe: Mirror download url.
+games/cosmic_assault: Mirror download url.
+games/doom_shareware_data: Mirror download url.
+games/gens-gs: Mirror download url.
+games/gnonograms: Mirror download url.
+games/heretic_shareware_data: Mirror download url.
+games/hexen_demo_data: Mirror download url.
+games/javacpc: Mirror download url.
+games/larn: Mirror download url.
+games/lmpc: Mirror download url.
+games/nethack: New maintainer.
+games/openjazz: Mirror download url.
+games/quake3_shareware_data: Mirror download url.
+games/quake_shareware_data: Mirror download url.
+games/roadfighter: Mirror download url.
+games/solarus-quest-editor: Patched to add a png logo.
+games/talkfilters: Mirror download url.
+games/transfusion: Mirror download url.
+games/typhoon_2001: Mirror download url.
+games/zelda-roth-se: Patched.
+games/zsdx: Patched.
+games/zsxd: Patched.
+gis/OWSLib: Add Python 3 support.
+gis/Shapely: Add Python 3 support.
+gis/josm: Mirror download url.
+gis/mapnik: Updated for version 3.0.19.
+gis/navit: Mirror download url.
+graphics/dcraw: Mirror download url.
+graphics/draftsight: Mirror download url.
+graphics/dxftoqet: Mirror download url.
+graphics/fbv: Mirror download url.
+graphics/feh: Updated for version 2.25.1.
+graphics/graphite2: Updated for version 1.3.11.
+graphics/openclipart: Mirror download url.
+graphics/textext: Mirror download url.
+graphics/tintii: Mirror download url.
+graphics/urbanlightscape: Mirror download url.
+ham/7plus: Mirror download url.
+ham/chirp: Mirror download url.
+ham/fldigi: Mirror download url.
+ham/flrig: Mirror download url.
+ham/svxlink: Updated for version 17.12.2.
+libraries/SDL2_image: Updated for version 2.0.3.
+libraries/activemq-cpp: Mirror download url.
+libraries/alglib: Mirror download url.
+libraries/ccrtp: Switch to i586, remove /usr/info/dir.
+libraries/cdk: Mirror download url.
+libraries/libbde: Mirror download url.
+libraries/libcitadel: Mirror download url.
+libraries/libfvde: Mirror download url.
+libraries/libfwnt: Mirror download url.
+libraries/libfwsi: Mirror download url.
+libraries/liblnk: Mirror download url.
+libraries/libmsiecf: Mirror download url.
+libraries/libolecf: Mirror download url.
+libraries/liboop: Mirror download url.
+libraries/libsass: Updated for version 3.5.0.
+libraries/libsmdev: Mirror download url.
+libraries/libsmraw: Mirror download url.
+libraries/libu2f-host: Updated for version 1.1.5.
+libraries/libvirt: Properly initialize $count in rc.libvirt
+libraries/libvshadow: Mirror download url.
+libraries/libwacom: Updated for version 0.29.
+libraries/libxnvctrl: Updated for version 390.25.
+libraries/mariadb_client: Mirror download url.
+libraries/mujs: Mirror download url.
+libraries/opencv: Updated patch for version 3.4.1
+libraries/wxGTK3: Updated for version 3.0.4.
+libraries/zita-resampler: Mirror download url.
+misc/BISP: Mirror download url.
+misc/ccze: Mirror download url.
+misc/floating-IPS: Minor cleanup.
+multimedia/devedeng: Updated for version 4.8.12.
+multimedia/opera-developer-ffmpeg-codecs: Updated for v 66.0.3343.3.
+network/PaleMoon: Updated for version 27.8.1.
+network/WireGuard: Updated for version 0.0.20180304.
+network/gui-ufw: Updated for version 18.04.0 + new maintainer.
+network/nmh: Updated for version 1.7.1.
+network/opera-developer: Updated for version 53.0.2885.0.
+network/opera: Updated for version 51.0.2830.55.
+network/palemoon: Updated for version 27.8.1.
+network/signal-desktop: Make sure to exit.
+network/tornado: Updated for version 5.0.0.
+network/vnstat: Updated for version 1.18.
+office/gcal: Updated for version 4.1.
+office/impressive: Updated for version 0.12.0.
+office/keepassxc: Updated for version 2.3.1.
+office/watson: Updated for version 1.5.2.
+perl/perl-Math-MPFR: Updated for version 4.01.
+python/arrow: Added (python library for dates, times).
+python/bleach: Updated for version 2.1.3.
+python/python-fonttools: Updated for version 3.24.1.
+python/python3-tornado: Updated for version 5.0.0.
+python/tqdm: Compress manpage.
+system/alacritty: Updated for version gitf298ebb.
+system/busybox: Added (The Swiss Army Knife of Embedded Linux).
+system/exa: Update README.
+system/fd: Update README.
+system/fio: Updated for version 3.5.
+system/firetools: Updated for version 0.9.52.
+system/letsencrypt: Updated for version 0.22.0.
+system/lynis: Updated for version 2.6.3.
+system/mlterm: Updated for version 3.8.5.
+system/ripgrep: Update README.
+system/salt: Updated for version 2017.7.4.
+system/virt-manager: Updated for version 1.5.1.
+system/vtcol: Update README.
+system/xen: Updated for version 4.10.0.
++--------------------------+
+Mon Mar  5 19:05:12 UTC 2018
+academic/artha: Mirror download url.
+academic/avogadro: Update download url.
+academic/galculator: Fix download url.
+academic/paml: Mirror download url.
+academic/qtoctave: Mirror download url.
+academic/tkgate: Update download url.
+accessibility/svkbd: Mirror download url.
+audio/clyrics: Updated for version 0.10.
+audio/fmit: Mirror download url.
+audio/mhwaveedit: Mirror download url.
+audio/nero-aac: Mirror download url.
+audio/ngjackspa: Mirror download url.
+audio/playmp3list: Fix download + switch to i586.
+audio/rplay: Update download url.
+audio/sfarkxtc: Mirror download url.
+audio/snd: Mirror download url.
+audio/specimen: Update download url.
+desktop/ClipboardViewer: Update download url.
+desktop/XDecorations: Mirror download url.
+desktop/Xfce-Theme-Manager: Mirror download url.
+desktop/afterstep: Update download url.
+desktop/cryptkeeper: Removed (Abandoned upstream).
+desktop/crystal: Update download url.
+desktop/dunst: Fix source url.
+desktop/faenza-icon-theme: Mirror download url.
+desktop/gntp-send: Update download url.
+desktop/gtk-nodoka-engine: Mirror download url.
+desktop/kde44-oxygen-molecule: Update download url.
+desktop/numix-icon-theme: Updated for version 20171225.
+desktop/numix-sx-theme: Update download url.
+desktop/oranchelo-icon-theme: Updated for version 0.7.6.
+desktop/pekwm: Update download url.
+desktop/plasma-adjustable-clock: Update download url.
+desktop/plasma-eyasdp: Update download url.
+desktop/qtile: Updated for version 0.11.1.
+desktop/quickaccess: Update download url.
+desktop/rootactions_servicemenu: Update download url.
+desktop/skulpture: Update download url.
+desktop/sun: Updated for version 1.2.2.
+desktop/xtrascreenhacks: Mirror download url.
+development/Arduino: Mirror download url.
+development/bas: Updated for version 2.4.
+development/bluefish: Update download url.
+development/chibi-scheme: Updated for version 0.8.
+development/cim: Update download url.
+development/cudnn: Update download url.
+development/d-tools: Updated for version 2.079.0
+development/dbeaver: Mirror download url.
+development/dmd: Updated for version 2.079.0
+development/ebe: Mirror download url.
+development/gecode: Mirror download url.
+development/git-lfs: Updated for version 2.4.0.
+development/global: Updated for version 6.6.2.
+development/gnome-inform7: Update download url.
+development/gprolog: New maintainer.
+development/gsoap: Mirror download url.
+development/hhvm: Updated for version 3.24.3
+development/kforth: Update download url.
+development/kotlin: Updated for version 1.2.30.
+development/libxbgi: Update download url.
+development/likepython: Update download url.
+development/lmdb: Mirror download url.
+development/mcu8051ide: Update download url.
+development/monkey-studio: Mirror download url.
+development/ne: Update download url.
+development/nedit: Update download url.
+development/newlisp: Update download url.
+development/omake: Mirror download url.
+development/omniORBpy: Update download url.
+development/openjdk6: Mirror download url.
+development/pasdoc: Update download url.
+development/phpDocumentor: Update download url.
+development/qconf: Update download url.
+development/regina-rexx: Update download url.
+development/sbcl: Updated for version 1.4.5.
+development/sdcc: Update download url.
+development/shed: Update download url.
+development/smartgit: Mirror download url.
+development/smartsvn: Update download url.
+development/splint: Update download url.
+development/sqliteman: Update download url.
+development/stgit: Mirror download url.
+development/vile: Update download url.
+development/xemacs: Mirror download url.
+development/xvile: Update download url.
+development/zope.testing: Switch to https.
+games/abe: Update download url.
+games/bloodcm: Mirror download url.
+games/cosmic_assault: Update download url.
+games/doom_shareware_data: Update download url.
+games/galaxyv2: Mirror download url.
+games/gens-gs: Update download url.
+games/gnonograms: Update download url.
+games/heretic_shareware_data: Update download url.
+games/hexen_demo_data: Update download url.
+games/jackhammer: Mirror download url.
+games/javacpc: Update download url.
+games/larn: Update download url.
+games/lmpc: Update download url.
+games/mrboom: Updated for version 4.4.
+games/openjazz: Update download url.
+games/quake3_shareware_data: Update download url.
+games/quake_shareware_data: Update download url.
+games/roadfighter: Update download url.
+games/talkfilters: Update download url.
+games/transfusion: Update download url.
+games/typhoon_2001: Update download url.
+games/warmux: Mirror download url.
+games/warsow: Mirror download url.
+gis/josm: Update download url.
+gis/navit: Update download url.
+gis/osgEarth: Mirror download url.
+gis/proj: Updated for version 5.0.0.
+gis/qgis: Updated for version 2.18.17.
+graphics/dcraw: Update download url.
+graphics/draftsight: Update download url.
+graphics/dxftoqet: Update download url.
+graphics/fbpic: Mirror download url.
+graphics/fbv: Update download url.
+graphics/feh: Updated for version 2.25.
+graphics/fotoxx: Mirror download url.
+graphics/openclipart: Update download url.
+graphics/raw-thumbnailer: Mirror download url.
+graphics/textext: Update download url.
+graphics/tintii: Update download url.
+graphics/urbanlightscape: Update download url.
+graphics/yed: Mirror download url.
+ham/7plus: Update download url.
+ham/chirp: Update download url.
+ham/cwstation: Mirror download url.
+ham/demorse: Mirror download url.
+ham/direwolf: Mirror download url.
+ham/fldigi: Update download url.
+ham/flrig: Update download url.
+ham/xdemorse: Mirror download url.
+ham/xwxapt: Mirror download url.
+libraries/FormEncode: Update download url.
+libraries/Geraldo: Update download url.
+libraries/activemq-cpp: Update download url.
+libraries/alglib: Update download url.
+libraries/cdk: Update download url.
+libraries/cfitsio: Updated for version 3.43.
+libraries/gtk-aurora-engine: Fixed DOWNLOAD.
+libraries/imlib2: Updated for version 1.5.0.
+libraries/libAfterImage: Mirror download url.
+libraries/libbde: Update download url.
+libraries/libcitadel: Update download url.
+libraries/libeot: Minor cleanup.
+libraries/libfvde: Update download url.
+libraries/libfwnt: Update download url.
+libraries/libfwsi: Update download url.
+libraries/liblnk: Update download url.
+libraries/libmsiecf: Update download url.
+libraries/libmspub: Updated for version 0.1.4.
+libraries/libolecf: Update download url.
+libraries/liboop: Update download url.
+libraries/liborcus: Updated for version 0.13.4.
+libraries/libpaper: Update download url.
+libraries/libsmdev: Update download url.
+libraries/libsmraw: Update download url.
+libraries/libtorrent-rasterbar: Update for qbittorrent-qt5.
+libraries/libvshadow: Update download url.
+libraries/mariadb_client: Update download url.
+libraries/mujs: Update download url.
+libraries/opencv: Updated for version 3.4.1
+libraries/p4api: Update download url.
+libraries/progressbar: Switch to https.
+libraries/xmltooling: Update download url.
+libraries/xview: Mirror download url.
+libraries/zita-resampler: Update download url.
+misc/BISP: Update download url.
+misc/ardesia: Mirror download url.
+misc/bdf2psf: Mirror download url.
+misc/ccze: Update download url.
+misc/floating-IPS: Mirror download url.
+misc/nfoview: Mirror download url.
+misc/tegaki-zinnia-japanese: Mirror download url.
+multimedia/QMPlay2: Updated for version 18.03.02.
+multimedia/a2jmidid: Mirror download url.
+multimedia/flvtool2: Mirror download url.
+multimedia/gmidimonitor: Mirror download url.
+multimedia/huludesktop: Mirror download url.
+multimedia/makemkv: Mirror download url.
+multimedia/opera-developer-ffmpeg-codecs: Updated for v65.0.3325.53.
+multimedia/qsampler: Mirror download url.
+multimedia/ripit: Mirror download url.
+multimedia/subtitleeditor: Mirror download url.
+network/Electrum-DASH: Mirror download url.
+network/PaleMoon: Updated for version 27.8.0.
+network/arpwatch: Mirror download url.
+network/bird: Mirror download url.
+network/boxcryptor: Mirror download url.
+network/btsync: Removed (maintainer's request).
+network/cadaver: Mirror download url.
+network/cicb: Mirror download url.
+network/clive: Mirror download url.
+network/dnstracer: Mirror download url.
+network/dropbox: Mirror download url.
+network/easyrsa: Updated for version 3.0.4.
+network/emacs-w3m: Mirror download url.
+network/firehol: Mirror download url.
+network/fping6: Mirror download url.
+network/freeradius-server: Mirror download url.
+network/googler: Updated for version 3.5.
+network/hostsblock: Mirror download url.
+network/httping: Mirror download url.
+network/icecat: Updated for version 52.6.0.
+network/kasp_updater: Mirror download url.
+network/kcm_ufw: Mirror download url.
+network/leafnode: Mirror download url.
+network/mod_chroot: Mirror download url.
+network/netperf: Mirror download url.
+network/opensmtpd: Fix permissions.
+network/opera-developer: Updated for version 53.0.2880.0.
+network/pidgin-birthday-reminder: Mirror download url.
+network/pidgin-visnotes: Mirror download url.
+network/qbittorrent-qt5: Updated for version 4.0.4.
+network/seahub: Mirror download url.
+network/shadowsocks-libev: Added (secure socks5 proxy).
+network/teamviewer: Updated for version 13.0.9865.
+network/tor: Updated for version 0.3.2.10.
+network/varnish: Mirror download url.
+network/vcspull: Mirror download url.
+network/yandex-browser-beta: Updated for version 18.1.1.952.
+office/JabRef: Mirror download url.
+office/hevea: Mirror download url.
+office/kate-latex-plugin: Mirror download url.
+office/keepassxc: .info fixes.
+office/keepnote: Mirror download url.
+office/sc-im: Updated for version 0.7.0.
+office/teapot: Mirror download url.
+office/trelby: Mirror download url.
+office/verbiste: Mirror download url.
+office/xmind: Mirror download url.
+perl/libpurple-kwallet-plugin: Mirror download url.
+perl/perl-DBD-Pg: Mirror download url.
+perl/perl-Date-Manip: Updated for version 6.70.
+perl/perl-DateTime-Format-Strptime: Mirror download url.
+perl/perl-IO-Socket-INET6: Mirror download url.
+perl/perl-Log-Dispatch: Mirror download url.
+perl/perl-Test-Harness: Updated for version 3.41.
+python/dfdatetime: Mirror download url.
+python/dfwinreg: Mirror download url.
+python/dhcpy6d: Mirror download url.
+python/p4python: Mirror download url.
+python/pychart: Mirror download url.
+python/python-neovim: Updated for version 0.2.1.
+python/python-notify2: Updated for version 0.3.1.
+python/python-suds: Mirror download url.
+python/python-yenc: Mirror download url.
+python/python3-augeas: Mirror download url.
+ruby/rubygem-mail: Updated for version 2.7.0.
+system/Iosevka: Updated for version 1.14.1.
+system/clamav: Updated for version 0.99.4.
+system/ddrescue-gui: Updated for version 1.7.2.
+system/eaglemode: Mirror download url.
+system/efitools: Mirror download url.
+system/emelfm2: Mirror download url.
+system/epson-inkjet-printer-escpr: Mirror download url.
+system/exomizer: Mirror download url.
+system/kafka: Mirror download url.
+system/microcode_ctl: Mirror download url.
+system/mkslack: Updated for version 5.2.
+system/nanum-coding-fonts-ttf: Mirror download url.
+system/pce: Mirror download url.
+system/pcsc-tools: Mirror download url.
+system/rfdump: Mirror download url.
+system/slackchlog: Mirror download url.
+system/slackyd: Mirror download url.
+system/smbldap-tools: Mirror download url.
+system/sysdig: Updated for version 0.20.0
+system/targetcli-fb: Mirror download url.
+system/tkdvd: Mirror download url.
+system/ttf-arphic-uming: Mirror download url.
+system/ttmkfdir: Mirror download url.
+system/virt-viewer: Mirror download url.
++--------------------------+
+Sat Mar  3 01:43:43 UTC 2018
+academic/Gblocks: Fix download url.
+academic/PhyML: Fix download url.
+academic/artha: Fix download url.
+academic/calc: Fix download url.
+academic/ncbi-blast: Updated downloar urls.
+academic/pyfits: Update download url.
+academic/qtoctave: Update download url.
+academic/smath-studio: Fix download urls.
+academic/veusz: Updated for version 2.2.
+academic/xflr5: Added (analysis tool for airfoils, wings, planes).
+accessibility/jpilot: Fix download url.
+audio/iripdb: Fix download url.
+audio/snd: Update download url.
+audio/soxr: Fix download url.
+audio/whysynth: Fix download url.
+desktop/cmatrix: Fix download url.
+desktop/icewm-themes: Fix download url.
+desktop/maitreya: Fix download url.
+desktop/numix-icon-theme: Fix download url.
+desktop/oranchelo-icon-theme: Updated for version 0.7.5.9.
+desktop/protozoa-cursor-themes: Fix download urls.
+desktop/searchmonkey: Fix download url.
+desktop/wmbutton: Update download url.
+desktop/xfce4-kbdleds-plugin: Fix download url.
+desktop/yad: Updated for version 0.40.0.
+development/Arduino: Update download url.
+development/Sphinx: Updated for version 1.7.1.
+development/alloy: Fix download url.
+development/arm-binutils: Updated for version 2.30.
+development/arm-gdb: Updated for version 8.1.
+development/bas55: Updated for version 1.14.
+development/cargo-vendor: Fix building on -current.
+development/codeblocks: Fix build on 32 bit.
+development/dart: Fix build with ARCH=i686.
+development/eclim: Fix building with latest Sphinx version.
+development/gcc-d: Updated for gcc version 5.5.0
+development/gcclegacy494: Fixed build on -current.
+development/glm: Updated for version 0.9.8.5.
+development/meson: Updated for version 0.44.1.
+development/openjdk6: Update download url.
+development/p4: Updated for version 2017.2.1611521.
+development/p4d: Updated for version 2017.2.1622831.
+development/perf: Updated for version 4.4.118.
+development/racer: Fix building on -current.
+development/rust: Updated for version 1.24.1.
+development/staruml: Update download url.
+development/swift: Unsupported on 32 bit.
+development/universal-ctags: Updated for version 059ed2c
+development/zile: Updated for version 2.4.14.
+games/OpenXcom: Updated for version 20180217_1352.
+games/ioquake3: Fix build on 32 bit.
+games/iortcw: Fix build on 32 bit.
+games/jackhammer: Update download url.
+games/openmsx: Added dmk tools from Contrib.
+games/quakeforge: Fix build with ARCH=i686.
+games/warsow: Update download url.
+gis/gdal: Add python3 support.
+graphics/Blender: Updated for version 2.79a
+graphics/FreeCAD: Updated for version 0.16.6712.
+graphics/feh: Updated for version 2.24.
+graphics/gource: Updated for version 0.48.
+graphics/openimageio: Updated for version 1.8.9
+graphics/yacreader: Updated for version 9.0.0.
+libraries/SDL2: Updated for version 2.0.8.
+libraries/gtk3-nocsd: Added (disable gtk+ 3 client side decoration).
+libraries/libabw: Updated for version 0.1.2.
+libraries/libe-book: Updated for version 0.1.3.
+libraries/libepubgen: Added (EPUB generator for librevenge).
+libraries/libixion: Updated for version 0.13.0.
+libraries/libmspub: Updated for version 0.1.3.
+libraries/liborcus: Updated for version 0.13.3.
+libraries/libpagemaker: Updated for version 0.0.4.
+libraries/libqxp: Added (QuarkXPress documents parser library).
+libraries/libtorrent-rasterbar: Adjust CXXFLAGS.
+libraries/live555: Updated for version 2018.02.28
+libraries/xview: Fix build with ARCH=i686.
+libraries/xview: Update download url.
+misc/mosquitto: Updated for version 1.4.15
+misc/tegaki-zinnia-japanese: Update download url.
+multimedia/gpodder: Updated for version 3.10.1.
+multimedia/huludesktop: Update download url.
+multimedia/makemkv: Update download url.
+multimedia/opera-ffmpeg-codecs: Updated for version 64.0.3282.168.
+multimedia/qsampler: Update download url.
+multimedia/smplayer: Updated for version 18.2.2.
+multimedia/spotify: Updated for version 1.0.72.
+multimedia/vlc: Updated for version 3.0.1
+network/Electrum-DASH: Update download url.
+network/argus: Update download url.
+network/arpwatch: Update download url.
+network/basilisk-src: Added (browser).
+network/bird: Update download url.
+network/bitcoin: Updated for version 0.16.0.
+network/boxcryptor: Update download url.
+network/btsync: Update download url.
+network/cadaver: Update download url.
+network/cicb: Update download url.
+network/clipgrab: Updated for version 3.6.8.
+network/clive: Update download url.
+network/dnscrypt-proxy: Fix DOWNLOAD url.
+network/dropbear: Updated for version 2018.76
+network/dropbox: Update download url.
+network/emacs-w3m: Update download url.
+network/firehol: Update download url.
+network/fping6: Update download url.
+network/freeradius-server: Update download url.
+network/hostsblock: Update download url.
+network/httping: Update download url.
+network/kasp_updater: Update download url.
+network/kcm_ufw: Update download url.
+network/leafnode: Update download url.
+network/lizardfs: Added (GPLv3 implementation of GoogleFS).
+network/mod_chroot: Update download url.
+network/netperf: Update download url.
+network/opera-developer: Updated for version 52.0.2871.0.
+network/opera: Updated for version 51.0.2830.40.
+network/palemoon: Updated for version 27.8.0.
+network/pidgin-birthday-reminder: Update download url.
+network/pidgin-visnotes: Update download url.
+network/postfix: Updated for version 3.3.0.
+network/seahub: Update download url.
+network/shorewall-core: Updated for version 5.1.12.3.
+network/shorewall6: Updated for version 5.1.12.3.
+network/shorewall: Updated for version 5.1.12.3.
+network/signal-desktop: Added (Signal for Desktop).
+network/varnish: Update download url.
+network/vcspull: Update download url.
+network/vimb: Update script.
+network/vivaldi: Updated for version 1.14.1077.55.
+network/wireshark: Updated for version 2.4.5.
+network/yandex-browser-beta: Update download url.
+office/JabRef: Update download url.
+office/LibreOffice: Updated for version 6.0.2.1
+office/hevea: Update download url.
+office/keepassxc: Updated for version 2.3.0.
+office/keepnote: Update download url.
+office/libreoffice-helppack: Updated for version 6.0.2.
+office/libreoffice-langpack: Updated for version 6.0.2.
+office/libreoffice: Update README.
+office/libreoffice: Updated for version 6.0.2.
+office/mu: Updated for version 1.0.
+office/notmuch: Updated for version 0.26.
+office/teapot: Update download url.
+office/trelby: Update download url.
+office/verbiste: Update download url.
+office/xmind: Update download url.
+perl/perl-DBD-Pg: Update download url.
+perl/perl-X10: Updated for version 0.04.
+perl/perl-YAML-Tiny: Updated for version 1.73.
+python/dfdatetime: Update download url.
+python/dfwinreg: Update download url.
+python/dhcpy6d: Update download url.
+python/mock: Switch to https.
+python/p4python: Update download url.
+python/pynzb: Switch to https.
+python/pyquery: Switch to https.
+python/pystatsd: Switch to https.
+python/python-cheetah: Switch to https.
+python/python-discid: Switch to https.
+python/python-fonttools: Updated for version 3.24.0
+python/python-oauth: Switch to https.
+python/python-orbited: Switch to https.
+python/python-yenc: Update download url.
+python/pyudev: Switch to https.
+python/rope: Switch to https.
+python/websocket-client: Updated for version 0.47.0.
+ruby/ruby-build: Updated for version 20180224.
+ruby/sequel: Updated for version 5.5.0.
+system/GentiumPlus: Update download url.
+system/alacritty: Updated for version git475ebec.
+system/ansible: Updated for version 2.4.3.0.
+system/audit: Switch to i586, fix i686 build.
+system/blake2: Update download url.
+system/chipsec: Fix build on 32 bit.
+system/eaglemode: Update download url.
+system/efitools: Update download url.
+system/emelfm2: Update download url.
+system/epson-inkjet-printer-escpr: Update download url.
+system/exa: Fix building on -current.
+system/exomizer: Update download url.
+system/fd: Fix building on -current.
+system/fswatch: Fix build on 32 bit.
+system/kafka: Update download url.
+system/kbfs: Updated for version 1.0.44_20180223200436.
+system/keybase: Updated for version 1.0.44 1.0.44.
+system/mktorrent: Updated for version 1.1.
+system/nanum-coding-fonts-ttf: Update download url.
+system/noto-fonts: Fix script.
+system/open-vm-tools: Fix optional deps in README.
+system/pce: Update download url.
+system/pcsc-tools: Update download url.
+system/qemu-guest-agent: Updated for version 2.11.1.
+system/rfdump: Update download url.
+system/sbbdep: Updated for version 0.3.0.
+system/slackchlog: Update download url.
+system/tkdvd: Update download url.
+system/ttf-arphic-uming: Update download url.
+system/ttmkfdir: Update download url.
+system/usbrelay: Added (software for HID usb relays).
+system/vtcol: Fix building on -current.
++--------------------------+
+Sat Feb 24 00:01:03 UTC 2018
+academic/engauge: Fixed build with openjpeg-2.3.0.
+audio/audacious-aac: Update HOMEPAGE and DOWNLOAD url.
+audio/audacious-cue: Update HOMEPAGE and DOWNLOAD url.
+audio/audacious-ffmpeg: Update HOMEPAGE and DOWNLOAD url.
+audio/rubberband: Fixed download link.
+audio/tuxguitar: Updated for version 1.5.
+desktop/buttonmaker: Added (dockapps).
+desktop/compton: Updated for version 316eac0.
+desktop/jgmenu: Updated for version 0.8.2.
+desktop/mh5000: Updated for version 1.3.
+desktop/oranchelo-icon-theme: Updated for version 0.7.5.8.
+desktop/subtle: Update HOMEPAGE and DOWNLOAD url.
+desktop/wmbutton: Added (3 button actions).
+desktop/wmcpuwatch: Added (form of wmmon).
+desktop/wmfishtime: Added (clock dockapp).
+desktop/wmix: Added (dockapp mixer).
+desktop/wmshutdown: Added (dockapp for shutdown).
+desktop/wmuptime: Added (LED display of your uptime).
+desktop/xxkb: Update HOMEPAGE url.
+development/Sphinx: Updated for version 1.7.0.
+development/atom-amd64: Updated for version 1.24.0.
+development/bpython: Updated for version 0.17.1.
+development/d-tools: Fixed version in .info.
+development/docutils: Updated for version 0.14.
+development/extra-cmake-modules: Compress manpages.
+development/gcclegacy494: Updated for version 4.9.4.
+development/jupyter-ipykernel: Updated for version 4.8.2.
+development/jupyter-ipywidgets: Updated for version 7.1.2.
+development/ripgrep: Updated for version 0.8.1.
+development/robomongo: Update HOMEPAGE and DOWNLOAD url.
+development/sbt: Update HOMEPAGE url.
+development/zeal: Updated for version 0.6.0.
+games/RetroArch: Updated for version 1.7.1.
+games/bastet: Fix -current build.
+games/d1x-rebirth: Update HOMEPAGE and DOWNLOAD url.
+games/d2x-rebirth: Update HOMEPAGE and DOWNLOAD url.
+games/doomretro: Updated for version 2.6.7.
+games/exult: Updated for version 2018.02.01_c3d7afb.
+games/freedoom: Update HOMEPAGE url.
+games/nuvie: Updated for version 2018.01.13_1fa4044.
+games/retux: Updated for version 1.3.5.
+games/zdbsp: Move binary to /usr/games.
+games/zennode: Move binaries to /usr/games.
+gis/GMT: Updated for version 5.4.3.
+gis/cartopy: Updated for version 0.16.0.
+gis/gpxsee: Updated for version 5.2.
+gis/navit: Fixed build.
+graphics/feh: Updated for version 2.23.2.
+libraries/Jinja2: Updated for version 2.10 + new maintainer.
+libraries/gloox: Update HOMEPAGE and DOWNLOAD url.
+libraries/leptonica: Updated for version 1.75.3.
+libraries/libAfterImage: Fix DOWNLOAD url.
+libraries/libfilezilla: Updated for versoin 0.12.1.
+libraries/libmpeg2: Fixed download link.
+libraries/libmusicbrainz3: Fixed download link.
+libraries/libtorrent-rasterbar: Change compiler & build options.
+libraries/libuv: Updated for version 1.19.2.
+libraries/uriparser: Re-add the dependency graphviz.
+multimedia/get_iplayer: Updated for version 3.12.
+multimedia/l-smash: Updated for version 2.14.5.
+multimedia/obs-studio: Updated for version 21.0.3
+multimedia/opera-ffmpeg-codecs: Updated for version 64.0.3282.140.
+multimedia/vlc: Temporarily remove default opencv support
+multimedia/x265: Updated for version 2.7.
+network/Pafy: Updated for version 0.5.4.
+network/WireGuard: Updated for version 0.0.20180218.
+network/asciinema: Fix MD5SUM.
+network/basilisk: Updated for version 2018.02.14.
+network/clipgrab: Updated for version 3.6.7.
+network/dianara: Don't split the makepkg line.
+network/dropbox: Update HOMEPAGE url.
+network/filezilla: Updated for version 3.31.0.
+network/gajim: Remove redundant space.
+network/geoipupdate: Update HOMEPAGE url.
+network/geomyidae: Updated for version v0.31.1.
+network/libmaxminddb: Update HOMEPAGE url.
+network/mps-youtube: Updated for version 0.2.8.
+network/openntpd: Updated for version 6.2p3.
+network/opera: Updated for version 51.0.2830.34.
+network/phpmyadmin: Updated for version 4.7.8.
+network/purple-facebook: Updated for version 0.9.5 + new maintainer.
+network/qbittorrent-qt5: Updated for version 4.0.4.
+network/qutebrowser: Update README and fix deps.
+network/r8168: Added patch for linux-4.15 kernels.
+network/shorewall-core: Updated for version 5.1.12.2.
+network/shorewall6: Updated for version 5.1.12.2.
+network/shorewall: Updated for version 5.1.12.2.
+network/skypeforlinux: Updated for version 8.16.0.4.
+network/youtube-dl: Updated for version 2018.02.11.
+network/yturl: Updated for version 2.0.2.
+office/abiword: fix screen flicker with gtk+3 >= 3.22.x
+office/adobe-reader-fontpacks: Switch to https.
+office/adobe-reader: Switch to https.
+office/ganttproject: Updated for version 2.8.6.
+perl/perl-Carp-Clan: Updated for version 6.06.
+perl/perl-IO-Socket-SSL: Updated for version 2.056.
+perl/perl-Module-Manifest: Update HOMEPAGE url.
+perl/perl-Sidef: Updated for version 3.15.
+python/mistune: Updated for version 0.8.3.
+python/python-certifi: Updated for version 2018.1.18.
+python/python-scandir: Updated for version 1.7.
+python/python-urllib3: Updated for version 1.22 + New maintainer.
+python/python3-jupyter-ipykernel: Updated for version 4.8.2.
+python/s3cmd: Updated for version 2.0.1
+system/afdko: Switch to https.
+system/conky: Updated for version 1.10.8.
+system/fwupd: Updated for version 1.0.5.
+system/kbfs: Updated for version 1.0.41_20180221190021.
+system/keybase: Updated for version 1.0.42.
+system/nvidia-driver: Updated for version 390.25.
+system/nvidia-kernel: Updated for version 390.25.
+system/passwordsafe: Update HOMEPAGE url.
+system/qemu: Updated for version 2.11.1.
+system/spl-solaris: Updated for version 0.7.6.
+system/virt-manager: Updated for version 1.5.0.
+system/wine: Updated for version 3.1.
+system/zfs-on-linux: Updated for version 0.7.6.
++--------------------------+
+Sat Feb 17 00:43:50 UTC 2018
+academic/aliview: Added (Alignment viewer and editor).
+academic/genius: Updated for version 1.0.23.
+academic/qcl: Added (A Programming Language for Quantum Computers).
+desktop/dunst: Updated for version 1.3.1, make cleanup
+desktop/jgmenu: Updated for version 0.8.1.
+desktop/kwalletcli: Updated for version 3.01.
+desktop/obbrowser: Updated for version 0.09.
+desktop/oranchelo-icon-theme: Updated for version 0.7.5.7.
+development/Sphinx: Updated for version 1.6.7.
+development/bas55: Updated for version 1.13.
+development/d-tools: Updated for version 2.078.3
+development/dmd: Updated for version 2.078.3
+development/dwarf: Fixed md5sum.
+development/eclim: Updated for version 2.7.2.
+development/extra-cmake-modules: Updated for version 5.43.0.
+development/jupyter-ipykernel: Updated for version 4.8.1.
+development/kotlin: Updated for version 1.2.21.
+development/obnc: Updated for version 0.11.1.
+development/pkgconf: Updated for version 1.4.2.
+development/rust: Updated for version 1.24.0.
+development/tanya: Updated for version 0.7.8
+development/universal-ctags: Updated for version 30ce6ee
+games/Genesis-Plus-GX: Updated for version 2018.01.31_726b711.
+games/crispy-doom: Updated for version 5.1.
+games/cyphesis: Patched to build with postgresql-10.2.
+games/instead: Updated for version 3.2.0.
+games/javacpc: Updated for version 2.9.6.
+games/nethack: Switch to i586, fix maintainer typo.
+gis/gj2ascii: Added (render spatial vectors as ASCII).
+gis/google-earth: Updated for version 7.3.1.4507.
+gis/gpxsee: Added (GPX viewer and analyzer).
+gis/openorienteering-mapper: Updated for version 0.8.0.
+graphics/PureRef: Unsupported except on x86_64.
+libraries/appstream-glib: Updated for version 0.7.6.
+libraries/efivar: Updated for version 34.
+libraries/leptonica: Updated for version 1.75.2.
+libraries/libechonest: Fixed download url.
+libraries/liblxi: Updated for version 1.11.
+libraries/libwebp: Updated for version 0.6.1.
+libraries/live555: Updated for version 2018.02.12
+libraries/tbb: Updated for version 2018u2.
+libraries/wxSQLite3: Updated for version 3.5.9.
+misc/Publican: Added (Tool for publishing DocBook XML).
+misc/discount: Updated for version 2.2.2 + new maintainer.
+misc/wkhtmltox: Added (Render HTML into PDF).
+multimedia/mpv: Updated for version 0.27.2, deps.
+multimedia/opera-ffmpeg-codecs: Updated for version 64.0.3282.119.
+multimedia/sfnt2woff: Fixed md5sum.
+multimedia/smplayer: Updated for version 18.2.0.
+multimedia/vivaldi-codecs-ffmpeg-extra: Updated for v 64.0.3282.167.
+multimedia/vlc: Updated for version 3.0.0
+network/asciinema: Updated for version 2.0.0.
+network/exim: Updated for version 4.90.1.
+network/frostwire: Updated for version 6.6.2 + new maintainer.
+network/lxi-tools: Updated for version 1.18.
+network/opera-developer: Updated for version 52.0.2857.0.
+network/opera: Added Terms, Privacy and EULA files.
+network/qutebrowser: Updated for version 1.1.1.
+network/skypeforlinux: Updated for version 8.15.0.4.
+network/slimjet: Remove icons folder.
+network/slimjet: Updated for version 18.0.1.0.
+network/speedtest-cli: Updated for version 2.0.0.
+network/vivaldi: Updated for version 1.14.1077.50.
+network/xdman: Updated for version 2018.7.1.2.
+network/yle-dl: Updated for version 2.31.
+office/LibreOffice: Updated for version 6.0.1.1
+office/krop: Updated for version 0.5.0.
+office/latexdiff: Added (diff utility for LaTeX files).
+office/onlyoffice-desktopeditors: Updated for version 4.8.7.392.
+perl/perl-CGI-Application: Added (Framework for web-applications).
+perl/perl-CSS: Added (Object oriented Cascading Style Sheets).
+perl/perl-Class-ISA: Added (search path for class's ISA tree).
+perl/perl-DateTime-Format-DateParse: Added (Date::Parse parser).
+perl/perl-File-Inplace: Added (in-place editing of files).
+perl/perl-HTML-FormatText-WithLinks-AndTables: Added (HTML to Text).
+perl/perl-HTML-FormatText-WithLinks: Added (HTML to text).
+perl/perl-HTML-Formatter: Added (Base class for HTML formatters).
+perl/perl-HTML-WikiConverter-Markdown: Added (HTML to Markdown).
+perl/perl-HTML-WikiConverter: Added (Convert HTML to wiki markup).
+perl/perl-Lingua-EN-Fathom: Added (readability of English text).
+perl/perl-Lingua-EN-Syllable: Added (short description of app).
+perl/perl-Locale-Maketext-Gettext: Added (gettext and Maketext).
+perl/perl-Locale-Msgfmt: Added (Compile .po files to .mo files).
+perl/perl-Locale-PO: Added (Manipulate .po from GNU gettext).
+perl/perl-Params-ValidationCompiler: Updated for version 0.27.
+perl/perl-String-Similarity: Added (similarity of two strings).
+perl/perl-Syntax-Highlight-Engine-Kate: Added (kate highlight).
+perl/perl-XML-Catalog: Added (perl library for xml catalogs).
+perl/perl-XML-TreeBuilder: Added (tree of XML::Element objects).
+python/alabaster: Updated for version 0.7.10.
+python/babel: Updated for version 2.5.3.
+python/coverage: Updated for version 4.5.1.
+python/foolscap: Update md5sum.
+python/imagesize: Add python3 support.
+python/python-emoji: Added (emoji terminal output).
+python/python3-jupyter-ipykernel: Updated for version 4.8.1.
+python/python3-pexpect: Updated for version 4.4.0.
+python/python3-pyzmq: Updated for version 17.0.0
+python/pyzmq: Updated for version 17.0.0.
+python/snowballstemmer: Add python3 support.
+python/typing: Updated for version 3.6.4.
+system/TLP: Updated for version 1.1 and corrected README.
+system/cantarell-fonts: Updated for version 0.100.
+system/dfu-util: Updated for version 0.9 + new maintainer
+system/fd: Updated for version 6.3.0.
+system/hack-font-ttf: Fixed SlackBuild.
+system/intel-microcode: Updated for version 20171117.
+system/inxi: Updated for version 2.3.56.
+system/ioninja: Added (terminal emulator).
+system/jpnevulator: Added (serial sniffer).
+system/lynis: Updated for version 2.6.2.
+system/noto-fonts: Updated for version 20180111.
+system/phoronix-test-suite: Updated for version 7.8.0.
+system/postgresql: Updated for version 10.2.
+system/pspg: Updated for version 0.9.3.
+system/ripgrep: Updated for version 0.8.0.
+system/sbotools: Updated for version 2.5.
+system/system/ttf-crosscorefonts: Updated for version 20180111.
+system/wine: Updated for version 3.0.
++--------------------------+
+Sat Feb 10 01:10:45 UTC 2018
+academic/fet: Updated for version 5.35.2.
+academic/gwyddion: Updated for version 2.50.
+audio/jack-audio-connection-kit: Updated for version 0.125.0.
+audio/ladspa_sdk: Update DOWNLOAD url.
+audio/pyalsaaudio: Update DOWNLOAD url.
+audio/xmms-scrobbler: Update DOWNLOAD url.
+desktop/cnslock: Fix version.
+desktop/kfaenza-icon-theme: Update DOWNLOAD url.
+desktop/nitrokey-app: Updated for version 1.2.
+development/chibi-scheme: Updated for version 0.8.0.
+development/composer: Updated for version 1.6.3
+development/cvsps: Update DOWNLOAD url.
+development/dwarf: Updated for version 20180129
+development/eric: Update DOWNLOAD url.
+development/generatorrunner: Update DOWNLOAD url.
+development/hhvm: Updated for version 3.24.2
+development/hugs98: Update DOWNLOAD url.
+development/jam: Update DOWNLOAD url.
+development/leiningen: Updated for version 2.8.1 + new maintainer.
+development/leveldb: Update DOWNLOAD url.
+development/lmdb: Update DOWNLOAD url.
+development/mono-debugger: Update DOWNLOAD url.
+development/perf: Updated for version 4.4.115.
+development/psycopg2: Updated for version 2.7.4.
+development/rtags: Updated for version 2.18.
+development/sbcl: Updated for version 1.4.4.
+development/slibtool: Updated for version 0.5.18.
+development/tidy-html5: Updated for version 5.6.0.
+development/tiled: Updated for version 1.1.2.
+development/universal-ctags: Updated for version 7918d19
+development/vscode: New maintainer.
+games/adom: Updated for version 3.0.6.
+games/advancemame: Updated for version 3.7.
+games/cowsay: Update DOWNLOAD url.
+games/fortune_firefly: Fix homepage.
+games/freeciv: Updated for version 2.6.0_beta2.
+games/pioneer: Updated for version 20180203.
+games/planetblupi: Updated for version 1.12.2.
+games/rogue: Update DOWNLOAD url.
+games/stella: Updated for version 5.1.
+gis/pktools: Updated for version 2.6.7.3.
+git/gitignore: Added phar.
+graphics/brlcad: Updated for version 7.26.4 + new maintainer.
+graphics/frescobaldi: Updated for version 2.20.0.
+graphics/gpscorrelate: Update DOWNLOAD url.
+graphics/mirage: New maintainer.
+graphics/trimage: Added (image compressor).
+ham/codec2: Added (low bit rate speech codec).
+ham/freedv: Added (Open source amateur digital voice).
+libraries/SDL_kitchensink: Updated for version 0.0.7.
+libraries/adns: Fix ownership & perms.
+libraries/edelib: Update DOWNLOAD url.
+libraries/freealut: Update DOWNLOAD url.
+libraries/gtk-qt-engine: Update DOWNLOAD url.
+libraries/gtk-sharp: Updated for version 2.12.45.
+libraries/iksemel: Update DOWNLOAD url.
+libraries/leptonica: Updated for version 1.75.1.
+libraries/libdaemon: Update DOWNLOAD url.
+libraries/libewf: Update DOWNLOAD url.
+libraries/libkate: Update DOWNLOAD url.
+libraries/libkface: Switch to opencv-legacy.
+libraries/libkgeomap4: Update DOWNLOAD url.
+libraries/liblrdf: Fix tarball handling.
+libraries/libminizip: Updated for version 1.2.11.
+libraries/libmp4v2: Update DOWNLOAD url.
+libraries/libmpd: Update DOWNLOAD url.
+libraries/libofa: Update DOWNLOAD url.
+libraries/libsass: Updated for version 3.4.9.
+libraries/libversion: Updated for version 2.5.0.
+libraries/libwacom: Updated for version 0.28.
+libraries/opal: Updated for version 3.10.10.
+libraries/opencv-legacy: Added (Open Source Computer Vision).
+libraries/opencv: Updated for version 3.4.0
+libraries/qt-assistant-compat: Update DOWNLOAD url.
+libraries/qt3: Fix download link.
+libraries/unibilium: Updated for version 2.0.0.
+libraries/uriparser: Updated for version 0.8.5, changed homepage.
+libraries/wvstreams: Update DOWNLOAD url.
+misc/KeePass: Remove VERSION.
+misc/mosquitto: Update README, slack-desc
+misc/xdelta: Update DOWNLOAD url.
+multimedia/dirac: Update DOWNLOAD url.
+multimedia/flashplayer-plugin: Updated for version 28.0.0.161.
+multimedia/freshplayerplugin: Updated for version 0.3.9.
+multimedia/ivtv-utils: Update DOWNLOAD url.
+multimedia/pepperflash-plugin: Updated for version 28.0.0.161.
+multimedia/schroedinger: Update DOWNLOAD url.
+multimedia/sfnt2woff: Updated for version 2009.10.03.
+multimedia/vivaldi-codecs-ffmpeg-extra: Updated for v 64.0.3282.140.
+multimedia/w_scan: Update DOWNLOAD url.
+network/Electrum: Updated for version 3.0.6.
+network/WireGuard: Updated for version 0.0.20180202.
+network/aMule: Added a patch for libupnp-1.8.x.
+network/basilisk: Updated for version 2018.02.02.
+network/brave: Update script.
+network/hiawatha: Updated for version 10.7 + new maintainer.
+network/opera: Updated for version 51.0.2830.26.
+network/prosody-mod-csi: Updated for version hg2876.
+network/skylable-sx: Update DOWNLOAD url.
+network/slack: Updated for version 3.0.5.
+network/slimjet: Updated for version 17.0.9.0.
+network/synergy: Update DOWNLOAD url.
+network/thttpd: Updated for version 2.28.
+network/tixati: Updated for version 2.56_1.
+network/transmission: Updated for version 2.93.
+network/tucan: Update DOWNLOAD url.
+network/urlwatch: Updated for version 2.8.
+network/vivaldi: Updated for version 1.14.1077.45.
+network/waterfox: Updated for version 56.0.4.1.
+network/wavemon: Updated for version 0.8.1.
+network/wvdial: Update DOWNLOAD url.
+network/x11vnc: Updated for version 0.9.15
+network/yandex-browser-beta: Updated for version 17.11.1.1120.
+office/LibreOffice: Updated for version 6.0.0.3
+office/kmymoney: Fix README.
+office/libreoffice-helppack: Updated for version 6.0.1.
+office/libreoffice-langpack: Updated for version 6.0.1.
+office/libreoffice: Updated for version 6.0.1.
+perl/perl-DateTime-Locale: Update DOWNLOAD url.
+perl/perl-Sub-Quote: Updated for version 2.005000.
+python/ipaddr-py: Update DOWNLOAD url.
+python/mechanize: Update download url
+python/pycodestyle: Added python3 support.
+python/python-configargparse: Updated for version 0.13.0.
+python/python-fonttools: Updated for version 3.22.0.
+python/python-neovim: Updated for version 0.2.1.
+system/Iosevka: Updated for version 1.14.0.
+system/bitrot: Added (dectects bit rotten files).
+system/cdrkit: Update DOWNLOAD url.
+system/chipsec: Added (Platform Security Assessment Framework).
+system/dfu-util: Update DOWNLOAD url.
+system/dosbox-dev: Updated for version 0.74.r4074.
+system/etsh: Added (extended Thompson shell).
+system/geoclue: Update DOWNLOAD url.
+system/hack-font-ttf: Updated for version 3.002.
+system/herculesstudio: Update DOWNLOAD url.
+system/innotop: Update DOWNLOAD url.
+system/isdct: Updated for version 3.0.10.
+system/iucode_tool: Updated for version 2.3.1.
+system/keybase: Updated for version 1.0.41.
+system/laptop-mode-tools: Updated for version 1.72.2.
+system/mailutils: Compress manpages.
+system/man-db: Updated for version 2.8.0.
+system/numlockx: Update DOWNLOAD url.
+system/pax: Update DOWNLOAD url.
+system/schedtool: Update DOWNLOAD url.
+system/stress: Update DOWNLOAD url.
+system/tilda: Updated for version 1.4.1.
+system/vifm: Updated for version 0.9.1.
+system/wmfsm: Updated for version 0.36.
+system/worker: Updated for version 3.15.0.
++--------------------------+
+Sat Feb  3 00:00:00 UTC 2018
+audio/sunvox: Updated for version 1.9.3b.
+audio/whipper: Updated for version 0.6.0.
+desktop/9menu: Updated for version 1.9.
+desktop/cnslock: Added (dock application).
+desktop/docfetcher: Fix patch.
+desktop/lxde-common: Call makepkg with the full path.
+desktop/lxlauncher: Call makepkg with the full path.
+desktop/lxmenu-data: Call makepkg with the full path.
+desktop/oranchelo-icon-theme: Updated for version 0.7.4.4.
+development/4th: Updated for version 3.62.5.
+development/SQLAlchemy: Updated for version 1.2.2.
+development/astyle: Updated for version 3.1
+development/atom-amd64: Updated for version 1.23.3.
+development/gcc-d: Updated for version 2.076.0_b3
+development/hhvm: Updated for version 3.24.1
+development/jupyter-ipykernel: New deps for jupyter-notebook.
+development/jupyter-notebook: Updated for version 5.4.0.
+development/pycharm: Updated for version 2017.3.3.
+development/tig: Updated for version 2.3.3.
+games/mame: Updated for version 0.194.
+gis/geographiclib-python: Updated for version 1.49.
+graphics/feh: Updated for version 2.23.1.
+graphics/openimageio: Updated for version 1.8.8
+libraries/adns: Added (C library).
+libraries/leptonica: Updated for version 1.75.0.
+libraries/libaudclient: Switch to https for the homepage.
+libraries/libbsd: Updated for version 0.8.7.
+libraries/liblxi: Added (support library for LAN eXtensions).
+libraries/libupnp: Fix build on 32 bit.
+libraries/liburcu: Updated for version 0.10.1.
+misc/sigrok-firmware-fx2lafw: Updated for version 0.1.6.
+misc/xbanish: Updated for version 1.5.
+multimedia/beets: Updated for version 1.4.6.
+multimedia/mkvtoolnix: Updated for version 20.0.0.
+multimedia/opera-developer-ffmpeg-codecs: Updated for version 65.0.
+multimedia/spotify: Remove whitespaces.
+multimedia/vivaldi-codecs-ffmpeg-extra: Updated for version 64.0.
+network/PaleMoon: Updated for version 27.7.2.
+network/basilisk: Added (Web browser).
+network/brave: Updated for version 0.20.29.
+network/dothost: Added (DNS lookup utility).
+network/dropbox: Updated for version 42.4.114.
+network/geomyidae: Updated for version v0.30.
+network/gtorrentviewer: Script cleanup.
+network/guacamole-client: Updated for version 0.9.14.
+network/guacamole-server: Updated for version 0.9.14.
+network/heimdal: Updated for version 7.5.0.
+network/lxi-tools: Added LAN eXtensions for Instrumentation).
+network/openldap-server: Call makepkg with the full path.
+network/opera-developer: Updated for version 52.0.2852.0.
+network/palemoon: Updated for version 27.7.2.
+network/postfix: Updated for version 3.2.5.
+network/prosody-mod-block-strangers: Added (block messages).
+network/shorewall-core: Updated for version 5.1.11.2.
+network/shorewall6: Updated for version 5.1.11.2.
+network/shorewall: Updated for version 5.1.11.2.
+network/skypeforlinux: Updated for version 8.14.0.10.
+network/sylpheed: Updated for version 3.7.0.
+network/vivaldi: Updated for version 1.14.1077.41.
+network/waterfox: Updated for version 56.0.4.
+network/youtube-dl: Updated for version 2018.01.27.
+office/MasterPDFEditor: Updated for version 4.3.82.
+office/anorack: Added (Spell checker).
+office/libreoffice-helppack: Updated for version 6.0.0.
+office/libreoffice-langpack: Updated for version 6.0.0.
+office/libreoffice: Updated for version 6.0.0.
+office/openoffice.org: Reduce package size.
+office/paps: Updated for version 0.7.0.
+python/Flask-HTMLmin: Fix DOWNLOAD url.
+python/Flask-Mail: Fix DOWNLOAD url.
+python/Flask-Principal: Fix DOWNLOAD url.
+python/Flask-WTF: Fix DOWNLOAD url.
+python/python-mimeparse: Fix DOWNLOAD url.
+python/python3-jupyter-ipykernel: New deps for jupyter-notebook.
+system/alacritty: Updated for version gitb82622.
+system/f3: Updated for version 7.0.
+system/forkstat: Updated for version 0.02.02.
+system/iucode_tool: Updated for version 2.3.
+system/kbfs: Updated for version 1.0.40_20180127033950.
+system/laptop-mode-tools: Updated for version 1.72.
+system/letsencrypt: Updated for version 0.21.1.
+system/lxrandr: Call makepkg with the full path.
+system/lxsession: Call makepkg with the full path.
+system/lxtask: Call makepkg with the full path.
+system/lynis: Updated for version 2.6.1.
+system/mailutils: Added (email handling).
+system/sboui: Updated for version 1.0.
+system/symbola-font-ttf: Updated for version 10.24.
+system/vagrant: Updated for version 2.0.2.
+system/xdiskusage: Call makepkg with the full path.
++--------------------------+
+Sat Jan 27 00:44:42 UTC 2018
+academic/fet: Updated for version 5.35.1.
+academic/novocraft: Updated for version 3.08.02.
+academic/pysam: Updated for version 0.13.0.
+academic/speedcrunch: Fixed tarball handling.
+accessibility/unclutter-xfixes: Updated for version 1.3.
+audio/ardour: Updated for version 5.12.0, changed maintainer.
+audio/mp3gain: Updated for version 1.6.1.
+desktop/dbgl: Added (a Java frontend for DOSBox).
+desktop/docfetcher: Added (Java desktop search application).
+desktop/kupfer: Added (a smart, quick launcher).
+desktop/tint2: Updated for version 16.2.
+development/SQLAlchemy: Updated for version 1.2.1.
+development/beautysh: Added (A Bash beautifier).
+development/d-tools: Updated for version 2.078.1
+development/dmd: Updated for version 2.078.1
+development/dpkg: Updated for version 1.19.0.5.
+development/ioncube-loader: Updated for version 10.1.1
+development/jupyter-ipywidgets: Updated for version 7.1.1.
+development/jupyter_client: Updated for version 5.2.2.
+development/kicad-library: Updated for v. 4.0.7, new maintainer.
+development/mutagen: Updated for version 1.40.0.
+development/pkgconf: Updated for version 1.4.1.
+development/universal-ctags: Updated for version 66c7915
+games/ZEsarUX: Added (Machines Emulator).
+games/adl: Updated for version 20110628.
+games/chessx: Added an icon and a desktop file.
+games/gemrb: Updated for version 0.8.5 + new maintainer.
+games/libretro-ppsspp: Updated for version 2018.01.23_af33ca2.
+games/steem: Add 64-bit support.
+games/z26: Add 64-bit support.
+games/zsnes: Partial 64-bit support.
+gis/Shapely: Updated for version 1.6.4.
+gis/mapnik: Updated for version 3.0.18.
+graphics/Blender: Support latest openimageio (1.8.7)
+graphics/GraphicsMagick: Updated for version 1.3.28.
+graphics/PureRef: Added (Organize Image).
+graphics/darktable: Updated for version 2.4.1.
+graphics/nomacs: Updated for version 3.8.0.
+graphics/openimageio: Updated for version 1.8.7
+graphics/vuescan: Updated for version 9.6.05.
+libraries/appstream-glib: Updated for version 0.7.5.
+libraries/aubio: Updated for version 0.4.6, changed maintainer.
+libraries/liblo: Updated for version 0.29, changed maintainer.
+libraries/liblrdf: Updated for version 0.6.1, changed maintainer.
+libraries/libseccomp: Updated for version 2.3.3.
+libraries/libuv: Updated for version 1.19.1.
+libraries/libversion: Updated for version 2.4.0.
+libraries/libvirt-python: Updated for version 4.0.0.
+libraries/libvirt: Updated for version 4.0.0.
+libraries/live555: Updated for version 2018.01.24
+libraries/med: Added (Data Modelization and Exchanges).
+libraries/webkit2gtk: Updated for version 2.18.6.
+misc/tal: New maintainer.
+multimedia/MediathekView: Updated for version 13.0.6.
+multimedia/obs-studio: Updated for version 21.0.2
+multimedia/opera-developer-ffmpeg-codecs: Updated for version 65.0.
+multimedia/spotify: Updated for version 1.0.70.
+network/Electrum: Updated for version 3.0.5.
+network/brave: Updated for version 0.19.139.
+network/claws-mail: Updated for version 3.16.0.
+network/etherape: Updated for version 0.9.16.
+network/lighttpd: Updated for version 1.4.48.
+network/opera-developer: Updated for version 52.0.2845.0.
+network/opera: Updated for version 50.0.2762.67.
+network/prosody-mod-cloud-notify: Added (Push Notification).
+network/prosody-mod-csi: Added (Client State Indication).
+network/prosody-mod-filter-chatstates: Added (Prosody modules).
+network/prosody-mod-http-upload: Added (lient HTTP File Upload).
+network/prosody-mod-mam-muc: Added (Message Archive Management).
+network/prosody-mod-smacks-offline: Added (Stream Management).
+network/prosody-mod-smacks: Added (Stream Management).
+network/prosody-mod-throttle-presence: Added (Prosody modules).
+network/slimjet: Updated for version 17.0.7.0.
+network/teamviewer: Remove redundant desktop file.
+network/tor-browser: Updated for version 7.5.
+network/vimb: Updated for version 3.1.0.
+network/waterfox: Only support x86_64.
+network/xtables-addons: Updated for version 2.14.
+office/MasterPDFEditor: Updated for versoin 4.3.80.
+office/openoffice-langpack: Updated for version 4.1.5.
+office/openoffice.org: Updated for version 4.1.5 + new maintainer.
+office/qpdfview-qt5: Added (tabbed document viewer).
+office/qpdfview: Switch to i586.
+perl/perl-Gtk2-Unique: Switch to i586.
+perl/perl-IO-Socket-SSL: Updated for version 2.054.
+perl/perl-Math-MPC: Updated for version 1.08.
+perl/perl-Proc-Simple: Update email address.
+python/python3-jupyter_client: Updated for version 5.2.2.
+python/python3-pyzmq: Updated for version 16.0.4
+python/pyzmq: Updated for version 16.0.4.
+python/requests-futures: Updated for version 0.9.7.
+ruby/ruby-faraday: Updated for version 0.14.0.
+system/CNS11643-font: Updated for version 20180105.
+system/alacritty: Updated for version git59b561b.
+system/clamav: Updated for version 0.99.3.
+system/conky: Updated for version 1.10.7.
+system/early-ssh: Added (SSH server during boot).
+system/fwupd: Updated for version 1.0.4.
+system/lynis: Updated for version 2.6.0.
+system/passwordsafe: Updated for version 1.04BETA.
+system/slackroll: Updated for version v47.
+system/spl-solaris: Fixed VERSION + fix for exported ARCH.
+system/statifier: Allow 64-bit build.
+system/vtcol: Updated README.
+system/zfs-on-linux: Fixed VERSION + fix for exported ARCH.
++--------------------------+
+Sat Jan 20 00:01:52 UTC 2018
+academic/ZeGrapher: Added (math graphing).
+academic/reduce-algebra: Updated for version 20180117svn4372.
+desktop/flatwoken-icon-theme: Added (icon theme).
+development/codeblocks: Updated for version 17.12.
+development/cppcms: Updated for version 1.2.0.
+development/jupyter-ipykernel: Updated for version 4.8.0.
+development/notepadqq: Added (Notepad++-like editor).
+development/psycopg2: Updated for version 2.7.3.2 and new maintainer.
+development/tanya: Added (General purpose D library).
+gis/qgis: Updated for version 2.18.16.
+ham/svxlink: Updated for version 17.12.1.
+libraries/efivar: Add patch to make efi_guid_ux_capsule work.
+libraries/libuv: Updated for version 1.19.0.
+misc/goldencheetah: Added (analysis tools for cycling performance).
+multimedia/flashplayer-plugin: Updated for version 28.0.0.137.
+network/Electrum: Fix build.
+network/PaleMoon: Updated for version 27.7.1.
+network/WireGuard: Updated for version 0.0.20180118.
+network/palemoon: Updated for version 27.7.1.
+network/slimjet: Updated for version 17.0.6.0.
+network/syncthing: Updated for version 0.14.43.
+network/vivaldi: Updated for version 1.13.1008.44.
+office/pdfstudio11: Update DOWNLOAD urls.
+python/josepy: Added (JOSE protocol).
+python/python3-jupyter-ipykernel: Updated for version 4.8.0.
+system/dina-font: Updated for version 2.93.
+system/fswatch: Updated for version 1.11.2.
+system/fwupdate: Updated for version 10.
+system/letsencrypt: Updated for version 0.21.0.
+system/luckybackup: Updated for version 0.4.9.
+system/open-vm-tools: Update script.
+system/ranger: Update README.
+system/statifier: Updated for version 1.7.4, new maintainer.
++--------------------------+
+Wed Jan 17 12:47:21 UTC 2018
+academic/libqalculate: Updated for version 2.2.0
+academic/qalculate-gtk: Updated for version 2.2.0
+academic/speedcrunch: Updated for version 0.12.0
+academic/sword-data-kjv: Updated for version 1.8.1.
+academic/sword: Updated for version 1.8.1.
+academic/trfind: Fix executable for use with RepeatMasker.
+audio/sayonara-player: Updated for version 1.0.0_git5_20180115.
+desktop/candle: Added (G-Code visualizer).
+desktop/dunst: Updated for version 1.3.0.
+desktop/flatpak: Update README.
+desktop/lxhotkey: Added (a keyboard shortcuts configurator).
+development/SQLAlchemy: Updated for version 1.2.0.
+development/atom: Updated for version 1.23.3.
+development/bvi: Updated for version 1.4.0
+development/hhvm: Updated for version 3.24.0
+development/jdk: Updated for version 8u162.
+development/jupyter-notebook: Updated for version 5.3.1.
+development/nodejs6: Added (JavaScript runtime).
+development/nodejs: Updated for version 8.9.4.
+development/perf: Updated for version 4.4.111.
+development/sassc: Updated for version 3.4.8.
+development/tea: Updated for version 44.1.1 + new maintainer.
+development/universal-ctags: Updated for version 1620c63
+development/vscode: Switch to nodejs6.
+development/yarn: Added (Secure Dependency Management).
+games/open-adventure: Updated for version 1.4.
+games/stone_soup: Fixed VERSION.
+gis/postgis: Updated for version 2.4.3.
+graphics/opencollada: Updated for version 1.6.62
+libraries/SDL_kitchensink: Fixed download & script.
+libraries/cmark: Added (C Reference libraries).
+libraries/libass: Updated for version 0.14.0.
+libraries/libsass: Updated for version 3.4.8.
+libraries/qml-material: Added (Material Design).
+libraries/uriparser: Fix docs installation errors.
+misc/par2cmdline: Updated for version 0.8.0.
+misc/sbo-templates: Updated for version 1.0.2.
+multimedia/gpodder: Fix the download url.
+multimedia/kodi: Updated for version 17.6
+multimedia/pepperflash-plugin: Updated for version 28.0.0.137.
+network/Electrum: Updated for version 2.9.4.
+network/PaleMoon: Updated for version 27.7.0.
+network/brave: Added (web browser).
+network/netsniff-ng: Updated for version 0.6.4.
+network/opensmtpd: Updated for version 6.0.3p1.
+network/palemoon: Updated for version 27.7.0.
+network/qutebrowser: Updated for version 1.1.0.
+network/transmission: Security fix.
+network/waterfox: Updated for version 56.0.3.
+python/decorator: Updated for version 4.2.1.
+python/dnspython: Added python3 support
+python/python-keyring: Updated for version 10.6.0.
+python/python3-decorator: Updated for version 4.2.1.
+python/send2trash: Added (send files to trash).
+system/guake: Updated for version 0.8.13.
+system/hh: Updated for version 1.24.
+system/joyce: Added (Amstrad PCW emulator).
+system/ksh-openbsd: Updated for version 20180115.
+system/lynis: Updated for version 2.5.9.
+system/lz4: Updated for version 1.8.1.2.
+system/netatop: Bump BUILD for kernel changes.
+system/open-vm-tools: Fixed VERSION.
+system/pspg: Updated for version 0.9.2.
+system/ranger: Updated for version 1.9.0b6.
+system/slpkg: Fixed md5sum.
+system/vbindiff: Update md5sum.
++--------------------------+
 Sat Jan 13 00:13:51 UTC 2018
 academic/RepeatMasker: Added (Screen DNA sequence).
 academic/bedtools: Updated for version 2.27.1.

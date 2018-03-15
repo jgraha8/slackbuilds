@@ -2,7 +2,7 @@
 #
 # Slackware build script for noto-fonts.
 #
-# Copyright 2016-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+# Copyright 2016-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +23,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=noto-fonts
-VERSION=${VERSION:-20171026}
-BUILD=${BUILD:-1}
+VERSION=${VERSION:-20180111}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
 ARCH=noarch
@@ -34,7 +34,7 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-SRCNAM=${SRCNAM:-95558bd828a48c17a5cbe7f9d971495afcd16abd}
+SRCNAM=${SRCNAM:-73683215d976115b8f0f11f3e4e61bb116709924}
 
 set -e
 
@@ -58,9 +58,6 @@ install -d $PKG/usr/share/fonts/TTF/
 install -m644 alpha/Noto*.tt[fc] $PKG/usr/share/fonts/TTF/
 install -m644 hinted/Noto*.tt[fc] $PKG/usr/share/fonts/TTF/
 install -m644 unhinted/Noto*.tt[fc] $PKG/usr/share/fonts/TTF/
-
-# Already in NotoSans-*.ttc
-rm -f $PKG/usr/share/fonts/TTF/NotoSans{,UI}-*.ttf
 
 mkdir -p $PKG/etc/fonts/conf.avail
 install -m644 $CWD/*.conf $PKG/etc/fonts/conf.avail/

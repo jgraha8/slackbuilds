@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=fd
-VERSION=${VERSION:-6.2.0}
+VERSION=${VERSION:-6.3.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -33,6 +33,12 @@ if [ -z "$ARCH" ]; then
     arm*) ARCH=arm ;;
        *) ARCH=$( uname -m ) ;;
   esac
+
+  if [ "$ARCH" = "i586" ]; then
+    if rustc -Vv | grep host | grep i686 > /dev/null ; then
+      ARCH=i686
+    fi
+  fi
 fi
 
 CWD=$(pwd)
