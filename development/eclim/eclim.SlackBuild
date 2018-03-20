@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=eclim
-VERSION=${VERSION:-2.7.1}
+VERSION=${VERSION:-2.7.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -65,6 +65,8 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+sed -i "s|'plantuml'|'sphinxcontrib.plantuml'|g" doc/content/conf.py
+
 # http://eclim.org/install.html#install-source
 (
   # build nailgun
@@ -95,7 +97,7 @@ ECLIPSE_HOME=${ECLIPSE_HOME%/}
 sed -i \
     -e "s|File(getVariable('eclipse')|File('$ECLIPSE_HOME/'|g" \
     -e 's|${user.home}/\.|${vim.files}/|g' \
-    -e '69,88d' \
+    -e '69,93d' \
     ant/build.gant
 
 ant build -Declipse.home=$ECLIPSE_HOME -Dvim.files=/usr/share/vim/vimfiles
