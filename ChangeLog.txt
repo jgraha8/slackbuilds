@@ -1,3 +1,990 @@
+Sat Apr 21 00:44:58 UTC 2018
+academic/copasi: Updated for version 4.23.184.
+audio/flacon: Updated for version 4.1.0.
+audio/mpd: Updated for version 0.20.18.
+desktop/Simplenote: Added (Note Taking Program).
+desktop/mh5000: Updated for version 1.3.1.
+desktop/nitrokey-app: Updated for version 1.3.
+desktop/wmslideshow: Added (dockapp for displaying images).
+development/d-tools: Updated for version 2.079.1
+development/dmd: Updated for version 2.079.1
+development/gtest: Update script.
+development/jdk: Updated for version 8u172.
+development/jupyter-ipywidgets: Updated for version 7.2.1.
+development/sbcl: Updated for version 1.4.6.
+development/yarn: Updated for version 1.6.0.
+games/flare-game: Updated for version 1.03.
+games/flare: Updated for version 1.03.
+games/mgba: Updated for version 0.6.3.
+gis/SFCGAL: Updated for version 1.3.4.
+gis/foxtrotgps: Updated for version 1.2.1.
+gis/gpxsee: Updated for version 5.7.
+gis/mapnik: Updated for version 3.0.20.
+gis/pdal: Updated for version 1.7.1.
+graphics/feh: Updated for version 2.26.
+ham/qsstv: Added (SSTV and HAMDRM software).
+haskell/haskell-base-compat: Updated for version 0.10.1.
+haskell/haskell-wl-pprint-text: Updated for version 1.1.1.1.
+libraries/CGAL: Updated for version 4.11.1.
+libraries/dropbox-python: Updated for version 8.7.1.
+libraries/libebml: updated for version 1.3.5
+libraries/libfwsi: Updated for version 20180408.
+libraries/liblnk: Updated for version 20171101.
+libraries/libmatroska: updated for version 1.4.8
+libraries/libsigrokdecode: Updated for version 0.5.1.
+libraries/libuv: Updated for version 1.20.1.
+libraries/libxkbcommon: Updated for version 0.8.0 + new maintainer.
+libraries/pyPEG2: Update SlackBuild and README.
+libraries/python-meld3: Added (HTML/XML templating engine).
+libraries/wxSQLite3: Updated for version 4.0.1.
+multimedia/mkvtoolnix: bump version to 22.0.0
+multimedia/picard-plugins: Updated for version 7d0cf37 + new maint.
+multimedia/picard: Updated for version 1.4.2 + new maintainer.
+multimedia/smtube: Updated for version 18.3.0.
+network/MEGAsync: Updated for version 3.6.0.0.
+network/PaleMoon: Updated for version 27.9.0.
+network/WireGuard: Updated for version 0.0.20180413.
+network/dropbox: Updated for version 47.4.74.
+network/exim: Updated for version 4.91.
+network/opera-developer: Updated for version 54.0.2929.0.
+network/palemoon: Updated for version 27.9.0.
+network/pdns-recursor: Updated for version 4.1.2 + new maintainer.
+network/retroshare: Updated for version 0.6.4.
+network/riot-web: Updated for version 0.14.1.
+network/signal-desktop: Updated for version 1.7.1.
+network/slimjet: Updated for version 18.0.4.0.
+network/uTox: Updated for version 0.17.0
+network/vivaldi: Updated for version 1.14.1077.60.
+network/yle-dl: Updated for version 2.32.
+office/aigaion: Fixed SlackBuild.
+office/gnucash: Updated for version 2.6.21.
+office/jstock: Updated for version 1.0.7.32.
+perl/perl-CPAN-Perl-Releases: Updated for version 3.54.
+perl/perl-Math-BigInt-GMP: Updated for version 1.6005.
+perl/perl-Math-BigInt: Updated for version 1.999813.
+perl/perl-Mojolicious: Updated for version 7.75.
+python/decorator: Updated for version 4.3.0.
+python/mini-amf: Added (Action Message Format support for Python).
+python/parsel: Updated for version 1.4.0.
+python/parso: Updated for version 0.2.0.
+python/pycryptodome: Added (Python Cryptography Toolkit).
+python/pygsl: Updated for version 2.3.0.
+python/python-autobahn: Updated for version 18.4.1.
+python/python-qrcode: Updated for version 6.0.
+python/python-txaio: Updated for version 2.10.0.
+python/python3-decorator: Updated for version 4.3.0.
+python/python3-jedi: Updated for version 0.12.0.
+python/python3-parso: Updated for version 0.2.0.
+python/python3-pexpect: Updated for version 4.5.0.
+python/w3lib: Updated for version 1.19.0.
+ruby/ruby-faraday: Updated for version 0.15.0.
+system/burp: Updated for version 2.1.32.
+system/ddcutil: Added (change monitor setings).
+system/dosbox-dev: Updated for version 0.74.r4095.
+system/ioninja: Updated for version 3.8.5.
+system/loksh: Added (Linux port of OpenBSD's ksh).
+system/ohmyalias: Added (Create your easily alias!!).
+system/passwordsafe: Updated for version 1.05BETA.
+system/rkhunter: Updated for version 1.4.6
+system/spice-guest-tools: Added (SPICE guest tools for windows vms).
+system/spl-solaris: Updated for version 0.7.8.
+system/supervisor: Updated for version 3.3.4.
+system/symbola-font-ttf: Updated for version 11.00.
+system/zfs-on-linux: Updated for version 0.7.8.
++--------------------------+
+Sat Apr 14 00:10:46 UTC 2018
+academic/fet: Updated for version 5.35.6.
+academic/veusz: Updated for version 2.2.2.
+audio/asunder: Updated for version 2.9.3.
+audio/lyvi: Added (A simple command-line lyrics viewer).
+audio/whipper: Updated for version 0.7.0.
+desktop/awesome-extra: Updated for version 2018041201.
+desktop/mousepad: Updated for version 823215f.
+desktop/py3status: Updated for version 3.8.
+development/alembic: Updated deps.
+development/brotli: Updated for version 1.0.4.
+development/composer: Updated for version 1.6.4
+development/eclipse-cpp: Updated for version 4.7.3a.
+development/eclipse-java: Updated for version 4.7.3a.
+development/eclipse-jee: Updated for version 4.7.3a.
+development/lua52: Correct library path in src/luaconf.h.
+development/lua53: Correct library path in src/luaconf.h.
+development/mrustc: Added (Alternative rust compiler).
+development/racer: Updated for version 2.0.13.
+development/robotframework: Updated for version 3.0.3.
+development/rust: Update README with bootstrapping notes.
+development/universal-ctags: Updated for version 4fe1a60
+development/wheel: Updated for version 0.31.0.
+games/Gearsystem: Added (Sega Master System / Game Gear Emulator).
+games/SameBoy: Updated for version 2018.04.12_51e3cb7.
+games/freeciv: Updated for version 2.6.0_beta3.
+gis/Shapely: Script cleanup.
+gis/geopy: Updated for version 1.13.0.
+gis/pgrouting: Script cleanup.
+graphics/paraview: Updated for version 5.5.0
+ham/chirp: Updated for version 20180331.
+ham/hamlib: Updated for version 3.2
+libraries/efivar: Updated for version 35.
+libraries/libmygpo-qt: Updated for version 1.1.0.
+libraries/libpri: Updated for version 1.6.0.
+libraries/libsodium: Updated for version 1.0.16.
+libraries/libtins: Added (network packet sniffing library).
+libraries/mysql-connector-python: Updated for version 2.1.8.
+libraries/ntl: Updated for version 11.0.0.
+libraries/pjsip: Updated for version 2.7.2.
+libraries/plyr: Updated for version 1.0.6.
+libraries/pugixml: Updated for version 1.9.
+libraries/pyte: Updated for version 0.8.0.
+libraries/webkit2gtk: Updated for version 2.20.1.
+libraries/wxSQLite3: Updated for version 4.0.0.
+multimedia/devedeng: Updated for version 4.9.0.
+multimedia/flashplayer-plugin: Updated for version 29.0.0.140.
+multimedia/pepperflash-plugin: Updated for version 29.0.0.140.
+multimedia/ripperX: Updated for version 2.8.0.
+network/Electrum: Updated for version 3.1.2.
+network/asterisk: Updated for version 13.20.0 + new maintainer.
+network/brave: Updated for version 0.21.24.
+network/dublin-traceroute: Added (NAT-aware multipath traceroute).
+network/etherape: Updated for version 0.9.17.
+network/etherpad-lite: Updated for version 1.6.5.
+network/fail2ban: Updated for version 0.10.3.1.
+network/freerdp: Updated for version git20180405.
+network/host-sflow: Added (sFlow protocol metrics).
+network/opera-developer: Updated for version 54.0.2920.0.
+network/opera: Updated for version 52.0.2871.64.
+network/phpmyadmin: Updated for version 4.8.0.
+network/pmacct: Added (network monitoring tools).
+network/remmina: Updated for version next20180405.
+network/riot-web: Updated for version 0.14.0.
+network/sflowtool: Added (print binary sFlow).
+network/shorewall-core: Updated for version 5.2.0.
+network/shorewall6: Updated for version 5.2.0.
+network/shorewall: Updated for version 5.2.0.
+network/signal-desktop: Updated for version 1.7.0.
+network/telegram: Updated for version 1.2.17.
+network/tornado: Updated for version 5.0.2.
+network/translate-shell: Added (a command-line translator).
+network/waterfox: Updated for version 56.1.0.
+network/wireshark: Updated for version 2.4.6.
+network/you-get: Updated for version 0.4.1040.
+network/youtube-dl: Updated for version 2018.04.09.
+office/gnucash-docs: Updated for version 2.6.20.
+office/gnucash: Updated for version 2.6.20.
+office/mythes: Minor fixes, updated download.
+perl/perl-Math-MPFR: Updated for version 4.03.
+perl/perl-Mojolicious: Updated for version 7.74.
+python/PyGithub: Updated for version 1.38.
+python/astroid: Updated for version 1.6.3.
+python/cheroot: Updated for version 6.1.1.
+python/jellyfish: Updated for version 0.6.0.
+python/munch: Updated for version 2.3.1.
+python/python-keyring: Updated for version 12.0.1.
+python/python-oauthlib: Updated for version 2.0.7.
+python/python-pcapy: Updated for version 0.11.3.
+python/python3-ipython: Updated for version 6.3.1.
+python/python3-tornado: Updated for version 5.0.2.
+python/queuelib: Updated for version 1.5.0.
+python/setuptools-scm-git-archive: Added (setuptools_scm plugin).
+system/apachetop: Updated for version 0.18.4.
+system/bacula-client: Updated for version 9.0.6.
+system/bacula: Cherry-pick and fix the upgrading procedure.
+system/bacula: Reverted back to old version.
+system/clamav: Updated for version 0.100.0.
+system/hdapsd: Updated for version 20141203 + New maintainer.
+system/inxi: Updated for version 3.0.00.
+system/kbfs: Updated for version 1.0.47_20180403160041.
+system/keybase: Updated for version 1.0.47.
+system/letsencrypt: Updated for version 0.23.0.
+system/listpkg: Added (Lists packages are installed or not).
+system/openrc: Updated for version 0.35.5.
+system/salt: Updated for version 2018.3.0.
+system/tp_smapi: Updated for version 0.43 + New maintainer.
+system/trash: Added (CLI trash utility).
+system/usermin: Updated for version 1.741.
++--------------------------+
+Sat Apr  7 01:14:25 UTC 2018
+academic/cadabra2: Updated for version 2.2.0.
+academic/ncview: Added (a netCDF visual browser).
+academic/reduce-algebra: Updated for version 20180406svn4567.
+audio/atunes: Updated for version 3.1.2 + new maintainer.
+audio/cmus: Switch to the https homepage.
+audio/museeks: Updated for version 0.9.3.
+desktop/conky-manager: Switch to i586 + new maintainer.
+desktop/dmenu: Updated for version 4.8.
+desktop/neofetch: Updated for version 3.4.0.
+development/SQLAlchemy: Updated for version 1.2.6.
+development/alembic: Updated for version 0.9.9.
+development/autoconf-archive: Added (GNU Autoconf macros).
+development/cppdb: Switch to i586.
+development/gcc-d: Updated for version 2.076.0_b4
+development/hhvm: Updated for version 3.24.6
+development/jupyter-ipywidgets: Updated for version 7.2.0.
+development/lua52: Fix the library name in the pkgconfig file.
+development/lua53: Fix the library name in the pkgconfig file.
+development/perl-shtags: Added (sh tag creator).
+development/processing: Updated for version 3.3.7 + new maintainer.
+development/pycharm: Updated for version 2018.1.
+development/rstudio-desktop: Updated for version 1.1.442.
+development/ucpp: Minor cleanups.
+development/universal-ctags: Updated for version e0d8b8d
+games/Tempus-Irae: Fixed for Windows formatted scripts.
+games/beetle-psx-libretro: Updated for version 2018.03.28_d469c7a.
+games/flare-game: Updated for version 1.01.
+games/flare: Updated for version 1.01.
+games/marathon-eternal-data: Fixed for Windows formatted scripts.
+games/marathon-rubicon-data: Fixed for Windows formatted scripts.
+games/mgba: Updated for version 0.6.2.
+games/nestopia-libretro: Removed (please use nestopia instead).
+games/nestopia: Add libretro core build.
+games/picodrive-libretro: Removed (replaced by picodrive).
+games/picodrive: Added (Fast MegaDrive/MegaCD/32X emulator).
+games/pinball: Updated for version 0.3.4.
+gis/gpxsee: Updated for version 5.5.
+gis/osm2pgrouting: Updated for version 2.3.4.
+gis/postgis: Updated for version 2.4.4.
+gis/proj: Updated for version 5.0.1.
+gis/qgis: Updated for version 2.18.18.
+graphics/opencolorio: Updated for version 1.1.0
+graphics/openimageio: Updated for version 1.8.10
+ham/svxlink: Added logrotate script.
+libraries/CherryPy: Updated for version 14.0.1.
+libraries/hyphen: Minor cleanups.
+libraries/libindi-drivers: Added (third party drivers for libindi).
+libraries/libindi: Added (Instrument Neutral Distributed Interface).
+libraries/libuv: Updated for version 1.20.0.
+libraries/libxnvctrl: Updated for version 390.42.
+libraries/png++: Minor cleanups.
+libraries/python-gnupg: Updated for version 0.4.2.
+libraries/udunits: Added (Unidata unit conversion library).
+libraries/wxPython4: Added (Crossplatform GUI Toolkit).
+misc/fcitx-qt5: Updated for version 1.2.2.
+misc/lppf: Minor cleanups.
+multimedia/QMPlay2: Updated for version 18.04.01.
+multimedia/opera-developer-ffmpeg-codecs: Updated for version 67.
+multimedia/opera-ffmpeg-codecs: Updated for version 65.0.3325.181.
+network/3proxy: Updated for version 0.8.11 + new maintainer.
+network/QuiteRSS: Updated for version 0.18.9 + new maintainer.
+network/asciinema: Updated for version 2.0.1.
+network/dnsmap: Added (dns mapper).
+network/filezilla: Updated for version 3.32.0.
+network/opera-developer: Updated for version 54.0.2913.0.
+network/prosody-mod-cloud-notify: Updated for version hg2976.
+network/sqlmap: Updated for version 1.2.4.
+network/suricata: Updated for version 4.0.4.
+network/tixati: Updated for version 2.57_1.
+network/uTox: Use git tarball to match latest c-toxcore
+network/urlwatch: Updated for version 2.9.
+network/youtube-dl: Updated for version 2018.04.03.
+office/LibreOffice: Updated for version 6.0.3.2
+office/gnucash: Update README.
+office/libreoffice-helppack: Updated for version 6.0.3.
+office/libreoffice-langpack: Updated for version 6.0.3.
+office/libreoffice: Updated for version 6.0.3.
+office/smoffice2018: Fixed desktop files.
+office/zim: Updated for version 0.68.
+perl/perl-CPAN-Perl-Releases: Updated for version 3.52.
+perl/perl-Math-MPFR: Updated for version 4.02.
+perl/perl-Mojolicious: Updated for version 7.72.
+perl/perl-Moose: Added (A postmodern object system for Perl 5).
+python/argcomplete: Updated for version 1.9.4.
+python/autopep8: Updated for version 1.3.5.
+python/backcall: Added (backwards compatible callback APIs).
+python/hg-git: Updated for version 0.8.11.
+python/ipython: Upgraded for version 5.6.0.
+python/more-itertools: Added (Python more itertools library).
+python/numpydoc: Updated for version 0.8.0.
+python/path.py: Updated for version 11.0.1.
+python/pendulum: Updated for version 1.4.4.
+python/pip: Updated for version 9.0.3.
+python/pipdeptree: Updated for version 0.11.0.
+python/ply: Updated for version 3.11.
+python/pytest: Updated for version 3.5.0.
+python/python-axolotl: Updated for version 0.1.42.
+python/python-emoji: Updated for version 0.5.0.
+python/python-fonttools: Updated for version 3.25.0.
+python/python-kerberos: Updated for version 1.2.1 + new maintainer.
+python/python-requests-kerberos: Updated for version 0.12.0.
+python/python3-ipython: Updated for version 6.3.0.
+python/python3: Updated for version 3.6.5.
+python/pytzdata: Updated for version 2018.3.
+python/tempora: Updated for version 1.11.
+python/tox: Updated for version 3.0.0.
+python/tqdm: Updated for version 4.19.9.
+python/zxcvbn-python: Updated for version 4.4.22.
+system/FunkLoad: Added (load web tester).
+system/bacula: Updated for version 9.0.6 + new maintainer.
+system/bbqsql: Added (A Blind SQL Injection Exploitation Tool).
+system/isdct: Updated for version 3.0.11.
+system/rhash: updated for version 1.3.6
+system/slack-scripts: Added (Some Slackware Utilities).
+system/st: Fix patch level.
+system/termenu: Updated for version 1.2.4.
+system/trmaid: Updated for version 0.6.8.
+system/wiimms-iso-tools: Updated for version 3.01a.
++--------------------------+
+Sun Apr  1 01:35:28 UTC 2018
+academic/GeoGebra: Fix download link.
+games/Tempus-Irae: Updated for version 1.1.
+games/marathon-eternal-data: Script update.
+games/marathon-evil-data: Script update.
+games/marathon-phoenix-data: Added (game data for alephone).
+games/marathon-red-data: Script update.
+games/marathon-rubicon-data: Script update.
+games/mgba: Place mgba_libretro.info in DOWNLOAD.
+libraries/mujs: New maintainer + Updated for version 1.0.3.
+multimedia/mpv: mujs is now an optional dep.
+network/c-toxcore: Switch to cmake.
+network/qTox: Rebuild for c-toxcore.
+office/pdfstudio12: Updated for version 12.0.7.
+system/containerd: Updated for version 1.0.2.
+system/docker-proxy: Updated for version 20180314_1b91bc9.
+system/docker: Updated for version 18.03.0.
+system/lsyncd: Updated for version 2.2.3.
+system/nvidia-driver: Fix library version.
+system/nvidia-firmware: Script cleanup.
+system/runc: Updated for version 1.0.0_rc5.
++--------------------------+
+Sat Mar 31 00:45:06 UTC 2018
+academic/fet: Updated download.
+audio/clockchimes: Added (plays clock chimes).
+audio/cmus: Updated for version 20180219_20a738d.
+audio/nas: Updated for version 1.9.4.
+audio/portmidi: Script cleanup.
+audio/retrovol: Updated for version 0.14.1.
+audio/shell-fm: Updated for version 0.8.
+audio/xforge: Script cleanup.
+desktop/elementary-xfce: Updated for version 0.11.
+desktop/myGtkMenu: Update script.
+desktop/oranchelo-icon-theme: Updated for version 0.7.6.6.
+desktop/xonclock: Switch to i586.
+development/GitEye: Updated md5sum.
+development/LLgen: Updated homepage.
+development/SDL2_gfx: Updated for version 1.0.4.
+development/atom-amd64: Updated for version 1.25.0.
+development/checkbashisms: Updated download.
+development/diffoscope: Updated for version 93.
+development/google-go-lang: Updated for version 1.9.5.
+development/kotlin: Updated for version 1.2.31.
+development/lua52: Added (scripting language).
+development/lua53: Added (scripting language).
+development/nodejs6: Updated for version 6.14.1.
+development/nodejs: Updated for version 8.11.1.
+development/rust: Updated for version 1.25.0.
+development/shed: Switch to i586.
+development/tiled: Updated for version 1.1.4.
+development/vscode: Updated for version 1.21.1.
+games/Gearboy: Added (Nintendo Game Boy / GameBoy Color emulator).
+games/commandergenius: Updated download.
+games/flare-game: Updated for version 1.0.
+games/flare: Updated for version 1.0.
+games/javacpc: Updated for version 2.9.6b.
+games/libretro-mgba: Removed (included in mgba).
+games/mgba: Build libretro.
+games/ppsspp: Updated for version 1.5.4.
+gis/proj: Fix .info file.
+gis/saga-gis: Updated for version 6.3.0.
+graphics/Blender: Updated for version 2.79b
+graphics/PyMOL: Updated for version 2.1.0.
+graphics/photoprint: Switch to i586.
+graphics/vuescan: Updated for version 9.6.07.
+graphics/yed: Updated homepage.
+ham/chirp: Updated for version 20180325.
+libraries/GitPython: Updated for version 2.1.9.
+libraries/PyYAML: Switch to i586.
+libraries/libAfterImage: Switch to i586.
+libraries/libilbc: Switch to i586.
+libraries/libnice: Updated for version 0.1.14.
+libraries/libversion: Updated for version 2.6.0.
+libraries/nspluginwrapper: Switch to i586.
+libraries/ptlib: Switch to i586.
+libraries/stfl: Avoid build potential failure.
+libraries/zint: Update README.
+misc/esniper: Updated for version 2.33.0.
+multimedia/farsight2: Switch to i586.
+multimedia/k9copy-reloaded: Added (DVD backup program).
+multimedia/opencaster: Updated md5sum.
+multimedia/smplayer: Updated for version 18.3.0.
+network/PaleMoon: Updated for version 27.8.3.
+network/chrony: Updated for version 3.2.
+network/ekiga: Update SlackBuild, switch to i586.
+network/gtk-gnutella: Updated for version 1.1.13.
+network/lighttpd: Additional path fixes.
+network/milter-greylist: Switch to i586.
+network/msmtp: Updated download + switch to i586.
+network/newsboat: Updated for version 2.11.
+network/nextcloud-server: Updated for version 13.0.1.
+network/opera-developer: Updated for version 53.0.2906.0.
+network/opera: Updated for version 52.0.2871.40.
+network/palemoon: Updated for version 27.8.3.
+network/phpmyadmin: Updated for version 4.7.9.
+network/polipo: Update doinst.sh + switch to i586.
+network/prosody-mod-http-upload: Updated for version hg2948.
+network/prosody-mod-man-muc: Updated for version hg2949.
+network/proxymini: Updated for version 0.2.3.
+network/pyNeighborhood: Updated for version 0.5.4.
+network/qutebrowser: Updated for version 1.2.1.
+network/rclone: Updated for version 1.40.
+network/slurm: Updated for version 17.02.10.
+network/teamviewer: Updated for version 13.1.3026.
+network/telegram: Updated for version 1.2.15.
+network/tor-browser: Updated for version 7.5.3.
+network/udpxy: Updated homepage.
+network/wifi-radar: Updated SlackBuild.
+network/xdman: Updated for version 2018.7.2.7.
+office/gnucash-docs: Added (Gnucash help and user guides).
+office/gnucash: Updated for version 2.6.19 + new maintainer.
+office/htmldoc: Updated homepage.
+office/rednotebook: Updated for version 2.4.
+perl/perl-CPAN-Perl-Releases: Updated for version 3.50.
+perl/perl-CPANPLUS-Dist-Slackware: Updated for version 1.027.
+perl/perl-DBD-SQLite: Updated for version 1.58.
+perl/perl-Devel-StackTrace: Updated for version 2.03.
+perl/perl-File-Copy-Recursive: Updated for version 0.40.
+perl/perl-Image-Info: Updated for version 1.41.
+perl/perl-Mail-DKIM: Updated for version 0.52.
+perl/perl-MailTools: Updated for version 2.20.
+perl/perl-Mojolicious: Updated for version 7.71.
+perl/perl-Net-DNS-Native: Updated for version 0.18.
+perl/perl-Pegex: Updated for version 0.64.
+perl/perl-Sys-CPU: Updated homepage.
+perl/perl-Test-File: Added (test file attributes and data).
+perl/perl-Test-Spec: Updated for version 0.54.
+perl/perl-Test-utf8: Added (tests for UTF-8 strings).
+perl/perl-Text-CSV_XS: Updated for version 1.35.
+perl/perl-Time-Piece: Updated for version 1.3204.
+perl/perl-YAML-LibYAML: Updated for version 0.69.
+perl/perl-local-lib: Updated for version 2.000024.
+perl/perlbrew: Updated for version 0.82.
+python/Pyro4: Updated homepage and download.
+python/git-fame: Updated for version 1.4.2.
+python/halberd: Update homepage.
+python/migen: Updated homepage.
+python/python-argopt: Added (doc to argparse driven by docopt).
+python/python-clamd: Switch to i586.
+python/python-fonttools: Updated for version 3.24.2.
+python/python-fusepy: Updated homepage + download url.
+python/python3-dateutil: Updated for version 2.7.1.
+python/python3-dateutil: Updated for version 2.7.2.
+ruby/ruby-build: Updated for version 20180329
+ruby/rubygem-httparty: Updated homepage.
+system/atool: Switch to i586.
+system/collectd: Updated for version 5.8.0.
+system/daa2iso: Switch to i586.
+system/ecm-tools: Updated for version 1.0.3.
+system/fd: Updated for version 7.0.0.
+system/goaccess: Switch to i586.
+system/gtk-vnc: Updated for version 0.7.2.
+system/hack-font-ttf: Updated for version 3.003.
+system/imwheel: Switch to i586.
+system/isdct: Updated md5sum.
+system/kbfs: Updated for version 1.0.46.
+system/keybase: Updated for version 1.0.46.
+system/lbench: Updated for version 3.5.
+system/letsencrypt: Updated for version 0.22.2.
+system/lomoco: Switch to i586.
+system/mjpg-streamer: Updated homepage + switch to i586.
+system/ncdu: Updated for version 1.13.
+system/netdata: Updated for version 1.10.0.
+system/noto-fonts: Updated for version 20180322.
+system/nvidia-driver: Updated for version 390.42.
+system/nvidia-kernel: Updated for version 390.42.
+system/powernowd: Add rc file + switch to i586.
+system/ptop: Updated homepage and download.
+system/regionset: Switch to i586.
+system/spacefm: Updated for version 1.0.6.
+system/st: Updated for version 0.8.1.
+system/uif2iso: Switch to i586.
+system/zstd: Updated for version 1.3.4.
++--------------------------+
+Sat Mar 24 00:01:07 UTC 2018
+academic/WordNet: Switch homepage to https.
+academic/amd: BUILD bump for SuiteSparse 5.2.0.
+academic/btf: BUILD bump for SuiteSparse 5.2.0.
+academic/camd: BUILD bump for SuiteSparse 5.2.0.
+academic/ccolamd: BUILD bump for SuiteSparse 5.2.0.
+academic/cholmod: Updated for version 3.0.12.
+academic/colamd: BUILD bump for SuiteSparse 5.2.0.
+academic/csparse: BUILD bump for SuiteSparse 5.2.0.
+academic/cxsparse: BUILD bump for SuiteSparse 5.2.0.
+academic/klu: Updated for version 1.3.9.
+academic/ldl: BUILD bump for SuiteSparse 5.2.0.
+academic/octave: Updated for version 4.2.2.
+academic/rbio: BUILD bump for SuiteSparse 5.2.0.
+academic/spqr: BUILD bump for SuiteSparse 5.2.0.
+academic/suitesparseconfig: Updated for version 5.2.0.
+academic/umfpack: BUILD bump for SuiteSparse 5.2.0.
+audio/dssi-vst: Switch to https.
+audio/ladspa-bs2b: Added (BS2B Library and Plugins).
+audio/rosegarden: Switch to https.
+audio/sonic-visualiser: Switch homepage to https.
+audio/vamp-plugin-sdk: Switch homepage to https.
+desktop/boston-icon-theme: Added (icon theme).
+desktop/compton-conf: Updated for version 0.3.0.
+desktop/enlightenment: Updated for version 0.22.2.
+desktop/i3: Updated for version 4.15.
+desktop/myGtkMenu: Update maintainer email.
+desktop/oranchelo-icon-theme: Updated for version 0.7.6.5.
+desktop/papirus-icon-theme: Added (icon theme).
+desktop/rofi: Fixed homepage.
+development/Sphinx: Updated for version 1.7.2.
+development/apache-log4cxx: Fixed homepage.
+development/apitrace: Update maintainer email.
+development/diffoscope: Updated for version 92.
+development/eclipse-cpp: Updated for version 4.7.3.
+development/eclipse-java: Updated for version 4.7.3.
+development/eclipse-jee: Updated for version 4.7.3.
+development/envytools: Update maintainer email.
+development/gisto: Switch homepage to https.
+development/git-cola: Updated for version 3.0 + new maintainer.
+development/google-webdesigner: Updated for version 3.0.0.0312.
+development/guile-json: Update maintainer email.
+development/hhvm: Updated for version 3.24.5
+development/icecream: Updated for version 1.1.
+development/jupyter-notebook: Updated for version 5.4.1.
+development/kdesvn: Switch to i586 + new maintainer.
+development/libretro-samples: Update maintainer email.
+development/pkgconf: Update maintainer email.
+development/rustup: Added (The Rust toolchain installer).
+development/sdcc: Updated for version 3.7.0.
+development/slibtool: Update maintainer email.
+development/ucpp: Update maintainer email.
+development/universal-ctags: Updated for version ec7b647
+development/xdebug: Updated for version 2.5.5.
+games/4do-libretro: Update maintainer email.
+games/Craft-libretro: Update maintainer email.
+games/Genesis-Plus-GX: Update maintainer email.
+games/QuickNES-Core: Update maintainer email.
+games/RetroArch: Update maintainer email.
+games/SameBoy: Update maintainer email.
+games/Tempus-Irae: Update maintainer email.
+games/beetle-bsnes-libretro: Update maintainer email.
+games/beetle-gba-libretro: Update maintainer email.
+games/beetle-lynx-libretro: Update maintainer email.
+games/beetle-ngp-libretro: Update maintainer email.
+games/beetle-pce-fast-libretro: Update maintainer email.
+games/beetle-pcfx-libretro: Update maintainer email.
+games/beetle-psx-libretro: Update maintainer email.
+games/beetle-saturn-libretro: Update maintainer email.
+games/beetle-supergrafx-libretro: Update maintainer email.
+games/beetle-vb-libretro: Update maintainer email.
+games/beetle-wswan-libretro: Update maintainer email.
+games/blastem-libretro: Update maintainer email.
+games/blueMSX-libretro: Update maintainer email.
+games/bnes-libretro: Update maintainer email.
+games/bsnes-libretro: Update maintainer email.
+games/bsnes-mercury: Update maintainer email.
+games/dhewm3: Update maintainer email.
+games/ecwolf: Update maintainer email.
+games/exult: Update maintainer email.
+games/fbalpha: Update maintainer email.
+games/fmsx-libretro: Update maintainer email.
+games/gambatte-libretro: Update maintainer email.
+games/gpsp-libretro: Update maintainer email.
+games/gw-libretro: Update maintainer email.
+games/higan-libretro: Update maintainer email.
+games/higan: Fixed homepage.
+games/libretro-2048: Update maintainer email.
+games/libretro-desmume: Update maintainer email.
+games/libretro-fceumm: Update maintainer email.
+games/libretro-handy: Update maintainer email.
+games/libretro-lutro: Update maintainer email.
+games/libretro-mgba: Update maintainer email.
+games/libretro-ppsspp: Update maintainer email.
+games/libretro-prboom: Update maintainer email.
+games/libretro-reicast: Update maintainer email.
+games/libretro-vecx: Update maintainer email.
+games/libretro-yabause: Update maintainer email.
+games/mame2000-libretro: Update maintainer email.
+games/mame2010-libretro: Update maintainer email.
+games/mame2014-libretro: Update maintainer email.
+games/marathon-eternal-data: Update maintainer email.
+games/marathon-evil-data: Update maintainer email.
+games/marathon-red-data: Update maintainer email.
+games/marathon-rubicon-data: Update maintainer email.
+games/meteor-libretro: Update maintainer email.
+games/mupen64plus-libretro: Update maintainer email.
+games/nSide-libretro: Update maintainer email.
+games/nestopia-libretro: Update maintainer email.
+games/nuvie: Update maintainer email.
+games/nxengine-libretro: Update maintainer email.
+games/parallel-n64: Update maintainer email.
+games/pcsx-rearmed: Update maintainer email.
+games/pcsx2: Update maintainer email.
+games/picodrive-libretro: Update maintainer email.
+games/pinball: Update maintainer email.
+games/pioneer: Update maintainer email.
+games/prosystem-libretro: Update maintainer email.
+games/scummvm-libretro: Update maintainer email.
+games/snes9x-libretro: Update maintainer email.
+games/snes9x2002: Update maintainer email.
+games/snes9x2005: Update maintainer email.
+games/snes9x2010: Update maintainer email.
+games/solarus-quest-editor: Update maintainer email.
+games/solarus: Update maintainer email.
+games/stella-libretro: Update maintainer email.
+games/tyrquake-libretro: Update maintainer email.
+games/vba-next: Update maintainer email.
+games/vbam-libretro: Update maintainer email.
+games/virtualjaguar-libretro: Update maintainer email.
+games/zelda-roth-se: Update maintainer email.
+games/zsdx: Update maintainer email.
+games/zsxd: Update maintainer email.
+gis/gdal: Updated for version 2.2.4.
+gis/josm: Switch homepage to https.
+gis/mapnik: Switch to i586.
+gis/pgrouting: Updated for version 2.6.0.
+gis/pointcloud: Remove need for cunit dependency.
+gis/polyline: Add Python 3 support.
+gis/postgis: Script clean up.
+gis/pyproj: Add Python 3 support.
+gis/pyshp: Add Python 3 support.
+gis/pyspatialite: Switch to i586.
+gis/python-mapnik: Add Python 3 support.
+gis/rasterio: Add Python 3 support.
+graphics/FSPViewer: Added (spherical panorama viewer).
+graphics/darktable: Updated for version 2.4.2.
+graphics/feh: Update maintainer email.
+graphics/graphite2: Update maintainer email.
+graphics/gthumb: Fixed homepage.
+graphics/leocad: Switch homepage to https.
+graphics/leocad_pieces: Switch homepage to https.
+graphics/vulkansdk: Updated for version 1.1.70.0.
+ham/chirp: Switch homepage to https.
+ham/klog: Switch homepage to https.
+haskell/haskell-setlocale: Updated for version 1.0.0.6.
+libraries/CoinMP: Update maintainer email.
+libraries/efl: Updated for version 1.20.7.
+libraries/hdf: Switch to i586.
+libraries/hyphen: Update maintainer email.
+libraries/imlib2: Updated for version 1.5.1.
+libraries/libabw: Update maintainer email.
+libraries/libbde: Updated for version 20170902.
+libraries/libcdr: Update maintainer email.
+libraries/libcmis: Update maintainer email.
+libraries/libe-book: Update maintainer email.
+libraries/libeot: Update maintainer email.
+libraries/libepubgen: Update maintainer email.
+libraries/libetonyek: Update maintainer email.
+libraries/libexttextcat: Update maintainer email.
+libraries/libfreehand: Update maintainer email.
+libraries/libfvde: Updated for version 20180108.
+libraries/libfwnt: Updated for version 20180117.
+libraries/libfwsi: Updated for version 20171103.
+libraries/libgltf: Update maintainer email.
+libraries/libhoard: Switch back to http.
+libraries/libhoard: Updated for version 3.12.
+libraries/libixion: Update maintainer email.
+libraries/liblangtag: Update maintainer email.
+libraries/liblxi: Updated for version 1.12
+libraries/libmsiecf: Updated for version 20170116.
+libraries/libmspub: Update maintainer email.
+libraries/libmwaw: Update maintainer email.
+libraries/libolecf: Updated for version 20170825.
+libraries/liborcus: Update maintainer email.
+libraries/libpagemaker: Update maintainer email.
+libraries/libqxp: Update maintainer email.
+libraries/libsass: Updated for version 3.5.2.
+libraries/libsmdev: Updated for version 20171112.
+libraries/libsmraw: Updated for version 20180123.
+libraries/libstaroffice: Update maintainer email.
+libraries/libupnp-legacy: Added (Portable SDK for UPnP Devices).
+libraries/libvshadow: Updated for version 20170902.
+libraries/libwps: Update maintainer email.
+libraries/libzmf: Update maintainer email.
+libraries/lua-lpeg: Script clean up.
+libraries/lua-mpack: Script clean up.
+libraries/mdds: Update maintainer email.
+libraries/msgpack-c: Script clean up.
+libraries/netcdf: Updated for version 4.6.1.
+libraries/physfs: Updated for version 3.0.1.
+libraries/png++: Update maintainer email.
+libraries/stfl: Add Python 3 support.
+libraries/vdk: Added (Visual Development Kit).
+libraries/webkit2gtk: Updated for version 2.20.0.
+libraries/xerces-c: Fix download link.
+libraries/zint: Added (Zint Barcode Generator).
+misc/esniper: Update maintainer email.
+misc/floating-IPS: Update maintainer email.
+misc/grabc: Update maintainer email.
+misc/langdrill: Added (language drill tests).
+misc/lppf: Update maintainer email.
+misc/xdelta3: Update maintainer email.
+multimedia/devedeng: Update maintainer email.
+multimedia/lightspark: Update maintainer email.
+multimedia/obs-studio: Updated for version 21.1.1
+multimedia/xvidcore: Updated for version 1.3.5.
+network/Electrum: Updated for version 3.1.1.
+network/PaleMoon: Updated for version 27.8.2.
+network/basilisk: Updated for version 2018.03.21.
+network/c-toxcore: Updated for version 0.2.1.
+network/deluge: Switch homepage to https.
+network/ekiga: Switch homepage to https.
+network/geoipupdate: Updated for version 2.5.0.
+network/lighttpd: Adapt README.SLACKWARE to the new conventions.
+network/lxi-tools: Updated for version 1.19
+network/nbd: Updated for version 3.17
+network/opera-developer: Updated for version 53.0.2900.0.
+network/palemoon: Updated for version 27.8.2.
+network/pdns: Added (high-performance authoritative server).
+network/prosody-mod-smacks: Updated for version hg2937.
+network/qTox: Updated for version 1.14.1.
+network/r8168: Update maintainer email.
+network/riot-web: Added (Riot for Desktop).
+network/siege: Updated for version 4.0.4.
+network/signal-desktop: Updated for version 1.6.1.
+network/skypeforlinux: Updated for version 8.18.0.6.
+network/surfraw: Updated for version 2.3.0.
+network/telegram: Updated for version 1.2.14.
+network/tor-browser: Updated for version 7.5.2.
+network/tornado: Alter optional and mandatory dependencies.
+network/tornado: Updated for version 5.0.1.
+network/weechat: Updated for version 2.1.
+network/znc: Updated for version 1.6.6.
+office/MasterPDFEditor: Updated for version 4.3.89.
+office/devtodo: Switch to i586 + new maintainer.
+office/keepassx: Fixed homepage.
+office/mythes: Update maintainer email.
+perl/perl-AnyEvent: Avoid prompting during build.
+perl/perl-B-Hooks-EndOfScope: Added (execute code after compile).
+perl/perl-B-Hooks-OP-Check: Added (Hook into XS modules).
+perl/perl-B-Hooks-OP-PPAddr: Added (Hook into opcode execution).
+perl/perl-Class-Load-XS: Added (XS implementation of Class::Load).
+perl/perl-Clone: Added (Recursively copy Perl datatypes).
+perl/perl-Devel-Declare: Added (Adding keywords to perl, in perl).
+perl/perl-Devel-OverloadInfo: Added (Introspect overloaded ops).
+perl/perl-File-Grep: Added (Find matches in files).
+perl/perl-File-Type: Added (Determine file type using magic).
+perl/perl-MRO-Compat: Added (mro::* interface compatibility).
+perl/perl-Math-GSL-Linalg-SVD: Added (SVD and eigenvector decomp).
+perl/perl-Module-Runtime-Conflicts: Added (Info on conflicts).
+perl/perl-Scalar-List-Utils: Added (updated version of List:Utils).
+perl/perl-Scope-Upper: Added (Act on upper scopes).
+perl/perl-Sub-Exporter-ForMethods: Added (helper for Sub::Exporter).
+perl/perl-Sub-Identify: Added (Retrieve names of code references).
+perl/perl-Test-CleanNamespaces: Added (Check for uncleaned imports).
+perl/perl-Test-Harness: Updated for version 3.42.
+perl/perl-Test-Inter: Updated for version 1.07.
+perl/perl-Variable-Magic: Added (user-defined magic).
+perl/perl-aliased: Added (Use shorter versions of class names).
+perl/perl-namespace-autoclean: Added (imports out of namespace).
+perl/perl-namespace-clean: Added (Keep imports out of namespace).
+perl/txt2html: Added (Text to HTML converter).
+python/Mako: Update maintainer email.
+python/XlsxWriter: Updated for version 1.0.2.
+python/affine: Updated for version 2.2.0.
+python/artifacts: Updated for version 20180115.
+python/astroid: Updated for version 1.6.2.
+python/backports.lzma: Added (Backport of Python 3.3 lzma library).
+python/click-plugins: Updated for version 1.0.3.
+python/dbus-python3: Update maintainer email.
+python/dfdatetime: Updated for version 20180318.
+python/dfvfs: Updated for version 20171230.
+python/dfwinreg: Updated for version 20170706.
+python/paramiko: Updated for version 2.4.1.
+python/phply: Updated for version 1.2.4.
+python/pkginfo: Updated for version 1.4.2.
+python/plaso: Updated for version 20180127.
+python/pygobject3-python3: Update maintainer email.
+python/pyparsing: Updated for version 2.2.0.
+python/pyperclip: Updated for version 1.6.0.
+python/pysqlite: Added (Python interface to SQLite 3).
+python/pytest-runner: Updated for version 4.2.
+python/python3-tornado: Updated for version 5.0.1.
+python/pytsk: Updated for version 20180225.
+python/pytz: Updated for version 2018.3.
+python/snuggs: Add Python 3 support.
+python/stopit: Updated for version 1.1.2.
+python/tqdm: Updated for version 4.19.8.
+system/alacritty: Updated for version gitdcc4b75.
+system/bin2iso: Update maintainer email.
+system/can-utils: Added (SocketCAN userspace utilities and tools).
+system/collectd: Switch to i586 + new maintainer.
+system/dehydrated: Updated for version 0.6.1.
+system/docbook-xml: Switch to https.
+system/dovecot-pigeonhole: Updated for version 0.5.0.1.
+system/dovecot: Updated for version 2.3.0.1.
+system/drbd-utils: Updated for version 9.3.0.
+system/ecm-tools: Update maintainer email.
+system/exfat-utils: Updated for version 1.2.8.
+system/fuse-exfat: Updated for version 1.2.8.
+system/gpart: Update maintainer email.
+system/guix: Update maintainer email.
+system/kcollectd: Added (Qt4-based frontend for collectd).
+system/mdf2iso: Update maintainer email.
+system/nilfs-utils: Updated for version 2.2.7.
+system/nvidia-firmware: Update maintainer email.
+system/posh: Update maintainer email.
+system/pspg: Updated for version 1.0.0.
+system/rover: Update maintainer email.
+system/slackroll: Updated for version v48.
+system/sleuthkit: Updated for version 4.6.0.
+system/spl-solaris: Updated for version 0.7.7.
+system/tpm: Update maintainer email.
+system/ttf-lato: Fixed slack-desc.
+system/unrar: Updated for version 5.6.1.
+system/usermin: Updated for version 1.740.
+system/webmin: Updated for version 1.881.
+system/wiimms-iso-tools: Update maintainer email.
+system/zfs-on-linux: Updated for version 0.7.7.
++--------------------------+
+Sat Mar 17 01:53:40 UTC 2018
+academic/R: Updated for version 3.4.4.
+academic/cld2: Fix build on current.
+academic/suitesparse: Updated for version 5.2.0
+academic/veusz: Updated for version 2.2.1.
+audio/audacity: Updated for version 2.2.2.
+audio/minimodem: Switch to i586.
+audio/opus-tools: Updated for version 0.1.10.
+audio/opusfile: Updated for version 0.10.
+desktop/caffeine-ng: Updated for version 3.4.0.
+desktop/kwalletcli: Switch to i586.
+desktop/oranchelo-icon-theme: Updated for version 0.7.6.4.
+desktop/polybar: Added (a fast and easy-to-use status bar).
+desktop/screenkey: Add FontAwesome as dependency.
+desktop/ssr: Updated for version 0.3.10.
+desktop/xfce-hkmon: Added (Hacker's Monitor for Xfce).
+desktop/xkblayout-state: Updated for version 1b_git20180118.
+development/SQLAlchemy: Updated for version 1.2.5.
+development/brotli: Added (compression algorithm).
+development/colm: Updated for version 0.13.0.5.
+development/cunit: Switch to i586.
+development/eclipse-php: Added (Eclipse IDE for PHP Developers).
+development/envytools: Updated for version 2018.03.10_dd0d6c2.
+development/eovim: Updated for version 0.1.2.
+development/hhvm: Updated for version 3.24.4
+development/ioncube-loader: Updated for version 10.2.0
+development/jupyter_client: Updated for version 5.2.3.
+development/ocamlbuild: Updated for version 0.12.0.
+development/openjdk8: Updated for version 8u161.
+development/openjdk: Updated for version 7u171.
+development/ragel: Updated for version 7.0.0.10.
+development/tanya: Updated for version 0.7.9
+development/textadept: Updated for version 9.6.
+development/universal-ctags: Updated for version 5010e84
+development/urjtag: Updated for version 2017.10pre2.
+development/woff2: Added (Web Open Font Format 2).
+games/RetroArch: More README information.
+games/lutris: Updated for version 0.4.14.
+games/openspades: Updated for version 0.1.2.
+games/planetblupi: Updated for version 1.12.4.
+games/stone_soup: Updated for version 0.21.1.
+gis/Fiona: Add Python 3 support.
+gis/Geohash: Add Python 3 support.
+gis/cligj: Add Python 3 support.
+gis/geographiclib-python: Add Python 3 support.
+gis/geojson: Add Python 3 support.
+gis/geopy: Updated for version 1.12.0.
+gis/gpxsee: Updated for version 5.4.
+gis/opencpn: Updated for version 4.8.2.
+gis/openorienteering-mapper: Updated for version 0.8.1.
+gis/qmapshack: Updated for version 1.11.0.
+gis/xplanet: Fix build on current.
+graphics/photoqt: Updated for version 1.6.
+graphics/resynthesizer: Updated for version 2.0.3.
+haskell/haskell-basement: Added (basic primitives).
+haskell/haskell-cmark: Updated for version 0.5.6.
+haskell/haskell-cryptonite: Updated for version 0.25.
+haskell/haskell-foundation: Updated for version 0.0.20.
+haskell/haskell-memory: Updated for version 0.14.16.
+haskell/haskell-regex-tdfa: Updated for version 1.2.3.
+libraries/allegro: Updated for version 5.2.4.0.
+libraries/appstream-glib: Updated for version 0.7.7.
+libraries/aqbanking: Updated for version 5.7.8.
+libraries/botocore: Updated for version 1.9.6.
+libraries/cfitsio: Update MD5SUM.
+libraries/chromaprint: Updated for version 1.4.3.
+libraries/frei0r: Updated for version 1.6.1, cleanups.
+libraries/gwenhywfar: Updated for version 4.20.0.
+libraries/lgi: Updated for version 0.9.2.
+libraries/libcacard: Updated for version 2.5.3.
+libraries/libfastjson: Updated for version 0.99.8.
+libraries/libfdk-aac: Updated for version 0.1.6
+libraries/libftdi1: Updated for version 1.4.
+libraries/libgee: Updated for version 0.20.1.
+libraries/libmikmod: Updated for version 3.3.11.1, changed homepage.
+libraries/libmwaw: Updated for version 0.3.13.
+libraries/libosinfo: Updated for version 1.1.0.
+libraries/libsass: Updated for version 3.5.1.
+libraries/libupnp: Add upstream patch to remove a private header.
+libraries/libvirt: (Really) properly initialize $count in rc.libvirt
+libraries/libvterm: Updated for version 20180220.
+libraries/lxqt-build-tools: Updated for version 0.4.0.
+libraries/netcdf: Updated for version 4.6.0.
+libraries/opencv: Fix library path
+libraries/qtermwidget: Updated for version 0.8.0.
+libraries/tre: Add Python 3 support.
+libraries/vte3-ng: Updated for version 0.50.2.a.
+libraries/wxsvg: Updated for version 1.5.12.
+multimedia/dvdstyler: Updated for version 3.0.4.
+multimedia/flashplayer-plugin: Updated for version 29.0.0.113.
+multimedia/opera-ffmpeg-codecs: Updated for version 64.0.3282.186.
+multimedia/pepperflash-plugin: Updated for version 29.0.0.113.
+multimedia/yarock: Updated for version 1.3.1.
+network/Electrum: Updated for version 3.1.0.
+network/GeoIP: Updated for version 1.6.12.
+network/awscli: Updated for version 1.14.53.
+network/conkeror: Updated for version 1.0.4.
+network/lighttpd: Updated for version 1.4.49.
+network/nextcloud-server: Updated for version 13.0.0.
+network/opera-developer: Updated for version 53.0.2893.0.
+network/phodav: Updated for version 2.2.
+network/signal-desktop: Updated for version 1.6.0.
+network/snort: Updated for version 2.9.11.1.
+network/sqlmap: Updated for version 1.2.3.
+network/tor-browser: Updated for version 7.5.1.
+network/twine: Updated for version 1.10.0.
+network/youtube-dl: Updated for version 2018.03.10.
+office/juffed: Updated for version 20180114_9b7af21.
+office/lyx: Updated for version 2.3.0.
+office/pdf2djvu: Updated for version 0.9.8.
+office/smoffice2018: Added (office suite).
+office/xtrkcad: Updated for version 5.1.0.
+perl/perl-file-basedir: Updated for version 0.08.
+python/pluggy: Updated for version 0.6.0.
+python/pycld2: Add Python 3 support.
+python/pyewmh: Updated for version 0.1.6.
+python/pytest-runner: Updated for version 4.0.
+python/pytest: Updated for version 3.4.2.
+python/python-autobahn: Updated for version 18.3.1.
+python/python-m2r: Updated for version 0.1.13.
+python/python-neovim: Updated for version 0.2.4.
+python/python-txaio: Updated for version 2.9.0.
+python/python-xcffib: Updated for version 0.6.0.
+python/python-xlib: Updated for version 0.21 + new maintainer.
+python/python3-dateutil: Updated for version 2.7.0.
+python/python3-jupyter_client: Updated for version 5.2.3.
+python/python3-xlib: Removed (replaced by python-xlib).
+python/pyxdg: Updated for version 0.26.
+python/s3transfer: Updated for version 0.1.13.
+python/selenium: Updated for version 3.10.0.
+python/setuptools-scm: Updated for version 1.15.7.
+python/trollius: Updated for version 2.2.
+system/BasiliskII: Removed (included in macemu).
+system/ProFont: Added (bitmap font).
+system/ack: Updated for version 2.22.
+system/alacritty: Updated for version git6debc4f.
+system/btrbk: Updated for version 0.26.1.
+system/cantarell-fonts: Updated for version 0.101.
+system/courier-screenplay: Added (a courier font).
+system/dosbox-dev: Updated for version 0.74.r4085.
+system/fakechroot: Added (gives a fake chroot environment).
+system/fwupd: Updated for version 1.0.6.
+system/intel-microcode: Updated for version 20180312.
+system/macemu: Updated for version 20180225_2e302d6, cleanups.
+system/osinfo-db: Updated for version 20180311.
+system/qterminal: Updated for version 0.8.0.
+system/rhash: Updated for version 1.3.5
+system/rsyslog: Updated for version 8.33.1.
+system/siji-font: Added (bitmap font).
+system/spice-vdagent: Updated for version 0.17.0.
+system/spkg: Updated for version 1.1.
+system/termite: Updated for version 13.
+system/the_silver_searcher: Script clean up.
+system/thinkfan: Switch to i586.
+system/ttf-lato: Added (TrueType Font).
+system/udevil: Updated for version 0.4.4.
+system/vagrant: Updated for version 2.0.3.
++--------------------------+
 Sat Mar 10 00:12:40 UTC 2018
 academic/avogadro: Mirror download url.
 academic/papi: Fixed ownership.
