@@ -7,3 +7,7 @@ power events, scheduled shutdowns and restarts; it displays
 information such as input voltage, runtime, battery charge and current
 status; and it offers self-testing features, adjustable alarm
 settings, and more.
+
+See README.SLACKWARE for more information on post-installation
+configuration and how to start the pwrstatd daemon automatically at
+boot.
