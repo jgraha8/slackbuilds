@@ -59,12 +59,11 @@ tar xvf $CWD/$PKGNAM-$ARCH.tar.gz
 cd $PRGNAM-$VERSION
 
 chown -R root:root .
-
 find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+     \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+     -o -perm 511 \) -exec chmod 755 {} \; -o \
+     \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+     -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 # Install binary files
 mkdir -p $PKG/usr/sbin
@@ -102,8 +101,9 @@ mkdir -p $PKG/usr/man/man8
 cat doc/pwrstat.8 > $PKG/usr/man/man8/pwrstat.8
 cat doc/pwrstatd.8 > $PKG/usr/man/man8/pwrstatd.8
 
+# Strip binaries and libraries
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Compress man pages
 find $PKG/usr/man -type f -exec gzip -9 {} \;
@@ -116,15 +116,23 @@ cp -a \
    $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
-# Copy the slack-desc (and a custom doinst.sh if necessary) into ./install
+# Copy the slack-desc and doinst.sh
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 # Don't clobber existing config files
 find $PKG/etc -type f -exec mv {} {}.new \;
+
+# Make sure we preserve permissions on rc-script(s)
 ( cd $PKG
-  for i in $(find etc -type f -name "*.new") ; do
+  for i in $(find etc/rc.d -type f -name "*.new") ; do
+      echo "preserve_perms $i" >> $PKG/install/doinst.sh
+  done
+)
+
+( cd $PKG
+  for i in $(find etc -type f -name "*.new" -not -path "etc/rc.d/*") ; do
       echo "config $i" >> $PKG/install/doinst.sh ;
   done
 )
