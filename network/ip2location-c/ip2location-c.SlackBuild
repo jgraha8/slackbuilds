@@ -1,9 +1,10 @@
 #!/bin/sh
+
 # Slackware build script for ip2location-c
 
 # Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
-
 # Copyright 2012, 2013  Chris Abela, Malta
+# Copyright 2018  Jason Graham, MD <jgraha8@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,25 +24,25 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=ip2location-c  # Previously known as C-IP2Location
-VERSION=${VERSION:-7.0.2}
+PRGNAM=ip2location-c
+VERSION=${VERSION:-8.0.7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
+# Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
     arm*) ARCH=arm ;;
+    # Unless $ARCH is already set, use uname -m for all other archs:
        *) ARCH=$( uname -m ) ;;
   esac
 fi
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/SBo}	# For consistency's sake, use this
 PKG=$TMP/package-$PRGNAM
-OUTPUT=${OUTPUT:-/tmp}
-
-DOCS="AUTHORS COPYING Developers_Guide.txt INSTALL LICENSE* NEWS README"
+OUTPUT=${OUTPUT:-/tmp}	# Drop the package in /tmp
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
@@ -64,7 +65,10 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
 
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+# Unpack and move to the standard directory name
+tar xvf $CWD/$VERSION.tar.gz
+mv IP2Location-C-Library-$VERSION $PRGNAM-$VERSION
+
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -73,6 +77,8 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# The README is missing and is needed by autoconf
+cat README.md > README
 autoreconf -vif
 
 CFLAGS="$SLKCFLAGS" \
@@ -84,25 +90,32 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --datarootdir=/usr/share \
   --build=$ARCH-slackware-linux \
-  --disable-libtool-lock \
-  --disable-static
+  --disable-static \
+  --disable-libtool-lock  
 
 make
 make install DESTDIR=$PKG
 
+if [ "$DB" = "yes" ]; then
+    ( cd data && perl ip-country.pl && make install DESTDIR=$PKG )
+fi
+
+# Strip binaries and libraries
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  $DOCS \
+   AUTHORS COPYING ChangeLog Developers_Guide.txt INSTALL LICENSE.TXT NEWS README.md \
   $PKG/usr/doc/$PRGNAM-$VERSION
-chmod 0644 $PKG/usr/doc/$PRGNAM-$VERSION/*
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
+# Copy the slack-desc (and a custom doinst.sh if necessary) into ./install
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
+# Make the package
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
