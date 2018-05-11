@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=cfengine
-VERSION=${VERSION:-3.10.1}
+VERSION=${VERSION:-3.10.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -54,6 +54,10 @@ else
   LIBDIRSUFFIX=""
 fi
 
+# JSG 20180510
+EXTRA_FLAGS="--with-pam --without-postgresql --with-mysql --with-libvirt"
+
+
 set -e
 
 rm -rf $PKG
@@ -79,11 +83,10 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --with-workdir=/var/lib/cfengine \
-  --with-pam=no \
-  --without-pam \
   --enable-static=no \
   --enable-shared=yes \
-  --build=$ARCH-slackware-linux
+  --build=$ARCH-slackware-linux \
+  $EXTRA_FLAGS
 
 make
 make install DESTDIR=$PKG
