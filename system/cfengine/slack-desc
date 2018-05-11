@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
         |-----handy-ruler------------------------------------------------------|
-cfengine: cfengine (Automate and manage your IT infrastructure)
+cfengine: cfengine (Automate and manage your IT infrastructure - with PAM)
 cfengine:
 cfengine: CFEngine is a configuration management and automation framework that
 cfengine: lets you securely manage your mission critical IT infrastructure.
 cfengine:
-cfengine: This build Includes PAM support.
-cfengine:
 cfengine: https://cfengine.com
+cfengine:
+cfengine:
 cfengine:
 cfengine:
 cfengine:
