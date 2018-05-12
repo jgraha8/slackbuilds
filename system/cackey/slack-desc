@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
        |-----handy-ruler------------------------------------------------------|
-appname: cackey (Department of Defense CAC PKCS#11 Provider)
-appname:
-appname: CACKey is a PKCS#11 compliant library that provides access to the
-appname: cryptographic and certificate functions US Goverment Smartcards
-appname: (cards that comply to Government Smart Card Interoperability
-appname: Specification v2.1). 
-appname:
-appname: Homepage: https://cackey.rkeene.org/fossil/index
-appname:
-appname:
-appname:
+cackey: cackey (Department of Defense CAC PKCS#11 Provider)
+cackey:
+cackey: CACKey is a PKCS#11 compliant library that provides access to the
+cackey: cryptographic and certificate functions US Goverment Smartcards
+cackey: (cards that comply to Government Smart Card Interoperability
+cackey: Specification v2.1). 
+cackey:
+cackey: Homepage: https://cackey.rkeene.org/fossil/index
+cackey:
+cackey:
+cackey:
