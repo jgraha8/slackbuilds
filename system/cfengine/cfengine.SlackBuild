@@ -55,8 +55,19 @@ else
 fi
 
 # JSG 20180510
-EXTRA_FLAGS="--with-pam --without-postgresql --with-mysql --with-libvirt --with-init-script=/etc/rc.d"
+EXTRA_FLAGS="--with-pam --without-postgresql"
 
+if [ "$MYSQL_CLIENT" = "yes" ]; then
+    EXTRA_FLAGS="${EXTRA_FLAGS} --with-mysql"
+else
+    EXTRA_FLAGS="${EXTRA_FLAGS} --without-mysql"
+fi
+
+if [ "$LIBVIRT" = "yes" ]; then
+    EXTRA_FLAGS="${EXTRA_FLAGS} --with-libvirt"
+else
+    EXTRA_FLAGS="${EXTRA_FLAGS} --without-libvirt"    
+fi
 
 set -e
 
@@ -94,9 +105,6 @@ make install DESTDIR=$PKG
 if [ "$ARCH" = "x86_64" ]; then
   mv $PKG/usr/lib $PKG/usr/lib${LIBDIRSUFFIX}
 fi
-
-# Update the init scripts
-mv $PKG/etc/rc.d/{,rc.}cfengine3
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
