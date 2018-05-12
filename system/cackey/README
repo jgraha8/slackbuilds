@@ -1,0 +1,6 @@
+CACKey is a PKCS#11 compliant library that provides access to the
+cryptographic and certificate functions US Goverment Smartcards (cards
+that comply to Government Smart Card Interoperability Specification
+v2.1). It supports all versions of the Department of Defense Common
+Access Card (CAC) and US Government Personal Identity Verification
+(PIV) cards (starting with release 0.7.0).
