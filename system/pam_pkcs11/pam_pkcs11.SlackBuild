@@ -22,10 +22,10 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=pam_pkcs11	
+PRGNAM=pam_pkcs11
 VERSION=${VERSION:-0.6.9}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}		
+TAG=${TAG:-_SBo}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -91,6 +91,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux \
   --with-pamdir=/lib${LIBDIRSUFFIX}/security \
+  --with-confdir=/etc/pam_pkcs11 \
   --with-ldap \
   --without-nss \
   --with-pcsclite
@@ -109,10 +110,9 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 # Copy program documentation into the package
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-   ABOUT-NLS COPYING NEWS TODO AUTHORS INSTALL README \
+   AUTHORS COPYING ChangeLog INSTALL NEWS README TODO \
    $PKG/usr/doc/$PRGNAM-$VERSION
 gzip -c ChangeLog > $PKG/usr/doc/$PRGNAM-$VERSION/ChangeLog.gz
-gzip -c ChangeLog.git > $PKG/usr/doc/$PRGNAM-$VERSION/ChangeLog.git.gz
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Copy the slack-desc and doinst.sh into ./install
