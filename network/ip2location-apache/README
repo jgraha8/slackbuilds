@@ -1,0 +1,8 @@
+This is an IP2Location Apache Module that enables the user to identify
+the country, region, city, latitude, longitude, zip code, time zone,
+ISP, domain name, connection type, area code, weather, MCC, MNC,
+mobile brand name, elevation and usage type by IP address.
+
+See README.SLACKWARE for post-install information.
+
+modsecurity-apache is an optional dependency.

@@ -1,0 +1,23 @@
+To enable the ip2location Apache module, first add the following to
+httpd.conf:
+
+  Include /etc/httpd/extra/httpd-ip2location.conf
+
+Then, set:
+
+  IP2LocationEnable ON
+
+in /etc/httpd/extra/httpd-ip2location.conf. Restart the apache
+service.
+
+Sample Codes:
+
+1) Apache .htaccess
+
+  RewriteEngine On
+  RewriteCond %{ENV:IP2LOCATION_COUNTRY_SHORT} ^GB$
+  RewriteRule ^(.*)$ http://www.google.co.uk [L]
+
+2) Apache Mod Security (requires modsecurity-apache)
+
+  SecRule ENV:IP2LOCATION_COUNTRY_SHORT "NG|VN" "deny,status:500,id:5000888,msg:'Block visitor from Nigeria and Vietnam'"
