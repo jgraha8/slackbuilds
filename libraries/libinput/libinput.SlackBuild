@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=libinput
-VERSION=${VERSION:-1.10.6}
+VERSION=${VERSION:-1.10.7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -52,13 +52,6 @@ elif [ "$ARCH" = "x86_64" ]; then
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
-fi
-
-wacom=`pkg-config --exists libwacom`
-if [ $? -eq 0 ]; then
-  libwacom="--enable-libwacom"
-else
-  libwacom="--disable-libwacom"
 fi
 
 set -e
