@@ -8,8 +8,8 @@ network-functions-ipv6 library, used by initscripts-ipv6.
 In addition to its internal databases, ipv6calc supports several
 external databases. The following build options may be used to include
 support for these:
-  
-  IP2LOCATION=yes  Enable IP2Location support (requires ip2location-c) 
+
+  IP2LOCATION=yes  Enable IP2Location support (requires ip2location-c)
   GEOIP=yes        Enable GeoIP support (requires GeoIP)
   EXTERNAL=yes     Enable external db support
 

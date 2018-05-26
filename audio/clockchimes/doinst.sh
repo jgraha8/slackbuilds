@@ -1,27 +1,37 @@
 # doinst.sh for clockchimes
-# focus is on making sure cron is managing clockchime script
 
-# negative test: check if root crontab exists
-if [ ! -e /var/spool/cron/crontabs/root ]; then
-  # true: does not exist, create root crontab and set permissions
-  touch /var/spool/cron/crontabs/root
-  chmod 0600 /var/spool/cron/crontabs/root
-fi
-
-# negative test: check if root crontab previously modified
-grep "# clockchimes" /var/spool/cron/crontabs/root 1> /dev/null
-if [ $? -ne 0 ]; then
-
-# true: not previously modified
-cat << EOF >> /var/spool/cron/crontabs/root
-# clockchimes
-0,15,30,45 * * * * /usr/bin/clockchimes.sh 1> /dev/null
-EOF
-
-  # positive test: check if crond is running
-  ps -C crond 1>/dev/null
-  if [ $? -eq 0 ]; then
-    # true: reload crond
-    crontab /var/spool/cron/crontabs/root 1> /dev/null
+config() {
+  NEW="$1"
+  OLD="$(dirname $NEW)/$(basename $NEW .new)"
+  # If there's no config file by that name, mv it over:
+  if [ ! -r $OLD ]; then
+    mv $NEW $OLD
+  elif [ "$(cat $OLD | md5sum)" = "$(cat $NEW | md5sum)" ]; then
+    # toss the redundant copy
+    rm $NEW
   fi
-fi
+  # Otherwise, we leave the .new copy for the admin to consider...
+}
+
+config etc/clockchimes.conf.new
+config etc/cron.d/clockchimes.new
+
+# clean root crontab from versions before v0.3
+grep 'clockchimes' /var/spool/cron/crontabs/root 1>/dev/null
+if [ $? -eq 0 ]; then
+  grep -v 'clockchimes' > /var/spool/cron/crontabs/root
+fi # END clean root crontab
+
+# kill crond if running
+ps -C crond 1>/dev/null
+if [ $? -eq 0 ]; then
+  # true: kill crond
+  killall crond 1>/dev/null
+fi # END crond running
+
+# start crond if not running
+ps -C crond 1>/dev/null
+if [ $? -ne 0 ]; then
+  # true: start crond
+  /usr/sbin/crond -l notice
+fi # END crond running
