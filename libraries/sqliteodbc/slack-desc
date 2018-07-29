@@ -1,0 +1,12 @@
+          |-----handy-ruler------------------------------------------------------|
+sqliteodbc: sqliteodbc (SQLite ODBC Driver)
+sqliteodbc:
+sqliteodbc: The SQLite Database Engine provides a lightweight C library to access
+sqliteodbc: database files using a large subset of SQL92 without the overhead of
+sqliteodbc: RDBMS server processes. In order to use that functionality as a
+sqliteodbc: desktop database, the SQLite library is wrapped into an ODBC driver.
+sqliteodbc:
+sqliteodbc: Homepage: http://www.ch-werner.de/sqliteodbc/
+sqliteodbc:
+sqliteodbc:
+sqliteodbc:
