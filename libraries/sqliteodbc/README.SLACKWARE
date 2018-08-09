@@ -44,4 +44,3 @@ Alternatively, to setup a SQLite data source using unixODBC:
    Database=/home/johndoe/databases/mytest.db
    # optional lock timeout in milliseconds
    Timeout=2000
-
