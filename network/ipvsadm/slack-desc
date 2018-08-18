@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
        |-----handy-ruler------------------------------------------------------|
-ipvsadm: ipvsadm (Admin tool for the Linux Virtual Server)
+ipvsadm: ipvsadm (Utility to administer the IP Virtual Server)
 ipvsadm:
 ipvsadm: The Linux Virtual Server is a highly scalable and highly available
 ipvsadm: server built on a cluster of real servers, with the load balancer
-ipvsadm: running on the Linux operating system. The architecture of the
-ipvsadm: server cluster is fully transparent to end users, and the users
-ipvsadm: interact as if it were a single high-performance virtual server.
+ipvsadm: running on the Linux operating system. ipvsadm is a utility to
+ipvsadm: administer the IP Virtual Server (IPVS) services offered by the Linux
+ipvsadm: kernel with IPVS support to create a wide range of load-balancer
+ipvsadm: setups.
 ipvsadm:
-ipvsadm:
-ipvsadm: ipvsadm is the admin tool for the Linux Virtual Server
+ipvsadm: Homepage: http://www.linuxvirtualserver.org/
 ipvsadm:
