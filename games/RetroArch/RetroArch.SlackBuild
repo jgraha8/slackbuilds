@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=RetroArch
-VERSION=${VERSION:-1.7.3}
+VERSION=${VERSION:-1.7.4}
 BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
@@ -81,6 +81,8 @@ fi
 
 lib=
 
+[ "${DISCORD:-0}" = 0 ] && lib="${lib} --disable-discord"
+
 if [ "${GLES:-0}" != 0 ]; then
   lib="${lib} --enable-opengles"
 elif [ "${GLES3:-0}" != 0 ]; then
@@ -88,6 +90,7 @@ elif [ "${GLES3:-0}" != 0 ]; then
 fi
 
 pkg-config --exists flac && lib="${lib} --disable-builtinflac"
+pkg-config --exists libsixel && lib="${lib} --enable-sixel"
 
 [ -d /usr/include/miniupnpc ] && lib="${lib} --disable-builtinminiupnpc"
 
@@ -105,21 +108,39 @@ fi
 # https://github.com/libretro/RetroArch/issues/3237
 SED_CORE=; SED_INFO=; SED_MENU=
 if [ "${BUILDBOT:-0}" = 0 ]; then
-  SED_CORE="s|# libretro_directory =|libretro_directory = /usr/lib${LIBDIRSUFFIX}/libretro|"
-  SED_INFO="s|# libretro_info_path =|libretro_info_path = /usr/lib${LIBDIRSUFFIX}/libretro/info|"
+  libdir="/usr/lib${LIBDIRSUFFIX}/libretro"
+  infodir="${libdir}/info"
+  SED_CORE="s|# libretro_directory =|libretro_directory = $libdir|"
+  SED_INFO="s|# libretro_info_path =|libretro_info_path = $infodir|"
   SED_MENU='s|# menu_show_core_updater = true|menu_show_core_updater = false|'
 fi
 
-# Set the config file default directories to be consistent with the installation.
-sed -e "s|# audio_filter_dir =|audio_filter_dir = /usr/lib${LIBDIRSUFFIX}/retroarch/filters/audio|" \
-    -e "s|# video_filter_dir =|video_filter_dir = /usr/lib${LIBDIRSUFFIX}/retroarch/filters/video|" \
+filter_dir="/usr/lib${LIBDIRSUFFIX}/retroarch/filters"
+
+# Set the default directories to be consistent with the installation.
+sed -e "s|# audio_filter_dir =|audio_filter_dir = ${filter_dir}/audio|" \
+    -e "s|# video_filter_dir =|video_filter_dir = ${filter_dir}/video|" \
     -e "$SED_CORE;$SED_INFO;$SED_MENU" \
     -i retroarch.cfg
 
-# Qt: only check for pending events of the main thread
-# https://github.com/libretro/RetroArch/commit/c2ad8d47d382c7460bb54c8a7116573d95648f95
-# https://github.com/libretro/RetroArch/issues/6726
-zcat $CWD/qt.patch.gz | patch -p1
+# Update libretro-common
+# https://github.com/libretro/RetroArch/commit/7c22f265b8928aca6e5706ab3a8bab2de0e24b8c
+# https://github.com/libretro/libretro-common/pull/84
+# https://github.com/libretro/RetroArch/issues/6889
+patch -p1 < $CWD/libretro.patch
+
+# Update config entries pointer to the new beginning of the list after sorting
+# https://github.com/libretro/RetroArch/commit/9da261c6d9a3f276e44c7f1999aef4fc758cbafd
+# https://github.com/libretro/RetroArch/pull/7178
+# https://github.com/libretro/RetroArch/issues/7160
+patch -p1 < $CWD/etc.patch
+
+# revert #7156
+# https://github.com/libretro/RetroArch/commit/64459bda3a8add5c5e679b3fa4d1fd4cd7796233
+# https://github.com/libretro/RetroArch/commit/dd9db4140304c480745f7f344ff67041bdd2c9ad
+# https://github.com/libretro/RetroArch/pull/7162
+# https://github.com/libretro/RetroArch/pull/7163
+patch -p1 < $CWD/savestates.patch
 
 # Set $lib to a portable array
 eval "set -- $lib"

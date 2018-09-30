@@ -24,7 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=sayonara-player
-VERSION=${VERSION:-1.0.0_git5_20180115}
+VERSION=${VERSION:-1.1.1_git3_20180905}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -90,7 +90,7 @@ mv $PKG/usr/share/man $PKG/usr/man
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-DOCS="COPYING license.txt MANUAL README.txt"
+DOCS="COPYING LICENSE MANUAL README.txt"
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $DOCS $PKG/usr/doc/$PRGNAM-$VERSION/
