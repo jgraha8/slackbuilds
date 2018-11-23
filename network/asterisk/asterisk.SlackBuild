@@ -23,8 +23,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=asterisk
-VERSION=${VERSION:-13.23.1}
-BUILD=${BUILD:-1}
+VERSION=${VERSION:-16.0.0}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -78,10 +78,9 @@ rm -fr $PKG $TMP/$PRGNAM-$VERSION $TMP/$IMAPDIR
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
-VM_IMAP=${VM_IMAP:-"no"}
 CONFIGURE_OPTS=
 
-if [ "$VM_IMAP" != "no" ] && [ "${VM_ODBC:-no}" = "no" ]; then
+if [ "${VM_IMAP:-no}" != "no" ] && [ "${VM_ODBC:-no}" = "no" ]; then
   tar xvf $CWD/imap.tar.Z
   ( cd imap-2007f
     chown -R root:root .
@@ -98,6 +97,18 @@ if [ "$VM_IMAP" != "no" ] && [ "${VM_ODBC:-no}" = "no" ]; then
     fi
   )
   CONFIGURE_OPTS="--with-imap=$TMP/$IMAPDIR"
+fi
+
+if [ "${JANSSON:-no}" != "yes" ]; then
+  CONFIGURE_OPTS="${CONFIGURE_OPTS} --with-jansson-bundled"
+else
+  CONFIGURE_OPTS="${CONFIGURE_OPTS} --without-jansson-bundled"
+fi
+
+if [ "${PJSIP:-no}" != "no" ]; then
+  CONFIGURE_OPTS="${CONFIGURE_OPTS} --with-pjproject-bundled"
+else
+  CONFIGURE_OPTS="${CONFIGURE_OPTS} --without-pjproject-bundled"
 fi
 
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
@@ -125,20 +136,20 @@ CXXFLAGS="$SLKCFLAGS" \
 )
 make menuselect-tree
 
+LANGUAGE=${LANGUAGE:-EN}
+
 menuselect/menuselect \
   --enable res_config_mysql \
+  --enable CORE-SOUNDS-${LANGUAGE}-WAV \
+  --enable CORE-SOUNDS-${LANGUAGE}-ULAW \
+  --enable CORE-SOUNDS-${LANGUAGE}-ALAW \
+  --enable CORE-SOUNDS-${LANGUAGE}-GSM \
+  --enable CORE-SOUNDS-${LANGUAGE}-G729 \
+  --enable CORE-SOUNDS-${LANGUAGE}-G722 \
+  --enable CORE-SOUNDS-${LANGUAGE}-SLN16 \
+  --enable CORE-SOUNDS-${LANGUAGE}-SIREN6 \
+  --enable CORE-SOUNDS-${LANGUAGE}-SIREN17 \
   menuselect.makeopts
-
-#
-# Did asterisk menuselect discover the pjsip library?
-if [ "$(menuselect/menuselect --list-options menuselect.makeopts | grep -c '+ res_pjsip')" -gt 0 ]; then
-  #
-  # Asterisk menuselect discovered the pjsip library and is trying to use it.
-  # Need to modify header file so asterisk will build properly.
-  sed -i -r \
-    -e "s/\/\*\s+#undef\s+(HAVE_PJ_TRANSACTION_GRP_LOCK)\s+\*\//#define \1 1/" \
-    include/asterisk/autoconfig.h
-fi
 
 if [ "${MOH:-no}" != "no" ]; then
   menuselect/menuselect \
@@ -146,16 +157,29 @@ if [ "${MOH:-no}" != "no" ]; then
     --enable MOH-OPSOUND-ALAW \
     --enable MOH-OPSOUND-GSM \
     --enable MOH-OPSOUND-G729 \
+    --enable MOH-OPSOUND-G722 \
+    --enable MOH-OPSOUND-SLN16 \
+    --enable MOH-OPSOUND-SIREN7 \
+    --enable MOH-OPSOUND-SIREN14 \
     menuselect.makeopts
 fi
 
 if [ "${SOUNDS_EXTRA:-no}" != "no" ]; then
+  # EXTRA_SOUNDS only has a subset of languages available for CORE_SOUNDS
+  LANGUAGE_EXTRA=EN
+  if [ "${LANGUAGE}" = "EN" -o "${LANGUAGE}" = "EN_GB" -o "${LANGUAGE}" -o "FR" ]; then
+    LANGUAGE_EXTRA="${LANGUAGE}"
+  fi
   menuselect/menuselect \
-    --enable EXTRA-SOUNDS-EN-WAV \
-    --enable EXTRA-SOUNDS-EN-ULAW \
-    --enable EXTRA-SOUNDS-EN-ALAW \
-    --enable EXTRA-SOUNDS-EN-GSM \
-    --enable EXTRA-SOUNDS-EN-G729 \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-WAV \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-ULAW \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-ALAW \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-GSM \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-G729 \
+    --enable EXTRA-SOUNDS-${LANGUAGE-EXTRA}-G722 \
+    --enable EXTRA-SOUNDS-${LANGUAGE-EXTRA}-SLN16 \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-SIREN7 \
+    --enable EXTRA-SOUNDS-${LANGUAGE_EXTRA}-SIREN14 \
     menuselect.makeopts
 fi
 
@@ -163,7 +187,7 @@ if [ "${VM_ODBC:-no}" != "no" ]; then
   menuselect/menuselect \
     --enable ODBC_STORAGE \
     menuselect.makeopts
-elif [ "$VM_IMAP" != "no" ]; then
+elif [ "${VM_IMAP:-no}" != "no" ]; then
   menuselect/menuselect \
     --enable IMAP_STORAGE \
     menuselect.makeopts
@@ -203,7 +227,7 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Install a few typical config files for common asterisk servers
 for i in \
-  asterisk codecs extensions iax indications musiconhold sip modules voicemail ;
+  asterisk codecs extensions iax indications musiconhold sip smdi modules voicemail ;
   do
   cat $PKG/usr/doc/$PRGNAM-$VERSION/sample_confs/${i}.conf > \
     $PKG/etc/asterisk/${i}.conf.new ;
