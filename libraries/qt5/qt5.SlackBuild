@@ -50,7 +50,7 @@
 # Adapted for Qt 5.9.6 by David Woodfall
 
 PRGNAM=qt5
-VERSION=${VERSION:-5.9.6}
+VERSION=${VERSION:-5.9.7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -85,6 +85,13 @@ elif [ "$ARCH" = "armv7hl" ]; then
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
+fi
+
+if [ -e /var/log/packages/$PRGNAM-legacy-[[:digit:]]* ]; then
+  printf "%s\n%s\n%s\n" "You appear to have $PRGNAM-legacy installed." \
+    "$PRGNAM will not co-exist with $PRGNAM-legacy." \
+    "Please uninstall $PRGNAM-legacy and restart the SlackBuild."
+  exit 1
 fi
 
 set -e
@@ -148,7 +155,6 @@ export CXXFLAGS="$SLKCFLAGS -std=c++11"
   -icu \
   -openssl-linked \
   -verbose \
-  -optimized-qmake \
   -dbus-linked \
   -qpa xcb \
   -xcb \

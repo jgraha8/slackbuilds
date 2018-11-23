@@ -1,3 +1,1038 @@
+Sat Dec  1 00:28:43 UTC 2018
+academic/calc: Update to 2.12.7.2
+academic/isoelectric-point: Update homepage and download.
+academic/novocraft: Updated for version 3.09.01.
+academic/pspp: Updated for version 1.2.0.
+academic/pyCRAC: Updated for version 1.3.3.
+academic/pyfits: Update homepage.
+academic/pysam: Updated for version 0.15.1.
+audio/mpdscribble: Update homepage and download.
+dekstop/catfish: Update README
+desktop/LX-Colors-Revival: Update download URLs, change SlackBuild.
+desktop/LX-Colors-themes: Update download URLs, change SlackBuild.
+desktop/dwm: Use local config.h.
+desktop/jgmenu: Updated for version 1.5.
+desktop/jwm: Update homepage.
+desktop/nitrogen: Update homepage.
+desktop/py3status: Updated for version 3.14.
+development/alex: Fix SlackBuild.
+development/diffoscope: Updated for version 106.
+development/hopper: Updated for version 4.4.8.
+development/mozjs: Remove build.log
+development/radare2: Updated for version 3.1.0.
+development/rtags: Updated for version 2.21.
+development/trf: Update homepage.
+development/zulu-openjdk7: Updated for version 7u201.
+development/zulu-openjdk8: Updated for version 8u192.
+development/zulu-openjdk9: Updated for version 9u07.
+games/beetle-psx-libretro: Updated for version 2018.11.26_a081f34.
+games/lutris: Updated for version 0.4.23.
+games/mangband: Switch homepage and download to https.
+gis/Fiona: Updated for version 1.8.3.
+gis/geos: Updated for version 3.7.1.
+gis/pktools: Updated for version 2.6.7.6.
+graphics/GraphicsMagick: Fix perl module.
+libraries/OpenAL: Switch homepage and download to https.
+libraries/SFGUI: Update homepage.
+libraries/alure: Switch homepage and download to https.
+libraries/botocore: Updated for version 1.12.57.
+libraries/gazebo: Fix build with tinyxml2-7.0.1.
+libraries/libtorrent-rasterbar: Update to 1.1.11
+libraries/libwebp: Updated for version 1.0.1.
+libraries/libxlsxwriter: Update 0.8.4
+libraries/live555: Updated for version 2018.11.26
+libraries/lua-MessagePack: Update homepage.
+libraries/mujs: Fixed download link.
+libraries/netcdf: Updated for version 4.6.2.
+libraries/ois: Fix tarball handling.
+libraries/opencv: Updated for version 3.4.4
+libraries/php-redis: Updated for version 4.2.0.
+libraries/spread-sheet-widget: Added (GTK+ Library).
+libraries/tDOM: Update homepage.
+misc/portecle: Updated for version 1.11.
+multimedia/ccxstream: Switch homepage to archive.org.
+multimedia/plexmediaserver: Updated for v. 1.14.0.5470_9d51fdfaa.
+network/Pafy: Update homepage.
+network/aircrack-ng: Updated for version 1.4 + new maintainer.
+network/awscli: Updated for version 1.16.67.
+network/geomyidae: Update to v0.34
+network/httpie: Updated for version 1.0.2.
+network/linphone: Fixed deps.
+network/memcached-init: Update homepage.
+network/mps-youtube: Update homepage.
+network/mps: Switch homepage to archive.org.
+network/opera-developer: Updated for version 59.0.3154.0.
+network/opera: Updated for version 57.0.3098.76.
+network/pidgin-privacy-please: Update homepage.
+network/qbittorrent-qt5: Update to 4.1.4
+network/qutebrowser: Update to 1.5.2
+network/rejik: Switch homepage and download to https.
+network/rspamd: Updated for version 1.8.2.
+network/signal-desktop: Updated for version 1.18.1.
+network/swaks: Updated for version 20181104.0.
+network/teamviewer: Fix download.
+network/twitter: Switch homepage to https.
+network/w3m: Update to 0.5.3_34
+network/wireshark: Updated for version 2.6.5.
+network/wmget: Update homepage and download.
+network/youtube-dl: Updated for version 2018.11.23.
+office/smoffice2018: Updated for version 2018_942.
+office/texstudio: Updated for version 2.12.12
+perl/perl-CPAN-Perl-Releases: Updated for version 3.84.
+perl/perl-Mojolicious: Updated for version 8.07.
+python/Flask-Compress: Update homepage.
+python/Flask-Mail: Update homepage, fix readme.
+python/colorama: Updated for version 0.3.9.
+python/euca2ools: Update homepage.
+python/git-fame: Updated for version 1.6.0.
+python/pycryptodome: Updated for version 3.7.2.
+python/python-autobahn: Updated for version 18.11.1.
+python/python-certifi: Updated for version 2018.11.29.
+python/python-keyring: Updated for version 17.0.0.
+python/python-libsass: Updated for version 0.16.1.
+python/python-requests: Updated for version 2.20.1.
+python/python3-Pygments: Updated for version 2.3.0.
+python/python3-astroid: Updated for version 2.1.0.
+python/python3-ipython: Updated for version 7.2.0.
+python/python3-pylint: Updated for version 2.2.0.
+python/ruffus: Updated for version 2.8.1.
+python/scikit-learn: Updated for version 0.20.1.
+ruby/ruby-faraday: Updated for version 0.15.4.
+ruby/rubygem-mustache: Updated for version 1.1.0.
+ruby/rubygem-ronn: Fix manpage installation.
+ruby/rubygem-trollop: Update homepage.
+system/alacritty: Include upstream patch for crates.io winpty-sys.
+system/ansible: Updated for version 2.7.4.
+system/dvdisaster: Update homepage.
+system/dynamips: Update homepage.
+system/epson-inkjet-printer-escpr2: Updated for version 1.0.27.
+system/fira-fonts: Updated for version 4.301.
+system/inxi: Updated for version 3.0.27.
+system/jq: Fix MD5SUM.
+system/kbfs: Updated for version 2.11.0_20181127185939.
+system/keybase: Updated for version 2.10.1.
+system/lbench: Updated for version 3.7.
+system/lomoco: Switch homepage to archive.org.
+system/luckybackup: Updated for version 0.5.0.
+system/maxcso: Added (Fast cso compressor).
+system/nano-syntax-highlighting: Updated for version 20180827.
+system/openrc-services: Updated for version 20181107 + SYSCONFDIR changed.
+system/openrc: Updated for version 0.39.2 + SYSCONFDIR changed.
+system/phoronix-test-suite: Updated for version 8.4.0.
+system/pstate-frequency: Updated for version 3.10.2.
+system/qtfm: Updated for version 6.1.4.
+system/sboui: Updated for version 2.0.
+system/targetcli-fb: Updated for version 2.1.fb49 + new maintainer.
+system/telegraf: Updated for version 1.9.0.
+system/usermin: Updated for version 1.750.
+system/vagrant: Updated for version 2.2.2.
+system/webmin: Updated for version 1.900.
++--------------------------+
+Sat Nov 24 05:36:19 UTC 2018
+academic/STAR: Updated for version 2.6.1d.
+academic/gwyddion: Updated for version 2.52.
+academic/libqalculate: Updated for version 2.8.1
+academic/qalculate-gtk: Updated for version 2.8.1
+audio/yoshimi: Updated for version 1.5.9.
+desktop/Zafiro-icons: Updated for version 0.7.2.
+desktop/s1kls: Switch homepage to https.
+development/cgit: Note lua versions compatibility in the README.
+development/composer: Updated for version 1.7.3
+development/diffoscope: Updated for version 105.
+development/hopper: Updated for version 4.4.6.
+development/ioncube-loader: Updated for version 10.2.7
+development/jdk: Updated for version 8u192.
+development/jupyter-ipyleaflet: Updated for version 0.9.1.
+development/jupyter-notebook: Updated for version 5.7.2.
+development/jupyter-widgetsnbextension: Remove unnecessary setup instruction.
+development/pycharm: Updated for version 2018.2.5.
+development/shed: Switch homepage to https.
+development/uncrustify: Updated for version 0.68.1.
+development/yarn: Updated for version 1.12.3.
+games/Sokoban: Switch homepage and download to https.
+gis/Fiona: Updated for version 1.8.2.
+gis/cartopy: Updated for version 0.17.0.
+gis/postgis: Updated for version 2.5.1.
+gis/rasterio: Updated for version 1.0.10.
+graphics/openimageio: Updated for version 1.8.16
+graphics/paraview: Updated for version 5.6.0
+graphics/qcad: Updated for version 3.21.3.7
+graphics/xzgv: Updated for version 0.9.2.
+ham/chirp: Updated for version 20181018.
+libraries/Botan: Updated for version 2.8.0.
+libraries/Nevow: Updated for version 0.14.4.
+libraries/SDL_kitchensink: Updated for version 1.0.7.
+libraries/greenlet: Add python3 support.
+libraries/libcec: Updated for version 4.0.3
+libraries/libowfat: Updated for version 0.32.
+libraries/ntl: Updated for version 11.3.2.
+libraries/qt5: Add -legacy check to slackbuild.
+libraries/tinyxml2: Updated for version 7.0.1
+libraries/wxSQLite3: Updated for version 4.3.0.
+libraries/xlt: Switch homepage and download to https.
+libraries/xmlsec: Updated for version 1.2.27.
+multimedia/QMPlay2: Updated for version 18.11.20.
+multimedia/opera-developer-ffmpeg-codecs: Updated for v 0.31.5.
+multimedia/opera-ffmpeg-codecs: Updated for version 0.31.5.
+multimedia/shotcut: Updated for version 18.11.18
+multimedia/vivaldi-codecs-ffmpeg-extra: Updated for version 70.0.3.
+network/MEGAsync: Updated for version 3.7.1.0.
+network/WireGuard: Updated for version 0.0.20181119.
+network/asterisk: Update script.
+network/barrier: Added (Synergy Fork).
+network/clipgrab: Updated for version 3.7.2.
+network/cowpatty: Updated for version 4.8.
+network/gtk-gnutella: Updated for version 1.1.14.
+network/opera-developer: Updated for version 59.0.3147.0.
+network/palemoon-bin: Updated for version 28.2.1.
+network/palemoon: Updated for version 28.2.1.
+network/psi-plus: Update to 1.4.409
+network/tinc: Updated for version 1.0.35.
+network/vivaldi: Updated for version 2.1.1337.51.
+network/vnstat: Updated for version 2.0.
+network/waterfox: Updated for version 56.2.5.
+network/yle-dl: Updated for version 20181103.
+network/youtube-dl: Updated for version 2018.11.03.
+office/LibreOffice: Support new mdds, liborcus
+office/MasterPDFEditor: Updated for version 5.2.00.
+office/calibre: Updated for version 3.34.0
+office/grisbi: Updated for version 1.0.4
+office/openoffice.org: Updated for version 4.1.6.
+office/pdfstudio2018: Updated for version 18.2.1.
+office/sigil: Updated for version 0.9.10
+office/texmaker: Updated for version 5.0.3
+office/texstudio: Updated for version 2.12.10
+python/MarkupSafe: Updated for version 1.1.0
+python/lxml: Add python3 bindings by default
+python/parhlib2: Add support for python3.
+python/polib: Fix doc location.
+python/pymysql: Updated for version 0.9.2
+python/pytest: Updated for version 4.0.0.
+python/python-libnacl: Updated for version 1.6.1
+python/python-neovim: Updated for version 0.3.1.
+python/python-pydns: Switch homepage and download to https.
+python/python-pyspf: Switch homepage and download to https.
+python/python3-pyzmq: Fix MD5SUM
+python/rope: Updated for version 0.11.0
+python/rsa: Updated for version 4.0
+python/s3cmd: Updated for version 2.0.2
+python/scikit-learn: Switch homepage to https.
+python/traittypes: Added (trait types for numpy, scipy and others).
+python/xarray: Added (N-D labeled arrays and datasets).
+ruby/rubygem-method_source: Updated for version 0.9.2.
+ruby/rubygem-pry: Updated for version 0.12.2.
+system/alacritty: Updated for version 0.2.3.
+system/ansible: Updated for version 2.7.2.
+system/chronograf: Updated for version 1.7.3.
+system/collectd: Updated for version 5.8.1.
+system/forkstat: Updated for version 0.02.07.
+system/jq: Updated for version 1.6.
+system/jsawk: Support for Slackware current.
+system/kitchen-sync: Updated for version 1.5.
+system/localepurge: Updated for version 0.7.3.5.
+system/mksh: Updated for version R56c.
+system/mpich: Updated for version 3.3
+system/netdata: Fix doinst.sh script.
+system/netdata: Updated for version 1.11.1.
+system/opam: Updated for version 2.0.1.
+system/pause: Added (don't exit, efficiently).
+system/preload: Switch homepage and download to https.
+system/procinfo-ng: Switch homepage and download to https.
+system/pspg: Updated for version 1.6.3.
+system/refind: Updated for version 0.11.4.
+system/sddm: Update to 0.18.0
+system/unetbootin: Switch homepage to https.
+system/unshield: Switch homepage and download to https.
+system/wine: Update README
+system/wterm: Switch homepage and download to https.
++--------------------------+
+Sat Nov 17 11:43:43 UTC 2018
+academic/boinc: Switch homepage to https.
+accessibility/flite: Better texlive support.
+accessibility/unclutter: Add conflict warning.
+audio/eyeD3: Fix DEP.
+audio/faac: Switch homepage and download to https.
+audio/ff8dls: Switch homepage to https.
+desktop/Zafiro-icons: Updated for version 0.7.1.
+desktop/flatpak-builder: Added (sandboxing tool).
+desktop/flatpak: Updated for version 1.0.5.
+desktop/flatpak: split -builder into its own pkg.
+desktop/oranchelo-icon-theme: Updated for version 0.7.8.2.
+desktop/plank: Update deps (remove gnome-common).
+desktop/tint2: Updated for version 16.6.1.
+desktop/wmimagedock: Updated for version 1.10.2.
+desktop/xdg-desktop-portal-gtk: Added (gtk sandboxing desktop APIs).
+desktop/xdg-desktop-portal: Added (sandboxing for desktop APIs).
+development/Sphinx: Updated for version 1.8.2.
+development/antlr2: Switch homepage and download to https.
+development/cpan2tgz: Switch homepage to https.
+development/gede: Added (Graphical User Interface for GDB).
+development/happy: Fixed SlackBuild.
+development/jupyter-notebook: Updated for version 5.7.1.
+development/jupyter-qtconsole: Updated for version 4.4.3.
+development/kotlin: Updated for version 1.3.10.
+development/meld3: Updated for version 3.18.3.
+development/sdcc: Updated for version 3.8.0.
+development/tea: Updated for version 46.3.0.
+development/tiled: Updated for version 1.2.1.
+games/SameBoy: Updated for version 0.11.2.
+games/haxima-nazghul: Switch homepage and download to https.
+gis/Fiona: Updated for version 1.8.1.
+gis/Geohash: Python 3 by default.
+gis/SFCGAL: Updated for version 1.3.6.
+gis/laszip: Script clean up.
+gis/navit: Switch homepage to https.
+gis/opencpn: Updated for version 4.8.8.
+gis/osgEarth: Updated for version 2.10
+gis/ossim: Updated for version 2.6.0.
+gis/pdal: Updated for version 1.8.0.
+graphics/HotShots: Switch homepage and download to https.
+graphics/opencollada: Updated for version 1.6.67
+graphics/shutter: Updated for version 0.94.2.
+haskell/ghc: Fixed build with Sphinx-1.8.
+haskell/haskell-idna: Fixed SlackBuild.
+libraries/VTK: Updated for version 8.1.2
+libraries/bamf: Updated for version 0.5.4.
+libraries/bitstream: Added (C Headers).
+libraries/cryptopp: Updated for version 7.0.0.
+libraries/jsoncpp: Updated for version 1.8.4
+libraries/libantlr3c: Switch homepage and download to https.
+libraries/libavc1394: Switch homepage and download to https.
+libraries/libbluray: Updated for version 1.0.2
+libraries/libdbusmenu: Updated for version 16.04.1.
+libraries/libdynamite: Switch homepage and download to https.
+libraries/libetonyek: Fix build.
+libraries/libgit2: Updated for version 0.27.7
+libraries/libixion: Updated for version 0.14.1.
+libraries/libnumbertext: Updated for version 1.0.5.
+libraries/liborcus: Updated for version 0.14.1.
+libraries/libsass: Updated for version 3.5.5.
+libraries/libuv: Updated for version 1.24.0.
+libraries/mdds: Updated for version 1.4.3.
+libraries/miniupnpc: Updated for version 2.1
+libraries/mujs: Updated for version 1.0.5.
+libraries/ois: Updated for version 1.4.0
+libraries/pipewire: Added (multimedia processing graphs).
+libraries/qgnomeplatform: Updated for version 0.4.
+libraries/qt5: Update to 5.9.7
+libraries/re2: Updated for version 2018_10_01
+libraries/wxSQLite3: Updated for version 4.2.0.
+libraries/zziplib: Updated for version 0.13.69
+misc/mosquitto: Updated for version 1.5.4
+misc/subsurface: Updated for version 4.8.4
+multimedia/dvblast: Added (MPEG-2 demux and streaming application).
+multimedia/vlc: Add -lrt to SLKLDFLAGS
+multimedia/xvst: Updated for version 2.5.2
+network/WireGuard: Updated for version 0.0.20181115.
+network/basilisk-bin: Updated for version 2018.11.07.
+network/basilisk: Updated for version 2018.11.07.
+network/bitlbee-discord: Added (Discord plugin for bitlbee).
+network/icecat: Updated for version 60.3.0.
+network/lighttpd2: Updated for version 20180908_bda1a90.
+network/opendchub: Switch homepage and download to https.
+network/opera-developer: Updated for version 58.0.3135.3.
+network/opera: Updated for version 56.0.3051.104.
+network/palemoon-bin: Updated for version 28.2.0.
+network/palemoon: Updated for version 28.2.0.
+network/riot-web: Updated for version 0.17.3.
+network/s-nail: Added (mail sending and receiving utility).
+network/signal-desktop: Updated for version 1.18.0.
+network/vivaldi: Updated for version 2.1.1337.47.
+network/you-get: Updated for version 0.4.1167.
+office/LibreOffice: Fix MD5SUM
+office/bibutils: Switch homepage and download to https.
+office/dictd: Switch homepage and download to https.
+perl/perl-CPAN-Perl-Releases: Updated for version 3.80.
+perl/perl-Cpanel-JSON-XS: Added (fork of JSON::XS).
+perl/perl-LWP-Protocol-socks: Added (socks protocol).
+perl/perl-Mojolicious: Updated for version 8.06.
+perl/perl-Pegex: Updated for version 0.70.
+perl/perl-Text-CSV_XS: Updated for version 1.37.
+perl/perl-URI-Simple: Added (A simple way to parse uri.).
+perl/perl-WebService-Gyazo-B: Added (a Perl image upload library).
+perl/perl-YAML-LibYAML: Updated for version 0.75.
+perl/perl-YAML-Syck: Updated for version 1.31.
+python/asn1crypto: Add support for python3.
+python/attrs: Updated for version 18.2.0.
+python/cryptography: Add python3 support.
+python/ps_mem: Updated for version 3.13.
+python/pyOpenSSL: Add support for python3.
+python/pyotp: Updated for version 2.2.7.
+python/pytest: Updated for version 3.10.0.
+python/python-fusepy: Updated for version 3.0.1.
+python/python3-pyzmq: Updated for version 17.1.2
+python/python3: Updated for version 3.6.7.
+python/pyzmq: Script fixes.
+python/thonny: Updated for version 3.0.8.
+python/timehash: Support Python 3.
+ruby/rubygem-ruumba: Updated for version 0.1.8.
+system/bubblewrap: Updated for version 0.3.1.
+system/chronograf: Updated for version 1.7.2.
+system/dget: Added (utility to download debian sources).
+system/fwupd: Switch homepage to https.
+system/go-mtree: Updated for version 0.4.4.
+system/guake: Updated for version 0.8.14.
+system/jdupes: Updated for version 1.11.1.
+system/letsencrypt: Updated for version 0.28.0.
+system/mingetty: Switch homepage to https.
+system/netdata: Updated for version 1.11.0.
+system/omnidb-app: Updated for version 2.12.0.
+system/ostree: Updated for version 2018.9.
+system/runit: Updated for version 2.1.2 + new maintainer.
+system/spl-solaris: Updated for version 0.7.12.
+system/sysdig: Updated for version 0.24.1
+system/telegraf: Updated for version 1.8.3.
+system/tilda: Move appstream metadata.
+system/ttf-open-sans: Updated for version 1.11.
+system/ttf-paratype-pt-fonts: Update homepage + downloads.
+system/vagrant: Updated for version 2.2.1.
+system/vifm: Updated for version 0.10.
+system/wine-staging: Updated for version 3.20.
+system/wine: Update to 3.0.3
+system/zfs-on-linux: Updated for version 0.7.12.
+system/zsh-syntax-highlighting: Updated for version 20181101.
++--------------------------+
+Sat Nov 10 00:49:30 UTC 2018
+academic/calc: Update to 2.12.7.0
+academic/units: Updated for version 2.18.
+audio/eyeD3: Updated for version 0.8.7
+audio/flacon: Updated for version 5.0.0.
+audio/mhwaveedit: Restore intbox patch.
+audio/shntool: Fix homepage and download.
+audio/shorten: Fix homepage and download.
+audio/xmms-shn: Fix homepage and download.
+desktop/Buku: Updated for version 4.0.
+desktop/Zafiro-icons: Updated for version 0.7.
+desktop/e16.theme.pack: Updated for version 1.0.3.
+desktop/flatpak: Updated for version 1.0.4.
+desktop/jgmenu: Updated for version 1.4.1.
+desktop/jwm: Update homepage and download.
+desktop/plank: Changed launcher to run Preferences on first open.
+desktop/recoll: Switch homepage to https.
+desktop/xmobar: Updated for version 0.28.1.
+desktop/xmonad: Updated for version 0.15.
+development/alex: Updated for version 3.2.4.
+development/cmocka: Updated for version 1.1.3.
+development/d-tools: Updated for version 2.083.0
+development/darcs: Updated for version 2.14.1.
+development/diffoscope: Updated for version 104.
+development/dmd: Updated for version 2.083.0
+development/gecode: Switch homepage to https.
+development/google-go-lang: Update for version 1.11.2.
+development/happy: Updated for version 1.19.9.
+development/hhvm: Updated for version 3.29.1
+development/howl: Added (The Howl Editor).
+development/hugs98: Removed (no longer builds).
+development/kakoune: Added (Code Editor).
+development/kompozer: Fix homepage.
+development/oni: Added (modern modal editing).
+development/pudb: Update README
+development/slibtool: Updated for version 0.5.28.
+development/sublime_text: Updated for version 3.1.76.
+development/tanya: Updated for version 0.13.0
+development/universal-ctags: Updated for version befcb88
+games/4do-libretro: Updated for version 2018.09.29_e1fec6e.
+games/Craft-libretro: Updated for version 2018.10.06_74b3a6d.
+games/Genesis-Plus-GX: Updated for version 2018.10.08_2ab02c8.
+games/QuickNES-Core: Updated for version 2018.09.30_264639f.
+games/beetle-bsnes-libretro: Updated for version 2018.08.12_2c67a30.
+games/beetle-gba-libretro: Updated for version 2018.08.12_0ca99bf.
+games/beetle-lynx-libretro: Updated for version 2018.04.07_6816829.
+games/beetle-ngp-libretro: Updated for version 2018.09.29_576eafc.
+games/beetle-pce-fast-libretro: Updated for v. 2018.09.29_7f6f061.
+games/beetle-pcfx-libretro: Updated for version 2018.07.20_84b7ca6.
+games/beetle-psx-libretro: Updated for version 2018.11.03_74bd755.
+games/beetle-saturn-libretro: Updated for v. 2018.07.20_1983713.
+games/beetle-supergrafx-libretro: Updated for v. 2018.09.29_a8f924e.
+games/beetle-vb-libretro: Updated for version 2018.09.29_93f5b60.
+games/beetle-wswan-libretro: Updated for version 2018.09.30_207404b.
+games/blastem-libretro: Updated for version 2018.08.12_ccc1118.
+games/blueMSX-libretro: Updated for version 2018.10.09_4be0a24.
+games/bnes-libretro: Updated for version 2018.08.12_cc082d1.
+games/bsnes-libretro: Updated for version 2018.08.15_c6e90dd.
+games/bsnes-mercury: Updated for version 2018.08.03_4e221df.
+games/cannonball-libretro: Updated for version 2018.11.02_57a2982.
+games/cubosphere: Updated for version beta0.3a
+games/dustrac: Updated for version 2.0.1
+games/fbalpha: Updated for version 2018.11.03_a26fdf9.
+games/fmsx-libretro: Updated for version 2018.09.29_a61ef7b.
+games/gambatte-libretro: Updated for version 2018.10.22_5ee8b1e.
+games/gpsp-libretro: Updated for version 2018.11.03_19aed02.
+games/gw-libretro: Updated for version 2018.10.03_dea8b93.
+games/libretro-2048: Updated for version 2018.09.30_80d462a.
+games/libretro-desmume: Updated for version 2018.11.03_5f6f1ee.
+games/libretro-fceumm: Updated for version 2018.09.29_eb17f88.
+games/libretro-handy: Updated for version 2018.09.29_08cc633.
+games/libretro-lutro: Updated for version 2018.08.21_b69dd3e.
+games/libretro-prboom: Updated for version 2018.09.30_b516a66.
+games/libretro-reicast: Updated for version 2018.11.03_01ab59e.
+games/libretro-vecx: Updated for version 2018.09.29_fb70263.
+games/libretro-yabause: Updated for version 2018.10.12_aa15301.
+games/mame2000-libretro: Updated for version 2018.09.30_12b5419.
+games/mame2010-libretro: Updated for version 2018.04.17_70732f9.
+games/mame: Updated for version 0.203.
+games/marathon-rubicon-data: Restores the original AI limits.
+games/meandmyshadow: Updated for version 0.5a
+games/meteor-libretro: Updated for version 2018.04.09_f8ab66c.
+games/mupen64plus-libretro: Updated for version 2018.10.31_bb64262.
+games/nxengine-libretro: Updated for version 2018.11.06_b460024.
+games/parallel-n64: Updated for version 2018.11.02_d4d8f47.
+games/pasang-emas: Updated for version 5.2.0
+games/pcsx-rearmed: Updated for version 2018.09.07_0370856.
+games/peg-e: Updated for version 1.2.6
+games/prosystem-libretro: Updated for version 2018.09.29_247d5f2.
+games/scummvm-libretro: Updated for version 2018.10.09_20d71cd.
+games/snes9x2002: Updated for version 2018.06.24_c98e1c3.
+games/snes9x2005: Updated for version 2018.11.02_f4a5a7a.
+games/snes9x2010: Updated for version 2018.10.11_d857a31.
+games/stella-libretro: Updated for version 2018.09.29_3ed8154.
+games/tyrquake-libretro: Updated for version 2018.09.30_83291a1.
+games/vba-next: Updated for version 2018.11.03_e40f1d5.
+games/vbam-libretro: Updated for version 2018.05.31_8041717.
+games/virtualjaguar-libretro: Updated for v. 2018.08.12_f3cf607.
+gis/opencpn: Updated for version 4.8.6.
+gis/pyshp: Updated for version 2.0.1.
+haskell/ghc: Updated for version 8.4.3.
+haskell/haskell-Crypto: Updated for version 4.2.5.1.
+haskell/haskell-Diff: Updated for version 0.3.4.
+haskell/haskell-FindBin: Updated for version 0.0.5.
+haskell/haskell-GLURaw: Updated for version 2.0.0.3.
+haskell/haskell-GLUT: Updated for version 2.7.0.12.
+haskell/haskell-Glob: Added (library for globbing).
+haskell/haskell-HTTP: Updated for version 4000.3.11.
+haskell/haskell-HUnit: Updated for version 1.6.0.0.
+haskell/haskell-HsYAML: Added (YAML 1.2 parser).
+haskell/haskell-JuicyPixels: Updated for version 3.3.2.
+haskell/haskell-ObjectName: Updated for version 1.1.0.1.
+haskell/haskell-OpenGL: Updated for version 3.0.2.0.
+haskell/haskell-OpenGLRaw: Updated for version 3.2.7.0.
+haskell/haskell-QuickCheck: Updated for version 2.12.6.1.
+haskell/haskell-SHA: Updated for version 1.6.4.4.
+haskell/haskell-ShellCheck: Updated for version 0.5.0.
+haskell/haskell-StateVar: Updated for version 1.1.1.1.
+haskell/haskell-Tensor: Updated for version 1.1.0.2.
+haskell/haskell-X11-xft: Updated for version 0.3.1.
+haskell/haskell-X11: Updated for version 1.9.
+haskell/haskell-aeson-compat: Added (Compatibility layer for aeson).
+haskell/haskell-aeson-pretty: Added (JSON pretty-printing library).
+haskell/haskell-aeson: Updated for version 1.4.1.0.
+haskell/haskell-annotated-wl-pprint: Added (pretty printer).
+haskell/haskell-ansi-terminal: Updated for version 0.8.1.
+haskell/haskell-ansi-wl-pprint: Updated for version 0.6.8.2.
+haskell/haskell-asn1-encoding: Updated for version 0.9.5.
+haskell/haskell-asn1-parse: Updated for version 0.9.4.
+haskell/haskell-asn1-types: Updated for version 0.3.2.
+haskell/haskell-async: Updated for version 2.2.1.
+haskell/haskell-attoparsec-iso8601: Added (Parse ISO8601 dates).
+haskell/haskell-attoparsec: Updated for version 0.13.2.2.
+haskell/haskell-auto-update: Added (periodic, on-demand actions).
+haskell/haskell-base-orphans: Added (orphan instances for base).
+haskell/haskell-base-prelude: Added (prelude formed from "base").
+haskell/haskell-base16-bytestring: Updated for version 0.1.1.6.
+haskell/haskell-base64-bytestring: Updated for version 1.0.0.1.
+haskell/haskell-basement: Updated for version 0.0.8.
+haskell/haskell-bifunctors: Added (Haskell bifunctors module).
+haskell/haskell-bindings-uname: Added (binding to POSIX uname(3)).
+haskell/haskell-bitarray: Added (Mutable and immutable bit arrays).
+haskell/haskell-blaze-builder: Updated for version 0.4.1.0.
+haskell/haskell-blaze-html: Updated for version 0.9.1.1.
+haskell/haskell-blaze-markup: Updated for version 0.8.2.2.
+haskell/haskell-bmp: Updated for version 1.2.6.3.
+haskell/haskell-byteable: Updated for version 0.1.1.
+haskell/haskell-bytestring-builder: Added (new bytestring builder).
+haskell/haskell-cabal-install: Updated for version 2.2.0.0.
+haskell/haskell-call-stack: Added (backward compatible call stacks).
+haskell/haskell-case-insensitive: Updated for version 1.2.0.11.
+haskell/haskell-cereal: Updated for version 0.5.7.0.
+haskell/haskell-cgi: Updated for version 3001.3.0.2.
+haskell/haskell-cipher-aes: Updated for version 0.2.11.
+haskell/haskell-cipher-des: Updated for version 0.0.6.
+haskell/haskell-cipher-rc4: Updated for version 0.1.4.
+haskell/haskell-clock: Add doinst.sh.
+haskell/haskell-cmark-gfm: Added (render GitHub Flavored Markdown).
+haskell/haskell-cmark: Fix deps, switch to https.
+haskell/haskell-cmdargs: Added (Command line argument processing).
+haskell/haskell-cmdlib: Updated for version 0.3.6.
+haskell/haskell-colour: Updated for version 2.3.4.
+haskell/haskell-comonad: Added (Comonads).
+haskell/haskell-composition: Add doinst.sh.
+haskell/haskell-conduit-extra: Added (adapters for libraries).
+haskell/haskell-conduit: Updated for version 1.3.1.
+haskell/haskell-connection: Updated for version 0.2.8.
+haskell/haskell-constraints: Added (Constraint manipulation).
+haskell/haskell-contravariant: Added (Contravariant functors).
+haskell/haskell-cookie: Updated for version 0.4.4.
+haskell/haskell-crypto-cipher-types: Updated for version 0.0.9.
+haskell/haskell-crypto-numbers: Updated for version 0.2.7.
+haskell/haskell-crypto-pubkey-types: Updated for version 0.4.3.
+haskell/haskell-crypto-pubkey: Updated for version 0.2.8.
+haskell/haskell-crypto-random: Updated for version 0.0.9.
+haskell/haskell-cryptohash-sha256: Added (SHA-256 implementation).
+haskell/haskell-cryptohash: Updated for version 0.11.9.
+haskell/haskell-cryptonite-conduit: Added (Conduit for cryptonite).
+haskell/haskell-cryptonite: Fix README.
+haskell/haskell-curl: Updated for version 1.3.8.
+haskell/haskell-data-default-class: Updated for version 0.1.2.0.
+haskell/haskell-data-default-instances-base: Updated for v0.1.0.1.
+haskell/haskell-data-default-instances-containers: Updated v0.0.1.
+haskell/haskell-data-default-instances-dlist: Updated for v0.0.1.
+haskell/haskell-data-default-instances-old-locale: Updated v0.0.1.
+haskell/haskell-data-default: Updated for version 0.7.1.1.
+haskell/haskell-data-ordlist: Updated for version 0.4.7.0.
+haskell/haskell-dataenc: Updated for version 0.14.0.7.
+haskell/haskell-deepseq-generics: Updated for version 0.2.0.0.
+haskell/haskell-digest: Updated for version 0.0.1.2.
+haskell/haskell-distributive: Added (Distributive functors).
+haskell/haskell-dlist: Updated for version 0.8.0.5.
+haskell/haskell-doctemplates: Added (Pandoc-style doc templates).
+haskell/haskell-easy-file: Added (Cross-platform File handling).
+haskell/haskell-echo: Added (cross-console echoing terminal input).
+haskell/haskell-ed25519: Added (cryptographic signatures).
+haskell/haskell-edit-distance: Added (Levenshtein edit distances).
+haskell/haskell-either: Added (Combinators for working with sums).
+haskell/haskell-enclosed-exceptions: Updated for version 1.0.3.
+haskell/haskell-env-locale: Add doinst.sh.
+haskell/haskell-erf: Added (The error function etc).
+haskell/haskell-exceptions: Updated for version 0.10.0.
+haskell/haskell-extensible-exceptions: Updated for version 0.1.1.4.
+haskell/haskell-extra: Added (extra funcs for standard libraries).
+haskell/haskell-fail: Updated for version 4.9.0.0.
+haskell/haskell-fast-logger: Added (A fast logging system).
+haskell/haskell-fgl: Updated for version 5.6.0.0.
+haskell/haskell-file-embed: Added (embed file contents).
+haskell/haskell-filelock: Added (Portable file locking interface).
+haskell/haskell-filemanip: Updated for version 0.3.6.3.
+haskell/haskell-fixed: Updated for version 0.2.1.1.
+haskell/haskell-foundation: Updated for version 0.0.21.
+haskell/haskell-free: Added (Monads for free).
+haskell/haskell-fsnotify: Added (file change notification).
+haskell/haskell-generic-deriving: Added (generalised deriving lib).
+haskell/haskell-ghc-paths: Updated for version 0.1.0.9.
+haskell/haskell-gitrev: Added (Compile git rev info into projects).
+haskell/haskell-gloss-rendering: Updated for version 1.13.0.2.
+haskell/haskell-gloss: Updated for version 1.13.0.1.
+haskell/haskell-graphviz: Updated for version 2999.20.0.2.
+haskell/haskell-hackage-security: Added (Hackage security library).
+haskell/haskell-haddock-library: Updated for version 1.7.0.
+haskell/haskell-half: Updated for version 0.2.2.3.
+haskell/haskell-hashable: Updated for version 1.2.7.0.
+haskell/haskell-hashed-storage: Updated for version 0.5.11.
+haskell/haskell-haskell-src: Updated for version 1.0.3.0.
+haskell/haskell-highlighting-kate: Updated for version 0.6.4.
+haskell/haskell-hinotify: Updated for version 0.4.
+haskell/haskell-hostname: Updated for version 1.0.
+haskell/haskell-hourglass: Updated for version 0.2.12.
+haskell/haskell-hpack: Added (modern format for Haskell packages).
+haskell/haskell-hslogger: Updated for version 1.2.12.
+haskell/haskell-hslua-module-text: Added (Lua module for text).
+haskell/haskell-hslua: Updated for version 1.0.1.
+haskell/haskell-hsp: Added (Haskell Server Pages).
+haskell/haskell-hspec-core: Added (Testing Framework for Haskell).
+haskell/haskell-hspec-discover: Added (discover + run Hspec tests).
+haskell/haskell-hspec-expectations: Added (combinators for HUnit).
+haskell/haskell-hspec-smallcheck: Added (support for Hspec).
+haskell/haskell-hspec: Added (Testing Framework for Haskell).
+haskell/haskell-html: Updated for version 1.0.1.2.
+haskell/haskell-http-api-data: Added (Convert HTTP API data).
+haskell/haskell-http-client-tls: Updated for version 0.3.5.3.
+haskell/haskell-http-client: Updated for version 0.5.13.1.
+haskell/haskell-http-conduit: Added (HTTP client + conduit).
+haskell/haskell-http-types: Updated for version 0.12.2.
+haskell/haskell-hxt-charproperties: Updated for version 9.2.0.1.
+haskell/haskell-hxt-regex-xmlschema: Updated for version 9.2.0.3.
+haskell/haskell-hxt-unicode: Updated for version 9.0.2.4.
+haskell/haskell-hxt: Updated for version 9.3.1.16.
+haskell/haskell-idna: Updated for version 0.3.0.
+haskell/haskell-infer-license: Added (Infer license from a file).
+haskell/haskell-integer-logarithms: Added (integer logs).
+haskell/haskell-iwlib: Added (Bindings for the iw C library).
+haskell/haskell-json: Updated for version 0.9.2.
+haskell/haskell-lcs: Updated for version 0.2.
+haskell/haskell-lexer: Added (A fully compliant Haskell 98 lexer).
+haskell/haskell-libyaml: Added (streaming YAML interface).
+haskell/haskell-lifted-async: Added (Run asynch lifted IO).
+haskell/haskell-lifted-base: Updated for version 0.2.3.12.
+haskell/haskell-logict: Added (logic-programming monad).
+haskell/haskell-megaparsec: Added (Monadic parser combinators).
+haskell/haskell-memory: Updated for version 0.14.18.
+haskell/haskell-microlens-th: Added (Autogenerate record lenses).
+haskell/haskell-microlens: Added (lens lib with no deps).
+haskell/haskell-mime-types: Updated for version 0.1.0.8.
+haskell/haskell-mintty: Added (detect MinTTY console on MS Windows).
+haskell/haskell-mmap: Updated for version 0.5.9.
+haskell/haskell-mmorph: Updated for version 1.1.2.
+haskell/haskell-monad-control: Updated for version 1.0.2.3.
+haskell/haskell-monad-logger: Added (monads which log messages).
+haskell/haskell-monad-loops: Added (Monadic loops).
+haskell/haskell-monads-tf: Updated for version 0.1.0.3.
+haskell/haskell-mono-traversable: Added (monomorphic containers).
+haskell/haskell-mtl: Removed (now part of ghc).
+haskell/haskell-multipart: Updated for version 0.1.3.
+haskell/haskell-mustache: Added (mustache template parser library).
+haskell/haskell-nats: Added (Natural numbers).
+haskell/haskell-neat-interpolation: Added (text interpolation).
+haskell/haskell-network-uri: Updated for version 2.6.1.0.
+haskell/haskell-network: Updated for version 2.6.3.5.
+haskell/haskell-old-locale: Updated for version 1.0.0.7.
+haskell/haskell-old-time: Updated for version 1.1.0.3.
+haskell/haskell-open-browser: Added (Open a web browser).
+haskell/haskell-optparse-applicative: Added (parse command line).
+haskell/haskell-optparse-simple: Added (optparse-applicative i/f).
+haskell/haskell-pandoc-types: Updated for version 1.17.5.3.
+haskell/haskell-parallel: Updated for version 3.2.2.0.
+haskell/haskell-parsec-numbers: Added (parse numbers from strings).
+haskell/haskell-parsec: Removed (now part of ghc).
+haskell/haskell-parser-combinators: Added (parser combinators).
+haskell/haskell-path-io: Added (Interface to 'directory' package).
+haskell/haskell-path-pieces: Added (Components of paths).
+haskell/haskell-path: Added (Support for well-typed paths).
+haskell/haskell-pem: Updated for version 0.2.4.
+haskell/haskell-persistent-sqlite: Added (sqlite for 'persistent').
+haskell/haskell-persistent-template: Added (Type-safe persistence).
+haskell/haskell-persistent: Added (Type-safe data serialization).
+haskell/haskell-polyparse: Updated for version 1.12.
+haskell/haskell-pretty-show: Added (derived Show instances tools).
+haskell/haskell-primitive: Updated for version 0.6.4.0.
+haskell/haskell-profunctors: Added (Profunctors).
+haskell/haskell-project-template: Added (project templates).
+haskell/haskell-publicsuffixlist: Updated for version 0.1.
+haskell/haskell-punycode: Updated for version 2.0.
+haskell/haskell-quickcheck-io: Added (HUnit assertions).
+haskell/haskell-random: Updated for version 1.1.
+haskell/haskell-regex-applicative-text: Added (text wrappers).
+haskell/haskell-regex-applicative: Updated for version 0.3.3.
+haskell/haskell-regex-base: Updated for version 0.93.2.
+haskell/haskell-regex-compat-tdfa: Updated for version 0.95.1.4.
+haskell/haskell-regex-compat: Updated for version 0.95.1.
+haskell/haskell-regex-pcre-builtin: Updated for v0.94.4.8.8.35.
+haskell/haskell-regex-pcre: Added (Replaces/Enhances Text.Regex).
+haskell/haskell-regex-posix: Updated for version 0.95.2.
+haskell/haskell-regex-tdfa: Updated for version 1.2.3.1.
+haskell/haskell-resolv: Added (DNS lookup via libresolv).
+haskell/haskell-resource-pool: Added (striped resource pooling).
+haskell/haskell-resourcet: Updated for version 1.2.2.
+haskell/haskell-retry: Added (monadic action retry combinators).
+haskell/haskell-rio: Added (standard library for Haskell).
+haskell/haskell-safe: Added (Library of exception free funcs).
+haskell/haskell-sandi: Updated for version 0.4.2.
+haskell/haskell-scientific: Updated for version 0.3.6.2.
+haskell/haskell-securemem: Updated for version 0.1.10.
+haskell/haskell-semigroupoids: Added (Category sans id).
+haskell/haskell-semigroups: Updated for version 0.18.5.
+haskell/haskell-setenv: Added (environment variable lib).
+haskell/haskell-setlocale: Cleanup SlackBuild.
+haskell/haskell-shellish: Removed (no longer builds).
+haskell/haskell-shelly: Added (shell-like programming).
+haskell/haskell-silently: Added (Prevent writing to stdout etc).
+haskell/haskell-skylighting-core: Added (syntax highlighting lib).
+haskell/haskell-skylighting: Added (syntax highlighting library).
+haskell/haskell-smallcheck: Added (property-based testing library).
+haskell/haskell-socks: Updated for version 0.5.6.
+haskell/haskell-split: Updated for version 0.2.3.3.
+haskell/haskell-stack: Added (The Haskell Tool Stack).
+haskell/haskell-stm-chans: Added (Additional channel types for STM).
+haskell/haskell-stm: Removed (now part of ghc).
+haskell/haskell-store-core: Added (binary serialization).
+haskell/haskell-store: Added (Fast binary serialization).
+haskell/haskell-streaming-commons: Updated for version 0.2.1.0.
+haskell/haskell-strict: Updated for version 0.3.2.
+haskell/haskell-stringprep: Updated for version 1.0.0.
+haskell/haskell-stringsearch: Updated for version 0.3.6.6.
+haskell/haskell-syb: Updated for version 0.7.
+haskell/haskell-system-fileio: Added (Consistent FS interaction).
+haskell/haskell-system-filepath: Added (path manipulations).
+haskell/haskell-tagged: Fix deps, switch to https.
+haskell/haskell-tagsoup: Updated for version 0.14.7.
+haskell/haskell-tar: Updated for version 0.5.1.0.
+haskell/haskell-temporary: Updated for version 1.3.
+haskell/haskell-test-framework-hunit: Updated for version 0.3.0.2.
+haskell/haskell-test-framework-quickcheck2: Updated for v0.3.0.5.
+haskell/haskell-test-framework: Updated for version 0.8.2.0.
+haskell/haskell-texmath: Updated for version 0.11.1.1.
+haskell/haskell-text-icu: Updated for version 0.7.0.1.
+haskell/haskell-text-metrics: Added (Calculate string metrics).
+haskell/haskell-text: Removed (now part of ghc).
+haskell/haskell-tf-random: Updated for version 0.5.
+haskell/haskell-th-abstraction: Added (reified data type info).
+haskell/haskell-th-expand-syns: Added (Expand type synonyms).
+haskell/haskell-th-lift-instances: Added (Lift instances).
+haskell/haskell-th-lift: Added (Derive Lift class for datatypes).
+haskell/haskell-th-orphans: Added (TH datatype orphan instances).
+haskell/haskell-th-reify-many: Added (reify template datatype info).
+haskell/haskell-th-utilities: Added (funcs for Template Haskell).
+haskell/haskell-time-locale-compat: Added (time-format locale).
+haskell/haskell-tls: Updated for version 1.4.1.
+haskell/haskell-transformers-base: Updated for version 0.4.5.2.
+haskell/haskell-transformers-compat: Updated for version 0.6.2.
+haskell/haskell-typed-process: Added (Run external processes).
+haskell/haskell-unicode-transforms: Added (Unicode normalization).
+haskell/haskell-unix-compat: Updated for version 0.5.1.
+haskell/haskell-unix-time: Added (Unix time parser/formatter).
+haskell/haskell-unliftio-core: Added (unlift monads to IO).
+haskell/haskell-unliftio: Added (The MonadUnliftIO typeclass).
+haskell/haskell-unordered-containers: Updated for version 0.2.9.0.
+haskell/haskell-utf8-string: Updated for version 1.0.1.1.
+haskell/haskell-uuid-types: Added (Type definitions for UUIDs).
+haskell/haskell-vector-algorithms: Added (vector arrays).
+haskell/haskell-vector: Updated for version 0.12.0.1.
+haskell/haskell-void: Updated for version 0.7.2.
+haskell/haskell-wl-pprint-text: Updated for version 1.2.0.0.
+haskell/haskell-x509-store: Updated for version 1.6.6.
+haskell/haskell-x509-system: Updated for version 1.6.6.
+haskell/haskell-x509-validation: Updated for version 1.6.10.
+haskell/haskell-x509: Updated for version 1.7.4.
+haskell/haskell-xml: Updated for version 1.3.14.
+haskell/haskell-yaml: Updated for version 0.11.0.0.
+haskell/haskell-zip-archive: Updated for version 0.3.3.
+haskell/haskell-zlib: Updated for version 0.6.2.
+haskell/hscolour: Updated for version 1.24.4.
+haskell/xmonad-contrib: Updated for version 0.15.
+libraries/dietlibc: Updated for version 0.34.
+libraries/html5lib: Updated for version 1.0.1
+libraries/libfilezilla: Downgraded to 0.14.0.
+libraries/libindi-drivers: Switch homepage to https.
+libraries/libindi: Switch homepage to https.
+libraries/libinput: Updated for version 1.12.3.
+libraries/libnfs: Updated for version 3.0.0
+libraries/libwacom: Updated for version 0.32.
+libraries/pcre2: Updated for version 10.32
+libraries/ring-daemon: Fixed version in .info.
+libraries/rtrlib: Added (RPKI-RTR Client C Library).
+libraries/tinyxml2: Updated for version 7.0.0
+misc/discount: Updated for version 2.2.4.
+misc/dos2unix: Updated for version 7.4.0.
+multimedia/ffmpeg4: Updated for version 4.1.
+multimedia/vivaldi-codecs-ffmpeg-extra: Update homepage.
+network/3proxy: Updated for version 0.8.12.
+network/amavisd-new: Updated for version 2.11.1.
+network/arpwatch: Switch homepage to https, fix url.
+network/basilisk: Updated for version 2018.11.04.
+network/et: Updated for version 5.1.8.
+network/falkon: Switch homepage to https.
+network/filezilla: Downgraded to 3.37.4.
+network/frostwire: Updated for version 6.7.4.
+network/frr: Added (The FRRouting Protocol Suite).
+network/limnoria: Update to 2018_09_10
+network/opera-developer: Updated for version 58.0.3134.0.
+network/opera: Updated for version 56.0.3051.99.
+network/prosody-mod-http-upload: Updated for version hg3366
+network/prosody-mod-mam-muc: Updated for version hg3364.
+network/shorewall-core: Updated for version 5.2.1.1.
+network/shorewall6: Updated for version 5.2.1.1.
+network/shorewall: Updated for version 5.2.1.1.
+network/signal-desktop: Updated for version 1.17.3.
+network/spice-gtk: Really disable celt051 support.
+network/tor: Updated for version 0.3.4.9.
+network/waterfox: Updated for version 56.2.4.
+network/yandex-browser-beta: Updated for version 18.10.0.2722.
+network/zabbix_agentd: Updated for version 4.0.1.
+network/zabbix_java_gateway: Updated for version 4.0.1.
+network/zabbix_proxy: Updated for version 4.0.1.
+network/zabbix_server: Updated for version 4.0.1.
+office/LibreOffice: Updated for version 6.1.3.2
+office/bibtex2html: Added (translate BibTeX bibliographies to HTML).
+office/broffice.org: Switch homepage to https.
+office/calibre: Updated for version 3.33.1
+office/gummi: Update homepage.
+office/libreoffice-helppack: Updated for version 6.1.3.
+office/libreoffice-langpack: Updated for version 6.1.3.
+office/libreoffice: Updated for version 6.1.3.
+office/pandoc: Updated for version 2.3.1.
+office/pdfstudio2018: Updated for version 18.2.0.
+office/smoffice2018: Updated for version 2018_940.
+office/wps-office: Updated for version 10.1.0.6757.
+perl/perl-Math-BigInt: Updated for version 1.999816.
+perl/perl-Math-MPFR: Updated for version 4.05.
+python/Pyro4: Updated for version 4.74.
+python/lxml: Updated for version 4.2.5
+python/msgpack-python: Updated for version 0.5.6.
+python/pathlib2: Added (Object-oriented filesystem paths).
+python/psutil: Updated for version 5.4.8
+python/python-autobahn: Updated for version 18.10.1.
+python/python-dateutil: Updated for version 2.7.5
+python/python-fonttools: Updated for version 3.32.0.
+python/python-m2r: Updated for version 0.2.1.
+python/python-magic: Updated for version 0.4.15
+python/python-mysqlclient: Updated for version 1.3.13.
+python/python-neovim: Updated for version 0.3.0.
+python/python-requests: Updated for version 2.20.0.
+python/python-serpent: Updated for version 1.27.
+python/python-unicodedata2: Updated for version 11.0.0_2
+python/python2-sip: Update default sip dir.
+python/python3-Cython: Switch homepage to https.
+python/python3-prompt_toolkit: 2.0.7.
+python/stem: Updated for version 1.7.0.
+ruby/ruby-build: Updated for version 20181106.
+ruby/rubygem-asciidoctor: Switch homepage to https.
+ruby/rubygem-parser: Updated for version 2.5.3.0.
+ruby/rubygem-term-ansicolor: Updated for version 1.7.0.
+ruby/rubygem-tins: Updated for version 1.18.0.
+ruby/sequel: Updated for version 5.14.0.
+system/argyllcms: Updated for version 2.0.1.
+system/cabextract: Updated for version 1.9.
+system/fira-code-fonts: Added (monospaced font with ligatures).
+system/go-mtree: Added (passive filesystem verification).
+system/kyotocabinet: Switch homepage and download to https.
+system/nano-syntax-highlighting: Updated for version 20181103.
+system/nvidia-driver: Updated for version 410.73.
+system/nvidia-kernel: Updated for version 410.73.
+system/nvidia-legacy390-driver: Added (Nvidia Proprietary Driver).
+system/nvidia-legacy390-kernel: Added (Kernel module for nvidia).
+system/powerkit: Updated for version 1.0.0rc2.
+system/salt: Updated for version 2018.3.3.
+system/ttf-computer-modern: Added (fonts for X applications).
+system/wine-staging: Updated for version 3.19.
+system/zsh-completions: Updated for version 0.29.0.
++--------------------------+
+Sat Nov  3 00:47:39 UTC 2018
+academic/aenig4: Updated for version 1.04.
+academic/kiwisolver: Added (Cassowary algorithm).
+audio/mhwaveedit: Updated for version 1.4.24, new maintainer.
+audio/snd: Updated for version 18.8.
+audio/whipper: Updated for version 0.7.2.
+desktop/e16.theme.pack: Added (theme pack).
+desktop/oomox: Updated for version 1.7.0.6.
+development/autoconf-archive: Update script.
+development/bas55: Updated for version 1.17.
+development/brotli: Updated for version 1.0.7.
+development/cargo-vendor: Updated for version 0.1.21.
+development/envytools: Updated for version 2018.10.30_16dd1ff.
+development/gcclegacy494: Patched to build with glibc-2.28.
+development/kotlin: Updated for version 1.2.71.
+development/mozjs: Added (Mozilla's JavaScript engine).
+development/openjdk8: Updated for version 8u181.
+development/pudb: Update to 2018.1
+development/python3-cycler: Update DEP and README.
+development/uz80as: Updated for version 1.10.
+games/OpenRA: Updated for version 20180923.
+games/gzdoom: Updated for version 3.6.0.
+games/oolite: Updated for version 1.88.
+games/tty-solitaire: Updated for version 1.1.0.
+gis/Fiona: Updated for version 1.8.0.
+gis/google-earth: Updated for version 7.3.2.5495.
+gis/qmapshack: Updated for version 1.12.0.
+graphics/converseen: Updated for version 0.9.7.2.
+graphics/feh: Updated for version 2.28.1.
+ham/tlf: Updated for version 1.3.1
+libraries/SOPE: Updated for version 4.0.4.
+libraries/bluez-alsa: Fix SlackBuild.
+libraries/hoel: Updated for version 1.4.6.
+libraries/hyperscan: Added (regex matching library).
+libraries/libfilezilla: Updated for version 0.15.0.
+libraries/libversion: Updated for version 2.8.1.
+libraries/matplotlib: Updated for version 2.2.3.
+libraries/opendht: Updated for version 1.7.4
+libraries/orcania: Updated for version 1.2.8.
+libraries/pjproject-ring: Removed.
+libraries/qt5: Update README
+libraries/ring-daemon: Updated for version 20181026_114c664.
+libraries/ring-lrc: Updated for version 20170728_23bf543.
+libraries/ulfius: Updated for version 2.4.4.
+libraries/uriparser: Updated for version 0.9.0.
+libraries/yder: Updated for version 1.4.4.
+multimedia/ffmpeg4: Added (record, convert, stream audio and video).
+multimedia/guvcview: Updated for version 2.0.6.
+multimedia/imagination: Updated for version 3.1.
+multimedia/mpv: Updated for version 0.29.1.
+multimedia/plexmediaserver: Updated for v. 1.13.9.5456_ecd600442.
+network/SocksiPy: Removed (Use PySocks).
+network/asterisk: Updated for version 16.0.0.
+network/filezilla: Updated for version 3.38.0.
+network/glewlwyd: Updated for version 1.4.8.
+network/netsniff-ng: Updated for version 0.6.5.
+network/openvswitch-utils: Updated for version 2.5.6.
+network/rspamd: Added (An advanced spam filtering system).
+network/signal-desktop: Updated for version 1.17.1.
+network/skypeforlinux: Updated for version 8.33.0.41.
+network/tcpflow: Updated for version 1.5.0.
+network/tor-browser: Updated for version 8.0.3.
+network/youtube-dl: Updated for version 2018.10.05.
+office/MasterPDFEditor: Updated for version 5.1.68.
+office/SOGo: Updated for version 4.0.4.
+office/krop: Updated for version 0.5.1.
+office/latexdiff: Updated for version 1.3.0.
+perl/MoarVM: Updated for version 2018.10.
+perl/nqp: Updated for version 2018.10.
+perl/perl-JSON-MaybeXS: Added (CPAN module JSON::MaybeXS).
+perl/rakudo: Updated for version 2018.10.
+python/functools-lru-cache: Updated for version 1.5.
+python/isort: Updated for version 4.3.4.
+python/mypy: Added (an optional static type checker for python).
+python/mypy_extensions: Added (python extensions for mypy).
+python/phply: Fix collision, script update.
+python/pycryptodome: Updated for version 3.7.0.
+python/python-fonttools: Updated for version 3.31.0.
+python/python3-dateutil: Updated for version 2.7.5.
+python/python3-docutils: Added (Python Document Utilities module).
+python/python3-ipython: Updated for version 7.1.1.
+python/python3-kiwisolver: Added (Cassowary algorithm).
+python/python3-pyserial: Added (python3 module for the serial port).
+python/python3-pytest: Added (simple powerful testing with Python).
+python/pyzmq: Updated for version 17.1.2.
+python/subprocess32: Added (subprocess module).
+python/thonny: Updated for version 3.0.5.
+python/websocket-client: Updated for version 0.54.0.
+ruby/rubygem-rubocop: Updated for version 0.60.0.
+ruby/rubygem-ruumba: Updated for version 0.1.7.
+system/eltclsh: Updated for version 1.17.
+system/fd: Updated for version 7.2.0.
+system/fwupd: Updated for version 1.1.3.
+system/isdct: Updated for version 3.0.16.
+system/kbfs: Updated for version 2.8.0_20181023124437.
+system/keybase: Updated for version 2.8.0.
+system/kitchen-sync: Updated for version 1.4.
+system/linuxconsoletools: Document gpm conflict.
+system/lynis: Updated for version 2.7.0.
+system/nologind: Added (logind wrapper for ConsoleKit).
+system/slack-scripts: Update to 0.0.3
+system/winusb: Fixed download link.
++--------------------------+
+Sat Oct 27 02:28:17 UTC 2018
+academic/Gridcoin-Research: Updated for version 4.0.0.0.
+audio/accuraterip-checksum: Update HOMEPAGE and DOWNLOAD urls.
+audio/opus: Updated for version 1.3.
+audio/whipper: Updated for version 0.7.1.
+desktop/cairo-clock: Added (Analog Clock).
+desktop/jgmenu: Updated for version 1.4.
+development/adoptopenjdk: Added (Open Implementation of JDK).
+development/netbeans: Updated for version 9.0 + new maintainer.
+development/slibtool: Updated for version 0.5.26.
+games/lutris: Updated for version 0.4.21.
+gis/gpxsee: Updated for version 6.3.
+gis/openorienteering-mapper: Updated for version 0.8.3.
+gis/polyline: Require Python 3.
+gis/rasterio: Updated for version 1.0.9.
+gis/saga-gis: Updated for version 7.0.0.
+libraries/OpenAL: New homepage and download URLs.
+libraries/appstream-glib: Updated for version 0.7.14.
+libraries/libsigrok: Updated for version 0.5.1.
+libraries/ntl: Updated for version 11.3.1.
+multimedia/opera-developer-ffmpeg-codecs: Updated for v0.34.0.
+multimedia/opera-ffmpeg-codecs: Updated for version 0.34.0.
+multimedia/smplayer: Updated for version 18.10.0.
+multimedia/vivaldi-codecs-ffmpeg-extra: Updated for version 70.0.
+network/fail2ban: Updated for version 0.10.4.
+network/liferea: Fix source.
+network/opera-developer: Updated for version 58.0.3120.0.
+network/opera: Updated for version 56.0.3051.52.
+network/qutebrowser: Update to 1.5.1
+network/signal-desktop: Updated for version 1.17.0.
+network/sslscan: Updated for version 1.11.12.
+network/vivaldi: Updated for version 2.1.1337.36.
+network/weechat: Updated for version 2.3.
+office/pdfstudio2018: Fixed md5sums.
+perl/perl-Math-BigInt: Updated for version 1.999815.
+perl/perl-Sidef: Updated for version 3.50.
+python/pycld2: Script clean up.
+system/ansible: Updated for version 2.6.6.
+system/btrbk: Updated for version 0.27.0.
+system/dar: Updated for version 2.5.17.
+system/nano-syntax-highlighting: Updated for version 20181023.
+system/powerkit: Added (desktop independent power manager).
+system/rear: Added (disaster recovery and system migration tool).
+system/rmw: Updated for version 0.4.05.
+system/sqldiff: Change to tgz.
++--------------------------+
 Sat Oct 20 23:48:10 UTC 2018
 academic/STAR: Updated for version 2.6.1c.
 academic/engauge: Updated for version 10.10.
