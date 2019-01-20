@@ -1,0 +1,14 @@
+libautoptr (Memory Managment of Shared Objects in C)
+
+libautoptr is a library that provides mechanisms for maintaining
+ownership and automatic memory cleanup of a shared objects in C.
+
+Build Options:
+
+  MAKE_CHECK=yes : Run build tests (i.e., 'make check')
+  API_DOCS=yes   : Install API documentation
+
+To enable build options, pass the respective build option(s) to
+the slackbuild as
+
+  OPT1=yes ... OPTN=yes ./libautoptr.Slackbuild
