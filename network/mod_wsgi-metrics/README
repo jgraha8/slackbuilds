@@ -4,3 +4,6 @@ Apache and mod_wsgi. At least mod_wsgi version 4.2.0 is required.
 
 It is also a requirement of mod_wsgi-express, a new developer friendly
 way to run mod_wsgi under Apache as unprivileged user.
+
+To enable python3, use the following:
+  PYTHON3=yes ./mod_wsgi-metrics.SlackBuild

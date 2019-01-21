@@ -14,8 +14,11 @@ From version 4.2, mod_wsgi ships with additional helper program for
 developers, mod_wsgi-express, which enables easier development and
 debugging with mod_wsgi and Apache.
 
-If you are a developer, you can enable the helper with:
-  ENABLE_EXPRESS=1 ./mod_wsgi.SlackBuild
+To enable python3, use the following:
+  PYTHON3=yes ./mod_wsgi.SlackBuild
 
-For express functionality you'll need to install 'pysetuptools' and
-'mod-wsgi-metrics' (both available from SBo).
+If you are a developer, you can enable the helper with:
+  ENABLE_EXPRESS=yes ./mod_wsgi.SlackBuild
+
+For express functionality mod-wsgi-metrics is required.
+

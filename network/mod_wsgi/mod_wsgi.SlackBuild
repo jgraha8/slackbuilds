@@ -31,6 +31,10 @@ VERSION=${VERSION:-4.6.5}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
+# Build options
+PYTHON3=${PYTHON3:-no}
+ENABLE_EXPRESS=${ENABLE_EXPRESS:-no}
+
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i486 ;;
@@ -51,6 +55,12 @@ else
   LIBDIRSUFFIX=""
 fi
 
+if [ "${PYTHON3}" = "yes" ]; then
+    PYTHON=python3
+else
+    PYTHON=python
+fi
+
 set -e
 
 rm -rf $PKG
@@ -66,15 +76,26 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-./configure
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+./configure \
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --build=$ARCH-slackware-linux \
+  --with-python=$PYTHON
+
 make
 make install DESTDIR=$PKG
 
-# Enable EXPRESS builds using 'ENABLE_EXPRESS=1 ./mod_wsgi.SlackBuild'
+# Enable EXPRESS builds using 'ENABLE_EXPRESS=yes ./mod_wsgi.SlackBuild'
 # For this you need pysetuptools and mod_wsgi-metrics, available from SBo
 # The express build creates it's own Apache module
-if [ ! -z $ENABLE_EXPRESS  ];then
-	python setup.py install --root=$PKG
+if [ "$ENABLE_EXPRESS" = "yes" ];then
+    $PYTHON setup.py install --root=$PKG
 fi
 
 find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \

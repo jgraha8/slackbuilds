@@ -30,6 +30,9 @@ VERSION=${VERSION:-1.1.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
+# Build options
+PYTHON3=${PYTHON3:-no}
+
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i486 ;;
@@ -57,6 +60,12 @@ else
   LIBDIRSUFFIX=""
 fi
 
+if [ "${PYTHON3}" = "yes" ]; then
+    PYTHON=python3
+else
+    PYTHON=python
+fi
+
 set -e
 
 rm -rf $PKG
@@ -72,7 +81,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-python setup.py install --root=$PKG
+$PYTHON setup.py install --root=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
