@@ -2,3 +2,11 @@ python-django (The Web framework for perfectionists with deadlines)
 
 Django is a high-level Python Web framework that encourages rapid development
 and clean, pragmatic design.
+
+To enable python3 installation instead of the default python2
+installation, pass PYTHON3=yes to the SlackBuild script as:
+
+  PYTHON3=yes ./python-django.SlackBuild
+
+This build option requires python3.
+
