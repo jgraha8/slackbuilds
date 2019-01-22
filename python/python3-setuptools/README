@@ -1,0 +1,9 @@
+python3-setuptools is a fully-featured, actively-maintained, and stable
+library designed to facilitate packaging Python 3 projects, where
+packaging includes:
+
+  - Python package and module definitions
+  - Distribution package metadata
+  - Test hooks
+  - Project installation
+  - Platform-specific details
