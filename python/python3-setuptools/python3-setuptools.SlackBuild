@@ -60,7 +60,10 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz || tar xvf $CWD/v$VERSION.tar.gz
+mkdir -p $PRGNAM-$VERSION
+tar -C $PRGNAM-$VERSION -xvf $CWD/$PRGNAM-$VERSION.tar.gz --strip-components=1 \
+    || tar -C $PRGNAM-$VERSION -xvf $CWD/v$VERSION.tar.gz --strip-components=1
+
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -69,15 +72,15 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+python3 bootstrap.py
 python3 setup.py install --root=$PKG
+
+# Remove easy_install since it conflicts with python-setuptools in slack
+rm -f $PKG/usr/bin/easy_install
 
 # Strip binaries and libraries.
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
-
-# Compress man pages
-find $PKG/usr/man -type f -exec gzip -9 {} \;
-for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 # Copy program documentation into the package
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
