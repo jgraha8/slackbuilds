@@ -20,5 +20,6 @@ To enable python3, use the following:
 If you are a developer, you can enable the helper with:
   ENABLE_EXPRESS=yes ./mod_wsgi.SlackBuild
 
-For express functionality mod-wsgi-metrics is required.
-
+For express functionality mod-wsgi-metrics is required. If enabling
+python3 and express functionality, then python3-setuptools is also
+required.
