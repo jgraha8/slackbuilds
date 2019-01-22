@@ -4,5 +4,5 @@ python3-setuptools:
 python3-setuptools: python3-setuptools is a fully-featured, actively-maintained, and
 python3-setuptools: stable library designed to facilitate packaging Python 3 projects.
 python3-setuptools:
-python3-setuptools: Homepage: https://github.com/pypa/setuptools
+python3-setuptools: Homepage: https://github.com/pypa/setuptools/
 python3-setuptools:
