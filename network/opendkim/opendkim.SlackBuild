@@ -136,9 +136,9 @@ install -m 0640 -D $PRGNAM/opendkim.conf.simple $PKG/etc/opendkim.conf.new
 install -m 0755 -D $CWD/rc.opendkim $PKG/etc/rc.d/rc.opendkim.new
 
 # Change KeyFile to match rc.opendkim
-sed -i 's|^KeyFile.*|KeyFile /etc/opendkim/keys/default.private|' $PKG/etc/opendkim.conf.new
+sed -i 's|^KeyFile.*|KeyFile\t\t/etc/opendkim/keys/default.private|' $PKG/etc/opendkim.conf.new
 
-echo "UserID $DKUSER:$DKGROUP" >> $PKG/etc/opendkim.conf.new
+echo -e "UserID\t\t$DKUSER:$DKGROUP" >> $PKG/etc/opendkim.conf.new
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
