@@ -1,0 +1,7 @@
+This extension enables PHP 7 to work with redis.
+
+To enable the redis extension for php 7, go to
+/etc/php.d/redis.ini and uncomment the line:
+  ; extension=redis
+
+NOTE: This package conflicts with php-redis.
