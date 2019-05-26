@@ -1,10 +1,10 @@
 PRGNAM="LibreOffice"
-VERSION="6.1.4.2"
-HOMEPAGE="http://libreoffice.org"
-DOWNLOAD="http://download.documentfoundation.org/libreoffice/src/6.1.4/libreoffice-6.1.4.2.tar.xz \
-          http://sourceforge.net/projects/slackbuildsdirectlinks/files/LibreOffice/libreoffice-6.1.4.2-srcs.tar.xz"
-MD5SUM="f6e69df90d8d6de6dd223d5309f71caa \
-        6846dfc948724bb9c89b29b5fa4f34e5"
+VERSION="6.2.4.2"
+HOMEPAGE="https://www.libreoffice.org"
+DOWNLOAD="https://download.documentfoundation.org/libreoffice/src/6.2.4/libreoffice-6.2.4.2.tar.xz \
+          http://sourceforge.net/projects/slackbuildsdirectlinks/files/LibreOffice/libreoffice-6.2.4.2-srcs.tar.xz"
+MD5SUM="9dd7f643f5d9ee9752c8bf5e241a9f46 \
+        21d371e654006433a5bc57f827804c61"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3 openjdk apache-ant perl-Archive-Zip"

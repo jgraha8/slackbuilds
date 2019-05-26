@@ -1,24 +1,24 @@
 PRGNAM="openjdk8"
-VERSION="8u181"
+VERSION="8u201"
 HOMEPAGE="http://openjdk.java.net"
-DOWNLOAD="http://icedtea.classpath.org/download/source/icedtea-3.9.0.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/openjdk.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/corba.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/jaxp.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/jaxws.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/jdk.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/langtools.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/nashorn.tar.xz \
-          http://icedtea.classpath.org/download/drops/icedtea8/3.9.0/hotspot.tar.xz"
-MD5SUM="7d4b94877cde222232433201a634a918 \
-        da51bd447df8551f914f8fb099bce868 \
-        f79e08350fd86f4fcbf375f109e494d3 \
-        b94287d6e7565da8a076f656bf1582d6 \
-        51b028fc374725e3099fc9870fc6a019 \
-        975901f03d2009ccebbd7aabb81c9390 \
-        8e5bc17e7001bb00611ce7636365fb78 \
-        02cb66948f875d74de4e051a2b061910 \
-        b5be7e80c38ccc5aa60172663b185d01"
+DOWNLOAD="http://icedtea.classpath.org/download/source/icedtea-3.11.0.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/openjdk.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/corba.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/jaxp.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/jaxws.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/jdk.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/langtools.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/nashorn.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.11.0/hotspot.tar.xz"
+MD5SUM="2b07ee0a90287c257cab63901c201bb1
+  d9b39123baae50e611ed996ff714848f
+  64b6ffdcd907dc2fad91583b31d27c70
+  333bb1c0dfd404226c4f1844a1661ee1
+  eaf803f7e8876ec5fcc8220a37b080b8
+  5749d5060b4abfdd5dde0e7a033d877c
+  862c9d13734526b8bf21279bb0650d71
+  59f2783ab3ffdaebb1d0e2d48d336603
+  f195edad7ffc0736b2146491ce7c3172"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="openjdk"
