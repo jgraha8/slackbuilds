@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description. Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in. You must
+# make exactly 11 lines for the formatting to be correct. It's also
+# customary to leave one space after the ':'.
+
+  	   |-----handy-ruler------------------------------------------------------|
+openvpn-pam: openvpn-pam (secure IP tunnel daemon with PAM support)
+openvpn-pam:
+openvpn-pam: OpenVPN is a full-featured SSL VPN which can accommodate a wide range
+openvpn-pam: of configurations, including remote access, site-to-site VPNs, WiFi
+openvpn-pam: security, and enterprise-scale remote access with load balancing,
+openvpn-pam: failover, and fine-grained access-controls.
+openvpn-pam:
+openvpn-pam: OpenVPN's home on the net is: http://openvpn.net
+openvpn-pam:
+openvpn-pam:
+openvpn-pam:
