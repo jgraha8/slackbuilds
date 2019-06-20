@@ -31,6 +31,10 @@ Use rofi instead of dmenu:
 
   ROFI=yes sh dwm.SlackBuild
 
+Enable keypad for tags as well as top row digits:
+
+  KEYPAD=yes sh dwm.SlackBuild
+
 The ROFI option also installs dwm.rasi rofi theme to
 /usr/share/rofi/themes.  This is set to use the same
 font as dwm, so if you have patched the dwm font then you
@@ -51,3 +55,14 @@ A good replacement for dmenu, which caches commands hit rate
 so that the most used ones are listed first and saves a lot
 of extra typing.  Cache can be cleared by deleting
 ~/.cache/rofi-*.runcache
+
+
+NOTE
+
+Some java applications seem to have problems displaying in
+dwm.  If you find any problems try:
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+in your shell before starting the application.  This is
+known to fix pycharm.
