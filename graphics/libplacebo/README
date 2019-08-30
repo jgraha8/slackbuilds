@@ -1,0 +1,7 @@
+libplacebo is essentially the core rendering algorithms and ideas of mpv
+turned into a library.
+
+shaderc is an optional dependency.
+
+libplacebo can be built without the vulkan-sdk, but most features will
+be missing.
