@@ -1,14 +1,14 @@
 PRGNAM="vivaldi"
-VERSION="2.6.1566.44"
+VERSION="2.7.1628.30"
 HOMEPAGE="https://vivaldi.com"
-DOWNLOAD="https://downloads.vivaldi.com/stable/vivaldi-stable_2.6.1566.44-1_i386.deb \
-          https://dl.google.com/widevine-cdm/4.10.1196.0-linux-ia32.zip"
-MD5SUM="85ed33d338fc5c2f4704ccc230f6f45b \
-        d3c080472cee2a74e85d24ba538795d8"
-DOWNLOAD_x86_64="https://downloads.vivaldi.com/stable/vivaldi-stable_2.6.1566.44-1_amd64.deb \
-                 https://dl.google.com/widevine-cdm/4.10.1196.0-linux-x64.zip"
-MD5SUM_x86_64="0efd81058478cd5ce1bb2bce4d789300 \
-               6f36d46184187f0f0ca5d93436dc4436"
+DOWNLOAD="https://downloads.vivaldi.com/stable/vivaldi-stable_2.7.1628.30-1_i386.deb \
+          https://dl.google.com/widevine-cdm/4.10.1440.18-linux-ia32.zip"
+MD5SUM="b30485977bc8ba02b97c030ebe06bcb9 \
+        c151f6314712678ac81b6298bc36c997"
+DOWNLOAD_x86_64="https://downloads.vivaldi.com/stable/vivaldi-stable_2.7.1628.30-1_amd64.deb \
+                 https://dl.google.com/widevine-cdm/4.10.1440.18-linux-x64.zip"
+MD5SUM_x86_64="3942f0afa4fe21ef7a258e32c574fa3c \
+               fc6cf66cdff7c57d367b317505f086d1"
 REQUIRES=""
 MAINTAINER="Alexander Verbovetsky"
 EMAIL="alik@ejik.org"
