@@ -64,7 +64,10 @@ LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
   --sysconfdir=/etc \
   --disable-static \
   --build=$ARCH-slackware-linux \
-  --with-zlib
+  --with-zlib \
+  --with-posix-acl \
+  --with-xattr \
+  --with-e2fsattrs
 
 # If you have the audit SlackBuild installed, and you'd like
 # aide to trigger an audit event on failures add:
