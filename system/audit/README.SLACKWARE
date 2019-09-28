@@ -2,11 +2,10 @@
 # This slackbuild won't do much unless you rebuild your kernel with audit enabled.
 # Optionally you can enable syscall-level audit.
 #
-# RULES: 
-# Some example rulesets are available at /usr/doc/audit-2.0.4/contrib
-# stig.rules is an example ruleset for systems that are subject to the US Department of Defense
-# UNIX STIG audit requirement, although I read recently on the gov-sec@ Redhat list that
-# they hadn't been updating it religiously.
+# RULES:
+# Rule sets are provided in /usr/doc/audit-2.8.5/rules. See the file
+# /usr/doc/audit-2.8.5/rules/README-rules for how to use the provided
+# rules.
 #
 # ROTATION:
 # The audit log (/var/log/audit/audit.log) is rotated on a size basis automatically by auditd. 
