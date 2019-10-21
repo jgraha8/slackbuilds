@@ -22,7 +22,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=sudo
-VERSION=${VERSION:-1.8.20p2}
+VERSION=${VERSION:-1.8.28p1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -119,7 +119,7 @@ fi
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh.gz > $PKG/install/doinst.sh
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 # Build the package:
 cd $PKG

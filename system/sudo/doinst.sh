@@ -11,6 +11,10 @@ config() {
   # Otherwise, we leave the .new copy for the admin to consider...
 }
 config etc/sudoers.new
-rm -f etc/sudoers.new
-
 config etc/pam.d/sudo.new
+
+# Ensure that there is an /etc/environment file to prevent "sudo -i"
+# from complaining:
+if [ ! -r etc/environment ]; then
+  touch etc/environment
+fi
