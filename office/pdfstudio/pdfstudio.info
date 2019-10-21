@@ -1,13 +1,13 @@
 PRGNAM="pdfstudio"
-VERSION="2019.1.1"
+VERSION="2019.1.4"
 HOMEPAGE="https://www.qoppa.com/pdfstudio/"
-DOWNLOAD="https://download.qoppa.com/pdfstudio/v2019/PDFStudio_v2019_1_1_linux.deb \
+DOWNLOAD="https://download.qoppa.com/pdfstudio/v2019/PDFStudio_v2019_1_4_linux.deb \
           https://www.qoppa.com/files/pdfstudio/guide/pdfstudio2019_userguide.pdf"
-MD5SUM="f92d676ce830b098133c370292c8c79e \
+MD5SUM="023c6538c720ea1e1c096c36646da699 \
         00449a6878d69dfea660ff210ecfe119"
-DOWNLOAD_x86_64="https://download.qoppa.com/pdfstudio/v2019/PDFStudio_v2019_1_1_linux64.deb \
+DOWNLOAD_x86_64="https://download.qoppa.com/pdfstudio/v2019/PDFStudio_v2019_1_4_linux64.deb \
                  https://www.qoppa.com/files/pdfstudio/guide/pdfstudio2019_userguide.pdf"
-MD5SUM_x86_64="a97f831cae5e093e41035a7929aed78b \
+MD5SUM_x86_64="eb7b0c54534c5d9fc3fe58e358e4c428 \
                00449a6878d69dfea660ff210ecfe119"
 REQUIRES="jdk %README%"
 MAINTAINER="Alexander Verbovetsky"
