@@ -1,3 +1,5 @@
+Mesa from the version 12 series.
+
 Mesa is a 3-D graphics library with an API very similar to that of
 another well-known 3-D graphics library.  :-)  The Mesa libraries are
 used by X to provide both software and hardware accelerated graphics.
@@ -5,4 +7,4 @@ used by X to provide both software and hardware accelerated graphics.
 This mesa package is an upgrade to the Slackware mesa version. It
 provides an updated API that is required by newer versions of qemu.
 
-
+NOTE: This package conflicts with the Slackware mesa package.

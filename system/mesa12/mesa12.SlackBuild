@@ -20,7 +20,8 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PKGNAM=mesa
+PKGNAM=mesa12
+SRCNAM=mesa
 VERSION=${VERSION:-12.0.6}
 DEMOVERS=${DEMOVERS:-8.3.0}
 BUILD=${BUILD:-1}
@@ -62,7 +63,7 @@ mkdir -p $TMP $PKG
 cd $TMP
 rm -rf ${PKGNAM}-${VERSION}
 
-tar xvf $CWD/${PKGNAM}-${VERSION}.tar.xz || exit 1
+tar xvf $CWD/${SRCNAM}-${VERSION}.tar.xz || exit 1
 cd ${PKGNAM}-$VERSION
 
 # Let's kill the warning about operating on a dangling symlink:
