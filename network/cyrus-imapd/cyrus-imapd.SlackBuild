@@ -101,6 +101,10 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# Apply patch which fixes the clamav API change
+# Upstream commit f2e25406a
+patch -p1 < $CWD/allow-building-against-clamav-0.101.patch
+
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \

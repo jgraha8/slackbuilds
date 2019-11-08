@@ -1,0 +1,39 @@
+From f2e25406a3a6ce20bff5ad0e6a1198b798c90392 Mon Sep 17 00:00:00 2001
+From: Christoph Moench-Tegeder <cmt@burggraben.net>
+Date: Mon, 27 May 2019 19:01:06 +0200
+Subject: [PATCH] allow building against clamav >= 0.101
+
+https://github.com/Cisco-Talos/clamav-devel/commit/048a88e changed
+the handling of scan options, removing the CL_SCAN_STDOPT macro.
+This change is already in the cyrus-imapd-3.0 branch as
+09b5bf11e12185727d53a6ae06d71a767952a537 and fd72fcef79a09cc3e349ee36bef1904e6e8e1030
+but missing from the still maintained 2.5 branch.
+---
+ imap/cyr_virusscan.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/imap/cyr_virusscan.c b/imap/cyr_virusscan.c
+index 0fb895b0a..c6033ab74 100644
+--- a/imap/cyr_virusscan.c
++++ b/imap/cyr_virusscan.c
+@@ -176,8 +176,17 @@ int clamav_scanfile(void *state, const char *fname,
+     int r;
+ 
+     /* scan file */
++#ifdef CL_SCAN_STDOPT
+     r = cl_scanfile(fname, virname, NULL, st->av_engine,
+ 		    CL_SCAN_STDOPT);
++#else
++    static struct cl_scan_options options;
++
++    memset(&options, 0, sizeof(struct cl_scan_options));
++    options.parse |= ~0; /* enable all parsers */
++
++    r = cl_scanfile(fname, virname, NULL, st->av_engine, &options);
++#endif
+ 
+     switch (r) {
+     case CL_CLEAN:
+-- 
+2.14.5
+
