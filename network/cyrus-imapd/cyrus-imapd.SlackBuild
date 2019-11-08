@@ -63,6 +63,13 @@ bailout() {
 getent group cyrus >/dev/null || bailout
 getent passwd cyrus >/dev/null || bailout
 
+# event notifications are enabled by default if jansson is autodetected
+DISABLE_EVENTS=${DISABLE_EVENTS:-no)
+case "$DISABLE_EVENTS" in
+    yes) DISABLE_EVENTS="--disable-event-notification" ;;
+      *) DISABLE_EVENTS="" ;;
+esac
+
 # clamav is autodetected by default
 WITHOUT_CLAMAV=${WITHOUT_CLAMAV:-no}
 case "$WITHOUT_CLAMAV" in
@@ -111,8 +118,9 @@ CXXFLAGS="$SLKCFLAGS" \
   --with-cyrus-group=cyrus \
   --enable-autocreate \
   --enable-idled \
-  $DATABASE \
+  $DISABLE_EVENTS \
   $WITHOUT_CLAMAV \
+  $DATABASE \
   --build=$ARCH-slackware-linux
 
 make PERL_MM_OPT='INSTALLDIRS=vendor'

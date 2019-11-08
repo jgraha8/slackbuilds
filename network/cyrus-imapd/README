@@ -37,6 +37,12 @@ Something like this will create them:
   # useradd -d /var/imap -s /bin/sh -u 238 -g 238 cyrus
 See http://slackbuilds.org/uid_gid.txt for uid/gid suggestions.
 
+By default, event notifications are enabled if the optional dependency
+jansson is installed. To disable event notifications, pass
+DISABLE_EVENTS=yes to the build script:
+
+  DISABLE_EVENTS=yes ./cyrus-imapd.SlackBuild
+
 By default, clamav is autodetected and is an optional dependency. To
 disable autodetection of clamav, pass WITHOUT_CLAMAV=yes to the build
 script:
