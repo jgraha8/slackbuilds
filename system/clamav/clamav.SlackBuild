@@ -168,14 +168,8 @@ make V=1
 make install DESTDIR=$PKG
 
 # Prepare the config files:
-for cf in clamd freshclam; do
+for cf in clamd freshclam $milter_cf; do
   mv $PKG/etc/$cf.conf.sample $PKG/etc/$cf.conf.new
-done
-
-# clamav-milter.conf.sample was renamed upstream to clamav-milter-conf.sample
-# This will only be included if milter_cf is set
-for cf in $milter_cf; do
-    mv $PKG/etc/$cf-conf.sample $PKG/etc/$cf.conf.new
 done
 
 # Our rc script and logrotate entry:
