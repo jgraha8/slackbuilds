@@ -63,8 +63,10 @@ bailout() {
 getent group cyrus >/dev/null || bailout
 getent passwd cyrus >/dev/null || bailout
 
+set -e
+
 # event notifications are enabled by default if jansson is autodetected
-DISABLE_EVENTS=${DISABLE_EVENTS:-no)
+DISABLE_EVENTS=${DISABLE_EVENTS:-no}
 case "$DISABLE_EVENTS" in
     yes) DISABLE_EVENTS="--disable-event-notification" ;;
       *) DISABLE_EVENTS="" ;;
@@ -85,8 +87,6 @@ case "$DATABASE" in
       sqlite) DATABASE="--with-sqlite" ;;
            *) DATABASE="" ;;
 esac
-
-set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
