@@ -121,6 +121,8 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --with-service-path=/usr/libexec/cyrus \
+  --with-bdb-incdir=/usr/include/db48 \
+  --with-bdb-libdir=/lib${LIBDIRSUFFIX} \
   --with-sasl \
   --with-libwrap \
   --with-openssl \
