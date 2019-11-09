@@ -80,10 +80,10 @@ case "$WITHOUT_CLAMAV" in
 esac
 
 # krb5 is autodetected by default
-WITHOUT_KRB=${WITHOUT_KRB:-no}
-case "$WITHOUT_KRB" in
-    yes) WITHOUT_KRB="--without-krb" ;;
-      *) WITHOUT_KRB="" ;;
+DISABLE_GSSAPI=${DISABLE_GSSAPI:-no}
+case "$DISABLE_GSSAPI" in
+    yes) DISABLE_GSSAPI="--disable-gssapi" ;;
+      *) DISABLE_GSSAPI="" ;;
 esac
 
 # Build with mysql database by default, sqlite/mysql/postgresql are supported
@@ -131,7 +131,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-idled \
   $DISABLE_EVENTS \
   $WITHOUT_CLAMAV \
-  $WITHOUT_KRB \
+  $DISABLE_GSSAPI \
   $DATABASE \
   --build=$ARCH-slackware-linux
 

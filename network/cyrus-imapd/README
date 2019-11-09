@@ -49,11 +49,11 @@ script:
 
   WITHOUT_CLAMAV=yes ./cyrus-imapd.SlackBuild
 
-By default, krb5 is autodetected and is an optional dependency. To
-disable autodetection of krb5, pass WITHOUT_KRB=yes to the build
-script:
+By default, GSSAPI authentication is enabled if krb5 is autodetected
+(krb5 is an optional dependency). To disable GSSAPI authentication,
+pass DISABLE_GSSAPI=yes to the build script:
 
-  WITHOUT_KRB=yes ./cyrus-imapd.SlackBuild
+  DISABLE_GSSAPI=yes ./cyrus-imapd.SlackBuild
 
 By default, cyrus-imapd is built with mysql database support. To
 change which database support is used, pass DATABASE=<db> to the build
