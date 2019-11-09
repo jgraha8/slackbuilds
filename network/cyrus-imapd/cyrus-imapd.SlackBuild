@@ -79,6 +79,13 @@ case "$WITHOUT_CLAMAV" in
       *) WITHOUT_CLAMAV="" ;;
 esac
 
+# krb5 is autodetected by default
+WITHOUT_KRB=${WITHOUT_KRB:-no}
+case "$WITHOUT_KRB" in
+    yes) WITHOUT_KRB="--without-krb" ;;
+      *) WITHOUT_KRB="" ;;
+esac
+
 # Build with mysql database by default, sqlite/mysql/postgresql are supported
 DATABASE=${DATABASE:-mysql}
 case "$DATABASE" in
@@ -124,6 +131,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-idled \
   $DISABLE_EVENTS \
   $WITHOUT_CLAMAV \
+  $WITHOUT_KRB \
   $DATABASE \
   --build=$ARCH-slackware-linux
 
