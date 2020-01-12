@@ -22,11 +22,12 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-SRCNAM=ipython
-PRGNAM=python3-$SRCNAM
-VERSION=${VERSION:-7.10.1}
+PRGNAM=python3-ipython
+VERSION=${VERSION:-7.11.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
+
+SRCNAM=ipython
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -57,14 +58,12 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 python3 setup.py install --root=$PKG
-rm $PKG/usr/bin/iptest
-rm $PKG/usr/bin/ipython
+rm $PKG/usr/bin/iptest*
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-mkdir -p $PKG/usr/man/man1
-mv $PKG/usr/share/man/man1/$SRCNAM.1 $PKG/usr/man/man1/${SRCNAM}3.1
+mv $PKG/usr/share/man $PKG/usr
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
