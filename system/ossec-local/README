@@ -5,10 +5,9 @@ real-time alerting and active response.
 The following build options are available:
 
   GEOIP=yes        Enable GeoIP support (requires GeoIP)
-  INOTIFY=yes	   Enable inotify for monitoring filesystem events
+  INOTIFY=yes      Enable inotify for monitoring filesystem events
 
-where each build option is passed to the slackbuild. Example of
-enabling the GeoIP and inotify support:
+Example of enabling the GeoIP and inotify support:
 
   GEOIP=yes INOTIFY=yes ./ossec-local.SlackBuild
 
