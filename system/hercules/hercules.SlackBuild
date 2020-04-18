@@ -7,7 +7,7 @@
 # revision date 2010/03/10
 
 PRGNAM=hercules
-VERSION=${VERSION:-3.07}
+VERSION=${VERSION:-3.13}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -90,8 +90,8 @@ cat $CWD/hercules.png > $PKG/usr/share/pixmaps/hercules.png
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/html
 cp -a \
-  ABOUT-NLS CHANGES COPYRIGHT INSTALL README.* RELEASE.NOTES \
-    $PKG/usr/doc/$PRGNAM-$VERSION
+   COPYRIGHT INSTALL README.* RELEASE.NOTES \
+   $PKG/usr/doc/$PRGNAM-$VERSION
 find $PKG/usr/doc/$PRGNAM-$VERSION -type f -exec chmod 644 {} \;
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
