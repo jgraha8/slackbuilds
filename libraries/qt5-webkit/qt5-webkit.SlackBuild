@@ -25,19 +25,19 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Adapted for 5.9.0 by David Woodfall <dave@slackbuilds.org>
+# Added some parts from -current build.
 
 PRGNAM=qt5-webkit
 SRCNAM=qtwebkit
 VERSION=${VERSION:-5.212.0_alpha4}
-SRCDIR=${SRCNAM}-$(echo $VERSION | sed -r "s,\.[[:digit:]]+_.*,,")
-SRCVERSION=$(echo v$VERSION | tr -s '_' '-')
-BUILD=${BUILD:-1}
+SRCVERSION=$(echo $VERSION | tr -s '_' '-')
+BUILD=${BUILD:-3}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
-    arm*) ARCH=arm ;;
+    arm*) readelf /usr/bin/file -A | egrep -q "Tag_CPU.*[4,5]" && ARCH=arm || ARCH=armv7hl ;;
        *) ARCH=$( uname -m ) ;;
   esac
 fi
@@ -66,9 +66,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $SRCDIR
+rm -rf $SRCNAM-$SRCVERSION
 tar xvf $CWD/$SRCNAM-$SRCVERSION.tar.gz
-cd $SRCDIR
+cd $SRCNAM-$SRCVERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
