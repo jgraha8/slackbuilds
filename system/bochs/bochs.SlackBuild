@@ -33,7 +33,7 @@
 # 		configure options on the command line.
 
 PRGNAM=bochs
-VERSION=${VERSION:-2.6.8}
+VERSION=${VERSION:-2.6.11}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -62,11 +62,14 @@ STATS=${STATS:-yes}
 FPU=${FPU:-yes}
 VMX=${VMX:-no} # (no/1/2)
 SVM=${SVM:-no}
+PROTECTION_KEYS=${PROTECTION_KEYS:-no}
+CET=${CET:-no}
 AVX=${AVX:-no}
 EVEX=${EVEX:-no}
 PCI=${PCI:-yes}
 USB=${USB:-yes}
 USB_OHCI=${USB_OHCI:-yes}
+USB_EHCI=${USB_EHCI:-yes}
 USB_XHCI=${USB_XHCI:-yes}
 NE2K=${NE2K:-yes}
 PNIC=${PNIC:-yes}
@@ -161,11 +164,14 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-fpu=${FPU} \
   --enable-vmx=${VMX} \
   --enable-svm=${SVM} \
+  --enable-protection-keys=${PROTECTION_KEYS} \
+  --enable-cet=${CET} \
   --enable-avx=${AVX} \
   --enable-evex=${EVE} \
   --enable-pci=${PCI} \
   --enable-usb=${USB} \
   --enable-usb-ohci=${USB_OHCI} \
+  --enable-usb-ehci=${USB_EHCI} \
   --enable-usb-xhci=${USB_XHCI} \
   --enable-ne2000=${NE2K} \
   --enable-pnic=${PNIC} \
