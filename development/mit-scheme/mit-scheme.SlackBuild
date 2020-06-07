@@ -62,13 +62,11 @@ else
 fi
 
 [ "$ENABLE_DEBUGGING" != "yes" ] && ENABLE_DEBUGGING="no"
-[ "$ENABLE_X11" != "yes" ] && ENABLE_X11="no"
-[ "$ENABLE_EDWIN" != "yes" ] && ENABLE_EDWIN="no"
-[ "$ENABLE_IMAIL" != "yes" ] && ENABLE_IMAIL="no"
-[ "$ENABLE_BLOWFISH" != "yes" ] && ENABLE_BLOWFISH="no"
-[ "$ENABLE_GDBM" != "yes" ] && ENABLE_GDBM="no"
-[ "$ENABLE_PGSQL" != "yes" ] && ENABLE_PGSQL="no"
-[ "$ENABLE_MCRYPT" != "yes" ] && ENABLE_MCRYPT="no"
+[ "$ENABLE_X11" != "no" ] && ENABLE_X11="yes"
+[ "$ENABLE_EDWIN" != "no" ] && ENABLE_EDWIN="yes"
+[ "$ENABLE_IMAIL" != "no" ] && ENABLE_IMAIL="yes"
+[ "$ENABLE_HTML" != "yes" ] && ENABLE_HTML="no"
+[ "$ENABLE_PDF" != "yes" ] && ENABLE_PDF="no"
 
 set -e
 
@@ -95,57 +93,49 @@ CXXFLAGS="$SLKCFLAGS" \
   --sysconfdir=/etc \
   --localstatedir=/var \
   --mandir=/usr/man \
+  --infodir=/usr/info \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux \
-  --enable-default-plugins=no \
+  --enable-default-plugins=yes \
   --enable-debugging=${ENABLE_DEBUGGING} \
   --enable-x11=${ENABLE_X11} \
   --enable-edwin=${ENABLE_EDWIN} \
-  --enable-imail=${ENABLE_IMAIL} \
-  --enable-blowfish=${ENABLE_BLOWFISH} \
-  --enable-gdbm=${ENABLE_GDBM} \
-  --enable-pgsql=${ENABLE_PGSQL} \
-  --enable-mcrypt=${ENABLE_MCRYPT}
+  --enable-imail=${ENABLE_IMAIL}
 
-  make
-  make install install-info install-html install-pdf DESTDIR=$PKG
+make
+make install DESTDIR=$PKG
 
-  cd ..
+cd ../doc
+
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+./configure \
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --infodir=/usr/info \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --build=$ARCH-slackware-linux \
+  --enable-html=${ENABLE_HTML} \
+  --enable-pdf=${ENABLE_PDF}
+
+make
+make install DESTDIR=$PKG
+
+cd ..
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
     | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-# Compress man pages
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-# Compress info pages and remove the package's dir file
 rm -f $PKG/usr/info/dir
-gzip -9 $PKG/usr/info/*.info*
+for i in $( find $PKG/usr/info -name '*.info' -type f); do gzip -9 $i; done
 
-# mkdir -p $PKG/usr/man/man1
-# cp -a doc/scheme.1 $PKG/usr/man/man1/mit-scheme.1
-# find $PKG/usr/man -type f -exec gzip -9 {} \;
-# for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
-
-# # take prebuilt info doc rather than build them by ourselves
-# mkdir -p $PKG/usr/info
-# tar xvf $CWD/$PRGNAM-$VERSION-doc-info.tar.gz
-# install -o root -g root -m 644 $PRGNAM-$VERSION/doc/*.info $PKG/usr/info
-# gzip -9 $PKG/usr/info/*.info*
-
-# # ditto for html ones
-# mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/html
-# tar xvf $CWD/$PRGNAM-$VERSION-doc-html.tar.gz \
-#   -C $PKG/usr/doc/$PRGNAM-$VERSION/html \
-#   --strip-components=2
-# chown -R root:root $PKG/usr/doc/$PRGNAM-$VERSION/html
-
-# # ditto for pdf ones
-# mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/pdf
-# tar xvf $CWD/$PRGNAM-$VERSION-doc-pdf.tar.gz
-# install -o root -g root -m 644 $PRGNAM-$VERSION/doc/*.pdf $PKG/usr/doc/$PRGNAM-$VERSION/pdf
-
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a changelog.txt src/COPYING src/README.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

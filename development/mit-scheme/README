@@ -3,11 +3,9 @@ providing an interpreter, compiler, source-code debugger, integrated Emacs-like
 editor, and a large runtime library. MIT/GNU Scheme is best suited to
 programming large applications with a rapid development cycle.
 
-  ENABLE_DEBUGGING=(yes/[no])      Compile with debugging support 
-  ENABLE_X11=(yes/[no])            Add support for x11 
-  ENABLE_EDWIN=(yes/[no])          Add support for the Edwin editor 
-  ENABLE_IMAIL=(yes/[no])          Add support for the Imail mail reader (implies ENABLE_EDWIN=yes)
-  ENABLE_BLOWFISH=(yes/[no])       Add support for the Blowfish encryption 
-  ENABLE_GDBM=(yes/[no])           Add support for the gdbm support 
-  ENABLE_PGSQL=(yes/[no])          Add support for the PostgreSQL support (requires postgresql) 
-  ENABLE_MCRYPT=(yes/[no])         Add support for the mcrypt support 
+  ENABLE_DEBUGGING=yes|no (default: no)     Compile with debugging support 
+  ENABLE_X11=yes|no       (default: yes)    Add support for x11 
+  ENABLE_EDWIN=yes|no     (default: yes)    Add support for the Edwin editor 
+  ENABLE_IMAIL=yes|no     (default: yes)    Add support for the Imail mail reader (implies ENABLE_EDWIN=yes)
+  ENABLE_HTML=yes|no      (default: no)     Builds html documentation
+  ENABLE_PDF=yes|no       (default: no)     Builds pdf documentation (requires texlive)
