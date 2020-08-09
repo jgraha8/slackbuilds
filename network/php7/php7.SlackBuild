@@ -249,7 +249,7 @@ rm -f $PKG/usr/lib${LIBDIRSUFFIX}/php/extensions/*.a
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   CODING_STANDARDS* CONTRIBUTING* EXTENSIONS* LICENSE* NEWS* README* UPGRADING* \
-  $PKG/usr/doc/php-$VERSION
+  $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/etc/httpd
 cat $CWD/mod_php.conf.example | sed -e "s#lib/httpd#lib${LIBDIRSUFFIX}/httpd#" > $PKG/etc/httpd/mod_php.conf.new
