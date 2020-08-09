@@ -1,9 +1,12 @@
-php version 7 with PAM
-
 PHP is an HTML-embedded scripting language. It shares syntax
 characteristics with C, Java, and Perl. The primary objective behind
 this language is to make a fast and easy-to-use scripting language for
 dynamic web sites.
+
+To enable Kerberus 5 support provide KRB5=yes to the Slackbuild as
+
+    KRB5=yes ./php7.SlackBuild     (requires krb5)
+
 
 NOTE: This package conflicts with the slackware php package. You must
 remove php before installing this package.

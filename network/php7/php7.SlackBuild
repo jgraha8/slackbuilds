@@ -4,10 +4,10 @@
 
 # Build and package mod_php on Slackware.
 # by:  David Cantrell <david@slackware.com>
-# Modified for PHP 4-5 by volkerdi@slackware.com
-# Modified for PHP 7 by jgraham@compukix.net
-# Copyright 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2017  Patrick Volkerding, Sebeka, MN, USA
-# Copyright 2019  Jason Graham <jgraham@compukix.net>, USA
+# Modified for PHP 4-7 by volkerdi@slackware.com
+# Copyright 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2017, 2019, 2020  Patrick Volkerding, Sebeka, MN, USA
+# Copyright 2019, 2020  Jason Graham <jgraham@compukix.net>, USA
+
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -16,7 +16,7 @@
 # 1. Redistributions of this script must retain the above copyright
 #    notice, this list of conditions and the following disclaimer.
 #
-#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
 #  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 #  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
 #  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -28,8 +28,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=php7
-VERSION=${VERSION:-7.2.32}
-ALPINE=2.21
+VERSION=${VERSION:-7.4.9}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -62,50 +61,53 @@ else
   LIBDIRSUFFIX=""
 fi
 
+set -e
+
+if [ "$KRB5" = "yes" ]; then
+    KRB5_OPTION="--with-kerberos"
+else
+    unset KRB5_OPTION
+fi
+
+
 rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+
 mkdir -p $PKG/etc/httpd
 mkdir -p $PKG/etc/php.d
 # A trick from DaMouse to enable building php into $PKG.
 # We'll remove this later on.
 cat $CWD/httpd.conf > $PKG/etc/httpd/httpd.conf
 if [ ! -e $CWD/httpd.conf ]; then
-  echo "FATAL:  no /etc/httpd/original/httpd.conf found."
+  echo "FATAL:  no $CWD/httpd.conf found."
   exit 1
 fi
 
 cd $TMP
 rm -rf php-$VERSION
-tar xvf $CWD/php-$VERSION.tar.?z || exit 1
-cd php-$VERSION || exit 1
+tar xvf $CWD/php-$VERSION.tar.xz
+cd php-$VERSION
 
 # cleanup:
 find . -name "*.orig" -delete
-
-# Add missing(?) PEAR modules back:
-if [ -d php-$VERSION/pear/packages ]; then
-  ( cd php-$VERSION/pear/packages
-    cp -a $CWD/pear/*.bz2 . 2> /dev/null
-    bzip2 -d *.bz2 2> /dev/null
-  )
-fi
 
 # Fixup perms/owners:
 chown -R root:root .
 find . \
   \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
-  -exec chmod 755 {} \; -o \
+  -exec chmod 755 {} \+ -o \
   \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
-  -exec chmod 644 {} \;
+  -exec chmod 644 {} \+
 
-find . -name "*.h" -exec chmod 644 {} \;
+find . -name "*.h" -exec chmod 644 {} \+
 
 # Sometimes they ship a few of these:
-find . -name "*.orig" -exec rm {} \;
+find . -name "*.orig" -exec rm {} \+
 
 # Patch ini files:
-cat $CWD/patches/php.ini-development.diff | patch -p1 --verbose || exit 1
-cat $CWD/patches/php.ini-development.diff | patch -p1 --verbose php.ini-production || exit 1
-cat $CWD/patches/php-fpm.conf.diff | patch -p1 --verbose || exit 1
+cat $CWD/php.ini-development.diff | patch -p1 --verbose
+cat $CWD/php.ini-development.diff | patch -p1 --verbose php.ini-production
+cat $CWD/php-fpm.conf.diff | patch -p1 --verbose
 
 # Install the build folder into /usr/lib$LIBDIRSUFFIX/php/build
 # and adapt phpize accordingly:
@@ -143,16 +145,17 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1" \
   --with-config-file-path=/etc \
   --with-layout=PHP \
   --disable-sigchild \
-  --enable-xml \
-  --with-libxml-dir=/usr \
+  --with-libxml \
   --with-xmlrpc=shared \
+  --with-expat \
   --enable-simplexml \
   --enable-xmlreader=shared \
   --enable-dom=shared \
   --enable-filter \
   --disable-debug \
   --with-openssl=shared \
-  --with-pcre-regex=/usr \
+  $KRB5_OPTION \
+  --with-external-pcre \
   --with-zlib=shared,/usr \
   --enable-bcmath=shared \
   --with-bz2=shared,/usr \
@@ -164,19 +167,16 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1" \
   --with-db4=/usr \
   --enable-exif=shared \
   --enable-ftp=shared \
-  --with-gd=shared \
-  --with-jpeg-dir=/usr \
-  --with-png-dir=/usr \
-  --with-zlib-dir=/usr \
-  --with-xpm-dir=/usr \
-  --with-freetype-dir=/usr \
+  --enable-gd=shared \
+  --with-external-gd \
+  --with-jpeg \
+  --with-xpm \
   --with-gettext=shared,/usr \
   --with-gmp=shared,/usr \
   --with-iconv=shared \
   --without-imap \
   --with-ldap=shared \
   --enable-mbstring=shared \
-  --enable-hash \
   --enable-mysqlnd=shared \
   --with-mysqli=shared,mysqlnd \
   --with-mysql-sock=/var/run/mysql/mysql.sock \
@@ -195,9 +195,8 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1" \
   --enable-sysvmsg \
   --enable-sysvsem \
   --enable-sysvshm \
-  --enable-wddx=shared \
   --with-xsl=shared,/usr \
-  --enable-zip=shared \
+  --with-zip=shared \
   --with-tsrm-pthreads \
   --enable-intl=shared \
   --enable-opcache \
@@ -210,7 +209,9 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1" \
   --with-password-argon2 \
   --without-readline \
   --with-libedit \
-  --build=$ARCH-slackware-linux || exit 1
+  --with-pear \
+  --with-tidy=shared \
+  --build=$ARCH-slackware-linux
 
 # I am told this option is worse than nothing.  :-)
 #  --enable-safe-mode
@@ -218,8 +219,8 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1" \
 # I would recommend *against* and will take no responbility for turning on
 # "safe" mode.
 
-make $NUMJOBS || make || exit 1
-make install INSTALL_ROOT=$PKG || exit 1
+make
+make install INSTALL_ROOT=$PKG
 
 mkdir -p $PKG/etc/{rc.d,php-fpm.d}
 cp sapi/fpm/init.d.php-fpm $PKG/etc/rc.d/rc.php-fpm.new
@@ -240,23 +241,18 @@ rm -f $PKG/usr/lib${LIBDIRSUFFIX}/php/extensions/*.a
 ( cd $PKG/usr/lib${LIBDIRSUFFIX}/php
   find . \
    \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
-   -exec chmod 755 {} \; -o \
+   -exec chmod 755 {} \+ -o \
    \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
-   -exec chmod 644 {} \;
+   -exec chmod 644 {} \+
 )
 
-mkdir -p $PKG/usr/doc/php-$VERSION
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  CODING_STANDARDS CONTRIBUTING.md CREDITS EXTENSIONS INSTALL LICENSE NEWS \
-  README.* UPGRADING* \
-  sapi/cgi/README.FastCGI \
+  CODING_STANDARDS* CONTRIBUTING* EXTENSIONS* LICENSE* NEWS* README* UPGRADING* \
   $PKG/usr/doc/php-$VERSION
-chown -R root:root $PKG/usr/doc/php-$VERSION
-chmod 644 $PKG/usr/doc/php-$VERSION/UPGRADING*
 
 mkdir -p $PKG/etc/httpd
-cat $CWD/mod_php.conf.example | sed -e "s#lib/httpd#lib${LIBDIRSUFFIX}/httpd#" \
-  > $PKG/etc/httpd/mod_php.conf.new
+cat $CWD/mod_php.conf.example | sed -e "s#lib/httpd#lib${LIBDIRSUFFIX}/httpd#" > $PKG/etc/httpd/mod_php.conf.new
 chmod 644 $PKG/etc/httpd/*
 chown root:root $PKG/etc/httpd/*
 
@@ -282,7 +278,5 @@ mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
-
-# Make the package
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

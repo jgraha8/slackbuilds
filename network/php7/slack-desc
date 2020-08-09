@@ -6,7 +6,7 @@
 # customary to leave one space after the ':'.
 
     |-----handy-ruler------------------------------------------------------|
-php7: php7 (HTML-embedded scripting language with PAM)
+php7: php7 (HTML-embedded scripting language)
 php7:
 php7: PHP is an HTML-embedded scripting language. It shares syntax
 php7: characteristics with C, Java, and Perl. The primary objective behind
