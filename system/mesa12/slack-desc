@@ -5,15 +5,15 @@
 # make exactly 11 lines for the formatting to be correct.  It's also
 # customary to leave one space after the ':'.
 
-    |-----handy-ruler------------------------------------------------------|
-mesa: mesa12 (a 3-D graphics library)
-mesa:
-mesa: Mesa is a 3-D graphics library with an API very similar to that of
-mesa: another well-known 3-D graphics library.  :-)  The Mesa libraries are
-mesa: used by X to provide both software and hardware accelerated graphics.
-mesa:
-mesa: NOTE: mesa12 conflicts with the Slackware mesa package.
-mesa:
-mesa: Mesa was written by Brian Paul.
-mesa:
-mesa:
+      |-----handy-ruler------------------------------------------------------|
+mesa12: mesa12 (a 3-D graphics library)
+mesa12:
+mesa12: Mesa is a 3-D graphics library with an API very similar to that of
+mesa12: another well-known 3-D graphics library.  :-)  The Mesa libraries are
+mesa12: used by X to provide both software and hardware accelerated graphics.
+mesa12:
+mesa12: NOTE: mesa12 conflicts with the Slackware mesa package.
+mesa12:
+mesa12: Mesa was written by Brian Paul.
+mesa12:
+mesa12:
