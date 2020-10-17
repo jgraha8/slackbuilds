@@ -62,14 +62,16 @@ fi
 
 DOCS=${DOCS:-"yes"}
 
-# Sanitize build settings
-[ "${X11:-yes}"     == "yes" ] || X11="no"
+# Sanitize build settings and set additional flags
+[ "${X11:-yes}"     == "yes" ] && WITH_X="--with-x" || X11="no"
 [ "${EDWIN:-yes}"   == "yes" ] || EDWIN="no"
 [ "${IMAIL:-no}"    == "yes" ] || IMAIL="no"
 [ "${BLOWFISH:-no}" == "yes" ] || BLOWFISH="no"
 [ "${GDBM:-no}"     == "yes" ] || GDBM="no"
 [ "${PGSQL:-no}"    == "yes" ] || PGSQL="no"
 [ "${MCRYPT:-no}"   == "yes" ] || MCRYPT="no"
+
+
 
 
 set -e
@@ -105,7 +107,9 @@ cd src
     --enable-blowfish=${BLOWFISH} \
     --enable-gdbm=${GDBM} \
     --enable-pgsql=${PGSQL} \
-    --enable-mcrypt=${MCRYPT} 
+    --enable-mcrypt=${MCRYPT} \
+    $WITH_X \
+    --enable-host-scheme-test
     
 
   make
