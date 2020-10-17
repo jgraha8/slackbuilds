@@ -72,8 +72,6 @@ DOCS=${DOCS:-"yes"}
 [ "${MCRYPT:-no}"   == "yes" ] || MCRYPT="no"
 
 
-
-
 set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -110,9 +108,9 @@ cd src
     --enable-mcrypt=${MCRYPT} \
     $WITH_X \
     --enable-host-scheme-test
-    
 
   make
+  make check
   make install DESTDIR=$PKG
 cd ..
 
