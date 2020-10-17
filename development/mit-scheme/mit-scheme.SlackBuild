@@ -126,6 +126,7 @@ tar xvf $CWD/$PRGNAM-$VERSION-doc-info.tar.gz
 install -o root -g root -m 644 $PRGNAM-$VERSION/doc/*.info $PKG/usr/info
 gzip -9 $PKG/usr/info/*.info*
 
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 if [ "$DOCS" = "yes" ]; then
     # ditto for html ones
     mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/html
