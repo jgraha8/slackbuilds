@@ -2,9 +2,10 @@
 
 # Slackware build script for mit-scheme
 # Originally by Jockey S. Kyd (jockey dot kyd at gmail dot com)
-
+#
 # Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
-
+# Copyright (C) 2018,2020 Jason Graham <jgraham@compukix.net>, USA
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -25,7 +26,7 @@
 
 
 PRGNAM=mit-scheme
-VERSION=${VERSION:-9.2}
+VERSION=${VERSION:-10.1.11}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -59,6 +60,18 @@ else
   exit 1
 fi
 
+DOCS=${DOCS:-"yes"}
+
+# Sanitize build settings
+[ "${X11:-yes}"     == "yes" ] || X11="no"
+[ "${EDWIN:-yes}"   == "yes" ] || EDWIN="no"
+[ "${IMAIL:-no}"    == "yes" ] || IMAIL="no"
+[ "${BLOWFISH:-no}" == "yes" ] || BLOWFISH="no"
+[ "${GDBM:-no}"     == "yes" ] || GDBM="no"
+[ "${PGSQL:-no}"    == "yes" ] || PGSQL="no"
+[ "${MCRYPT:-no}"   == "yes" ] || MCRYPT="no"
+
+
 set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -79,7 +92,21 @@ cd src
   ./configure \
     --prefix=/usr \
     --libdir=/usr/lib$LIBDIRSUFFIX \
-    --build=$ARCH-slackware-linux
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --mandir=/usr/man \
+    --docdir=/usr/doc/$PRGNAM-$VERSION \
+    --disable-static \
+    --build=$ARCH-slackware-linux \
+    --enable-default-plugins=no \
+    --enable-x11=${X11} \
+    --enable-edwin=${EDWIN} \
+    --enable-imail=${IMAIL} \
+    --enable-blowfish=${BLOWFISH} \
+    --enable-gdbm=${GDBM} \
+    --enable-pgsql=${PGSQL} \
+    --enable-mcrypt=${MCRYPT} 
+    
 
   make
   make install DESTDIR=$PKG
@@ -99,17 +126,19 @@ tar xvf $CWD/$PRGNAM-$VERSION-doc-info.tar.gz
 install -o root -g root -m 644 $PRGNAM-$VERSION/doc/*.info $PKG/usr/info
 gzip -9 $PKG/usr/info/*.info*
 
-# ditto for html ones
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/html
-tar xvf $CWD/$PRGNAM-$VERSION-doc-html.tar.gz \
-  -C $PKG/usr/doc/$PRGNAM-$VERSION/html \
-  --strip-components=2
-chown -R root:root $PKG/usr/doc/$PRGNAM-$VERSION/html
+if [ "$DOCS" = "yes" ]; then
+    # ditto for html ones
+    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/html
+    tar xvf $CWD/$PRGNAM-$VERSION-doc-html.tar.gz \
+	-C $PKG/usr/doc/$PRGNAM-$VERSION/html \
+	--strip-components=2
+    chown -R root:root $PKG/usr/doc/$PRGNAM-$VERSION/html
 
-# ditto for pdf ones
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/pdf
-tar xvf $CWD/$PRGNAM-$VERSION-doc-pdf.tar.gz
-install -o root -g root -m 644 $PRGNAM-$VERSION/doc/*.pdf $PKG/usr/doc/$PRGNAM-$VERSION/pdf
+    # ditto for pdf ones
+    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/pdf
+    tar xvf $CWD/$PRGNAM-$VERSION-doc-pdf.tar.gz
+    install -o root -g root -m 644 $PRGNAM-$VERSION/doc/*.pdf $PKG/usr/doc/$PRGNAM-$VERSION/pdf
+fi
 
 cp -a changelog.txt src/COPYING src/README.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
