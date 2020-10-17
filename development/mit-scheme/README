@@ -10,8 +10,8 @@ The following build options are available:
   IMAIL=[yes|no]        Enable support for the Imail mail reader (default: no)
   BLOWFISH=[yes|no]     Enable support for Blowfish encryption (default: no)
   GDBM=[yes|no]         Enable support for gdbm (default: no)
-  PGSQL=[yes|no]        Enable support for PostgreSQL (default: no)
-  MCRYPT=[yes|no]       Enable support for mcrypt (default: no)
+  PGSQL=[yes|no]        Enable support for PostgreSQL (default: no; requires postgresql)
+  MCRYPT=[yes|no]       Enable support for mcrypt (default: no; requires mcrypt)
   DOCS=[yes|no]         Include html and pdf documentation (default: no)
   
 where each build option may be passed to the slackbuild. Example of

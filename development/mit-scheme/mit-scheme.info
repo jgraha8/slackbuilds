@@ -13,10 +13,10 @@ DOWNLOAD_x86_64="https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-schem
 		 https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-html.tar.gz \
 		 https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-info.tar.gz \
 		 https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-pdf.tar.gz"
-MD5SUM_x86_64="e735b238110fae35134e5c2de16c2442 \
+MD5SUM_x86_64="301453a99b6af9b521dd69d33ca8a547 \
                bbfc06567d552e90cb37bc644f2fe0b2 \
 	       e276b36d6721285afe418843ddece8a2 \
-	       301453a99b6af9b521dd69d33ca8a547"
+	       e735b238110fae35134e5c2de16c2442"
 REQUIRES=""
 MAINTAINER="Jason Graham"
 EMAIL="jgraham@compukix.net"
