@@ -110,7 +110,7 @@ cd src
     --enable-host-scheme-test
 
   make
-  make check
+  FAST=yes make check
   make install DESTDIR=$PKG
 cd ..
 
