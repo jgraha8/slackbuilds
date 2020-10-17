@@ -8,14 +8,19 @@ The following build options are available:
   X11=[yes|no]          Enable support for x11 (default: yes)
   EDWIN=[yes|no]        Enable support for the Edwin editor (default: yes)
   IMAIL=[yes|no]        Enable support for the Imail mail reader (default: no)
+  DOCS=[yes|no]         Include html and pdf documentation (default: no)
+
+where each build option may be passed to the slackbuild. Example of
+disabling x11 and enabling blowfish support:
+
+  X11=no DOCS=yes ./mit-scheme.SlackBuild
+
+The build options below require an existing installation of
+mit-scheme. In fact, the build will fail if mit-scheme is not already
+installed. You may build mit-scheme a second time with any of these
+enabled:
+
   BLOWFISH=[yes|no]     Enable support for Blowfish encryption (default: no)
   GDBM=[yes|no]         Enable support for gdbm (default: no)
   PGSQL=[yes|no]        Enable support for PostgreSQL (default: no; requires postgresql)
   MCRYPT=[yes|no]       Enable support for mcrypt (default: no; requires mcrypt)
-  DOCS=[yes|no]         Include html and pdf documentation (default: no)
-  
-where each build option may be passed to the slackbuild. Example of
-disabling x11 and enabling blowfish support:
-
-  X11=no BLOWFISH=yes ./mit-scheme.SlackBuild
-
