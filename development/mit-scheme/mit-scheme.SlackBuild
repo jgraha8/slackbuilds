@@ -133,7 +133,7 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 rm -f $PKG/usr/info/dir
-gzip -9f $PKG/usr/info/*.info*
+gzip -9 $PKG/usr/info/*.info*
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a changelog.txt src/COPYING src/README.txt $PKG/usr/doc/$PRGNAM-$VERSION
@@ -144,6 +144,6 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
-for i in usr/info/*.info*; do echo "info_install $i" >> $PKG/install/doinst.sh; done
+for i in usr/info/*.info*; do echo "info_install /$i" >> $PKG/install/doinst.sh; done
 
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
