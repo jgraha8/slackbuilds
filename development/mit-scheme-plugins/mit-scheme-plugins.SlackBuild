@@ -98,8 +98,7 @@ patch -p1 < $CWD/fix-plugins-scmdocdir.patch
 for plugin in $PLUGINS
 do
     cd src/$plugin
-    rm -rf aclocal.m4
-    automake
+    ./autogen.sh
     CFLAGS="$SLKCFLAGS" \
 	  CXXFLAGS="$SLKCFLAGS" \
 	  ./configure \
