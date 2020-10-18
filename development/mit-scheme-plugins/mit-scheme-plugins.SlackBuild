@@ -75,7 +75,7 @@ PLUGINS=""
 [ "$MCRYPT" = "yes" ] && PLUGINS+=" mcrypt"
 
 [ -z "$PLUGINS" ] && echo "No plugins configured" 1>&2 && exit 1
-
+[ "$DOCS" = "yes" ] && HTMLDIR="/usr/doc/mit-scheme-$VERSION" || HTMLDIR=""
 
 
 set -e
@@ -151,7 +151,7 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 for plugin in $PLUGINS
 do
 cat >> $PKG/install/doinst.sh <<EOF
-( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/etc/mit-scheme/"'; echo '"")' ) | mit-scheme --batch-mode
+( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/etc/mit-scheme/"'; echo '"$HTMLDIR")' ) | mit-scheme --batch-mode
 EOF
 done
 
