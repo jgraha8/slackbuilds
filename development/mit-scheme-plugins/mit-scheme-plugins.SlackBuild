@@ -24,12 +24,12 @@
 # along with this program (most likely, a file named COPYING).  If
 # not, see <http://www.gnu.org/licenses/>.
 
-
-MIT_SCHEME=mit-scheme
 PRGNAM=mit-scheme-plugins
 VERSION=${VERSION:-10.1.11}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
+
+PKGNAM=mit-scheme
 
 if [ -z "$ARCH" ]; then
   case "$(uname -m)" in
@@ -83,7 +83,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$MIT_SCHEME-$VERSION-$TARARCH.tar.gz -C $PRGNAM-$VERSION --strip-components=1
+tar -xvf $CWD/$PKGNAM-$VERSION-$TARARCH.tar.gz -C $PRGNAM-$VERSION --strip-components=1
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -104,17 +104,21 @@ do
 	  --localstatedir=/var \
 	  --mandir=/usr/man \
 	  --infodir=/usr/info \
-	  --docdir=/usr/doc/$MIT_SCHEME-$VERSION/$plugin \
+	  --docdir=/usr/doc/$PRGNAM-$VERSION/$plugin \
 	  --disable-static \
 	  --build=$ARCH-slackware-linux \
-	  --htmldir=/usr/doc/$MIT_SCHEME-$VERSION/$plugin/html \
-	  --pdfdir=/usr/doc/$MIT_SCHEME-$VERSION/$plugin/pdf
+	  --htmldir=/usr/doc/$PRGNAM-$VERSION/$plugin/html \
+	  --pdfdir=/usr/doc/$PRGNAM-$VERSION/$plugin/pdf
 
     make
     make install install-info install-man DESTDIR=$PKG
     if [ "$DOCS" = "yes" ]; then
 	make install-html install-pdf DESTDIR=$PKG
     fi
+
+    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
+    cp -a [A-Z][A-Z]* ChangeLog $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
+    
     cd ../..
 done
 
@@ -127,9 +131,8 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
 
-mkdir -p $PKG/usr/doc/$MIT_SCHEME-$VERSION
-cp -a changelog.txt src/COPYING src/README.txt $PKG/usr/doc/$MIT_SCHEME-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$MIT_SCHEME-$VERSION/$PRGNAM.SlackBuild
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
