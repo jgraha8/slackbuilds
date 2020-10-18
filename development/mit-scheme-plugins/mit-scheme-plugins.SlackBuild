@@ -113,6 +113,7 @@ do
 
     make
     make install install-info install-man DESTDIR=$PKG
+
     if [ "$DOCS" = "yes" ]; then
 	make install-html install-pdf DESTDIR=$PKG
     fi
@@ -126,8 +127,10 @@ done
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-find $PKG/usr/man -type f -exec gzip -9 {} \;
-for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+if [ -d $PKG/usr/man ]; then
+    find $PKG/usr/man -type f -exec gzip -9 {} \;
+    for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+fi    
 
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
