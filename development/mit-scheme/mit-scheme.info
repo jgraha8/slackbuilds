@@ -1,23 +1,10 @@
 PRGNAM="mit-scheme"
 VERSION="10.1.11"
 HOMEPAGE="http://www.gnu.org/software/mit-scheme/"
-DOWNLOAD="http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-i386.tar.gz \
-          http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-html.tar.gz \
-          http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-info.tar.gz \
-          http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-pdf.tar.gz"
-MD5SUM="3881681eaaea80f765ebd28bd91f62b4 \
-        e735b238110fae35134e5c2de16c2442 \
-	bbfc06567d552e90cb37bc644f2fe0b2 \
-	e276b36d6721285afe418843ddece8a2"
-DOWNLOAD_x86_64="https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-x86-64.tar.gz \
-		 https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-html.tar.gz \
-		 https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-info.tar.gz \
-		 https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-doc-pdf.tar.gz"
-
-MD5SUM_x86_64="301453a99b6af9b521dd69d33ca8a547 \
-               e735b238110fae35134e5c2de16c2442 \
-	       bbfc06567d552e90cb37bc644f2fe0b2 \
-	       e276b36d6721285afe418843ddece8a2"
+DOWNLOAD="http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-i386.tar.gz"
+MD5SUM="3881681eaaea80f765ebd28bd91f62b4"
+DOWNLOAD_x86_64="https://ftp.gnu.org/gnu/mit-scheme/stable.pkg/10.1.11/mit-scheme-10.1.11-x86-64.tar.gz"
+MD5SUM_x86_64="301453a99b6af9b521dd69d33ca8a547"
 REQUIRES=""
 MAINTAINER="Jason Graham"
 EMAIL="jgraham@compukix.net"
