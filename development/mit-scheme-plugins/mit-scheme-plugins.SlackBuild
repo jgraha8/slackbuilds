@@ -1,10 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for mit-scheme
-# Originally by Jockey S. Kyd (jockey dot kyd at gmail dot com)
+# Slackware build script for mit-scheme-plugins
 #
-# Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
-# Copyright (C) 2018,2020 Jason Graham <jgraham@compukix.net>, USA
+# Copyright (C) 2020 Jason Graham <jgraham@compukix.net>, USA
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -92,23 +90,6 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-
-cd src/
-    CFLAGS="$SLKCFLAGS" \
-	  CXXFLAGS="$SLKCFLAGS" \
-	  ./configure \
-	  --prefix=/usr \
-	  --libdir=/usr/lib$LIBDIRSUFFIX \
-	  --sysconfdir=/etc \
-	  --localstatedir=/var \
-	  --mandir=/usr/man \
-	  --infodir=/usr/info \
-	  --docdir=/usr/doc/$PRGNAM-$VERSION/$plugin \
-	  --disable-static \
-	  --build=$ARCH-slackware-linux \
-	  --enable-blowfish \
-	  --enable-gdbm
-cd ..
     
 for plugin in $PLUGINS
 do
@@ -134,9 +115,6 @@ do
     if [ "$DOCS" = "yes" ]; then
 	make install-html install-pdf DESTDIR=$PKG
     fi
-
-    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
-    cp -a [A-Z][A-Z]* ChangeLog $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
     
     cd ../..
 done
@@ -152,12 +130,24 @@ fi
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
 
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+for plugin in $PLUGINS
+do
+    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
+    cp -a [A-Z][A-Z]* ChangeLog $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
+done
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
+# Include installed plugins in mit-scheme load-options
+for plugin in $PLUGINS
+do
+cat >> $PKG/install/doinst.sh <<EOF
+( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/usr/lib64/mit-scheme-x86-64/"'; echo '"")' ) | mit-scheme --batch-mode
+EOF
+done
 
 cd $PKG
 for i in usr/info/*.info*; do echo "info_install /$i" >> $PKG/install/doinst.sh; done
