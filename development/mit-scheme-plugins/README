@@ -1,0 +1,22 @@
+MIT/GNU Scheme is an implementation of the Scheme programming language,
+providing an interpreter, compiler, source-code debugger, integrated
+Emacs-like editor, and a large runtime library. MIT/GNU Scheme is best suited
+to programming large applications with a rapid development cycle.
+
+The purpose of mit-scheme-plugins is to provide the additional MIT/GNU
+Scheme blowfish, gdbm, mcrypt, and pgsql plugins. Since version 9.2
+these plugins are configured, built, and installed separately from the
+main installation.
+
+The following build options are available:
+
+  BLOWFISH=yes|no     Enable support for Blowfish encryption (default: yes)
+  GDBM=yes|no         Enable support for gdbm (default: yes)
+  PGSQL=yes|no        Enable support for PostgreSQL (default: no), requires postgresql
+  MCRYPT=yes|no       Enable support for mcrypt (default: no),  requires mcrypt
+  DOCS=yes|no         Include html and pdf documentation (default: no),  requires texlive
+  
+where each build option may be passed to the slackbuild. Example of
+disabling Blowfish and enabling PostgresSQL support:
+
+  BLOWFISH=no PGSQL=yes sh ./mit-scheme-plugins.SlackBuild
