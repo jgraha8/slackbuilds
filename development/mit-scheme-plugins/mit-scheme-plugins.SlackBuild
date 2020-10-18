@@ -115,6 +115,9 @@ do
 	  --pdfdir=/usr/doc/$PRGNAM-$VERSION/$plugin/pdf
 
     make
+    
+    # The doc directory needs to exist before install
+    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/$plugin    
     make install install-info install-man DESTDIR=$PKG
 
     if [ "$DOCS" = "yes" ]; then
@@ -137,7 +140,6 @@ gzip -9 $PKG/usr/info/*.info*
 
 for plugin in $PLUGINS
 do
-    mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
     cp -a src/$plugin/{[A-Z][A-Z]*,ChangeLog} $PKG/usr/doc/$PRGNAM-$VERSION/$plugin
 done
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
