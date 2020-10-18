@@ -11,6 +11,31 @@ Index: mit-scheme-10.1.11/src/blowfish/Makefile.am
  
  scmlib_LTLIBRARIES = blowfish-shim.la
  scmlib_DATA = blowfish-types.bin blowfish-const.bin
+@@ -94,24 +94,7 @@ EXTRA_DIST += blowfish-test.scm blowfish
+ EXTRA_DIST += make.scm optiondb.scm tags-fix.sh
+ 
+ install-data-hook:
+-	( echo '(add-plugin "blowfish" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
+-	  echo '            "")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+ 
+ install-html: install-html-am
+-	( echo '(add-plugin "blowfish" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+ 
+ uninstall-hook:
+-	( echo '(remove-plugin "blowfish" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '               ""'; \
+-	  echo '               "$(DESTDIR)$(scmlibdir)"'; \
+-	  echo '               "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+-	[ -d "$(DESTDIR)$(scmlib_subdir)" ] \
+-	&& rmdir "$(DESTDIR)$(scmlib_subdir)"
 Index: mit-scheme-10.1.11/src/gdbm/Makefile.am
 ===================================================================
 --- mit-scheme-10.1.11.orig/src/gdbm/Makefile.am
@@ -24,6 +49,31 @@ Index: mit-scheme-10.1.11/src/gdbm/Makefile.am
  
  scmlib_LTLIBRARIES = gdbm-shim.la
  scmlib_DATA = gdbm-types.bin gdbm-const.bin
+@@ -94,24 +94,7 @@ EXTRA_DIST += gdbm-check.scm gdbm-check.
+ EXTRA_DIST += make.scm optiondb.scm tags-fix.sh
+ 
+ install-data-hook:
+-	( echo '(add-plugin "gdbm" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
+-	  echo '            "")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+ 
+ install-html: install-html-am
+-	( echo '(add-plugin "gdbm" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+ 
+ uninstall-hook:
+-	( echo '(remove-plugin "gdbm" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '               ""'; \
+-	  echo '               "$(DESTDIR)$(scmlibdir)"'; \
+-	  echo '               "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+-	[ -d "$(DESTDIR)$(scmlib_subdir)" ] \
+-	&& rmdir "$(DESTDIR)$(scmlib_subdir)"
 Index: mit-scheme-10.1.11/src/mcrypt/Makefile.am
 ===================================================================
 --- mit-scheme-10.1.11.orig/src/mcrypt/Makefile.am
@@ -37,23 +87,35 @@ Index: mit-scheme-10.1.11/src/mcrypt/Makefile.am
  
  scmlib_LTLIBRARIES = mcrypt-shim.la
  scmlib_DATA = mcrypt-types.bin mcrypt-const.bin
-@@ -97,14 +97,14 @@ install-data-hook:
- 	( echo '(add-plugin "mcrypt" "@MIT_SCHEME_PROJECT@"'; \
- 	  echo '            ""'; \
- 	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
+@@ -94,28 +94,11 @@ EXTRA_DIST += mcrypt-check.scm mcrypt-ch
+ EXTRA_DIST += make.scm optiondb.scm tags-fix.sh
+ 
+ install-data-hook:
+-	( echo '(add-plugin "mcrypt" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
 -	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
-+	  echo '            "")' ) \
- 	| $(MIT_SCHEME_EXE) --batch-mode
+-	| $(MIT_SCHEME_EXE) --batch-mode
  
  install-html: install-html-am
- 	( echo '(add-plugin "mcrypt" "@MIT_SCHEME_PROJECT@"'; \
- 	  echo '            ""'; \
- 	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
+-	( echo '(add-plugin "mcrypt" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
 -	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
-+	  echo '            "")' ) \
- 	| $(MIT_SCHEME_EXE) --batch-mode
+-	| $(MIT_SCHEME_EXE) --batch-mode
  
  install-info-am:
+ 
+ uninstall-info-am:
+ 
+ uninstall-hook:
+-	( echo '(remove-plugin "mcrypt" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '               ""'; \
+-	  echo '               "$(DESTDIR)$(scmlibdir)"'; \
+-	  echo '               "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+-	[ -d "$(DESTDIR)$(scmlib_subdir)" ] \
+-	&& rmdir "$(DESTDIR)$(scmlib_subdir)"
 Index: mit-scheme-10.1.11/src/pgsql/Makefile.am
 ===================================================================
 --- mit-scheme-10.1.11.orig/src/pgsql/Makefile.am
@@ -67,19 +129,32 @@ Index: mit-scheme-10.1.11/src/pgsql/Makefile.am
  
  scmlib_LTLIBRARIES = pgsql-shim.la
  scmlib_DATA = pgsql-types.bin pgsql-const.bin
-@@ -97,13 +97,13 @@ install-data-hook:
- 	( echo '(add-plugin "pgsql" "@MIT_SCHEME_PROJECT@"'; \
- 	  echo '            ""'; \
- 	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
+@@ -94,28 +94,11 @@ EXTRA_DIST += pgsql-check.scm pgsql-chec
+ EXTRA_DIST += make.scm optiondb.scm tags-fix.sh
+ 
+ install-data-hook:
+-	( echo '(add-plugin "pgsql" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
+-	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
 -	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
-+	  echo '            "")' ) \
- 	| $(MIT_SCHEME_EXE) --batch-mode
+-	| $(MIT_SCHEME_EXE) --batch-mode
  
  install-html: install-html-am
- 	( echo '(add-plugin "pgsql" "@MIT_SCHEME_PROJECT@"'; \
- 	  echo '            ""'; \
+-	( echo '(add-plugin "pgsql" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '            ""'; \
 -	  echo '            "$(DESTDIR)$(scmlibdir)"'; \
-+	  echo '            ""'; \
- 	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
- 	| $(MIT_SCHEME_EXE) --batch-mode
+-	  echo '            "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
  
+ install-info-am:
+ 
+ uninstall-info-am:
+ 
+ uninstall-hook:
+-	( echo '(remove-plugin "pgsql" "@MIT_SCHEME_PROJECT@"'; \
+-	  echo '               ""'; \
+-	  echo '               "$(DESTDIR)$(scmlibdir)"'; \
+-	  echo '               "$(DESTDIR)$(scmdocdir)")' ) \
+-	| $(MIT_SCHEME_EXE) --batch-mode
+-	[ -d "$(DESTDIR)$(scmlib_subdir)" ] \
+-	&& rmdir "$(DESTDIR)$(scmlib_subdir)"
