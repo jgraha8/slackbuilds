@@ -143,10 +143,10 @@ mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
-mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/plugins.scm{,new}
+mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/plugins.scm{,.new}
 echo "config usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/plugins.scm.new" >> $PKG/install/doinst.sh
 
-mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm{,new}
+mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm{,.new}
 echo "config usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm.new" >> $PKG/install/doinst.sh
 
 cd $PKG
