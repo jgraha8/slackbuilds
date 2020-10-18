@@ -151,7 +151,11 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 for plugin in $PLUGINS
 do
 cat >> $PKG/install/doinst.sh <<EOF
-( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/etc/mit-scheme/"'; echo '"$HTMLDIR")' ) | mit-scheme --batch-mode
+if [ -d /usr/doc-mit-scheme-$VERSION/html ]; then
+  ( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/etc/mit-scheme/"'; echo '"$HTMLDIR")' ) | mit-scheme --batch-mode
+else
+  ( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/etc/mit-scheme/"'; echo '"")' ) | mit-scheme --batch-mode
+fi
 EOF
 done
 
