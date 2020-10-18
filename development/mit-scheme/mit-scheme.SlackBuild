@@ -152,6 +152,7 @@ mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm $PKG/etc/mit-scheme/o
 ln -sf /etc/mit-scheme/optiondb.scm $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm
 
 for n in $PKG/etc/mit-scheme/*.new
+do
   echo "config etc/mit-scheme/$n" >> $PKG/install/doinst.sh
 done
 	 
