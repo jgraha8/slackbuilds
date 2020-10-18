@@ -145,15 +145,11 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 # Move configuration scheme files to etc
 mkdir -p $PKG/etc/mit-scheme
-mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/plugins.scm $PKG/etc/mit-scheme/plugins.scm.new
-ln -sf /etc/mit-scheme/plugins.scm $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/plugins.scm
-
-mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm $PKG/etc/mit-scheme/optiondb.scm.new
-ln -sf /etc/mit-scheme/optiondb.scm $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/optiondb.scm
-
-for n in $PKG/etc/mit-scheme/*.new
+for f in plugins.scm optiondb.scm
 do
-  echo "config etc/mit-scheme/$n" >> $PKG/install/doinst.sh
+    mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/$f $PKG/etc/mit-scheme/$f.new
+    ln -sf /etc/mit-scheme/$f $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/$f
+    echo "config etc/mit-scheme/$f" >> $PKG/install/doinst.sh
 done
 	 
 cd $PKG
