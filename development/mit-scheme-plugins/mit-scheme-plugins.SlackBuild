@@ -114,6 +114,7 @@ do
 	  --htmldir=/usr/doc/$PRGNAM-$VERSION/$plugin/html \
 	  --pdfdir=/usr/doc/$PRGNAM-$VERSION/$plugin/pdf
 
+    mkdir -p $PKG/usr/share/doc/mit-scheme
     make
     make install install-info install-man DESTDIR=$PKG
 
