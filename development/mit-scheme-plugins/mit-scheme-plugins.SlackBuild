@@ -145,7 +145,7 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 for plugin in $PLUGINS
 do
 cat >> $PKG/install/doinst.sh <<EOF
-( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/usr/lib64/mit-scheme-x86-64/"'; echo '"")' ) | mit-scheme --batch-mode
+( echo '(add-plugin "$plugin" "mit-scheme"'; echo '""'; echo '"/etc/mit-scheme/"'; echo '"")' ) | mit-scheme --batch-mode
 EOF
 done
 
