@@ -1,0 +1,52 @@
+Index: mit-scheme/src/pgsql/Makefile.am
+===================================================================
+--- mit-scheme.orig/src/pgsql/Makefile.am
++++ mit-scheme/src/pgsql/Makefile.am
+@@ -29,7 +29,7 @@ EXTRA_DIST = autogen.sh
+ MIT_SCHEME_EXE = @MIT_SCHEME_EXE@
+ scmlibdir = @MIT_SCHEME_LIBDIR@
+ scmlib_subdir = $(scmlibdir)pgsql
+-scmdocdir = $(datarootdir)/doc/@MIT_SCHEME_PROJECT@
++scmdocdir = $(docdir)
+ 
+ scmlib_LTLIBRARIES = pgsql-shim.la
+ scmlib_DATA = pgsql-types.bin pgsql-const.bin
+Index: mit-scheme/src/blowfish/Makefile.am
+===================================================================
+--- mit-scheme.orig/src/blowfish/Makefile.am
++++ mit-scheme/src/blowfish/Makefile.am
+@@ -29,7 +29,7 @@ EXTRA_DIST = autogen.sh
+ MIT_SCHEME_EXE = @MIT_SCHEME_EXE@
+ scmlibdir = @MIT_SCHEME_LIBDIR@
+ scmlib_subdir = $(scmlibdir)blowfish
+-scmdocdir = $(datarootdir)/doc/@MIT_SCHEME_PROJECT@
++scmdocdir = $(docdir)
+ 
+ scmlib_LTLIBRARIES = blowfish-shim.la
+ scmlib_DATA = blowfish-types.bin blowfish-const.bin
+Index: mit-scheme/src/gdbm/Makefile.am
+===================================================================
+--- mit-scheme.orig/src/gdbm/Makefile.am
++++ mit-scheme/src/gdbm/Makefile.am
+@@ -29,7 +29,7 @@ EXTRA_DIST = autogen.sh
+ MIT_SCHEME_EXE = @MIT_SCHEME_EXE@
+ scmlibdir = @MIT_SCHEME_LIBDIR@
+ scmlib_subdir = $(scmlibdir)gdbm
+-scmdocdir = $(datarootdir)/doc/@MIT_SCHEME_PROJECT@
++scmdocdir = $(docdir)
+ 
+ scmlib_LTLIBRARIES = gdbm-shim.la
+ scmlib_DATA = gdbm-types.bin gdbm-const.bin
+Index: mit-scheme/src/mcrypt/Makefile.am
+===================================================================
+--- mit-scheme.orig/src/mcrypt/Makefile.am
++++ mit-scheme/src/mcrypt/Makefile.am
+@@ -29,7 +29,7 @@ EXTRA_DIST = autogen.sh
+ MIT_SCHEME_EXE = @MIT_SCHEME_EXE@
+ scmlibdir = @MIT_SCHEME_LIBDIR@
+ scmlib_subdir = $(scmlibdir)mcrypt
+-scmdocdir = $(datarootdir)/doc/@MIT_SCHEME_PROJECT@
++scmdocdir = $(docdir)
+ 
+ scmlib_LTLIBRARIES = mcrypt-shim.la
+ scmlib_DATA = mcrypt-types.bin mcrypt-const.bin
