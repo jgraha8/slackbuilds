@@ -149,7 +149,7 @@ for f in plugins.scm optiondb.scm
 do
     mv $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/$f $PKG/etc/mit-scheme/$f.new
     ln -sf /etc/mit-scheme/$f $PKG/usr/lib$LIBDIRSUFFIX/$PRGNAM-$TARARCH/$f
-    echo "config etc/mit-scheme/$f" >> $PKG/install/doinst.sh
+    echo "config etc/mit-scheme/$f.new" >> $PKG/install/doinst.sh
 done
 	 
 cd $PKG
