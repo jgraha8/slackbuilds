@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for ht.
+# Slackware build script for cyrus-sasl-xoath2
 
-# Copyright 2018 Davidson Francis, Minas Gerais, Brazil.
+# Copyright 2020 Ebben Aries <e@dscp.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,8 +22,8 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-PRGNAM=ht
-VERSION=${VERSION:-2.1.0}
+PRGNAM=cyrus-sasl-xoauth2
+VERSION=${VERSION:-0.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -60,7 +60,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -71,12 +71,17 @@ find -L . \
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
+./autogen.sh
+
+# Patch Makefile.am that autoconf does not figure out
+sed -i -e "s/{CYRUS_SASL_PREFIX}\/lib\/sasl2/{CYRUS_SASL_PREFIX}\/lib$LIBDIRSUFFIX\/sasl2/" Makefile.am
+
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \
   --localstatedir=/var \
-  --mandir=/usr/man \
+  --enable-static=no \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux
 
@@ -87,7 +92,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a ChangeLog doc/ht.html README KNOWNBUGS TODO $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a COPYING INSTALL README.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
