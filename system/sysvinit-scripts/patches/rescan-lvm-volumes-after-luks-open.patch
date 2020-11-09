@@ -1,0 +1,19 @@
+--- etc/rc.d/rc.S	2020-11-08 21:05:12.918076997 -0500
++++ etc/rc.d/rc.S.new	2020-11-08 21:05:27.940851511 -0500
+@@ -172,6 +172,16 @@
+       mkswap /dev/mapper/$LUKS
+     fi
+   done
++
++  if [ -r /etc/lvmtab -o -d /etc/lvm/backup ]; then
++    # Scan for new volume groups:
++    /sbin/vgscan --mknodes --ignorelockingfailure 2> /dev/null
++    if [ $? = 0 ]; then
++      # Make volume groups available to the kernel.
++      # This should also make logical volumes available.
++      /sbin/vgchange -ay --ignorelockingfailure
++    fi
++  fi
+ fi
+ 
+ # Enable swapping:
