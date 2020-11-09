@@ -1,0 +1,13 @@
+sysvinit-scripts (the basic scripts used to boot your machine)
+
+These are the Slackware boot scripts, which are needed to start the
+machine.  Sysvinit looks for these in /etc/rc.d/.
+
+These scripts modify the scripts in the Slackware sysvinit-scripts
+package. This package is to be used in place of the Slackware
+sysvinit-scripts packages.
+
+The changes included in this sysvinit-scripts package are:
+
+  * Add LVM crypttab support for initializing volume groups in LUKS volumes
+  * Deactivate LVM volumes before closing LUKS volumes

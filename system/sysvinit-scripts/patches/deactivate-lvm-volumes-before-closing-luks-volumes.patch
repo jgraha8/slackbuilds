@@ -1,0 +1,38 @@
+--- etc/rc.d/rc.6	2020-11-08 20:10:55.118559020 -0500
++++ etc/rc.d/rc.6.new	2020-11-08 20:11:39.550905515 -0500
+@@ -234,6 +234,17 @@
+ # This never hurts:
+ /bin/sync
+ 
++# Deactivate LVM volume groups:
++if [ -r /etc/lvmtab -o -d /etc/lvm/backup ]; then
++  echo "Deactivating LVM volume groups:"
++  /sbin/vgchange -an --ignorelockingfailure
++fi
++
++# This never hurts again (especially since root-on-LVM always fails
++# to deactivate the / logical volume...  but at least it was
++# remounted as read-only first)
++/bin/sync
++
+ # Close any volumes opened by cryptsetup:
+ if [ -f /etc/crypttab -a -x /sbin/cryptsetup ]; then
+   cat /etc/crypttab | grep -v "^#" | grep -v "^$" | while read line; do
+@@ -255,17 +266,6 @@
+   done
+ fi
+ 
+-# Deactivate LVM volume groups:
+-if [ -r /etc/lvmtab -o -d /etc/lvm/backup ]; then
+-  echo "Deactivating LVM volume groups:"
+-  /sbin/vgchange -an --ignorelockingfailure
+-fi
+-
+-# This never hurts again (especially since root-on-LVM always fails
+-# to deactivate the / logical volume...  but at least it was
+-# remounted as read-only first)
+-/bin/sync
+-
+ # sleep 3 fixes problems with some hard drives that don't
+ # otherwise finish syncing before reboot or poweroff
+ /bin/sleep 3

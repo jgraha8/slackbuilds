@@ -20,14 +20,18 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
+PRGNAM=sysvinit-scripts
 VERSION=${VERSION:-2.0}
 ARCH=noarch
 BUILD=${BUILD:-33}
+TAG=${TAG:_SBo}
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp}
-PKG=$TMP/package-sysvinit-scripts
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG
@@ -43,6 +47,12 @@ cat $CWD/scripts/inittab > $PKG/etc/inittab.new
 chmod 644 $PKG/etc/inittab.new
 chown root:root $PKG/etc/inittab.new
 
+# Apply changes to installed scripts
+pushd $PKG
+patch -p0 < $CWD/patches/add-rc.S-crypttab-lvm-support.patch
+patch -p0 < $CWD/patches/deactivate-lvm-volumes-before-closing-luks-volumes.patch
+popd
+
 # Add a very handy tool for scanning new SCSI devices.  Most useful for
 # finding new USB and Firewire storage devices which show up as SCSI.
 mkdir -p $PKG/sbin
@@ -51,10 +61,9 @@ chmod 755 $PKG/sbin/rescan-scsi-bus
 chown root:root $PKG/sbin/rescan-scsi-bus
 
 mkdir -p $PKG/install
-zcat $CWD/doinst.sh > $PKG/install/doinst.sh
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 # Build the package:
 cd $PKG
-/sbin/makepkg -l y -c n $TMP/sysvinit-scripts-$VERSION-$ARCH-$BUILD.txz
-
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
