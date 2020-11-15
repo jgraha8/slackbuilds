@@ -92,7 +92,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --with-x-app-defaults=/etc/X11/app-defaults \
   --with-text-file=/usr/doc/netdate/COPYRIGHT \
-  --with-shadow \
+  --without-shadow \
   --with-jpeg \
   --with-gl \
   --with-pam \
