@@ -1,0 +1,262 @@
+diff --git a/liboath/errors.c b/liboath/errors.c
+index e8d90c8..bc50d2d 100644
+--- a/liboath/errors.c
++++ b/liboath/errors.c
+@@ -56,7 +56,8 @@ static const err_t errors[] = {
+   ERR (OATH_MALLOC_ERROR, "Memory allocation failed"),
+   ERR (OATH_FILE_FLUSH_ERROR, "System error when flushing file buffer"),
+   ERR (OATH_FILE_SYNC_ERROR, "System error when syncing file to disk"),
+-  ERR (OATH_FILE_CLOSE_ERROR, "System error when closing file")
++  ERR (OATH_FILE_CLOSE_ERROR, "System error when closing file"),
++  ERR (OATH_FILE_CHOWN_ERROR, "System error when changing file ownership")
+ };
+ 
+ /**
+diff --git a/liboath/oath.h.in b/liboath/oath.h.in
+index 8654342..c2b51dd 100644
+--- a/liboath/oath.h.in
++++ b/liboath/oath.h.in
+@@ -38,6 +38,7 @@
+ #include <stdint.h>		/* For uint64_t, SIZE_MAX. */
+ #include <string.h>		/* For size_t.t */
+ #include <time.h>		/* For time_t. */
++#include <sys/types.h>          /* For uid_t. */
+ 
+ # ifdef __cplusplus
+ extern "C"
+@@ -91,6 +92,7 @@ extern "C"
+  * @OATH_FILE_FLUSH_ERROR: System error when flushing file buffer
+  * @OATH_FILE_SYNC_ERROR: System error when syncing file to disk
+  * @OATH_FILE_CLOSE_ERROR: System error when closing file
++ * @OATH_FILE_CHOWN_ERROR: System error when changing file ownership
+  * @OATH_LAST_ERROR: Meta-error indicating the last error code, for use
+  *   when iterating over all error codes or similar.
+  *
+@@ -129,9 +131,10 @@ typedef enum
+   OATH_FILE_FLUSH_ERROR = -23,
+   OATH_FILE_SYNC_ERROR = -24,
+   OATH_FILE_CLOSE_ERROR = -25,
++  OATH_FILE_CHOWN_ERROR = -26,
+   /* When adding anything here, update OATH_LAST_ERROR, errors.c
+      and tests/tst_errors.c. */
+-  OATH_LAST_ERROR = -25
++  OATH_LAST_ERROR = -26
+ } oath_rc;
+ 
+ /* Global */
+@@ -353,6 +356,7 @@ oath_totp_validate4_callback (const char *secret,
+ 
+ extern OATHAPI int
+ oath_authenticate_usersfile (const char *usersfile,
++			     uid_t usersfile_uid,
+ 			     const char *username,
+ 			     const char *otp,
+ 			     size_t window,
+diff --git a/liboath/usersfile.c b/liboath/usersfile.c
+index 9da30fe..0ff01d4 100644
+--- a/liboath/usersfile.c
++++ b/liboath/usersfile.c
+@@ -298,6 +298,7 @@ update_usersfile2 (const char *username,
+ 
+ static int
+ update_usersfile (const char *usersfile,
++		  uid_t usersfile_uid,
+ 		  const char *username,
+ 		  const char *otp,
+ 		  FILE * infh,
+@@ -393,6 +394,10 @@ update_usersfile (const char *usersfile,
+   if (fclose (outfh) != 0)
+     rc = OATH_FILE_CLOSE_ERROR;
+ 
++  /* Change ownership of the new usersfile file */
++  if(rc == OATH_OK && chown(newfilename, usersfile_uid, -1) != 0)
++    rc = OATH_FILE_CHOWN_ERROR;
++
+   /* On success, overwrite the usersfile with the new copy. */
+   if (rc == OATH_OK && rename (newfilename, usersfile) != 0)
+     rc = OATH_FILE_RENAME_ERROR;
+@@ -416,6 +421,7 @@ update_usersfile (const char *usersfile,
+ /**
+  * oath_authenticate_usersfile:
+  * @usersfile: string with user credential filename, in UsersFile format
++ * @usersfile_uid: UID to use for updated user credential file
+  * @username: string with name of user
+  * @otp: string with one-time password to authenticate
+  * @window: how many past/future OTPs to search
+@@ -441,6 +447,7 @@ update_usersfile (const char *usersfile,
+  **/
+ int
+ oath_authenticate_usersfile (const char *usersfile,
++			     uid_t usersfile_uid,
+ 			     const char *username,
+ 			     const char *otp,
+ 			     size_t window,
+@@ -481,7 +488,7 @@ oath_authenticate_usersfile (const char *usersfile,
+ 
+       old_umask = umask (~(S_IRUSR | S_IWUSR));
+ 
+-      rc = update_usersfile (usersfile, username, otp, infh,
++      rc = update_usersfile (usersfile, usersfile_uid, username, otp, infh,
+ 			     &line, &n, timestamp, new_moving_factor,
+ 			     skipped_users);
+ 
+diff --git a/pam_oath/configure.ac b/pam_oath/configure.ac
+index 24f60af..d9ec863 100644
+--- a/pam_oath/configure.ac
++++ b/pam_oath/configure.ac
+@@ -32,9 +32,12 @@ AC_PROG_LIBTOOL
+ 
+ AC_CHECK_HEADERS([security/pam_appl.h], [],
+   [AC_MSG_ERROR([[PAM header files not found, install libpam-dev.]])])
++AC_CHECK_HEADERS([security/pam_modutil.h], [],
++  [AC_MSG_ERROR([[PAM header files not found, install libpam-dev.]])])
+ AC_CHECK_HEADERS([security/pam_modules.h security/_pam_macros.h], [], [],
+   [#include <security/pam_appl.h>])
+ 
++
+ AC_CHECK_LIB(pam, pam_get_item)
+ 
+ AC_SUBST(PAMDIR, "\$(exec_prefix)/lib/security")
+diff --git a/pam_oath/pam_oath.c b/pam_oath/pam_oath.c
+index 8ac4605..5723a8a 100644
+--- a/pam_oath/pam_oath.c
++++ b/pam_oath/pam_oath.c
+@@ -26,6 +26,8 @@
+ #include <stdlib.h>
+ #include <stdarg.h>
+ #include <ctype.h>
++#include <pwd.h>
++#include <unistd.h>
+ 
+ /* Libtool defines PIC for shared objects */
+ #ifndef PIC
+@@ -41,6 +43,9 @@
+ #ifdef HAVE_SECURITY_PAM_APPL_H
+ #include <security/pam_appl.h>
+ #endif
++#ifdef HAVE_SECURITY_PAM_MODUTIL_H
++#include <security/pam_modutil.h>
++#endif
+ #ifdef HAVE_SECURITY_PAM_MODULES_H
+ #include <security/pam_modules.h>
+ #endif
+@@ -129,6 +134,66 @@ parse_cfg (int flags, int argc, const char **argv, struct cfg *cfg)
+     }
+ }
+ 
++static int
++parse_usersfile_str(const struct cfg *cfg, const struct passwd *pw, const char *user, char *usersfile,
++		    size_t max_len, uid_t *usersfile_uid)
++{
++
++  const char *const str_end = cfg->usersfile + strlen(cfg->usersfile);
++  const char *str = cfg->usersfile;
++  size_t end = 0;
++
++  do {
++    const char *copy_str = NULL;
++    size_t copy_len = 0;
++
++    if( strncmp(str, "${USER}", 7) == 0 )
++      {
++	copy_str = user;
++	copy_len = strlen(copy_str);
++	*usersfile_uid = pw->pw_uid;
++	str += 7;
++      }
++    else if( strncmp(str, "${HOME}", 7) == 0 )
++      {
++	copy_str = pw->pw_dir;
++	copy_len = strlen(copy_str);
++	*usersfile_uid = pw->pw_uid;
++	str += 7;
++      }
++    else
++      {
++	const char *search_str = str;
++	while( search_str[0] != '\0' && search_str[0] == '$' )
++	  {
++	    ++search_str;
++	  }
++	const char *spec = strchr(search_str, '$');
++	if(!spec)
++	  {
++	    spec = str_end;
++	  }
++	copy_str = str;
++	copy_len = spec - str;
++	str = spec;
++      }
++
++    if( max_len - end < copy_len + 1 )
++      {
++	return OATH_TOO_SMALL_BUFFER;
++      }
++    if(copy_len > 0)
++      {
++	memcpy(usersfile + end, copy_str, copy_len);
++      }
++    end += copy_len;
++    usersfile[end] = '\0';
++
++  } while(str[0]);
++
++  return OATH_OK;
++}
++
+ PAM_EXTERN int
+ pam_sm_authenticate (pam_handle_t * pamh,
+ 		     int flags, int argc, const char **argv)
+@@ -145,6 +210,8 @@ pam_sm_authenticate (pam_handle_t * pamh,
+   struct cfg cfg;
+   char *query_prompt = NULL;
+   char *onlypasswd = strdup ("");	/* empty passwords never match */
++  char usersfile[1024];
++  uid_t usersfile_uid = 0;
+ 
+   if (!onlypasswd)
+     {
+@@ -162,11 +229,32 @@ pam_sm_authenticate (pam_handle_t * pamh,
+     }
+   DBG (("get user returned: %s", user));
+ 
++  {
++      struct passwd *pw = pam_modutil_getpwnam(pamh, user);
++      if(!pw)
++	{
++	  retval=PAM_USER_UNKNOWN;
++	  goto done;
++	}
++
++      usersfile_uid = getuid();
++      usersfile[0]='\0';
++
++      rc = parse_usersfile_str(&cfg, pw, user, usersfile, sizeof(usersfile), &usersfile_uid);
++      if( rc != OATH_OK )
++	{
++	  retval = PAM_BUF_ERR;
++	  goto done;
++	}
++  }
++  DBG (("usersfile is %s", usersfile));
++
+   // quick check to skip unconfigured users before prompting for password
+   {
+     time_t last_otp;
+     otp[0] = '\0';
+-    rc = oath_authenticate_usersfile (cfg.usersfile,
++    rc = oath_authenticate_usersfile (usersfile,
++				      usersfile_uid,
+                                       user,
+                                       otp, cfg.window, onlypasswd, &last_otp);
+ 
+@@ -321,7 +409,8 @@ pam_sm_authenticate (pam_handle_t * pamh,
+   {
+     time_t last_otp;
+ 
+-    rc = oath_authenticate_usersfile (cfg.usersfile,
++    rc = oath_authenticate_usersfile (usersfile,
++				      usersfile_uid,
+ 				      user,
+ 				      otp, cfg.window, onlypasswd, &last_otp);
+     DBG (("authenticate rc %d (%s: %s) last otp %s", rc,
