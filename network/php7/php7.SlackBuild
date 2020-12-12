@@ -16,7 +16,7 @@
 # 1. Redistributions of this script must retain the above copyright
 #    notice, this list of conditions and the following disclaimer.
 #
-#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
 #  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 #  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
 #  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -28,7 +28,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=php7
-VERSION=${VERSION:-7.4.11}
+VERSION=${VERSION:-7.4.13}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -118,11 +118,13 @@ sed -i "s|build\"$|php/build\"|" scripts/phpize.in
 # requirement. See the link below:
 # http://site.icu-project.org/download/61#TOC-Migration-Issues
 
+# -DU_DEFINE_FALSE_AND_TRUE=1 since recent icu4c no longer defines these otherwise.
+
 # Generic "kitchen sink" configure function, with as many things as possible (and
 # maybe then some ;-) compiled as shared extensions:
 EXTENSION_DIR=/usr/lib${LIBDIRSUFFIX}/php/extensions \
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1" \
+CFLAGS="$SLKCFLAGS -DU_DEFINE_FALSE_AND_TRUE=1" \
+CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1 -DU_DEFINE_FALSE_AND_TRUE=1" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
