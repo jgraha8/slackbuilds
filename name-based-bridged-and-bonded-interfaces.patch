@@ -1,0 +1,57 @@
+diff -ur a/rc.inet1 b/rc.inet1
+--- a/etc/rc.d/rc.inet1.new	2020-12-23 05:12:13.462426021 -0500
++++ b/etc/rc.d/rc.inet1.new	2020-12-23 05:27:17.841056442 -0500
+@@ -72,6 +72,29 @@
+ # INTERFACE FUNCTIONS #
+ #######################
+ 
++# Function to assemble a bond interface.
++bond_open() {
++  # argument is 'i' - the position of this interface in the IFNAME array.
++  echo "+${IFNAME[$1]}" > /sys/class/net/bonding_masters 2> /dev/null
++  #/usr/sbin/ip link set ${IFNAME[$1]} up
++  for BONDIF in $(echo ${BONDNICS[$1]}); do
++    /sbin/ifconfig $BONDIF down
++    echo "+$BONDIF" > /sys/class/net/${IFNAME[$1]}/bonding/slaves 2> /dev/null
++    /sbin/ifconfig $BONDIF 0.0.0.0 -promisc up    
++  done
++}
++
++# Function to disassemble a bond interface.
++bond_close() {
++  # argument is 'i' - the position of this interface in the IFNAME array.
++  for BONDIF in $(cat /sys/class/net/${IFNAME[$1]}/bonding/slaves 2> /dev/null);
++  do
++    echo "-$BONDIF" > /sys/class/net/${IFNAME[$1]}/bonding/slaves      
++  done
++  /sbin/ifconfig ${IFNAME[$1]} down
++  echo "-${IFNAME[$1]}" > /sys/class/net/bonding_masters 2> /dev/null
++}
++
+ # Function to assemble a bridge interface.
+ br_open() {
+   # argument is 'i' - the position of this interface in the IFNAME array.
+@@ -106,7 +129,9 @@
+     i=$(($i+1))
+   done
+   # If the interface is a bridge, then create it first:
+-  [ -n "${BRNICS[$i]}" ] && br_open $i
++  [[ "${IFNAME[$i]}" =~ br[0-9]+$ ]] && br_open $i
++  [[ "${IFNAME[$i]}" =~ bond[0-9]+$ ]] && bond_open $i
++  
+   # If the interface isn't in the kernel yet (but there's an alias for it in
+   # modules.conf), then it should be loaded first:
+   if ! grep `echo ${1}: | cut -f 1 -d :`: /proc/net/dev 1> /dev/null ; then # no interface yet
+@@ -208,9 +233,9 @@
+       . /etc/rc.d/rc.wireless ${1} stop # Kill wireless daemons if any.
+     fi
+     # If the interface is a bridge, then destroy it now:
+-    if [ -n "${BRNICS[$i]}" ]; then
+-      br_close $i
+-    fi
++    [[ "${IFNAME[$i]}" =~ br[0-9]+$ ]] && br_close $i
++    # If the interface is a bond, then destroy it now:
++    [[ "${IFNAME[$i]}" =~ bond[0-9]+$ ]] && bond_close $i
+   fi
+ }
+ 
