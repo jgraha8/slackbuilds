@@ -1,0 +1,11 @@
+network-scripts (Scripts to configure a network)
+
+These are the basic scripts and files used to define a network and
+configure network interfaces on Linux.  Most of the original
+/etc files were written by Fred N. van Kempen, or borrowed from BSD.
+The rc.inet1 and rc.inet2 scripts were mostly written by Patrick
+Volkerding, with suggestions and fixes from hundreds of contributors
+over the years.
+
+NOTE: this package provides support for name-based bridged and bonded
+interfaces and replaces the network-scripts package in Slackware.
