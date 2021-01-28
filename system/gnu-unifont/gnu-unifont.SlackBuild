@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=gnu-unifont
-VERSION=${VERSION:-13.0.04}
+VERSION=${VERSION:-13.0.05}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -104,6 +104,9 @@ if [ "$FONTSCOPIED" -eq 0 ]; then
     echo "Please check value of the FONTFORMATS environment variable."
     exit 1
 fi
+
+# Keep the fonts names unversioned
+find -L $PKG/usr/share -type f -name "*-$VERSION*" -exec rename -- "-$VERSION" '' {} \;
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $DOCFILES $PKG/usr/doc/$PRGNAM-$VERSION

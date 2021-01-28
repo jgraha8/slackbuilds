@@ -2,6 +2,7 @@
 
 # Slackware build script for raku-Readline
 
+# Copyright 2020- Michel Begue <mab974@gmail.com>
 # Copyright 2018-2019 Andreas Voegele <andreas@andreasvoegele.com>
 #
 # Permission to use, copy, modify, and distribute this software for any
@@ -17,7 +18,7 @@
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 PRGNAM=raku-Readline
-VERSION=${VERSION:-0.1.5}
+VERSION=${VERSION:-0.1.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
