@@ -29,10 +29,17 @@ TAG=${TAG:-_SBo}
 
 NUMJOBS=${NUMJOBS:--j7}
 
+COMPAT32=${COMPAT32:-no}
+
 # Be sure this list is up-to-date:
 DRI_DRIVERS="i915,i965,nouveau,r200,radeon,swrast"
 GALLIUM_DRIVERS="nouveau,r300,r600,svga,radeonsi,swrast"
 EGL_PLATFORMS="drm,x11"
+
+if [ "$COMPAT32" = "yes" ]; then
+    ARCH=i586
+    . /etc/profile.d/32dev.sh
+fi
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -76,6 +83,7 @@ find . \
   -exec chmod 755 {} \; -o \
   \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
   -exec chmod 644 {} \;
+
 
 # Apply patches from git (and maybe elsewhere):
 # Patches obtained by:
@@ -187,4 +195,9 @@ mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/${PKGNAM}-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+OUTPUT_PKG=$OUTPUT/${PKGNAM}-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+/sbin/makepkg -l y -c n $OUTPUT_PKG
+
+if [ "$COMPAT32" = "yes" ]; then
+    /usr/sbin/convertpkg-compat32 -i $OUTPUT_PKG  -e ${PKGTYPE:-tgz} -o $OUTPUT/${PKGNAM}-compat32-$VERSION-x86_64-$BUILD$TAG.${PKGTYPE:-tgz}
+fi
