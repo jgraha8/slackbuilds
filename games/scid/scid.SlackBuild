@@ -8,9 +8,11 @@
 # Modified by Robby Workman <rworkman@slackbuilds.org>
 
 PRGNAM=scid
-VERSION=${VERSION:-4.3}
+VERSION=${VERSION:-4.7.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
+
+ENGINES=${ENGINES:-yes}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -45,8 +47,15 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+unzip $CWD/$PRGNAM-code-$VERSION.zip
 cd $PRGNAM
+
+# Apply patches
+for p in $CWD/patches/*.patch
+do
+    patch -p2 < $p
+done
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -54,35 +63,60 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Don't force the possibly wrong tcl version.
-sed -i -e "s/tclsh8.5;/tclsh;/" configure
-
 ./configure \
   BINDIR="/usr/bin" \
   SHAREDIR="/usr/share/scid" \
-  OPTIMIZE="$SLKCFLAGS -fno-rtti -fno-exceptions"
+  OPTIMIZE="$SLKCFLAGS -std=c++14 -fno-rtti -fno-exceptions"
 
 make all_scid
-make strip
 make install_scid DESTDIR=$PKG
 
-## Add some stuff if it's present
-if [ -f $CWD/scidlet40k.zip ] ; then
-    mkdir -p $PKG/usr/share/scid/books
-    unzip $CWD/scidlet40k.zip -d $PKG/usr/share/scid/books
-fi
-if [ -f $CWD/ratings_2008_4.zip ] ; then
-    mkdir -p $PKG/usr/share/scid/data
-    unzip $CWD/ratings_2008_4.zip -d $PKG/usr/share/scid/data
-fi
-if [ -f $CWD/photos2007.zip ] ; then
-    mkdir -p $PKG/usr/share/scid/photos
-    unzip $CWD/photos2007.zip -d $PKG/usr/share/scid/photos
-fi
+mkdir -p $PKG/usr/share/scid/books
+
+mkdir -p $PKG/usr/share/scid/data
+unzip $CWD/ratings0320.zip ratings0320.ssp -d $PKG/usr/share/scid/data
+mv $PKG/usr/share/scid/data/{ratings0320.ssp,spelling.ssp}
+mv $PKG/usr/share/scid/{,data}/scid.eco
+
+unzip $CWD/sounds.zip -d $PKG/usr/share/scid/
+
+mkdir -p $PKG/usr/share/scid/photos
+for p in $CWD/{FIDE_photos_gif.zip,historic.zip,photos.zip,wikipedia.zip}
+do
+    unzip $p -d $PKG/usr/share/scid/photos
+done
+# Create the photo index files
+for p in $PKG/usr/share/scid/photos/*.spf
+do
+    $PKG/usr/bin/spf2spi $p > ${p%*.spf}.spi
+done
 
 # Fix some permissions
 find $PKG/usr/share/scid -type d -exec chmod 0755 {} \;
 find $PKG/usr/share/scid -type f -exec chmod 0644 {} \;
+
+if [ "$ENGINES" = "yes" ]; then
+    make all_engines
+    make install_engines DESTDIR=$PKG
+
+    # The scidlet engine is built with "make all_engines", but is, for
+    # some reason, not installed with "make install_engines"
+    mkdir -p $PKG/usr/share/scid/engines/scidlet    
+    cp -a scidlet engines/scidlet/scidlet.ini \
+       $PKG/usr/share/scid/engines/scidlet
+    unzip $CWD/scidlet40k.zip -d $PKG/usr/share/scid/engines/scidlet
+    mv $PKG/usr/share/scid/engines/scidlet/scidlet{40k,}.sbk
+
+    # Build and install togaII engine
+    pushd engines/togaII1.2.1a/src
+    make
+    mkdir -p $PKG/usr/share/scid/engines/togaII1.2.1a
+    cp -a togaII $PKG/usr/share/scid/engines/togaII1.2.1a/
+    popd
+fi
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # We're going to diverge from upstream a bit in location but not functionality
 # This will require users to be in the 'games' group for write permissions
@@ -99,23 +133,23 @@ cd -
 # Add a desktop menu entry
 mkdir -p $PKG/usr/share/{applications,pixmaps}
 cat $CWD/scid.desktop > $PKG/usr/share/applications/scid.desktop
-cat $CWD/scid.png > $PKG/usr/share/pixmaps/scid.png
+cat $CWD/scid.xpm > $PKG/usr/share/pixmaps/scid.xpm
 
 ## Add the manpage (Thanks to debian)
-mkdir -p $PKG/usr/man/man1
-cd $PKG/usr/man/man1
-  sed "s%@VERSION@%$VERSION%g" $CWD/scid.1 | gzip -9c > scid.1.gz
+mkdir -p $PKG/usr/man/man6
+cd $PKG/usr/man/man6
+  sed "s%@VERSION@%$VERSION%g" $CWD/scid.6 | gzip -9c > scid.6.gz
   for i in \
     sc_remote scmerge pgnscid sc_spell spliteco sc_eco sc_tree scidpgn pgnfix \
     tkscid sc_epgn sc_addmove tcscid sc_import scidlet scidt ;
-    do ln -s scid.1.gz $i.1.gz
+    do ln -s scid.6.gz $i.6.gz
   done
 cd -
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  ChangeLog CHANGES COPYING help README THANKS TODO \
-    $PKG/usr/doc/$PRGNAM-$VERSION
+  ChangeLog TODO COPYING README.md \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

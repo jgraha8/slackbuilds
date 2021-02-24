@@ -1,0 +1,34 @@
+Index: scid/scid/tcl/tools/analysis.tcl
+===================================================================
+--- scid.orig/scid/tcl/tools/analysis.tcl
++++ scid/scid/tcl/tools/analysis.tcl
+@@ -257,7 +257,10 @@ if {[llength $engines(list)] == 0} {
+     set scidEngPaths [list $::scidExeDir [file join $::scidExeDir "engines" ] [file join $::scidShareDir "engines" ] \
+             [ file join $::scidUserDir "engines" ]  [ file join /usr local share scid engines ] \
+             [ file join /usr local bin ] [ file join  /usr bin ] [ file join /usr local games ] [ file join /usr games ] \
+-            [file join $::scidExeDir "engines" "phalanx-scid" ] [file join $::scidExeDir "engines" "togaII1.2.1a" "src" ] ]
++	    [ file join $::scidExeDir "engines" "phalanx-scid" ] [file join $::scidExeDir "engines" "togaII1.2.1a" "src" ] \
++	    [ file join $::scidShareDir "engines" "phalanx-scid" ] \
++	    [ file join $::scidShareDir "engines" "scidlet" ] \
++	    [ file join $::scidShareDir "engines" "togaII1.2.1a" ] ]
+     
+     # The next four lists should have the same length!
+     set scidEngCmds [list $phalanx $togaII $scidlet ]
+@@ -279,7 +282,7 @@ if {[llength $engines(list)] == 0} {
+                 engine [list \
+                         Name $name \
+                         Cmd  $c \
+-                        Dir  . \
++                        Dir  $path \
+                         UCI  $uci \
+                         UCIoptions {} \
+                         ]
+@@ -291,7 +294,7 @@ if {[llength $engines(list)] == 0} {
+                         engine [list \
+                                 Name $name \
+                                 Cmd  $c \
+-                                Dir  . \
++				Dir  [ file join $path $parent ] \
+                                 UCI  $uci \
+                                 UCIoptions {} \
+                                 ]

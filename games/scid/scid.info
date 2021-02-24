@@ -1,10 +1,24 @@
 PRGNAM="scid"
-VERSION="4.3"
+VERSION="4.7.0"
 HOMEPAGE="http://scid.sourceforge.net"
-DOWNLOAD="http://downloads.sourceforge.net/scid/scid-4.3.tar.bz2"
-MD5SUM="66592f91b690458d3aecb582142fc159"
+DOWNLOAD="https://sourceforge.net/projects/scid/files/Scid/Scid%204.7/scid-code-4.7.0.zip \
+          https://sourceforge.net/projects/scid/files/Player%20Data/ratings0320.zip \
+	  https://sourceforge.net/projects/scid/files/Player%20Data/FIDE_photos_gif.zip \
+	  https://sourceforge.net/projects/scid/files/Player%20Data/Franz_Nagl_Latest_data/historic.zip \
+	  https://sourceforge.net/projects/scid/files/Player%20Data/Franz_Nagl_Latest_data/photos.zip \
+	  https://sourceforge.net/projects/scid/files/Player%20Data/Franz_Nagl_Latest_data/wikipedia.zip \
+	  https://sourceforge.net/projects/scid/files/Scid/Additional%20Files/sounds.zip \
+	  https://sourceforge.net/projects/scid/files/Scid/Scidlet%20Opening%20Books/scidlet40k.zip"
+MD5SUM="a7163436231a929cf828b186771dd526 \
+	eab7a9ddbc82b06b12c5644e5ad8d698 \
+	2cdb89011198fc07c10b11c355043ce5 \
+	f7db7e4cb47bb63ee78f0d824178cd8d \
+	65f6dee77c58e145a204dc1339424087 \
+	edae51c4cd9d7436ed521d22ac6cb989 \
+	c3c866bef648ef4dfd38f56609fb8b78 \
+	88fa5d5d38b1b5c34ede70f89d82703d"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="snack"
 MAINTAINER="Nicky Chorley"
 EMAIL="nick.chorley@gmail.com"

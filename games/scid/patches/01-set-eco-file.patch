@@ -1,0 +1,13 @@
+Index: scid/scid/tcl/start.tcl
+===================================================================
+--- scid.orig/scid/tcl/start.tcl
++++ scid/scid/tcl/start.tcl
+@@ -108,7 +108,7 @@ proc InitDirs {} {
+   #Default values, can be overwritten by file option
+   set scidBooksDir [file nativename [file join $scidShareDir "books"]]
+   set scidBasesDir [file nativename [file join $scidShareDir "bases"]]
+-  set ecoFile [file nativename [file join $scidShareDir "scid.eco"]]
++  set ecoFile [file nativename [file join $scidShareDir "data/scid.eco"]]
+ 
+   proc moveOldConfigFiles {} {
+     # Moves configuration files from the old (3.4 and earlier) names
