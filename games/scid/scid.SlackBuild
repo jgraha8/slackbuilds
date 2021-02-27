@@ -96,7 +96,7 @@ find $PKG/usr/share/scid -type d -exec chmod 0755 {} \;
 find $PKG/usr/share/scid -type f -exec chmod 0644 {} \;
 
 if [ "$ENGINES" = "yes" ]; then
-    make all_engines
+    CFLAGS="$SLKCFLAGS" make all_engines
     make install_engines DESTDIR=$PKG
 
     # The scidlet engine is built with "make all_engines", but is, for
@@ -109,7 +109,7 @@ if [ "$ENGINES" = "yes" ]; then
 
     # Build and install togaII engine
     pushd engines/togaII1.2.1a/src
-    make
+    CXXFLAGS="$SLKCFLAGS" make 
     mkdir -p $PKG/usr/share/scid/engines/togaII1.2.1a
     cp -a togaII $PKG/usr/share/scid/engines/togaII1.2.1a/
     popd
