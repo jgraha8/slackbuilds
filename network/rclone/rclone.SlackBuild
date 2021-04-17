@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright 2019-2020 Andrew Payne <phalange@komputermatrix.com>
+# Copyright 2019-2021 Andrew Payne <phalange@komputermatrix.com>
 # Copyright 2017-2018 Rodrigo Gimenez <estrod[at]zoho[dot]com>
 # All rights reserved.
 #
@@ -22,7 +22,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=rclone
-VERSION=${VERSION:-1.53.3}
+VERSION=${VERSION:-1.54.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
