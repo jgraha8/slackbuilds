@@ -48,4 +48,4 @@ VNCSRV=yes/no (default: yes)
 X11=yes/no (default: yes)
 WX=yes/no (default: no), requires wxGTK, or wxPython
 SDL=yes/no (default: yes)
-SDL2=yes/no (default:no), requires SDL2, buggy
+SDL2=yes/no (default:no), requires SDL2
