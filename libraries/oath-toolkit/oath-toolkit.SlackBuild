@@ -69,6 +69,9 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+patch -p1 < $CWD/pam-oath-userfile-placeholders.patch
+autoreconf -if
+
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
@@ -79,14 +82,24 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --disable-static \
-  --disable-pam \
+  --enable-pam \
   --build=$ARCH-slackware-linux
 
 make
 make install DESTDIR=$PKG
 
+# Copy the pam configuration file (other pam files must be updated in order to enable pam support)
+mkdir -p $PKG/etc/pam.d/
+cat $CWD/pam.d/system-oath > $PKG/etc/pam.d/system-oath
+
+# Move pam module to correct security directory
+mkdir -p $PKG/lib${LIBDIRSUFFIX}/security
+mv $PKG/usr/lib/security/pam_oath.* $PKG/lib${LIBDIRSUFFIX}/security/
+rm -rf $PKG/usr/lib/security
+
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+    | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
@@ -97,6 +110,15 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
+# Don't clobber existing config files
+find $PKG/etc -type f -exec mv {} {}.new \;
+( cd $PKG
+  for i in $(find etc -type f -name "*.new") ; do
+      echo "config $i" >> $PKG/install/doinst.sh ;
+  done
+)
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

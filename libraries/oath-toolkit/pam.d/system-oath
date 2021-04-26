@@ -1,0 +1,5 @@
+# Begin /etc/pam.d/system-oath
+
+auth 	requisite pam_oath.so usersfile=/etc/users.oath window=2 digits=6
+
+# End /etc/pam.d/system-oath

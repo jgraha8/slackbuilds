@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
             |-----handy-ruler------------------------------------------------------|
-oath-toolkit: oath-toolkit (OTP Authentication System)
+oath-toolkit: oath-toolkit (OTP Authentication System with PAM support)
 oath-toolkit:
 oath-toolkit: The OATH Toolkit provide components for building one-time password
 oath-toolkit: authentication systems. Supported technologies include the event-based
