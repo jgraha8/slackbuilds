@@ -24,10 +24,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=obs-studio
-VERSION=${VERSION:-26.1.2}
+VERSION=${VERSION:-24.0.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
-CMAKE=${CMAKE:-/opt/cmake-202x/bin/cmake}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -83,7 +82,7 @@ fi
 
 mkdir -p build
 cd build
-  $CMAKE \
+  cmake \
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_INSTALL_PREFIX=/usr \
