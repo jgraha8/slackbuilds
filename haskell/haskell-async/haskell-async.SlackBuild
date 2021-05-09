@@ -24,7 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=haskell-async
-VERSION=${VERSION:-2.2.1}
+VERSION=${VERSION:-2.2.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -90,7 +90,7 @@ runghc Setup copy --destdir=$PKG
 runghc Setup register --gen-pkg-config
 
 PKGCONFD=/usr/lib${LIBDIRSUFFIX}/ghc-${GHC_VERSION}/package.conf.d
-PKGID=$( grep -E "^id: " $SRCNAM-$VERSION.conf | cut -d" " -f2 )
+PKGID=$( grep -E "^id: " $SRCNAM-$VERSION.conf | sed "s/[[:space:]][[:space:]]*/ /" | cut -d" " -f2 )
 mkdir -p $PKG/$PKGCONFD
 mv $SRCNAM-$VERSION.conf $PKG/$PKGCONFD/$PKGID.conf
 
