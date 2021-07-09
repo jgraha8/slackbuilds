@@ -2,6 +2,7 @@
 #
 # Copyright 2006, 2011  Alan Hicks, Lizella, GA
 # Copyright 2010, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019  Mario Preksavec, Zagreb, Croatia
+# Copyright 2021  Jason Graham, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=postfix
-VERSION=${VERSION:-3.3.2}
+VERSION=${VERSION:-3.3.18}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
