@@ -82,6 +82,7 @@ find -L . \
 export CFLAGS="$SLKCFLAGS"
 export CXXFLAGS="$SLKCFLAGS"
 mkdir build
+pushd build
 meson setup \
   --prefix=/usr \
   --libdir=lib${LIBDIRSUFFIX} \
@@ -94,8 +95,9 @@ meson setup \
   --sysconfdir=/etc \
   --localstatedir=/var \
   --buildtype=release \
-  build || exit 1
+  . .. || exit 1
 "${NINJA:=ninja}"
+popd
 $NINJA -C build || exit 1
 DESTDIR=$PKG $NINJA -C build install || exit 1
 
