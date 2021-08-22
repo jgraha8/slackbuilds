@@ -1,0 +1,10 @@
+acts is a minimal shell script that creates backups with Tarsnap. Our
+design goals:
+
+  Just backup, no restore.
+  Calendar-based backup schedule
+  Portable, small, code footprint.
+
+One daily Tarsnap archive is created per-target per-run. By default,
+31 daily and 12 monthly backups are kept, and yearly backups are kept
+indefinitely.
