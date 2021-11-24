@@ -60,11 +60,6 @@ autoreconf -fi
 make
 make install DESTDIR=$PKG
 
-# Files conflict with versions in development/gnome-common and these files are
-# not needed by games/nestopia which requires autoconf-archive.
-rm -f $PKG/usr/share/aclocal/ax_check_enable_debug.m4 \
-  $PKG/usr/share/aclocal/ax_code_coverage.m4
-
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
 

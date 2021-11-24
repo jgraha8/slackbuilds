@@ -13,3 +13,9 @@ such a pivotal position in the software development tool chain that the
 benefits from having this tool available as widely as possible outweigh
 the disadvantage that some authors may choose to use it, too, for
 proprietary software.
+
+The following files installed by this package conflict with the versions
+in development/gnome-common:
+
+   /usr/share/aclocal/ax_check_enable_debug.m4
+   /usr/share/aclocal/ax_code_coverage.m4
