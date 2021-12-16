@@ -29,7 +29,7 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=mariadb105
+PRGNAM=mariadb105
 VERSION=${VERSION:-10.5.13}
 BUILD=${BUILD:-1}
 
@@ -111,8 +111,8 @@ cmake \
   -DINSTALL_SCRIPTDIR=bin \
   -DINSTALL_SUPPORTFILESDIR=share/mysql \
   -DINSTALL_MYSQLDATADIR="/var/lib/mysql" \
-  -DINSTALL_DOCREADMEDIR="doc/${PKGNAM}-$VERSION" \
-  -DINSTALL_DOCDIR="doc/${PKGNAM}-$VERSION" \
+  -DINSTALL_DOCREADMEDIR="doc/${PRGNAM}-$VERSION" \
+  -DINSTALL_DOCDIR="doc/${PRGNAM}-$VERSION" \
   -DMYSQL_DATADIR="/var/lib/mysql" \
   -DMYSQL_UNIX_ADDR="/var/run/mysql/mysql.sock" \
   -DWITH_EXTRA_CHARSETS=complex \
