@@ -1,0 +1,6 @@
+Mariadb 10.5 is a backward compatible, drop-in replacement branch of
+the MySQL(R) Database Server. It includes all major open source
+storage engines, including the Aria storage engine.
+
+NOTE: This package conflicts with the Slackware mariadb package. You
+must remove mariadb before installing this package.
