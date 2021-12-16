@@ -5,6 +5,6 @@ DOWNLOAD="https://downloads.mariadb.com/MariaDB/mariadb-10.5.13/source/mariadb-1
 MD5SUM="d29634917b964201b485e4780ed1ddb1"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="%README%
+REQUIRES="%README%"
 MAINTAINER="Jason Graham"
 EMAIL="jgraham@compukix.net"
