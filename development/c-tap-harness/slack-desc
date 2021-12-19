@@ -1,0 +1,12 @@
+             |-----handy-ruler------------------------------------------------------|
+c-tap-harness: c-tap-harness (pure-C implementation of TAP)
+c-tap-harness: 
+c-tap-harness: C TAP Harness is a pure-C implementation of TAP, the Test Anything
+c-tap-harness: Protocol. TAP is the text-based protocol used by Perl's test
+c-tap-harness: suite. This package provides a harness similar to Perl's 
+c-tap-harness: Test::Harness for running tests, with some additional features useful
+c-tap-harness: for test suites in packages that use Autoconf and Automake, and C and
+c-tap-harness: shell libraries to make writing TAP-compliant test programs easier.
+c-tap-harness:
+c-tap-harness: Homepage: https://www.eyrie.org/~eagle/software/c-tap-harness/
+c-tap-harness:
