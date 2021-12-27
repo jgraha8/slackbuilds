@@ -1,0 +1,14 @@
+diff --git a/lutris/runtime.py b/lutris/runtime.py
+index 71f68fe9..28d10758 100644
+--- a/lutris/runtime.py
++++ b/lutris/runtime.py
+@@ -73,6 +73,9 @@ class Runtime:
+             return None
+ 
+         url = remote_runtime_info['url']
++        if not url:
++            return None
++
+         archive_path = os.path.join(RUNTIME_DIR, os.path.basename(url))
+         downloader = Downloader(url, archive_path, overwrite=True)
+         downloader.start()
