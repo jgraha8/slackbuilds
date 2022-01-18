@@ -68,6 +68,10 @@ find -L . \
 
 python setup.py install --root=$PKG
 
+if [ "$PYTHON3" = "yes" ]; then
+    python setup.py install --root=$PKG
+fi
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a README.rst *.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
