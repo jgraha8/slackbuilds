@@ -69,7 +69,7 @@ find -L . \
 python setup.py install --root=$PKG
 
 if [ "$PYTHON3" = "yes" ]; then
-    python setup.py install --root=$PKG
+    python3 setup.py install --root=$PKG
 fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
