@@ -1,0 +1,5 @@
+Dependency mangement and queue file generator for SlackBuilds.org
+repository.
+
+This package provides the sbosqf command line program which will
+generate queue files for sbopkg.
