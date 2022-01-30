@@ -1,0 +1,8 @@
+libbds provides support for data structures typically needed for C
+applications. In addition, there is support for string manipulation,
+data serialization, and others.
+
+The library is written using generic data types, which makes it
+flexible for any data type. This excludes the string manipulation
+module, which is predicated on standard, null-character terminated
+strings.
