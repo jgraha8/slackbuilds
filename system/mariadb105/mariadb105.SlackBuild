@@ -30,7 +30,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=mariadb105
-VERSION=${VERSION:-10.5.13}
+VERSION=${VERSION:-10.5.15}
 BUILD=${BUILD:-1}
 
 # To reduce the package size, the embedded server may be omitted.  Currently
