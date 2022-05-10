@@ -1,3 +1,600 @@
+Sat May  7 07:00:10 UTC 2022
+academic/boinc: Upgraded to version 7.18.1
+academic/gwyddion: Updated for version 2.61.
+academic/nco: Updated for version 5.0.7.
+accessibility/mbrola: Added (speech synthesizer)
+audio/SongRec: Added (Shazam client for linux)
+audio/ncspot: Updated for version 0.9.8.
+audio/pogo: Updated for version 1.0.1. New maintainer.
+audio/spectmorph: Added (Analyze samples and combine them)
+audio/whipper: Update DEP and README.
+desktop/emwm: Added (enhanced motif window manager)
+desktop/grim: Added (Grab images from a Wayland compositor)
+desktop/mwm-utils: Added (utilities for emwm)
+desktop/thunar-archive-plugin: Updated for version 0.5.0.
+development/OpenJDK11: Updated for version 11.0.15.
+development/OpenJDK17: Updated for version 17.0.3.
+development/jupyter-nbclient: Updated for version 0.6.2.
+development/jupyter-nbformat: Updated for version 5.4.0.
+development/jupyter_server: Updated for version 1.17.0.
+development/jupyterlab: Updated for version 3.4.0.
+development/mutagen: Updated for version 1.45.1. New maintainer.
+development/mysql-workbench: Add network warning to README.
+development/pgmodeler: Fix slack-desc.
+development/pycharm: Updated for version 2022.1.
+development/vscodium: Updated for version 1.66.2.
+games/opensurge: Added (2D retro platformer)
+games/pcgen: Strip bins/libs, fix ARCH, etc.
+games/protontricks: Fix doinst.sh.
+games/redeclipse: Fix docs.
+games/rlvm: Clean up package.
+games/scid_vs_pc: Fix fonts, docs.
+games/scummvm: Fix doinst.sh and docs.
+games/stuntrally: Don't include 32bit libs in 64bit pkg.
+games/surgescript: Added (scripting language for games)
+games/ufoai: Strip shared lib.
+games/waterCloset: Fix doinst and desktop nitpicks.
+games/wesnoth: Strip binaries.
+games/wolfmame: Added (A secure fork of MAME)
+gis/gdal: Updated for version 3.4.3.
+gis/python3-pyshp: Updated for version 2.3.0.
+gis/python3-shapely: Updated for version 1.8.2.
+graphics/graphviz: Updated for version 3.0.0.
+graphics/vuescan: Updated for version 9.7.85.
+libraries/hoel: Updated for version 1.4.23.
+libraries/libgweather4: Added (weather library for GNOME)
+libraries/libreadline-java: Updated for version 0.8.3.
+libraries/mysql-connector-c++: Updated for version 8.0.29.
+libraries/pylast: Updated for version 5.0.0. New maintainer.
+libraries/python-ruamel: Updated for version 0.16.13.
+libraries/rabbitmq-c: Fix missing backslash in script.
+libraries/uthash: Updated for version 2.3.0.
+libraries/xmlsec: Updated for version 1.2.34.
+misc/xcape: Updated for version 1.2.
+misc/yara: Updated for version 4.2.1.
+multimedia/beets: Updated for version 1.6.0. New maintainer.
+multimedia/plexmediaserver: Updated for v 1.26.0.5715_8cf78dab3.
+multimedia/vlc: Updated for version 3.0.17.3. New maintainer.
+network/brave-browser: Updated for version 1.38.111.
+network/element-desktop: Updated for version 1.10.11.
+network/elinks: Allow content-disposition filenames.
+network/emailrelay: Updated for version 2.3.
+network/glewlwyd: Updated for version 2.7.0.
+network/liferea: Fix build with newer webkit2gtk.
+network/microsoft-edge: Updated for version 101.0.1210.32.
+network/onedrive: Updated for version 2.4.17.
+network/openconnect: Updated for version 9.01.
+network/qbittorrent: Updated for version 4.4.2. New maintainer.
+network/qutebrowser-bin: Added (keyboard-focused browser)
+network/signal-desktop: Updated for version 5.42.0.
+network/social-engineer-toolkit: Removed. (Unmaintained).
+network/sshguard: Updated for version 2.4.2.
+network/tcpflow: Updated for version 1.6.1.
+network/teams: Updated for version 1.5.00.10453.
+network/tor-browser: Updated for version 11.0.11.
+network/wireshark: Updated for version 3.6.5.
+network/yle-dl: Updated for version 20220425.
+network/zabbix_frontend: Added (distributed monitoring solution)
+office/LibreOffice: Updated for version 7.3.3.2
+office/MasterPDFEditor: Updated for version 5.8.52.
+office/calibre-bin: Updated for version 5.42.0.
+office/featherpad: Added (text editor)
+office/libreoffice-helppack: Updated for version 7.3.3.
+office/libreoffice-langpack: Updated for version 7.3.3.
+office/libreoffice: Updated for version 7.3.3.
+perl/perl-Test-Harness: Updated for versino 3.44.
+python/distorm: Removed. (Renamed to python/python2-distorm).
+python/doit: Add dependency python-importlib_metadata.
+python/pefile: Updated for version 2021.9.3.
+python/pycdio: Update source URL.
+python/python2-distorm: Added (Disassembler Library)
+python/python3-autobahn: Updated for version 22.4.2.
+python/python3-bcrypt: updated for version 3.2.2
+python/python3-filetype: Added (file type and MIME type checking)
+python/python3-h11: Added (little HTTP/1.1 library in Python)
+python/python3-httpcore: Added (a minimal low-level HTTP client)
+python/python3-httpx: Added (A next-gen HTTP client for Python)
+python/python3-rfc3986: Added (validation and authority parsing)
+ruby/ruby-build: Updated for version 20220426.
+system/arqiver: Added (Simple Qt archive manager)
+system/binfmt-support: Update HOMEPAGE.
+system/bitrot: Updated for version 1.0.0.
+system/bulk_extractor: Fix 32bit build.
+system/jenkins: Updated for version 2.332.3.
+system/letsencrypt: Updated for version 1.27.0.
+system/mhddfs: Update email.
+system/redis: updated for version 7.0.0
+system/sakura: Updated for version 3.8.5.
+system/swtpm: Fix 32bit build.
+system/telegraf: Updated for version 1.22.3.
+system/xen: Add logic for sysconfig *enhanced* systems.
+system/zzzfm: Added (Multi-panel tabbed file manager)
++--------------------------+
+Sat Apr 30 06:54:56 UTC 2022
+academic/AlphaPlot: Added (data analysis and visualization)
+academic/avogadroapp: Fix DOWNLOAD.
+academic/avogadroapp: Provide option to build shared/static.
+academic/dakota: Update BUILD.
+academic/getdp: Update README.
+academic/getfem: Fix slack-desc.
+academic/gmsh: Updated for version 4.10.0.
+academic/x48: Added (HP48 Calculator emulator)
+audio/flacon: Updated for version 8.3.0.
+audio/pulseaudio-ctl: Updated for version 1.70.
+audio/rack: Added (The Eurorack Simulator)
+desktop/BlockstreamGreen: Added (A Bitcoin Wallet).
+desktop/doctest: Added (C++ testing framework).
+desktop/dunst: Updated for version 1.8.1
+desktop/gfi: Added (GTK Flatpak Installer)
+desktop/gmrun: Updated for version 1.3w.
+desktop/jgmenu: Updated for version 4.4.0.
+desktop/qt5ct: Updated for version 1.5.
+desktop/sl-fortune: Added (fortune in X with a slack-ish icon)
+desktop/waybar: Added (bar for wlroots based compositors).
+desktop/wayfire: Added (3D wayland compositor).
+desktop/wcm: Added (config manager for wayfire).
+desktop/wf-config: Added (Configuration library).
+desktop/wf-shell: Added (GTK3-based panel for wayfire).
+desktop/xfce4-windowck-plugin: add upstream patch
+desktop/yambar: Fix slack-desc.
+desktop/zenity: Update for 3.42.1; update website.
+development/avr-binutils: Updated for version 2.38.
+development/avrdude: Updated for version 6.4.
+development/composer: Updated for version 2.3.5
+development/dbeaver-ce: Updated for version 22.0.3.
+development/dpkg: Updated for version 1.21.7.
+development/gedit-plugins: Updated for version 42.0. New maintainer.
+development/gedit: Updated for version 42.0. New maintainer.
+development/ghidra: Updated for version 10.1.3
+development/git-lfs: Updated for version 3.1.4.
+development/github-cli: Updated for version 2.9.0
+development/hugo: Updated for version 0.98.0
+development/idea: Updated for version 2022.1.
+development/jupyter-nbclient: Update for 0.6.0
+development/jupyter-nbconvert: Update for 6.5.0
+development/jupyter-notebook_shim: Added (shim for Jupyter Notebook)
+development/jupyter_client: Update for 7.3.0
+development/jupyter_packaging: Added (Jupyter Packaging Utilities)
+development/jupyter_server: Added (Jupyter Backend)
+development/jupyterlab: Added (Jupyter next-gen user interface)
+development/jupyterlab_server: Added (Launch a JupyterLab app)
+development/mdbook: Strip binaries.
+development/mysql-workbench: Updated for version 8.0.29.
+development/pgmodeler: Added (PostgreSQL Database Modeler)
+development/postman: Updated for version 9.16.0
+development/protobuf3: Updated for version 3.20.1.
+development/recutils: Added (tools/libraries to access recfiles).
+development/rstudio-desktop: Update for 2022.02.2+485
+development/universal-ctags: Updated for version p5.9.20211205.0
+development/xmake: Updated for version 2.6.5.
+games/ZEsarUX: Updated for version 10.0.
+games/devilutionx: Updated for version 1.4.0.
+games/dwarffortress: Added (A single-player fantasy adventure game)
+games/nestopia: Add newline at EOF to README.
+games/openttd: Updated for version 12.2.
+games/trigger-rally: Updated for version 0.6.6.1. New maintainer.
+games/worldofpadman: Remove cruft, fix icons, desktop, add wrappers.
+graphics/farbfeld: Added (lossless image format)
+graphics/peek: Added (an animated GIF recorder).
+graphics/vuescan: Updated MD5SUMs.
+graphics/vuescan: Updated for version 9.7.84.
+graphics/yed: Updated for version 3.22
+libraries/aqbanking: Updated for version 6.5.0.
+libraries/audioread: Updated for version 2.1.9.
+libraries/bullet: Updated for version 3.24.
+libraries/date: Added (date and time library)
+libraries/gtk-layer-shell: Added (Layer Shell GTK appls libs).
+libraries/gtkglext: Fix docs.
+libraries/gtkmm-utils: Fix docs.
+libraries/gwenhywfar: Updated for version 5.9.0.
+libraries/hoel: updated for version 1.4.22
+libraries/iddawc: updated for version 1.1.3
+libraries/levmar: Fix docs.
+libraries/libchamplain: Fix typo in the build script
+libraries/libdbi-drivers: Fix docs.
+libraries/libde265: Remove tests. Update README.
+libraries/libdmapsharing: Fix docs.
+libraries/libfprint: Strip library; fix docs.
+libraries/libg3d: Fix docs.
+libraries/libgdata: Make sure we use the correct switch for tests
+libraries/libgnomeuimm: Fix docs.
+libraries/libgweather: Remove unused options
+libraries/libheif: Updated for version 1.12.0.
+libraries/libmrss: Strip library.
+libraries/libquicktime: Fix docs.
+libraries/libskk: Fix docs.
+libraries/libticalcs2: Strip library, fix docs.
+libraries/libtifiles2: Strip library, fix docs.
+libraries/libtorrent-rasterbar: Update for 1.2.16
+libraries/libtpms: Updated for version 0.9.4
+libraries/libucil: Fix docs.
+libraries/libvirt: Strip binaries.
+libraries/libxdg-basedir: Updated for version 1.2.3.
+libraries/lua-cjson: Strip library, use SLKCFLAGS.
+libraries/lua-md5: Fix doc permissions.
+libraries/mowitz: Fix docs.
+libraries/munkres: Updated for version 1.1.4.
+libraries/musicbrainzngs: New maintainer.
+libraries/nlohmann_json: Fix slack-desc.
+libraries/opendht: Fix docs.
+libraries/php-redis: updated for version 5.3.7, new maintainer
+libraries/process-cpp: Fix docs.
+libraries/properties-cpp: Fix docs.
+libraries/pyacoustid: Updated for version 1.2.2.
+libraries/qt-assistant-compat: Fix doc permissions.
+libraries/rabbitmq-c: Updated for version 0.11.0.
+libraries/raylib: Added (Game development library).
+libraries/rhonabwy: updated for version 1.1.5
+libraries/simbody: Fix docs.
+libraries/slib: Fix docs, make noarch.
+libraries/slv2: Strip binaries.
+libraries/spdlog: Updated for version 1.10.0.
+libraries/tolua++: Fix doc permissions.
+libraries/webkit2gtk4.1: Updated for version 2.36.1.
+libraries/webkit2gtk: Updated for version 2.36.1.
+libraries/wxPython4: Fix docs.
+libraries/xalan-c: Fix doc permissions.
+libraries/xmlrpc-c: Fix doc perms, add -j1 to make.
+misc/discount: New Maintainer.
+misc/dos2unix: Updated for version 7.4.2
+misc/ghostpcl: Updated for version 9.56.1.
+misc/gprename: Updated for version 20220206, new maintainer.
+misc/sbo-templates: Updated for version 1.3.4.
+misc/tal: New maintainer.
+multimedia/MuseScore: build and README update
+multimedia/QMPlay2: Updated for version 22.03.19.
+multimedia/parole: Updated for version 4.16.0.
+network/AdGuardHome: Update script.
+network/AdGuardHome: Updated for version 0.107.6.
+network/bitcoin: Updated for version 23.0.
+network/brave-browser: Updated for version 1.38.109
+network/clipgrab: Updated for version 3.9.7.
+network/deluge: Update for 2.0.5
+network/dropbox: Updated for version 147.4.4800.
+network/elinks: Add Patches: disable suspend, -no-connect
+network/fdns: Updated for version 0.9.68.
+network/haproxy: Updated for version 2.5.6.
+network/js185: Added (SpiderMonkey - Mozilla's JavaScript Engine).
+network/mattermost-desktop: Update BUILD. New maintainer.
+network/mattermost-desktop: Updated for version 5.0.4.
+network/mosh: New maintainer, bash completion, ufw support.
+network/opera-developer: Updated for version 88.0.4395.0.
+network/opera: Updated for version 86.0.4363.23.
+network/quassel-qt5: Removed (redundant; use quassel).
+network/quassel: New maintainer.
+network/rclone: Updated for version 1.58.1
+network/seadrive-fuse: Added (SeaDrive daemon with FUSE interface)
+network/signal-desktop: Updated for version 5.41.0
+network/snownews: Removed (part of slackWare).
+network/teamviewer: Updated for version 15.29.4
+network/telegram: Updated for version 3.7.1.
+network/telegram: Updated for version 3.7.3.
+network/vdirsyncer: Added (cli calendar/address book sync tool)
+network/wsdd2: Updated for version 1.8.6.
+network/zoom-linux: Updated for version 5.10.4.2845
+office/JabRef: Updated for version 5.6.
+office/anorack: New Maintainer.
+office/calibre-bin: Updated for version 5.41.0.
+office/evolution-ews: Added (Exchange Web Services)
+office/evolution: Added (Email and calendaring application)
+office/gmdb2: Added (official GUI for mdbtools).
+office/khal: Added (terminal/cli calendar program)
+office/khard: Added (an address book for the Unix console)
+office/leafpad: New Maintainer.
+office/mdbtools: Updated for version 1.0.0.
+office/qpdfview-qt5: Removed (redundant; use qpdfview).
+office/qpdfview: New maintainer.
+perl/MoarVM: Updated for version 2022.04
+perl/nqp: Updated for version 2022.04
+perl/perl-Devel-Trace: Added (Print each line before execution)
+perl/perl-JSON-XS: Updated for version 4.03. New maintainer.
+perl/perl-Types-Serialiser: Updated for v 1.01. New maintainer.
+perl/perl-common-sense: Remove empty man page. New maintainer.
+perl/perl-extutils-depends: Updated for version 0.8001.
+perl/perl-file-basedir: Updated for version 0.09.
+perl/perl-file-mimeinfo: Updated for version 0.32.
+perl/rakudo: Updated for version 2022.04
+python/bleach: updated for version 5.0.0
+python/doit: Updated for version 0.36.0.
+python/ipython: Update for 8.3.0
+python/jellyfish: Updated for version 0.9.0.
+python/python-confuse: Added (painless YAML config files)
+python/python-mediafile: Added (read and write audio files' tags)
+python/python3-aiohttp: Remove gunicorn from DEPs
+python/python3-amqp: updated for version 5.1.1
+python/python3-anyio: Added (Asynchronous framework)
+python/python3-babel: updated for version 2.10.1
+python/python3-celery: updated for version 5.2.6
+python/python3-deprecation: Added (lib for handling deprecations)
+python/python3-json5: Added (Python implementation of JSON5)
+python/python3-prompt_toolkit: updated for version 3.0.29
+python/python3-psycopg3: Added (python3 PostgreSQL database adapter)
+python/python3-pytest: Update for 7.1.2
+python/python3-requests-unixsocket: Added (talk to HTTP)
+python/python3-sniffio: Added (detect async library)
+python/python3-tomlkit: Added (Style-preserving TOML library)
+ruby/3llo: Added (The interactive CLI application for Trello)
+ruby/pastel: Added (independent coloring component f/ TTY toolkit.)
+ruby/tty-color: Added (Terminal color capabilities detection.)
+ruby/tty-cursor: Added (move the cursor and manipulate text)
+ruby/tty-prompt: Added (A powerful interactive command line prompt)
+ruby/tty-reader: Added (process keyboard input in character)
+ruby/tty-screen: Added (Terminal screen size detection)
+ruby/wisper: Added (Ruby objects w/ Publish-Subscribe capabilities.)
+system/backintime: Added (simple backup tool)
+system/bitrot: New Maintainer.
+system/bleachbit: Updated for version 4.4.2.
+system/bulk_extractor: Updated to v2.0.0
+system/dosbox-dev: updated for version 0.75_pre4474
+system/dump: New maintainer.
+system/f3: Updated for version 8.0.
+system/fprintd: Added (fingerprint scanning daemon over D-Bus)
+system/linkchecker: Update DEP for GUI.
+system/makeself: Don't put files directly in /usr/share.
+system/monitorix: Fix download URL.
+system/munin-node: Add doc directory.
+system/netdata: Update README.
+system/netdata: Update source to fix build with protobuf3.
+system/nsca-ng: Exit nonzero if user/group don't exist.
+system/nvidia-driver: Updated for version 510.68.02.
+system/nvidia-kernel: Updated for version 510.68.02.
+system/openrazer-kernel: Fix PRINT_PACKAGE_NAME & docs dir.
+system/openrc-services: Updated for version 20210926.
+system/passwordsafe: Fix doinst.sh.
+system/phoronix-test-suite: Updated for version 10.8.3.
+system/piper: Add doinst.sh.
+system/powershell: Update for version 7.2.3.
+system/python-urwid: Strip binaries.
+system/razerCommander: Fix doinst.sh.
+system/redis-py: updated for version 4.2.2, python3, new maintainer
+system/redis: updated for version 6.2.6, new maintainer
+system/sakura: New Maintainer.
+system/slackrepo-hints: Updated for version 20220429.
+system/sleuthkit: Updated for version 4.11.1
+system/swtpm: Added (libtpms-based TPM emulator)
+system/trmaid: removed, upstream disappeared, removed from pypi
+system/veracrypt: Remove empty /usr/share/doc dir.
+system/zsh-completions: Updated for version 0.33.0.
++--------------------------+
+Sat Apr 23 18:49:13 UTC 2022
+academic/FreeFem: Updated for version 4.11.
+academic/avogadroapp: Added (graphic user interface of Avogadro 2)
+academic/avogadrolibs: Added (Libraries for Avogadro 2)
+academic/dakota: Added documentation.
+academic/gcompris-qt: Updated for version 2.4.
+academic/getfem: Added (finite element modeling software)
+academic/gwyddion: Updated for version 2.60.
+academic/molequeue: Updated for version 0.9.0.
+academic/petsc: Added (toolkit for scientific computation).
+academic/rpy2: Updated to version 3.5.1.
+audio/JDSP4Linux: Added (Pipewire system equalizer).
+audio/ncmpcpp: Updated for version 0.9.2.
+audio/opustags: Added (View and edit Ogg Opus comments.)
+desktop/Tela-icon-theme: Fix github tarball handling.
+desktop/anki: Fix DOWNLOAD url.
+desktop/bottles: Updated for version 2022.4.14.trento.2.
+desktop/foot: Added (native wayland terminal emulator)
+desktop/fuzzel: Added (wayland native application launcher)
+desktop/qtile: Updated README.
+desktop/yambar: Added (status panel for X11 and Wayland)
+development/Catch: Fix docs; make self-test optional.
+development/ghex: Update for 42.1
+development/jupyter-notebook: Updated for version 6.4.11.
+development/jupyter_core: Updated for version 4.10.0.
+development/jupyterlab_pygments: Revert to version 0.1.2.
+development/kotlin: Updated for version 1.6.21.
+development/mongodb-compass: Updated for version 1.31.2.
+development/mysql-workbench: Add upstream patch.
+development/neovim: Updated for version 0.7.0.
+development/openjdk7: Fix script.
+development/openjdk8: Updated for version 8u322.
+development/portaudio: new maintainer.
+development/protobuf3: Updated for version 3.20.0.
+development/valgrind: Updated for version .
+games/0ad-data: Updated for version 0.0.25b.
+games/0ad: Updated for version 0.0.25b.
+games/lutris: Updated to 0.5.10
+games/mgba: Updated for version 0.9.3.
+games/nestopia: Updated for version 1.51.1.
+games/ppsspp: Updated for version 1.12.3.
+gis/google-earth: Use correct VERSION.
+gis/python3-pyproj: Updated for version 3.3.1
+graphics/vuescan: Updated for version 9.7.83.
+ham/qt-dab: Added (Software DAB Decoder)
+libraries/Botan: Fix docs.
+libraries/CCfits: Fix docs.
+libraries/CGAL: Fix man page location.
+libraries/DevIL: Fix docs.
+libraries/FormEncode: Fix docs.
+libraries/GLee: Fix docs.
+libraries/Geraldo: Fix docs.
+libraries/HawkNL: Fix symlinks, rm static lib.
+libraries/Impacket: Fix docs.
+libraries/SDL_gfx: Fix docs.
+libraries/VitaMTP: Fix docs.
+libraries/antlr4: Updated for version 4.10.1.
+libraries/avr-libc: Fix PRINT_PACKAGE_NAME.
+libraries/barry: Fix docs.
+libraries/belle-sip: Fix docs.
+libraries/bullet: Updated for version 3.22b.
+libraries/bzrtp: Fix docs.
+libraries/cloog: Fix PRINT_PACKAGE_NAME.
+libraries/clutter-gtk: Added (GTK+ Integration library for Clutter).
+libraries/clutter: Added (OpenGL based interactive canvas library).
+libraries/cogl: Fix build with multiple jobs.
+libraries/compface: Strip libraries.
+libraries/ctemplate: Strip libraries.
+libraries/edelib: Fix docs.
+libraries/fcft: Added (font loading and glyph rasterization library)
+libraries/fcgi: Fix docs.
+libraries/ffms2: Fix docs.
+libraries/fmt: Updated for version 8.1.1.
+libraries/gconfmm: Fix docs.
+libraries/gdata: Fix docs.
+libraries/genshi: Strip library.
+libraries/gf2x: Fix docs, mention SSE2 in README.
+libraries/giblib: Fix docs.
+libraries/gmtk: Fix docs.
+libraries/goffice0.8: Fix docs.
+libraries/goffice: Fix docs.
+libraries/grx: Fix docs, disable parallel builds.
+libraries/gsm: Fix build.
+libraries/gsound: Fix docs.
+libraries/gspell: Fix PRINT_PACKAGE_NAME.
+libraries/gtk-sharp: Fix docs.
+libraries/gtkhtml: Fix doc, doinst.sh.
+libraries/htslib: Fix MD5SUM.
+libraries/iniparser: Use SLKCFLAGS, fix shared lib, rm static.
+libraries/jbigkit: Strip binaries.
+libraries/libEMF: Remove .la files.
+libraries/libasr: Fix man page permissions.
+libraries/libchamplain: Added (C library).
+libraries/libcitadel: Strip library.
+libraries/libclaw: Fix docs, rm static libs.
+libraries/libcoap: Make API docs optional.
+libraries/libcryptui: Add doinst.sh, fix icons.
+libraries/libdatrie: Fix docs.
+libraries/libdbi-drivers: fixup the postgres flags
+libraries/libdbus-c++: Fix docs.
+libraries/libdca: Fix docs, broken symlink.
+libraries/libdca: New maintainer.
+libraries/libeatmydata: Fix PRINT_PACKAGE_NAME.
+libraries/libetpan: Fix docs.
+libraries/libfastjson: Fix docs.
+libraries/libgaminggear: Fix docs.
+libraries/libgnomecups: Strip library.
+libraries/libgringotts: Fix docs.
+libraries/libhtp: Fix docs.
+libraries/libiptcdata: Fix docs.
+libraries/libircclient: Fix PRINT_PACKAGE_NAME.
+libraries/libkate: Remove static lib, fix docs.
+libraries/libmaa: Strip binaries.
+libraries/libmimic: Fix docs.
+libraries/libmms: Fix docs.
+libraries/libmspack: Fix docs.
+libraries/liboauth: Strip lib, fix PRINT_PACKAGE_NAME.
+libraries/liboglappth: Fix docs.
+libraries/libopenshot-audio: Make API doc optional.
+libraries/liborigin: Fix docs.
+libraries/libotf: Fix docs.
+libraries/libpar2: Fix docs.
+libraries/libpgf: Remove dos2unix dep; fix docs.
+libraries/libprelude: Strip binaries.
+libraries/librcd: Fix docs.
+libraries/libshout: New maintainer.
+libraries/libsieve: Strip binaries, fix tarball handling.
+libraries/libsmdev: Fix docs.
+libraries/libsoup3: Fix PRINT_PACKAGE_NAME.
+libraries/libticables2: Strip binaries.
+libraries/libticonv: Strip lib, fix docs.
+libraries/libtorrent-rasterbar: Fix PRINT_PACKAGE_NAME, strip.
+libraries/libtorrent: Fix docs.
+libraries/libtpms: Added (library for emulating TPM 1.2 and 2.0)
+libraries/libuchardet: Fix docs.
+libraries/libuinputplus: Fix PRINT_PACKAGE_NAME.
+libraries/libxfcegui4: Fix docs.
+libraries/libxlsxwriter: Fix docs.
+libraries/libxmi: Fix docs.
+libraries/libxmp: Fix PRINT_PACKAGE_NAME.
+libraries/libxnvctrl: Strip shared libary.
+libraries/live555: Update maintainer.
+libraries/lksctp-tools: Fix docs.
+libraries/log4shib: Fix conflict with graphviz.
+libraries/lua-luv: Updated for version 1.43.0_0.
+libraries/lxqt-notificationd: Fix .desktop, add doinst.sh.
+libraries/mbedtls: Fix PRINT_PACKAGE_NAME.
+libraries/meanwhile: Fix docs.
+libraries/msgpack-c: Fix docs.
+libraries/mujs: Fix docs.
+libraries/mxml: Fix docs, rm static lib.
+libraries/mysql-connector-c++: Fix docs.
+libraries/mysqltcl: Fix docs.
+libraries/nlohmann_json: Added (JSON for Modern C++)
+libraries/nlopt: Fix (gzip) man pages.
+libraries/ogre: Fix docs.
+libraries/onevpl: Fix docs.
+libraries/opencl-amd: Fix package filename, docs.
+libraries/paho-mqtt: Fix PRINT_PACKAGE_NAME.
+libraries/pangox-compat: Fix docs.
+libraries/pidgin-mra: Fix icon permissions.
+libraries/podofo: Fix PRINT_PACKAGE_NAME.
+libraries/progressbar: Fix PRINT_PACKAGE_NAME.
+libraries/ptypes: Fix docs.
+libraries/qt3: Fix docs, doinst, symlink.
+libraries/qwt: Don't build examples by defalt.
+libraries/rapidjson: Fix docs.
+libraries/spdlog: Strip binaries.
+libraries/tDOM: Fix tarball handling.
+libraries/tclap: Make API docs optional.
+libraries/tcllib: Fix docs.
+libraries/tllist: Added (typed linked list c header file)
+libraries/tlsh: Fix docs.
+libraries/totem-pl-parser: Strip binaries.
+libraries/udunits: Fix docs.
+libraries/ulfius: Fix docs.
+libraries/vdk: Fix man page.
+libraries/vigra: Fix docs.
+libraries/wcslib: Fix permissions, rm static lib.
+libraries/webkit2gtk4.1: Fix PRINT_PACKAGE_NAME.
+libraries/webkit2gtk: Fix PRINT_PACKAGE_NAME.
+libraries/wxGTK3: Make API docs optional.
+libraries/xapian-bindings: Do not include /tmp in the package.
+libraries/xforms: Strip demos.
+libraries/xlt: Fix docs.
+libraries/xmpppy: Fix docs.
+libraries/xview: Fix docs.
+misc/fcitx-mozc: Updated for version 2.26.4220.102.1.
+misc/simh-classic: Gzip patch to preserve line endings.
+multimedia/haruna: Updated for version 0.8.0.
+multimedia/openshot: Fix doinst.sh, stop spamming /usr.
+multimedia/zvbi: Update maintainer. Template fixes.
+network/axel: Updated for version 2.17.11.
+network/brave-browser: Fix BUILD variable usage.
+network/dropbear: Updated for version 2022.82.
+network/element-desktop: Updated for version 1.10.10.
+network/franz: Updated for version 5.9.2.
+network/hostapd: Updated for version 2.10.
+network/isync: Updated for version 1.4.4.
+network/mailspring: Updated for version 1.10.3
+network/microsoft-edge: Update for version 100.0.1185.50.
+network/mrtg: Update maintainer email
+network/signal-desktop: Updated for version 5.40.1.
+network/skypeforlinux: Updated for version 8.83.0.408.
+network/sslscan: Updated for version 2.0.13.
+network/strongswan: Updated for version 5.9.5.
+network/teamviewer: Added (remote control application).
+network/telegram: Updated for version 3.7.0.
+network/zoom-linux: Updated for version 5.10.3.2778.
+office/MasterPDFEditor: Updated for version 5.8.49.
+office/etmtk: Updated for version 3.2.39.
+office/gnucash: Update DEP.
+office/hunspell-en: Update for 2020.12.07 (+new maintainer)
+office/pdfarranger: moved from python; adapted doinst.sh for icons
+office/tudu: Updated for version 0.10.4.
+python/objgraph: Added (Python Module).
+python/pikepdf: Updated to version 5.1.2.
+python/python-xkbcommon: Fix github tarball handling.
+python/python3-pytest-cov: Added (coverage plugin for pytest)
+ruby/ruby-build: Updated for version 20220324.
+ruby/sequel: Updated for version 5.55.0.
+system/brlaser: Added (CUPS driver for Brother laser printers).
+system/efiboots: Added (GTK3 frontend for efibootmgr).
+system/evolution-data-server: Fix script.
+system/fish: Remove /usr/share/doc, fix doinst.sh.
+system/fswatch: Updated for version 1.16.0.
+system/mpollux-digisign-client: Added (smart card middleware).
+system/netdata: Updated for version 1.34.1.
+system/osquery-bin: Updated for version 5.2.3.
+system/pcem: update to version f4a1ab9.20220418
+system/prometheus: Updated for version 2.35.0.
+system/scdoc: Updated for version 1.11.2.
+system/swapinzram: Added (Configure a swap block device in RAM).
+system/trash-cli: Update for 0.22.4.16 (+new maintainer)
+system/trousers: Added (TSS implementation by IBM)
+system/winetricks: Update for 20220411 (+new maintainer)
+system/xen: Updated for version 4.16.1.
+system/yelp: Update README.
++--------------------------+
 Sat Apr 16 05:25:03 UTC 2022
 academic/R: Updated for version 4.1.3.
 academic/bcftools: Updted to version 1.15.1
