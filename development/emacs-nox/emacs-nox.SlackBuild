@@ -25,18 +25,16 @@
 # Modified by Robby Workman <rworkman@slackbuilds.org>
 # Modified by Patrick Volkerding <volkerdi@slackware.com>
 
+set -xeo pipefail
+
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=emacs-nox
+PRGNAM=emacs-nox
+TARBALLNAM=emacs
+VERSION=${VERSION:-27.2}
 BUILD=${BUILD:-1}
-# Determine version number the tarball is labeled with:
-TARBALLVER=${TARBALLVER:-$(echo $PKGNAM-*.tar.xz | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
-# OK, now what's being used as the source directory version number...  account
-# for subversions a, b, c, and d in the $TARBALLVER:
-SRCDIRVER=$(echo $TARBALLVER | tr -d a | tr -d b | tr -d c | tr -d d)
-# I guess this is the main "version"...  we don't use this variable anywhere below, but
-# defining it is traditional:
-VERSION=$SRCDIRVER
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -53,9 +51,13 @@ fi
 # the name of the created package would be, and then exit. This information
 # could be useful to other scripts.
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$TARBALLVER-$ARCH-$BUILD.txz"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
 fi
+
+TMP=${TMP:-/tmp/SBo}	# For consistency's sake, use this
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}	# Drop the package in /tmp
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
@@ -77,61 +79,19 @@ PDUMPER=${PDUMPER:-"--with-pdumper=no --with-dumping=unexec"}
 # Don't use icecream:
 PATH=$(echo $PATH | sed "s|/usr/libexec/icecc/bin||g" | tr -s : | sed "s/^://g" | sed "s/:$//g")
 
-NUMJOBS=${NUMJOBS:-" -j$(expr $(nproc) + 1) "}
-
 TMP=${TMP:-/tmp}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 
 rm -rf $PKG
 mkdir -p $TMP $PKG
 cd $TMP
-rm -rf $PKGNAM-$TARBALLVER
-tar xvf $CWD/$PKGNAM-$TARBALLVER.tar.xz || exit 1
-cd $PKGNAM-$SRCDIRVER || exit 1
-
-chown -R root:root .
-find . \
-  \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
-  -exec chmod 755 {} \+ -o \
-  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
-  -exec chmod 644 {} \+
+rm -rf $TARBALLNAM-$VERSION
+tar xvf $CWD/$TARBALLNAM-$VERSION.tar.xz || exit 1
+cd $TARBALLNAM-$VERSION || exit 1
 
 # The defaults are a little too worried about adding a few more K of pure
 # memory given the amount available on modern systems:
 sed -i "s/#define SYSTEM_PURESIZE_EXTRA 0/#define SYSTEM_PURESIZE_EXTRA 100000/g" src/puresize.h
-
-#autoreconf -vif
-
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
-./configure \
-  --prefix=/usr \
-  --sysconfdir=/etc \
-  --localstatedir=/var \
-  --program-prefix="" \
-  --program-suffix="" \
-  --mandir=/usr/man \
-  --infodir=/usr/info \
-  --without-gconf \
-  --without-gsettings \
-  --with-modules \
-  --without-x \
-  $PDUMPER \
-  --build=${ARCH}-slackware-linux || exit 1
-
-make $NUMJOBS || make || exit 1
-make install DESTDIR=$PKG || exit 1
-
-( cd $PKG/usr/bin
-  rm emacs
-  mv emacs-${SRCDIRVER} emacs-${TARBALLVER}-with-x11
-)
-
-# Also add a version of the binary that is not linked to X11:
-cd $TMP
-rm -rf $PKGNAM-$TARBALLVER
-tar xvf $CWD/$PKGNAM-$TARBALLVER.tar.xz || exit 1
-cd $PKGNAM-$SRCDIRVER || exit 1
 
 chown -R root:root .
 find . \
@@ -157,19 +117,17 @@ CXXFLAGS="$SLKCFLAGS" \
   $PDUMPER \
   --build=${ARCH}-slackware-linux || exit 1
 
-make $NUMJOBS || make || exit 1
+make || exit 1
+make install DESTDIR=$PKG || exit 1
 
 # Install the non-x version:
-cat src/emacs > $PKG/usr/bin/emacs-${TARBALLVER}-no-x11
-chown root:root $PKG/usr/bin/emacs-${TARBALLVER}-no-x11
-chmod 1755 $PKG/usr/bin/emacs-${TARBALLVER}-no-x11
+cat src/emacs > $PKG/usr/bin/emacs-${VERSION}-no-x11
+chown root:root $PKG/usr/bin/emacs-${VERSION}-no-x11
+chmod 1755 $PKG/usr/bin/emacs-${VERSION}-no-x11
 
-# Create unversioned symlinks for both versions of emacs:
 ( cd $PKG/usr/bin
-  ln -sf emacs-${TARBALLVER}-with-x11 emacs-with-x11
-  ln -sf emacs-${TARBALLVER}-no-x11 emacs-no-x11
-  # Create a plain "emacs" symlink pointing to emacs-with-x11:
-  ln -sf emacs-with-x11 emacs
+  ln -sf emacs-${VERSION}-no-x11 emacs-no-x11
+  ln -sf emacs-no-x11 emacs
 )
 
 # Seems like this nonsense is finally obsolete:
@@ -201,15 +159,15 @@ find $PKG | xargs file | grep -e "executable" -e "shared object" \
   gzip -9 *
 )
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$TARBALLVER
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  AUTHORS COPYING* INSTALL README* \
-  $PKG/usr/doc/$PKGNAM-$TARBALLVER
+  COPYING* INSTALL README* \
+  $PKG/usr/doc/$PRGNAM-$VERSION
 
 # If there's a ChangeLog, installing at least part of the recent history
 # is useful, but don't let it get totally out of control:
 if [ -r ChangeLog ]; then
-  DOCSDIR=$(echo $PKG/usr/doc/${PKGNAM}-$TARBALLVER)
+  DOCSDIR=$(echo $PKG/usr/doc/${PRGNAM}-$VERSION)
   cat ChangeLog | head -n 1000 > $DOCSDIR/ChangeLog
   touch -r ChangeLog $DOCSDIR/ChangeLog
 fi
@@ -224,4 +182,4 @@ if [ -z "$TAG" ] && [ ! -z "$X_TOOLKIT" ]; then
 fi
 
 cd $PKG
-/sbin/makepkg -l y -c n $TMP/$PKGNAM-$TARBALLVER-$ARCH-$BUILD$TAG.txz
+/sbin/makepkg -l y -c n $TMP/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.txz
