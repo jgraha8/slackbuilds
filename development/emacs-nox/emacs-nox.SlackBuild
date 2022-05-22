@@ -25,8 +25,6 @@
 # Modified by Robby Workman <rworkman@slackbuilds.org>
 # Modified by Patrick Volkerding <volkerdi@slackware.com>
 
-set -xeo pipefail
-
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=emacs-nox
