@@ -1,0 +1,12 @@
+     |-----handy-ruler------------------------------------------------------|
+emacs-nox: emacs-nox (GNU Emacs)
+emacs-nox:
+emacs-nox: Emacs is the extensible, customizable, self-documenting real-time
+emacs-nox: display editor. If this seems to be a bit of a mouthful, an
+emacs-nox: easier explanation is that Emacs is a text editor and more. At
+emacs-nox: its core is an interpreter for Emacs Lisp, a dialect of the Lisp
+emacs-nox: programming language with extensions to support text editing.
+emacs-nox: This version is console only (no X11).
+emacs-nox:
+emacs-nox: Homepage: http://www.gnu.org/software/emacs/
+emacs-nox:
