@@ -1,7 +1,7 @@
 PRGNAM="mariadb105"
 VERSION="10.5.16"
 HOMEPAGE="https://mariadb.com/"
-DOWNLOAD="https://downloads.mariadb.com/MariaDB/mariadb-10.5.15/source/mariadb-10.5.15.tar.gz"
+DOWNLOAD="https://downloads.mariadb.com/MariaDB/mariadb-10.5.16/source/mariadb-10.5.16.tar.gz"
 MD5SUM="8f2c6f29ae3f9054d8c0f1c6a283cd7e"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
