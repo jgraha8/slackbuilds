@@ -2,14 +2,14 @@
 
 # Slackware build script for unclutter-xfixes
 
-# Written by B. Watson (yalhcru@gmail.com)
+# Written by B. Watson (urchlay@slackware.uk)
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=unclutter-xfixes
-VERSION=${VERSION:-1.5}
+VERSION=${VERSION:-1.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}

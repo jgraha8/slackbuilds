@@ -3,11 +3,13 @@
 # Slackware build script for frotz
 
 # Originally written for Slackware 12.2 by Beej Jorgensen <email
-# removed>, heavily modified by B. Watson <yalhcru@gmail.com> since
+# removed>, heavily modified by B. Watson <urchlay@slackware.uk> since
 # then.
 
 # Original had no license. This modified version is released under the
 # WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
+
+# 20220613 bkw: updated for v2.54.
 
 # 20211007 bkw:
 # - updated for v2.53.
@@ -34,7 +36,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=frotz
-VERSION=${VERSION:-2.53}
+VERSION=${VERSION:-2.54}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
