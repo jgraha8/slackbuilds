@@ -1,3 +1,125 @@
+Sat Jul 30 04:27:17 UTC 2022
+academic/EMBASSY: Update binaries location.
+academic/EMBOSS: Update binaries location.
+academic/OpenFOAM: Updated for version 10.
+academic/aliview: Updated for version 1.28.
+academic/dakota: Updated for version 6.16.0.
+audio/SongRec: Updated for version 0.3.2.
+desktop/cheese: Update README.
+desktop/gnome-control-center: Autodetect CHEESE.
+desktop/gnome-maps: Update README.
+desktop/xlunch: Updated for version 4.7.4.
+development/apache-ant: Updated for version 1.10.12.
+development/composer: Updated for version 2.3.10
+development/dbeaver-ce: Updated for version 22.1.3.
+development/github-cli: Updated for version 2.14.3.
+development/gnats: Updated contact information.
+development/icon: Updated for version 9.5.22e
+development/idea: Updated for version 2022.2.
+development/jupyterlab: Updated for version 3.4.4.
+development/jupyterlab_pygments: Updated for version 0.2.2.
+development/mysql-workbench: Updated for version 8.0.30.
+development/nodejs: Updated for version 18.7.0.
+development/postman: Updated for version 9.25.2.
+development/rstudio-desktop: Use bundled node.
+development/universal-ctags: Updated for version p5.9.20220724.0
+gis/google-earth: Update md5sum.
+gis/python3-xarray: Updated for version 2022.06.0.
+graphics/kuickshow: Updated for version 20220618_a9c29cc.
+graphics/opencolorio: Adapt for next glibc
+graphics/vuescan: Updated MD5SUMs.
+libraries/clutter-gst: Update README.
+libraries/cyrus-sasl-xoauth2: Updated contact information.
+libraries/exiftool: Updated for version 12.44. New maintainer.
+libraries/folks: Update README.
+libraries/folly: Updated for version 20220722_437b29d.
+misc/rbutil: Updated for version 1.5.1
+misc/untldr: Added (tldr.sh command line client).
+multimedia/strawberry: Updated for version 1.0.7.
+network/dovecot-pgsql: Added (PostgreSQL driver for dovecot)
+network/element-desktop: Updated for version 1.11.1.
+network/haproxy: Added PCRE2 JIT and QUIC support.
+network/ngrok: Updated for version 3.0.6.
+network/postfix-pgsql: Added (postfix with support for PostgreSQL)
+network/signal-desktop: Updated for version 5.52.0.
+network/teamviewer: Updated for version 15.32.3.
+network/tnfs-fuse: Added (client for trivial network filesystem)
+network/tnfsd: Added (trivial network filesystem server).
+network/wireshark: Updated for version 3.6.7.
+office/LibreOffice: Fix md5sum
+office/calibre-bin: Updated for version 6.2.1.
+python/argon2-cffi-bindings: Added (CFFI bindings for Argon2).
+python/python-executing: Updated for version 0.9.0.
+system/logwatch: Updated for version 7.7.
+system/procs: Added (Replacement of ps).
+system/slackupdr: Updated for version 3.5.
+system/splitjob: Added (Tool to split up data).
+system/usbtop: Added (bandwidth monitor for USB buses and devices).
+system/xsettingsd: Added (lightweight XSETTINGS implementation).
++--------------------------+
+Sat Jul 23 04:13:48 UTC 2022
+academic/zotero: Updated for version 6.0.10.
+audio/qmmp-plugin-pack-qt5: Updated for version 1.6.0.
+audio/qmmp-qt5: Updated for version 1.6.1.
+audio/yabridge: Added (Yet Another way to use Windows VST plugins)
+desktop/BlockstreamGreen: Updated for version 1.1.3.
+desktop/numix-icon-theme-circle: Updated for version 20220711.
+desktop/numix-icon-theme-square: Updated for version 20220711.
+desktop/numix-icon-theme: Updated for version 20211031.
+desktop/qtile: Fix xinitrc.
+development/crosstool-ng: Updated for version 1.25.0
+development/gambas3: Updated for version 3.17.3.
+development/github-cli: Updated for version 2.14.2
+development/mongodb-compass: Updated for version 1.32.4.
+development/sbt: Updated for version 1.7.1.
+development/tclvfs: Updated for version 1.4. New maintainer.
+development/tktable: Added (a full-featured 2D table widget for Tk)
+development/xmake: Updated for version 2.6.9.
+development/zulu-openjdk11: Updated for version 11.0.16, new maint.
+games/puzzles: Updated for version 20220613.387d323
+games/vkQuake: Updated for version 1.20.3.
+libraries/clutter-gtk: Make introspection yes by default
+libraries/clutter: Make introspection yes by default
+libraries/cogl: Make introspection yes by default
+libraries/geocode-glib: Make introspection yes by default
+libraries/gnome-autoar: Make introspection and vapi yes by default
+libraries/libchamplain: Make introspection and vapi yes by default
+libraries/libfilezilla: Updated for version 0.38.1.
+libraries/libgdata: Make introspection and vapi yes by default
+libraries/libgweather4: Make introspection and vapi yes by default
+libraries/python-efl: Updated for version 1.26.0.
+multimedia/strawberry: Updated for version 1.0.6.
+network/brave-browser: Updated for version 1.41.100.
+network/deluge: Update for 2.1.1
+network/filezilla: Updated for version 3.60.2.
+network/haproxy: Updated for version 2.6.2.
+network/icyque: Updated for version 20220630_78b90a4.
+network/prosody-mod-cloud-notify: Updated for version hg4968.
+network/prosody-mod-http-upload: Updated for version hg4976.
+network/purple-googlechat: Added (googlechat plugin for libpurple)
+network/signal-desktop: Updated for version 5.51.0.
+network/vivaldi: Updated for version 5.3.2679.70.
+network/zoom-linux: Updated for version 5.11.3.3882.
+office/LibreOffice: Updated for version 7.3.5.2
+office/focuswriter: Update README
+office/libreoffice-helppack: Updated for version 7.3.5.
+office/libreoffice-langpack: Updated for version 7.3.5.
+office/libreoffice: Updated for version 7.3.5.
+python/mypy: Updated for version 0.971.
+python/python-evdev: Update for 1.6.0
+python/python3-fastjsonschema: Update for 2.16.1
+python/python3-pandas: Update README
+system/evolution-data-server: Make introspection and vala yes by default
+system/gnome-online-accounts: Make introspection and vala yes by default
+system/ima-evm-utils: Added (IMA Extended Verification Module Utils)
+system/megacli: Updated contact information
+system/rfdump: Updated contact information.
+system/sarasa-gothic: Updated for version 0.36.7.
+system/telegraf: Updated for version 1.23.2
+system/usbguard: Updated for version 1.1.1.
+system/usermin: Updated for version 1.852.
+system/webmin: Updated for version 1.997.
++--------------------------+
 Sat Jul 16 23:41:20 UTC 2022
 academic/nco: Updated for version 5.1.0.
 academic/plus42: Added (An Enhanced HP-42S Calculator Simulator)
