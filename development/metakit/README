@@ -1,5 +1,3 @@
-Mk4tcl - Tcl binding for Metakit embedded database library
-
 Metakit is an efficient embedded database library with a small
 footprint.  It fills the gap between flat-file, relational,
 object-oriented, and tree-structured databases, supporting
@@ -14,3 +12,9 @@ architectures, from PDA's to S390's.
 
 Metakit is in use in various commercial projects and products on
 millions of desktops.
+
+This script builds libmk4, Mk4tcl (bindings for Tcl) and Mk4py
+(bindings for Python)
+If Mk4Py is not desired, the user may set WITH_PYTHON to "NO", e.g.:
+  WITH_PYTHON="NO" ./Mk4tcl.SlackBuild
+
