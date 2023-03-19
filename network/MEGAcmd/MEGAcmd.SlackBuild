@@ -26,8 +26,8 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=MEGAcmd
-VERSION=${VERSION:-1.5.1}
-SDK=${SDK:-3.9.11d}
+VERSION=${VERSION:-1.6.0}
+SDK=${SDK:-4.16.0b}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -97,6 +97,9 @@ CXXFLAGS="$SLKCFLAGS" \
 
 make
 make install DESTDIR=$PKG
+# Fix installdir of megacmd_completion.sh
+rm -rf $PKG/etc
+install -Dm644 src/client/megacmd_completion.sh $PKG/usr/share/bash-completion/completions/megacmd
 
 # Don't ship .la files:
 rm -rf $PKG/usr/lib${LIBDIRSUFFIX}/*.la
