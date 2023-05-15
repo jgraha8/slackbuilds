@@ -2,7 +2,7 @@
 
 # Slackware build script for hyphy
 
-# Copyright 2017-2022 Petar Petrov slackalaxy@gmail.com
+# Copyright 2017-2023 Petar Petrov slackalaxy@gmail.com
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +25,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=hyphy
-VERSION=${VERSION:-2.5.42}
+VERSION=${VERSION:-2.5.50}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -100,10 +100,7 @@ cd build
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release ..
 
-# It is actually not necessary anymore to specify here MP and HYPHYMPI,
-# as 'make' alone will attempt to build them both. However, let's leave
-# them, just in case.
-  make MP HYPHYMPI
+  make HYPHYMPI
   make install DESTDIR=$PKG
 cd ..
 
