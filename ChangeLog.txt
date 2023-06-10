@@ -1,3 +1,1129 @@
+Sat Jun 10 07:02:09 UTC 2023
+academic/copasi: Updated for version 4.40.278.
+academic/gcompris-qt: Updated for version 3.3.
+academic/mathjax2: Update maintainer's email
+academic/python3-scipy: Update maintainer's email
+academic/qucs-s: Updated for version 1.1.0.
+academic/xsimd: Update maintainer's email
+audio/abcde: New maintainer.
+audio/alsamixergui: New download links.
+audio/cd-discid: New maintainer.
+audio/mkcue: New maintainer.
+audio/puddletag: Version bump to 2.2.0
+audio/tagtool: Version bump to 0.14.2 and switch to newer upstream
+desktop/Matcha-gtk-theme: Update maintainer's email
+desktop/SwayNotificationCenter: Updated for version 0.9.0.
+desktop/Tela-icon-theme: Update maintainer's email
+desktop/artix-backgrounds: Update maintainer's email
+desktop/breath-gtk-theme: Update maintainer's email
+desktop/breeze-snow-cursor-theme: Update maintainer's email
+desktop/dwmblocks: Update maintainer's email
+desktop/libqtxdg: Update maintainer's email
+desktop/lxqt-panel: Update maintainer's email
+desktop/lxqt-themes: Update maintainer's email
+desktop/mate-terminal: Fix schema.
+desktop/nitrogen: Update maintainer's email
+desktop/nwg-panel: Updated for version 0.9.6.
+desktop/nwg-shell-config: Updated for version 0.5.2.
+desktop/papirus-icon-theme: Updated for version 20230601.
+desktop/plasma5-themes-breath-migration: Update maintainer's email
+desktop/plasma5-themes-breath: Update maintainer's email
+desktop/qtile: Update maintainer's email
+desktop/sddm-theme-artix: Update maintainer's email
+desktop/slbar: Update maintainer's email
+desktop/sun: Updated for version 1.5.2.
+desktop/vertex-maia-icon-theme: Update maintainer's email
+desktop/xsecurelock: Update maintainer's email
+development/QtPy: Update maintainer's email
+development/avr-binutils: Use https download URL.
+development/bazel: Update maintainer's email
+development/cloc: Version bump to 1.96.1
+development/cproc: Added (small C11 compiler).
+development/electron: Update maintainer's email
+development/ghidra: Updated for version 10.3
+development/jupyter-ipykernel: Update maintainer's email
+development/jupyter-nbclassic: Update maintainer's email
+development/jupyter-nbclient: Update maintainer's email
+development/jupyter-nbconvert: Update maintainer's email
+development/jupyter-nbformat: Update maintainer's email
+development/jupyter-notebook: Update maintainer's email
+development/jupyter-notebook_shim: Update maintainer's email
+development/jupyter-qtconsole: Update maintainer's email
+development/jupyter_client: Update maintainer's email
+development/jupyter_console: Update maintainer's email
+development/jupyter_core: Update maintainer's email
+development/jupyter_events: Update maintainer's email
+development/jupyter_packaging: Update maintainer's email
+development/jupyter_server: Update maintainer's email
+development/jupyter_server_terminals: Update maintainer's email
+development/jupyterlab: Update maintainer's email
+development/jupyterlab_pygments: Update maintainer's email
+development/jupyterlab_server: Update maintainer's email
+development/kotlin: Updated for version 1.8.22.
+development/nodejs: Updated for version 20.3.0.
+development/pyqt-distutils: Removed (replaced by python3-pyqt-distutils)
+development/python3-spyder-kernels: Update maintainer's email
+development/rstudio-desktop-legacy: Update maintainer's email
+development/rstudio-desktop: Update maintainer's email
+development/rstudio-desktop: Updated for version 2023.06.0+421.
+development/sasm: Added (IDE for NASM,MASM, GAS, and FASM assembly).
+development/sbcl: Updated for version 2.3.5
+development/uncrustify: Updated for version 0.77.1
+development/universal-ctags: Updated for version p6.0.20230604.0
+development/vscode-bin: Updated for version 1.79.0.
+development/wheel: Removed: (replaced by python3-wheel)
+games/Mindustry: Added (hybrid tower-defense sandbox factory game)
+games/PrismLauncher: Updated for version 7.0.
+games/ags: updated for version 3.6.0.49
+games/desmume: Updated for version 0.9.13, new maintainer.
+gis/libspatialindex: Update maintainer's email
+gis/pdal: Updated for version 2.5.4.
+gis/proj-data: Updated for version 1.14.
+gis/saga-gis: Updated for version 9.0.2.
+graphics/FotoKilof: Updated for version 4.3.3.
+graphics/maim: Update maintainer's email
+graphics/qiv: Updated for version 2.3.3.
+graphics/vimiv-qt: Update maintainer's email
+graphics/webp-pixbuf-loader: Updated for version 0.2.4.
+libraries/CherryPy: Removed: (replaced by python3-CherryPy)
+libraries/QDarkStyle: Update maintainer's email
+libraries/googlebenchmark: Added (Google tiny benchmarking library)
+libraries/libfm-qt: Update maintainer's email
+libraries/libgusb: Updated for version 0.4.6.
+libraries/liblxqt: Update maintainer's email
+libraries/liblzf: Update maintainer's email
+libraries/libmirage: Update maintainer's email
+libraries/libopenraw: Updated for version 0.3.5.
+libraries/librsync: Update maintainer's email
+libraries/libtorrent-rasterbar: Update for 1.2.19
+libraries/lua53-filesystem: Added (lua filesystem library)
+libraries/lxqt-build-tools: Update maintainer's email
+libraries/lxqt-notificationd: Update maintainer's email
+libraries/lxqt-qtplugin: Update maintainer's email
+libraries/lxqt-sudo: Update maintainer's email
+libraries/plumbum: Removed: (replaced by python3-plumbum)
+libraries/rpyc: Removed: (replaced by python3-rpyc)
+libraries/soci: Update maintainer's email
+libraries/zc.lockfile: Removed: (replaced by python3-zc.lockfile)
+libraries/zeromq: Update maintainer's email
+libraries/zziplib: Updated for version 0.13.72, new maintainer.
+misc/KeePass: Updated for version 2.54.
+misc/simh-classic: Updated for version 3.12_4.
+multimedia/makemkv: Updated for version 1.17.4.
+multimedia/picard-plugins: Version bump to c03c7f1
+multimedia/picard: Version bump to 2.8.5
+multimedia/pitivi: Correct md5sum
+multimedia/pitivi: Version bump to 2023.03
+multimedia/plexmediaserver: Updated for v 1.32.3.
+network/AdGuardHome: Updated for version 0.107.31.
+network/CherryMusic: Removed: (replaced by python3-CherryMusic)
+network/PyRSS2Gen: Removed: (replaced by python3-PyRSS2Gen)
+network/brave-browser: update 1.52.117
+network/dropbox: Updated for version 175.4.5569.
+network/element-desktop: Updated for version 1.11.33.
+network/epiphany: Updated for version 43.1.
+network/jitsi-meet-desktop: Update maintainer's email
+network/qbittorrent: Adjust desktop file.
+network/sfeed: Update maintainer's email
+network/telegram: Updated for version 4.8.3.
+network/tor-browser: Updated for version 12.0.7.
+network/vivaldi: Updated for version 6.1.3035.75.
+network/whalebird: Update maintainer's email
+network/zoom-linux: Updated for version 5.14.10.3738
+office/LibreOffice: Updated for version 7.5.4.2
+office/asymptote: Added missing files.
+office/asymptote: Updated for version 2.85.
+office/calibre-bin: Updated for version 6.20.0.
+office/focuswriter: Update maintainer's email
+office/hunspell-en: Update maintainer's email
+office/libreoffice-helppack: Updated for version 7.5.4.
+office/libreoffice-langpack: Updated for version 7.5.4.
+office/libreoffice: Updated for version 7.5.4.
+perl/perl-DBD-Pg: Updated for version 3.16.3. New maintainer.
+perl/perl-Date-Manip: Updated for version 6.92.
+python/APScheduler: Removed: (replaced by python3-APScheduler)
+python/BeautifulSoup4: Update maintainer's email
+python/PyPDF2: Update source.
+python/WTForms: Removed: (replaced by python3-WTForms)
+python/argon2-cffi-bindings: Update maintainer's email
+python/argon2-cffi: Update maintainer's email
+python/babelfish: Removed: (replaced by python3-babelfish)
+python/blinker: Removed: (replaced by python3-blinker)
+python/cairocffi: Update maintainer's email
+python/cheroot: Removed: (replaced by python3-cheroot)
+python/cppy: Update maintainer's email
+python/docopt: Removed (split into python2/3)
+python/entrypoints: Update maintainer's email
+python/esptool: Updated for version 4.6.1.
+python/et_xmlfile: Update maintainer's email
+python/guessit: Removed: (replaced by python3-guessit)
+python/iniconfig: Remove iniconfig
+python/ipython: Update maintainer's email
+python/ipython_genutils: Update maintainer's email
+python/itsdangerous: Removed: (replaced by python3-itsdangerous)
+python/jaraco.classes: Removed: (replaced by python3-jaraco.classes)
+python/jsonpointer: Update maintainer's email
+python/jsonschema: Removed: (replaced by python3-jsonschema)
+python/nest_asyncio: Update maintainer's email
+python/netifaces: Removed: (replaced by python3-netifaces)
+python/pandocfilters: Update maintainer's email
+python/pickleshare: Update maintainer's email
+python/pluggy: Update maintainer's email
+python/portend: Removed: (replaced by python3-portend)
+python/pynzb: Removed: (replaced by python3-pynzb)
+python/python-augeas: Removed: (replaced by python3-augeas)
+python/python-evdev: Update maintainer's email
+python/python-iso3166: Removed: (replaced by python3-iso3166)
+python/python-iso639: Removed: (replaced by python3-iso639)
+python/python2-BeautifulSoup4: Update maintainer's email
+python/python2-asn1crypto: Update maintainer's email
+python/python2-atomicwrites: Update maintainer's email
+python/python2-py: Update maintainer's email
+python/python2-pyasn1: Update maintainer's email
+python/python2-soupsieve: Update maintainer's email
+python/python3-aiohttp-oauthlib: Added (aiohttp requests-oauthlib)
+python/python3-aiohttp-socks: Update maintainer's email
+python/python3-aiohttp: Update maintainer's email
+python/python3-aiorpcX-legacy: Remove python3-aiorpcX-legacy
+python/python3-aiorpcX: Update maintainer's email
+python/python3-aiosignal: Update maintainer's email
+python/python3-anyio: Update maintainer's email
+python/python3-arrow: Update maintainer's email
+python/python3-asn1crypto: Update maintainer's email
+python/python3-async-timeout: Update maintainer's email
+python/python3-atomicwrites: Update maintainer's email
+python/python3-autobahn: updated for version 23.6.1
+python/python3-beniget: Update maintainer's email
+python/python3-black: Update maintainer's email
+python/python3-boto3: Update maintainer's email
+python/python3-comm: Update maintainer's email
+python/python3-cookiecutter: Update maintainer's email
+python/python3-dbus-next: Update maintainer's email
+python/python3-debugpy: Update maintainer's email
+python/python3-defusedxml: Update maintainer's email
+python/python3-deprecation: Update maintainer's email
+python/python3-diff-match-patch: Update maintainer's email
+python/python3-executing: Update maintainer's email
+python/python3-fastjsonschema: Update maintainer's email
+python/python3-flit: Updated for version 3.9.0.
+python/python3-flit_core: Updated for version 3.9.0.
+python/python3-fqdn: Update maintainer's email
+python/python3-frozenlist: Update maintainer's email
+python/python3-gast: Update maintainer's email
+python/python3-gensim: Update maintainer's email
+python/python3-glances: Updated for version 3.4.0.3.
+python/python3-h5py: Update maintainer's email
+python/python3-hatch-nodejs-version: Update maintainer's email
+python/python3-hatch_fancy_pypi_readme: Updated for version 23.1.0.
+python/python3-hatch_jupyter_builder: Update maintainer's email
+python/python3-hatchling: Updated for version 1.17.1.
+python/python3-helpdev: Update maintainer's email
+python/python3-inflection: Update maintainer's email
+python/python3-iniconfig: Update maintainer's email
+python/python3-intervaltree: Update maintainer's email
+python/python3-ipython-sql: Update maintainer's email
+python/python3-isoduration: Update maintainer's email
+python/python3-jedi: Update maintainer's email
+python/python3-jinja2-time: Update maintainer's email
+python/python3-joblib: Update maintainer's email
+python/python3-json-logger: Update maintainer's email
+python/python3-json5: Update maintainer's email
+python/python3-kiwisolver: Update maintainer's email
+python/python3-lazy_loader: Added (Load subpackages and functions)
+python/python3-llvmlite: Added (Lightweight LLVM python binding).
+python/python3-lsp-black: Update maintainer's email
+python/python3-lsp-jsonrpc: Update maintainer's email
+python/python3-lsp-server: Update maintainer's email
+python/python3-matplotlib-inline: Update maintainer's email
+python/python3-mir_eval: Added (Music/audio processing algorithms)
+python/python3-mistune: Update maintainer's email
+python/python3-multidict: Update maintainer's email
+python/python3-openpyxl: Update maintainer's email
+python/python3-overrides: Update maintainer's email
+python/python3-pandas: Update maintainer's email
+python/python3-patsy: Update maintainer's email
+python/python3-pep517: Removed: (replaced by python3-pyproject-hooks)
+python/python3-pluggy: Update maintainer's email
+python/python3-pooch: Added (A friend to fetch your data files).
+python/python3-presets: Added (Manipulate params of module function)
+python/python3-prometheus_client: Update maintainer's email
+python/python3-pure_eval: Update maintainer's email
+python/python3-py: Update maintainer's email
+python/python3-pyasn1: Update maintainer's email
+python/python3-pydocstyle: Update maintainer's email
+python/python3-pylint-venv: Update maintainer's email
+python/python3-pyls-spyder: Update maintainer's email
+python/python3-pypandoc: Update maintainer's email
+python/python3-pypng: Update maintainer's email
+python/python3-pyrsistent: Update maintainer's email
+python/python3-pytest-runner: Update maintainer's email
+python/python3-pytest: Update maintainer's email
+python/python3-pythran: Update maintainer's email
+python/python3-pywayland: Update maintainer's email
+python/python3-pywlroots: Update maintainer's email
+python/python3-qstylizer: Update maintainer's email
+python/python3-qtawesome: Update maintainer's email
+python/python3-regex: Update for 2023.6.3
+python/python3-regex: Update maintainer's email
+python/python3-requests-unixsocket: Update maintainer's email
+python/python3-rfc3339_validator: Update maintainer's email
+python/python3-rfc3986_validator: Update maintainer's email
+python/python3-rope: Update maintainer's email
+python/python3-rtree: Update maintainer's email
+python/python3-seaborn: Update maintainer's email
+python/python3-shtab: Update maintainer's email
+python/python3-slugify: Update maintainer's email
+python/python3-smart_open: Update maintainer's email
+python/python3-sniffio: Update maintainer's email
+python/python3-socks: Update maintainer's email
+python/python3-sortedcontainers: Update maintainer's email
+python/python3-soupsieve: Update maintainer's email
+python/python3-soxr: Added (Sample-rate conversion library)
+python/python3-stack_data: Update maintainer's email
+python/python3-statsmodels: Update maintainer's email
+python/python3-text-unidecode: Update maintainer's email
+python/python3-textdistance: Update maintainer's email
+python/python3-threadpoolctl: Update maintainer's email
+python/python3-three-merge: Update maintainer's email
+python/python3-tomlkit: Update maintainer's email
+python/python3-tornado: Update maintainer's email
+python/python3-trove-classifiers: Updated for version 2023.5.24.
+python/python3-uri_template: Update maintainer's email
+python/python3-videohash: Added (detecting identical videos).
+python/python3-watchdog: Update maintainer's email
+python/python3-webcolors: Update maintainer's email
+python/python3-wurlitzer: Update maintainer's email
+python/python3-xcffib: Update for 1.4.0
+python/python3-xcffib: Update maintainer's email
+python/python3-xkbcommon: Update maintainer's email
+python/python3-yarl: Update maintainer's email
+python/pyudev: Update maintainer's email
+python/rebulk: Removed: (replaced by python3-rebulk)
+python/scikit-learn: Update maintainer's email
+python/send2trash: Update maintainer's email
+python/tempora: Removed: (replaced by python3-tempora)
+python/terminado: Update maintainer's email
+python/testpath: Update maintainer's email
+python/thonny: Updated for version 4.1.0.
+python/traitlets: Update maintainer's email
+python/typing-extensions: Update for 4.6.3
+python/typing-extensions: Update maintainer's email
+python/zxcvbn-python: Removed: (replaced by python3-zxcvbn-python)
+system/FontAwesome: Update for 6.4.0
+system/Iosevka-aile: Updated for version 24.1.0.
+system/Iosevka-etoile: Updated for version 24.1.0.
+system/Iosevka-slab: Updated for version 24.1.1
+system/Iosevka: Updated for version 24.1.1
+system/android-file-transfer: Update maintainer's email
+system/arqiver: Update maintainer's email
+system/cdemu-client: Update maintainer's email
+system/cdemu-daemon: Update maintainer's email
+system/docker-compose: Removed: (replaced by python3-docker-compose)
+system/gcdemu: Update maintainer's email
+system/hyperfine: Updated for version 1.17.0.
+system/image-analyzer: Update maintainer's email
+system/libratbag: Update maintainer's email
+system/libtrash: Update maintainer's email
+system/libwmf-type1-fonts: Added (postscript fonts for libwmf)
+system/lxqt-config: Update maintainer's email
+system/lxqt-globalkeys: Update maintainer's email
+system/lxqt-policykit: Update maintainer's email
+system/lxqt-session: Update maintainer's email
+system/nnn: Update maintainer's email
+system/nvidia-driver: Updated for version 525.116.04.
+system/nvidia-kernel: Updated for version 525.116.04.
+system/nvidia-legacy390-driver: Fix nvidia-persistenced.
+system/nvidia-legacy470-driver: Fix nvidia-persistenced.
+system/nvidia-open-kernel: Updated for version 525.116.04.
+system/openzfs: Updated for version 2.1.12.
+system/pass-import: Update maintainer's email
+system/pbzx: Added (pbzx stream parser)
+system/pcmanfm-qt: Update maintainer's email
+system/piper: Update maintainer's email
+system/powerline-fonts: Update maintainer's email
+system/qps: Update maintainer's email
+system/qtxdg-tools: Update maintainer's email
+system/sarasa-gothic: Updated for version 0.41.0.
+system/sbo-create: Updated for version 2.0.6.
+system/sbo-maintainer-tools: Updated for version 0.8.2.
+system/slpkg: Updated for version 4.8.9.
+system/tbsm: Update maintainer's email
+system/trash-cli: Update maintainer's email
+system/vhba-module: Update maintainer's email
+system/vim-airline-themes: Update maintainer's email
+system/vim-airline: Update maintainer's email
+system/winetricks: Update maintainer's email
++--------------------------+
+Sat Jun  3 03:39:33 UTC 2023
+academic/fet: Updated for version 6.9.1.
+academic/gspiceui: Updated for version 1.2.87.
+academic/mendeleydesktop: Fix ARCH.
+academic/nco: Updated for version 5.1.6.
+accessibility/magnus: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+audio/JDSP4Linux: Updated for version 2.4.
+audio/clementine: Version bump to 1.4.0rc2
+audio/flacon: Updated for version 11.1.0.
+audio/gtklick: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+audio/mididings: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+audio/musikcube: Updated for version 3.0.1.
+audio/sndio: Added (small audio and MIDI framework)
+desktop/9menu: Get rid of unused LIBDIRSUFFIX.
+desktop/BlockstreamGreen: Updated for version 1.2.0.
+desktop/breath-gtk-theme: Change version format
+desktop/calls: Added (GNOME Calls)
+desktop/dapper: Added (Desktop Applications Autostarter)
+desktop/gopsuinfo: Updated for version 0.1.4.
+desktop/i3-easyfocus: Added (Focus and select windows in i3)
+desktop/nwg-displays: Updated for version 0.3.3.
+desktop/nwg-panel: Updated for version 0.9.4.
+desktop/nwg-shell-config: Updated for version 0.5.0.
+desktop/wlsunset: Updated for version 0.3.0.
+development/acpica: Updated for version 20230331.
+development/codespell: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+development/cutter: Added (FOSS Reverse Engineering Platform)
+development/github-cli: Updated for version 2.30.0
+development/gsoap: Updated for version 2.8.127.
+development/hugo: Updated for version 0.112.7.
+development/icdiff: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+development/jupyter-nbformat: Updated for version 5.9.0.
+development/jupyter_server: Update for 2.6.0
+development/kawa.bin: Added (Scheme implementation running on JVM)
+development/kodespel: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+development/neovim: Updated for version 0.9.1.
+development/ophis: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+development/premake5: Fix encoding of SlackBuild.
+development/universal-ctags: Updated for version p6.0.20230528.0
+games/SpaceCadetPinball: Added (3D Pinball for Windows- Space Cadet)
+games/ZEsarUX: Updated for version 10.3.
+games/clksignal: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+games/endless-sky: updated for version 0.10.1
+games/eureka: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+games/nexuiz: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+games/puzzles: Updated for version 20230527.b6c842a.
+games/sumeria: actually use SLKCFLAGS.
+games/wolfmame: Updated for version 0.255.
+games/yahtzee: Actually use SLKCFLAGS.
+gis/eccodes: Updated for version 2.30.2.
+gis/gdal: Updated for version 3.7.0.
+gis/proj: Updated for version 9.2.1.
+graphics/FotoKilof: Added (graphic interface for ImageMagick)
+graphics/OpenSubdiv: Option for CUDA support
+graphics/posterazor: Added (make poster printing patterns)
+graphics/ueberzugpp: Updated for version 2.8.6.
+graphics/vuescan: Updated for versino 9.8.03.
+libraries/OpenSceneGraph: Ignore OpenCASCADE
+libraries/ceres-solver: Added (Open Source Optimization Library)
+libraries/dbus-cpp: Version bump to 5.0.3 and update homepage
+libraries/kddockwidgets: Added (KDAB's Dock Widget Framework for Qt)
+libraries/libcurl-gnutls: Updated for version 8.1.2.
+libraries/libgrss: Added (rss parser for the tracker desktop search)
+libraries/libspng: Added (Portable Network PNG C library)
+libraries/libtins: Fix cmake support files.
+libraries/process-cpp: Update homepage and src download locations,
+libraries/properties-cpp: Version bump to 0.0.2 and update homepage
+libraries/webkit2gtk4.1: Updated for version 2.40.2.
+libraries/webkit2gtk: Updated for version 2.40.2.
+misc/asterixInspector: Updated for version 0.13.2.
+misc/bitwarden-desktop: Updated for version 2023.5.0.
+misc/python3-random-username: Added (Generate random usernames)
+misc/txt2tags: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+multimedia/filebot: Version bump to 5.0.3
+multimedia/haruna: Updated for version 0.11.1.
+multimedia/inputstream.adaptive: Version bump to 20.3.9
+multimedia/plexmediaserver: Fix ARCH, .desktop, speed up build.
+multimedia/spotify: Updated for version 1.2.11.916.
+multimedia/winff: Fix ARCH, README grammar.
+network/dublin-traceroute: Do not write to $CWD.
+network/gallery-dl: Updated for version 1.25.5.
+network/haproxy: Updated for version 2.8.0.
+network/jitsi-meet-desktop: Update for 2023.5.3
+network/prosody-mod-csi: Removed (part of prosody 0.11.x).
+network/prosody-mod-smacks: Removed (part of prosody 0.12.x).
+network/protonmail-bridge: Updated for version 3.2.0.
+network/qbittorrent: Updated for version 4.5.3.
+network/rtl8812bu: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+network/signal-desktop: Updated for version 6.20.0.
+network/surl: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+network/tnfs-fuse: Remove unused SLKCFLAGS.
+network/webex: Align with template.
+office/calibre-bin: Updated for version 6.19.1.
+office/calibre: Removed (Use calibre-bin).
+office/epy: Updated for version 2023.2.8.
+office/mupdf: Actually use SLKCFLAGS.
+office/python3-proselint: Added (a stylistic checker spellchecker)
+office/texlive-docs: Updated for version 2023.230322.
+office/x_x: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+office/xlsx2csv: Removed (use python3 version).
+perl/perl-GD: Updated for version 2.77.
+perl/perl-IO-Tty: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+perl/perl-Term-ReadLine-Gnu: rm unused LIBDIRSUFFIX and SLKCFLAGS.
+perl/perl-Unicode-LineBreak: rm unused LIBDIRSUFFIX and SLKCFLAGS.
+perl/perl-audio-sndfile: rm unused LIBDIRSUFFIX and SLKCFLAGS.
+perl/perl-data-dump: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+perl/perl-file-libmagic: rm unused LIBDIRSUFFIX and SLKCFLAGS.
+perl/perl-xml-fast: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+python/google-apputils: Removed (No longer build).
+python/huepy: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+python/huepy: New maintainer.
+python/path.py: Remove junk file.
+python/pyelftools: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+python/pyliblo: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+python/python-msal: Added (Microsoft Auth Library (MSAL) for Python)
+python/python-wand: Added (ImageMagick binding for Python)
+python/python2-pyasn1: Updated for version 0.5.0.
+python/python3-anyio: Update README
+python/python3-caldav: Added (CalDAV client library for Python)
+python/python3-iniconfig: Added (ini file parsing)
+python/python3-paramiko: Updated for version 3.2.0.
+python/python3-pyasn1: Updated for version 0.5.0.
+python/python3-pytest: Updated for version 7.3.1.
+python/python3-sge: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+python/python3-sgmllib3k: rm unused LIBDIRSUFFIX and SLKCFLAGS.
+python/python3-soundfile: Added (libsndfile/CFFI/NumPy Audio lib)
+python/ttkbootstrap: Added (theme extension for tkinter)
+system/a2tools: Fix compile warnings.
+system/alacritty: Updated for version 0.12.1.
+system/anything-sync-daemon: Install completions in right places.
+system/archmage: Get rid of unused LIBDIRSUFFIX and SLKCFLAGS.
+system/bubblewrap: Updated for version 0.8.0.
+system/burp: Updated for version 2.4.0 by S Arcus.
+system/bzip3: Added (Successor to BZip2)
+system/dget: Updated for version 2.23.4.
+system/fzf: Updated for version 0.41.1.
+system/grub4dos: Fix ARCH.
+system/jenkins: Updated for version 2.401.1.
+system/kbfs: Removed.
+system/slpkg: Updated for version 4.8.8.
+system/unrar-free: Added (free version of the non-free unrar util)
+system/virtualbox-addons: Updated for version 6.1.44.
+system/virtualbox-extension-pack: Updated for version 6.1.44.
+system/virtualbox-kernel: Updated for version 6.1.44.
+system/virtualbox: Updated for version 6.1.44.
+system/virtualxt: Added (IBM PC/XT emulator)
+system/xdg-ninja: Added ($HOME Dir Cleaner)
++--------------------------+
+Sat May 27 01:09:41 UTC 2023
+academic/calc: Updated for version 2.14.1.5.
+accessibility/orca: Added (Orca Screen Reader)
+audio/callaudiod: Added (Call audio routing daemon)
+audio/flacon: Updated for version 11.0.0.
+audio/gtklick: python => python2.
+audio/mktoc: python => python2.
+desktop/TextSnatcher: Added (tool to ORC screenshots to clipboard)
+desktop/caffeine-ng: REQUIRES updated for renamed python deps.
+desktop/domterm: Added (terminal emulator, console, DOM and JS)
+desktop/dwmblocks: Change version formatting
+desktop/gammastep: Added (monitor color temperature tuning)
+desktop/gmrun: Update script.
+desktop/gnome-boxes: Added (GNOME Boxes)
+desktop/gnome-connections: Added (GNOME Remote Desktop Client)
+desktop/gnome-tour: Added (GNOME Tour)
+desktop/gsimplecal: Update for 2.4.1
+desktop/gtklock-userinfo-module: Updated for version 2.1.0.
+desktop/gtklock: Updated for version 2.1.0.
+desktop/kolorcontrol: REQUIRES updated for renamed python deps.
+desktop/mate-control-center: Added (control center for MATE)
+desktop/mate-power-manager: Update REQUIRES.
+desktop/mozo: Added (menu editor for the MATE desktop)
+desktop/nwg-panel: Updated for version 0.9.3.
+desktop/qt6ct: Added (Qt6 configuration utility)
+desktop/slbar: Added (status bar for dwm)
+desktop/sun: Updated for version 1.5.1.
+desktop/sushi: Added (Quick Previewer for Nautilus)
+desktop/weston: Update for 10.0.4
+development/byacc: Updated for version 20230521
+development/codespell: Fix deps.
+development/composer: Updated for version 2.5.7
+development/dpkg: Updated for version 1.21.22.
+development/fpc: ARCH=i586 on x86.
+development/hugo: Updated for version 0.112.3
+development/jupyter-nbclient: Update for 0.8.0
+development/mle: Updated for version 1.7.2.
+development/mongodb-compass: Updated for version 1.37.0.
+development/muon: Added (c99 implementation of meson build system)
+development/mutagen: Fix deps.
+development/premake5: Added (build configuration tool)
+development/pyqt-distutils: REQUIRES updated for renamed python deps.
+development/pyvim: REQUIRES updated for renamed python deps.
+development/reuse-tool: Fix deps.
+development/universal-ctags: Updated for version p6.0.20230521.0
+development/zmac: Added (Z-80 cross assembler)
+games/opentyrian: Update homepage.
+games/ovcc: Added (CoCo 3 emulator)
+games/trs80gp: Added (Various TRS-80 Emulators)
+gis/pdal: Updated for version 2.5.3.
+gis/saga-gis: Updated for version 9.0.1.
+git/README: Added back README.
+graphics/BOSL2: Added (The Belfry OpenScad Library, v2)
+graphics/dvisvgm: Removed. Included in texlive.
+graphics/ristretto: Updated for version 0.13.1.
+graphics/scantailor-advanced: Updated for version 1.0.18.
+graphics/ueberzug: REQUIRES updated for renamed python deps.
+graphics/vuescan: Updated for version 9.8.02.
+libraries/agar: Added (GUI toolkit)
+libraries/configobj: python => python2.
+libraries/gom: Added (GObject Data Mapper)
+libraries/gupnp-av: Added (GUPnP A/V)
+libraries/gupnp-dlna: Added (GUPnP DLNA)
+libraries/libcurl-gnutls: Updated for version 8.1.0.
+libraries/libfixposix: Updated for version 0.5.1.
+libraries/libheif: Updated for version 1.16.2.
+libraries/libjxl: Updated for version 20230511_8ec9ed1.
+libraries/nghttp3: Updated for version 0.11.0.
+libraries/ngtcp2: Updated for version 0.15.0.
+libraries/python3-imapclient: Added (Pythonic IMAP client library)
+libraries/python3-rpyc: Fix deps.
+libraries/python3-ruamel: Updated for version 0.17.26.
+libraries/sofia-sip: Added (SIP User-Agent Library)
+libraries/xmlsec: Updated for version 1.3.0.
+misc/feedbackd: Added (Haptic/visual/audio feedback for GNOME)
+misc/gnome-user-docs: Added (GNOME User Documentation)
+multimedia/mkvtoolnix Updated to 76.0
+multimedia/parole: Updated for version 4.18.0.
+multimedia/plexmediaserver: Updated for V. 1.32.2.7100_248a2daf0.
+multimedia/rygel: Added (UPnP AV MediaServer)
+network/RYMTracks: REQUIRES updated for renamed python deps.
+network/bitcoin: Updated for version 25.0.
+network/curl-quic: Updated for version 8.1.1.
+network/deis: REQUIRES updated for renamed python deps.
+network/dropbox: Updated for version 174.4.5852.
+network/gnome-remote-desktop: Added (GNOME Remote Desktop)
+network/gnome-user-share: Added (User level file sharing)
+network/jitsi-meet-desktop: Update for 2023.5.1
+network/microsoft-edge: Updated for version 113.0.1774.57
+network/mod_auth_gssapi: Update source.
+network/netcat-openbsd: Updated for version 7.3_1
+network/nextcloud-desktop: Updated for version 3.8.2
+network/protonvpn-cli: REQUIRES updated for renamed python deps.
+network/proxychains-ng: Removed by author.
+network/radicale: Fix deps.
+network/signal-desktop: Updated for version 6.19.0.
+network/surl: python => python2.
+network/tailscale: Updated for version 1.42.0
+network/teamviewer: Updated for version 15.42.4.
+network/wireshark: Updated for version 4.0.6.
+network/xdman: Added (Xtreme Download Manager)
+network/yle-dl: Fix deps.
+office/calibre-bin: Updated for version 6.18.1.
+office/glow: Added (CLI Markdown Reader)
+office/mtp2-fonts: Updated for version 2.1a.
+office/texlive-extra: Updated for version 2023.230322.
+office/wps-office-dicts: Added (dictionaries for WPS Office)
+perl/perl-PAR-Dist: Updated for version 0.52.
+python/aiosignal: Remove aiosignal
+python/argon2-cffi: Fix deps.
+python/async-timeout: Remove async-timeout
+python/frozenlist: Remove frozenlist
+python/git-fame: REQUIRES updated for renamed python deps.
+python/huepy: python => python2.
+python/humanize: Fix deps.
+python/ics: Fix deps.
+python/internetarchive: REQUIRES updated for renamed python deps.
+python/nyx: build with python3.
+python/pelican: Fix deps.
+python/pyatspi: Added (Python Client Library for AT-SPI)
+python/pyliblo: python => python2.
+python/python-jeepney: Fix deps.
+python/python-socks: Remove python-socks
+python/python3-Flask-Dance: Fix deps.
+python/python3-aiohttp-socks: Update DEPs
+python/python3-aiohttp: Update DEPs
+python/python3-attrdict: Fix deps.
+python/python3-calver: Fix deps.
+python/python3-comm: Fix deps.
+python/python3-confuse: Fix deps.
+python/python3-diff-match-patch: Fix deps.
+python/python3-distlib: Fix deps.
+python/python3-editables: Fix deps.
+python/python3-fastjsonschema: Update for 2.17.1
+python/python3-flit_scm: Fix deps.
+python/python3-installer: Updated for version 0.7.0, new maintainer.
+python/python3-isoduration: Fix deps.
+python/python3-jaraco.context: Fix deps.
+python/python3-lsp-black: Update for 1.3.0
+python/python3-mdurl: Fix deps.
+python/python3-more-itertools: Fix deps.
+python/python3-nltk: Fix deps.
+python/python3-overrides: Added (decorator for overriding methods)
+python/python3-pathspec: Fix deps.
+python/python3-poetry-core: Fix deps.
+python/python3-prometheus_client: Update for 0.17.0
+python/python3-py-cpuinfo: Fix deps.
+python/python3-pydantic: Fix deps.
+python/python3-pypng: Fix deps.
+python/python3-pytest-runner: Fix deps.
+python/python3-seaborn: Fix deps.
+python/python3-teletype: Fix deps.
+python/python3-threadpoolctl: Fix deps.
+python/python3-tinydb: Updated for homepage.
+python/python3-tomli_w: Fix deps.
+python/python3-ujson: Fix deps.
+python/stem: Updated for version 1.8.1.
+python/testpath: Fix deps.
+python/typing-extensions: Update for 4.6.0
+python/tzdata: Fix deps.
+python/yarl: Remove yarl
+system/docker-buildx: Updated for version 0.10.5.
+system/docker-compose: REQUIRES updated for renamed python deps.
+system/gslapt: Added (GUI Frontend to slapt-get)
+system/guake: Update for 3.10
+system/nvidia-driver: Updated for version 525.116.03.
+system/nvidia-kernel: Updated for version 525.116.03.
+system/nvidia-legacy390-driver: Update script.
+system/nvidia-legacy470-driver: Updated for version 470.182.03.
+system/pymux: REQUIRES updated for renamed python deps.
+system/python3-docker-compose: REQUIRES updated for renamed python deps.
+system/qemu: Fix find performance
+system/s3fs-fuse: Updated for version 1.92.
+system/sakura: Updated for version 3.8.7
+system/sbo-maintainer-tools: Updated for version 0.8.1.
+system/sdltrs: Updated for version 1.2.27+20230518_7dcf4ca9.
+system/slapt-get: Added (apt-get for pkgtool)
+system/slapt-src: Added (Slapt SlackBuild Utility)
+system/slapt-update-service: Added (Slapt-get update Notifier)
+system/slpkg: Updated for version 4.8.7.
+system/telegraf: Updated for version 1.26.3
+system/ttop: REQUIRES updated for renamed python deps.
+system/udiskie: REQUIRES updated for renamed python deps.
+system/wine-staging: Updated for version 8.8.
+system/xfburn: Updated for version 0.7.0.
+system/xvfb-run: Updated for version 21.1.7. New maintainer.
++--------------------------+
+Sat May 20 04:18:53 UTC 2023
+academic/CAFS_divergence: Fix ARCH section.
+academic/CAPS_coevolution: Fix ARCH section.
+academic/Gblocks: Fix ARCH section.
+academic/amd: Align with template.
+academic/amplifx: Fix ARCH section.
+academic/arpack-ng: Align with template.
+academic/btf: Align with template.
+academic/camd: Align with template.
+academic/cblas: Align with template.
+academic/ccolamd: Align with template.
+academic/cdo: Updated for version 2.2.0.
+academic/cholmod: Align with template.
+academic/colamd: Align with template.
+academic/colin: Use template TMP assignment.
+academic/csparse: Align with template.
+academic/cxsparse: Align with template.
+academic/fiji: Fix ARCH section.
+academic/finchtv: Fix ARCH section.
+academic/gresistor: Align with template.
+academic/klu: Align with template.
+academic/lapacke: Align with template.
+academic/ldl: Align with template.
+academic/megax: Fix and mv ARCH sect.
+academic/metis: Align with template.
+academic/ncbi-blast: Fix and mv ARCH sect.
+academic/octave: Align with template.
+academic/plus42: Updated for version 1.0.19.
+academic/pyfits: Align with template.
+academic/python2-kiwisolver: Align with template.
+academic/python2-scipy: Align with template.
+academic/python3-scipy: Align with template.
+academic/qrupdate: Align with template.
+academic/rbio: Align with template.
+academic/seqkit: Fix ARCH sect.
+academic/spidey: Fix and mv ARCH sect.
+academic/spqr: Align with template.
+academic/suitesparseconfig: Align with template.
+academic/ucsc-blat: Fix and mv ARCH sect, http->https.
+academic/umfpack: Align with template.
+academic/xoscope: Align with template.
+academic/xsimd: Updated for version 11.1.0.
+audio/TiMidity++: Align with template.
+audio/easymp3gain: Fix ARCH section. Change to i586.
+audio/freepats: Align with template.
+audio/pipewire-native-jack: Align with template.
+audio/sonata: Align with template.
+desktop/dbgl-legacy: New maintainer, builds from source.
+desktop/ee: Align with template.
+desktop/engrampa: Added (archive manager for the MATE desktop)
+desktop/gnome-screenshot: slack-desc nitpick.
+desktop/mate-desktop-environment: Added (continuation of GNOME 2)
+desktop/mate-media: Added (media tools for the MATE desktop)
+desktop/mate-power-manager: Added (power session daemon for MATE)
+desktop/mate-screensaver: Updated for version 1.26.2.
+desktop/mate-session-manager: Updated for version 1.26.1.
+desktop/mate-settings-daemon: Updated for version 1.26.1.
+desktop/mate-terminal: Added (terminal emulator for MATE)
+desktop/mate-utils: Added (various utilities for the MATE desktop)
+desktop/nwg-dock: Updated for version 0.3.4.
+desktop/rss-guard: Align with template.
+desktop/thunar-custom-actions: Change of maintainer
+desktop/todoman: Under REQUIRES, change atomicwrites to python3-atomicwrites
+desktop/vinagre: Added (remote desktop viewer for GNOME)
+development/Pivy: Align with template.
+development/amazon-corretto: Align with template.
+development/cpan2tgz: Align with template.
+development/cppunit: Align with template.
+development/cudatoolkit: Fix ARCH sect. amd symlinks.
+development/d-tools: Updated for version 2.103.1
+development/dis6502: Updated for version 0.15+2857fc3_20180311.
+development/dmd: Updated for version 2.103.1
+development/ecl: Align with template.
+development/elixir: Align with template.
+development/erlang-otp: Align with template.
+development/gcc5: Fix -march for i486, keep sbolint quiet.
+development/gcc5: slack-desc nitpick.
+development/icon: Align with template.
+development/jdk: Align with template.
+development/jupyter-ipykernel: Updated for version 6.23.1.
+development/kForth-32: Fix SlackBuild.
+development/kForth-64: Fix SlackBuild.
+development/nickle: Align with template.
+development/nodejs: Updated for version 20.2.0.
+development/noweb: Align with template.
+development/numpy-legacy: Align with template.
+development/openjdk8: Updated for version 8u372.
+development/poedit: Updated for version 3.3.1.
+development/postman: Updated for version 10.14.0.
+development/pycharm: Updated for version 2023.1.2.231.9011.38.
+development/python2-cycler: Align with template.
+development/python2-numpy: Align with template.
+development/python3-cycler: Align with template.
+development/python3-matplotlib: Align with template.
+development/python3-numpy: Align with template.
+development/python3-pyqt-distutils: SRCNAM changes.
+development/reuse-tool: Updated for version 1.1.2.
+development/rstudio-desktop: Update for 2023.03.1+446
+development/sdcc: Align with template.
+development/spyder: Under REQUIRES, change atomicwrites to python3-atomicwrites
+development/squeak-vm: Align with template.
+development/udis86: Align with template.
+development/universal-ctags: Updated for version p6.0.20230514.0
+development/xmake: Updated for version 2.7.9.
+games/UrbanTerror: Fix ARCH section and symlinks.
+games/boosteroid: Align with template.
+games/crispy-doom: Updated for version 6.0.
+games/emulationstation-de: slack-desc nitpick.
+games/etlegacy: ARCH->i586, add SRCARCH.
+games/ffgo: Align with template.
+games/fgo: Align with template.
+games/hatari: Align with template.
+games/hatari_tos_roms: Align with template.
+games/lbreakouthd: Updated for version 1.1.3.
+games/lutris: Align with template.
+games/lutris: Updated for version 0.5.13.
+games/mame: Align with template.
+games/smokinguns: Copy SlackBuild to docs, i386->i586, http->https.
+games/worldofpadman: ARCH->i586, add SRCARCH.
+gis/eccodes: Added (ECMWF en/decoding library for GRIB, BUFR, GTS)
+gis/gpsbabel: Align with template.
+gis/python3-basemap: Updated for version 1.3.7.
+gis/pytrainer: Align with template.
+gis/saga-gis: Align with template.
+graphics/Blender: Align with template.
+graphics/exif: Align with template.
+graphics/gbdfed: Align with template.
+graphics/ipe: slack-desc nitpick.
+graphics/lilypond: Align with template.
+graphics/mftrace: Align with template.
+graphics/peek: Align with template.
+graphics/potrace: Align with template.
+graphics/tuxpaint-stamps: Updated for version 2023.05.19.
+graphics/tuxpaint: Updated for version 0.9.30.
+graphics/ueberzugpp: Updated for version 2.8.3.
+graphics/vuescan: Updated MD5SUMs.
+graphics/xdot: Align with template.
+haskell/haskell-optparse-applicative: slack-desc nitpick.
+libraries/CondConfigParser: Align with template.
+libraries/batinfo: Align with template.
+libraries/blas: Align with template.
+libraries/gamemode: Added (Optimise Linux system performance)
+libraries/gtkdatabox: Align with template.
+libraries/gtkglarea: Align with template.
+libraries/highway: Updated for version 1.0.4.
+libraries/jogamp: Added (Java libraries for 3D Graphics/Multimedia)
+libraries/lapack: Align with template.
+libraries/libavif: Updated for version 20230512_94352e0.
+libraries/libcurl-gnutls: Align with template.
+libraries/libfabric: Updated for version 1.18.0.
+libraries/libfastjson: Updated for version 1.2304.0.
+libraries/libgweather4: Align with template.
+libraries/libjodycode: Updated for version 2.0.1.
+libraries/libmatekbd: Updated for version 1.26.1.
+libraries/libmateweather: Updated for version 1.26.1.
+libraries/libmysofa: Updated for version 1.3.1.
+libraries/libpng-legacy12: Change to i586.
+libraries/libsrtp2: Added (Secure RTP libraries version 2)
+libraries/libvdpau-va-gl: Align with template.
+libraries/libyuv: Updated for version 20230107_62af467.
+libraries/luaexpat: Updated for version 1.5.1
+libraries/luasec: Updated for version 1.3.1
+libraries/luasocket: Updated for version 3.1.0
+libraries/microsoft-gsl: Added (C++ Core Guidelines Support Library)
+libraries/moddb: Added (navigate ModDB purely programmatically)
+libraries/nghttp3: Added (RFC9114 HTTP/3 implementation over QUIC)
+libraries/ngtcp2: Added (quic library)
+libraries/ode: Align with template.
+libraries/opencl-amd: Align with template.
+libraries/pangox-compat: Align with template.
+libraries/python2-matplotlib: Align with template.
+libraries/python3-CherryPy: SRCNAM changes.
+libraries/python3-plumbum: SRCNAM changes.
+libraries/python3-pymdstat: Updated for version 0.4.3.
+libraries/python3-rpyc: SRCNAM changes.
+libraries/python3-zc.lockfile: SRCNAM changes.
+libraries/squish: Align with template.
+libraries/usrsctp: Added (a userland SCTP stack)
+libraries/virtualpg: slack-desc nitpick.
+libraries/xblas: Align with template.
+misc/fcitx5-mcbopomofo: Updated for version 2.5.2.
+misc/goldencheetah: Align with template.
+misc/ibus-table-chinese: ARCH=noarch. Remove unused CFLAGS etc..
+misc/pokemon-colorscripts: Switch to noarch.
+misc/rbutil: Align with template.
+misc/rmlint: Added (filesystem linter and deduplifier)
+multimedia/gnash: Align with template.
+multimedia/haruna: Updated for version 0.11.0.
+multimedia/huludesktop: Move/modify ARCH and move DEBARCH section.
+multimedia/inputstream.adaptive: Updated for version 20.3.8.
+multimedia/kvazaar: Updated for version 2.2.0.
+multimedia/openh264: Updated for version 2.3.1.
+network/armcord: Updated for version 3.2.0.
+network/arno-iptables-firewall: Align with template.
+network/bottle: Align with template.
+network/brave-browser: Updated for version 1.51.118.
+network/curl-quic: Added (command line URL data transfer tool)
+network/dino: Added (a simple Jabber client supporting video calls)
+network/librewolf: Updated for 112.0.2
+network/microsoft-edge: Updated for version 113.0.1774.50.
+network/neomutt: Updated for version 20230517.
+network/netperf: Align with template.
+network/nxclient: ADD SRCARCH. Fix synlinks.
+network/onioncat: Updated for version 4.11.0.
+network/openfortivpn: Updated for version 1.20.3
+network/privoxy: Align with template.
+network/prosody: Updated for version 0.12.3
+network/proxychains-ng: Added (TCP and DNS through proxy server)
+network/proxychains: Updated for version 4.16.
+network/psi-plus: Align with template.
+network/python3-CherryMusic: SRCNAM changes.
+network/python3-PyRSS2Gen: SRCNAM changes.
+network/rtl8821ce: Align with template.
+network/tor-browser: Updated for version 12.0.6.
+network/tor: Updated for version 0.4.7.13
+network/viber: Move/modify ARCH section. Strip.
+network/vivaldi: Updated for version 6.0.2979.22.
+network/webex: Fix ARCH section.
+network/wendzelnntpd: Align with template, use CFLAGS, fix docs.
+network/zeek: Updated for version 5.0.8.
+network/zsync: slack-desc nitpick.
+office/adobe-reader-fontpacks: Add SRCARCH to avoid lint errors.
+office/adobe-reader: Add SRCARCH to avoid lint errors.
+office/bibclean: Added (cleaner and pretty-printer for bibtex)
+office/catdvi: Added (dvi fallback for recoll)
+office/keepassxc: Updated for version 2.7.5.
+office/khal: Under REQUIRES, change atomicwrites to python3-atomicwrites
+office/khard: Under REQUIRES, change atomicwrites to python3-atomicwrites
+office/openoffice.org: Add submenu support.
+office/python3-xlsx2csv: SRCNAM changes.
+office/semantik: Updated for version 1.2.10.
+office/t-prot: Update DOWNLOAD.
+perl/perl-gnome2-canvas: slack-desc nitpick.
+python/RBTools: Align with template.
+python/atomicwrites: Remove atomicwrites
+python/click-didyoumean: Align with template.
+python/click-repl: Align with template.
+python/cppy: Align with template.
+python/django-sass: Align with template.
+python/email-validator: Updated for version 2.0.0.post2.
+python/feedgenerator: Updated for version 2.1.0.
+python/hachoir: Align with template.
+python/jaraco-packaging: Align with template.
+python/license-expression: Updated for version 30.1.0.
+python/npm: Align with template.
+python/optional-django: Align with template.
+python/pathtools3: Align with template.
+python/pathtools: Align with template.
+python/py3sensors: Align with template.
+python/pyblake2: Align with template.
+python/pycdio: Removed by request of maintainer.
+python/pynacl: Align with template.
+python/pysass: Align with template.
+python/pytest: Under REQUIRES, change atomicwrites to python2-atomicwrites
+python/python-debian: Updated for version 0.1.49.
+python/python-socks: Update for 2.3.0
+python/python-uritemplate: Align with template.
+python/python-webpack: Align with template.
+python/python2-docopt: SRCNAM changes.
+python/python2-elib.intl: Align with template.
+python/python2-mpd: Align with template.
+python/python2-psutil: Updated for version 5.9.5.
+python/python2-wheel: SRCNAM changes.
+python/python3-APScheduler: SRCNAM changes.
+python/python3-Flask-Babel: SRCNAM changes.
+python/python3-Flask-Bcrypt: SRCNAM changes.
+python/python3-Flask-Compress: SRCNAM changes.
+python/python3-Flask-Cors: SRCNAM changes.
+python/python3-Flask-Dance: Updated for version 7.0.0.
+python/python3-Flask-Login: SRCNAM changes.
+python/python3-Flask-Mail: SRCNAM changes.
+python/python3-Flask-Principal: SRCNAM changes.
+python/python3-Flask-RESTX: SRCNAM changes.
+python/python3-Flask-SQLAlchemy: SRCNAM changes.
+python/python3-Flask-Security-Too: SRCNAM changes.
+python/python3-Flask-WTF: SRCNAM changes.
+python/python3-WTForms: SRCNAM changes.
+python/python3-aiosignal: Added (callbacks in asyncio projects)
+python/python3-alembic: Updated for version 1.11.1.
+python/python3-aniso8601: SRCNAM changes.
+python/python3-async-timeout: Added (asyncio-compatible timeout)
+python/python3-autocommand: SRCNAM changes.
+python/python3-babelfish: SRCNAM changes.
+python/python3-blinker: SRCNAM changes.
+python/python3-calver: SRCNAM changes.
+python/python3-cattrs: SRCNAM changes.
+python/python3-characteristic: ARCH->i586.
+python/python3-cheroot: SRCNAM changes.
+python/python3-confuse: SRCNAM changes.
+python/python3-docker: Updated for version 6.1.2.
+python/python3-dockerpty: SRCNAM changes.
+python/python3-docopt: SRCNAM changes.
+python/python3-dotenv: SRCNAM changes.
+python/python3-editables: SRCNAM changes.
+python/python3-exceptiongroup: SRCNAM changes.
+python/python3-filetype: SRCNAM changes.
+python/python3-flask-paginate: SRCNAM changes.
+python/python3-flit: SRCNAM changes.
+python/python3-flit_core: SRCNAM changes.
+python/python3-flit_scm: SRCNAM changes.
+python/python3-frozenlist: Added (list-like structure)
+python/python3-glances: SRCNAM changes.
+python/python3-guessit: SRCNAM changes.
+python/python3-h11: SRCNAM changes.
+python/python3-hatch_fancy_pypi_readme: SRCNAM changes.
+python/python3-hatch_vcs: SRCNAM changes.
+python/python3-hatchling: Updated for version 1.17.0.
+python/python3-httpcore: SRCNAM changes.
+python/python3-httpx: SRCNAM changes.
+python/python3-inflect: SRCNAM changes.
+python/python3-iso3166: SRCNAM changes.
+python/python3-iso639: SRCNAM changes.
+python/python3-jaraco.classes: SRCNAM changes.
+python/python3-jaraco.collections: SRCNAM changes.
+python/python3-jaraco.context: SRCNAM changes.
+python/python3-jaraco.functools: SRCNAM changes.
+python/python3-jaraco.text: SRCNAM changes.
+python/python3-json5: Updated for version 0.9.14.
+python/python3-jsonschema: SRCNAM changes.
+python/python3-kiwisolver: Align with template.
+python/python3-libtmux: SRCNAM changes.
+python/python3-loguru: Updated for version 0.7.0.
+python/python3-markdown-it-py: SRCNAM changes.
+python/python3-mat2: Added (A metadata removal tool)
+python/python3-mdurl: SRCNAM changes.
+python/python3-mediafile: SRCNAM changes.
+python/python3-more-itertools: SRCNAM changes.
+python/python3-netifaces: SRCNAM changes.
+python/python3-pathspec: SRCNAM changes.
+python/python3-poetry-core: SRCNAM changes.
+python/python3-portend: SRCNAM changes.
+python/python3-psutil: Updated for version 5.9.5.
+python/python3-py-cpuinfo: SRCNAM changes.
+python/python3-pydantic: SRCNAM changes.
+python/python3-pynzb: SRCNAM changes.
+python/python3-pyproject-hooks: SRCNAM changes.
+python/python3-pyusb: slack-desc nitpick.
+python/python3-rebulk: SRCNAM changes.
+python/python3-requests-cache: SRCNAM changes.
+python/python3-rfc3986: SRCNAM changes.
+python/python3-rich: Updated for version 13.3.5.
+python/python3-socks: Added (SOCKS proxy connector for aiohttp)
+python/python3-teletype: SRCNAM changes.
+python/python3-tempora: Updated for version 5.2.2.
+python/python3-texttable: SRCNAM changes.
+python/python3-tomli_w: SRCNAM changes.
+python/python3-tornado: Updated for version 6.3.2.
+python/python3-trove-classifiers: Updated for version 2023.5.2.
+python/python3-ujson: SRCNAM changes.
+python/python3-url-normalize: SRCNAM changes.
+python/python3-watchdog: Align with template.
+python/python3-websocket-client: SRCNAM changes.
+python/python3-wheel: SRCNAM changes.
+python/python3-yarl: Added (Yet another URL library)
+python/python3-zxcvbn-python: SRCNAM changes.
+python/pytz-deprecation-shim: SRCNAM changes.
+python/pyusb: Align with template.
+python/pywal: slack-desc nitpick.
+python/reedsolo: Align with template.
+python/rst-linker: Align with template.
+python/rst: Align with template.
+python/scikit-umfpack: Align with template.
+python/sphinx-rtd-theme: Align with template.
+python/sqlalchemy-migrate: Align with template.
+python/subprocess32: Align with template.
+python/tempita: Align with template.
+python/tzdata: SRCNAM changes.
+python/vine: Align with template.
+python/workbook: Align with template.
+python/xlutils: Align with template.
+python/yarl: Update for 1.9.2
+system/CNS11643-font: Modify configs and README.
+system/Iosevka-aile: Updated for version 22.1.2.
+system/Iosevka-etoile: Updated for version 22.1.2.
+system/SavvyCAN: slack-desc nitpick.
+system/acpi_call: Align with template.
+system/atop: Updated for version 2.9.0.
+system/bogofilter: Align with template.
+system/bottom: Updated for version 0.9.1.
+system/btrbk: Align with template.
+system/conky: Updated for version 1.19.2.
+system/containerd: Updated for version 1.6.21
+system/docker-cli: Updated for version 23.0.6.
+system/docker-proxy: Updated for version 20230425_3f00484.
+system/docker: Updated for version 23.0.6.
+system/edk2-ovmf: Fix .json files.
+system/f3: Align with template.
+system/fwupd: Build efi-binary.
+system/hivex: Updated for version 1.3.23.
+system/hstr: Updated for version 3.1
+system/intel-microcode: Update to version 20230512
+system/limine: updated for version 4.20230503.0
+system/mbuffer: Added (a tool for buffering data streams)
+system/memkind: Remove 32bit support.
+system/memtest86+: Align with template.
+system/memtest86: Align with template.
+system/netdata: Updated for version 1.39.1.
+system/nvidia-kernel: Align with template.
+system/nvidia-kernel: Updated for version 525.105.17.
+system/nvidia-legacy340-kernel: Align with template.
+system/nvidia-legacy390-kernel: Align with template.
+system/nvidia-legacy470-kernel: Align with template.
+system/nvidia-legacy470-kernel: Updated for version 470.182.03.
+system/nvidia-open-kernel: Align with template.
+system/nvidia-open-kernel: Updated for version 525.116.03.
+system/oracle-instantclient-basic: Modify ARCH rules, csh profile.
+system/oracle-instantclient-devel: ARCH=noarch, SDL READMDE/LICENSE
+system/pixma: Align with template.
+system/pmdk: Updated for version 1.13.0.
+system/pomed-light: Updated for version 1.52lw
+system/prometheus: Updated to version 2.44.0
+system/python3-docker-compose: SRCNAM changes.
+system/rEFInd: Updated for version 0.14.2.
+system/rar: Fix ARCH section.
+system/refind-bin: Added (An EFI boot manager utility)
+system/rmw: Updated for version 0.9.1.
+system/rsyslog: Updated for version 8.2304.0.
+system/runc: Updated for version 1.1.7.
+system/samsung-mfp-drivers: ADD SRCARCH to stop linter warnings.
+system/sarasa-gothic: Updated for version 0.40.7.
+system/sbo-maintainer-tools: Updated for version 0.8.0.
+system/sdltrs: Updated for version 1.2.9a+20230517_29980234.
+system/skim: Updated for version 0.10.4, new maintainer.
+system/slpkg: Updated for version 4.8.5.
+system/stress-ng: Align with template.
+system/supervisor: Align with template.
+system/swtpm: Update README.
+system/trs80-roms: Updated for version 20230516.
+system/uhubctl: slack-desc nitpick.
+system/usbview: Align with template.
+system/v4l2loopback: Fix md5sum
+system/vhba-module: Align with template.
+system/virtualbox-kernel: Align with template.
+system/xtrs: Fix window close button.
++--------------------------+
 Sat May 13 12:28:22 UTC 2023
 .mailmap updated
 academic/boinc: Fix rc.boinc variables, remove extraneous characters

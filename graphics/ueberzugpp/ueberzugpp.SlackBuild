@@ -25,10 +25,12 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=ueberzugpp
-VERSION=${VERSION:-2.8.1}
+VERSION=${VERSION:-2.8.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
+
+WLROOTS=${WLROOTS:-no}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -56,6 +58,9 @@ elif [ "$ARCH" = "i686" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
@@ -76,12 +81,18 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+with_wlroots=()
+if [ "$WLROOTS" = "yes" ]; then
+    with_wlroots=( -DENABLE_WLROOTS=ON )
+fi
+
 mkdir -p build
 cd build
   cmake \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
+    "${with_wlroots[@]}" \
     ..
   make
   make install/strip DESTDIR=$PKG
