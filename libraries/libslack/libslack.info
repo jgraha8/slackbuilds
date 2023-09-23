@@ -1,10 +1,10 @@
 PRGNAM="libslack"
-VERSION="0.7.3"
+VERSION="0.7.5"
 HOMEPAGE="https://libslack.org"
-DOWNLOAD="https://libslack.org/download/libslack-0.7.3.tar.gz \
-	https://libslack.org/download/libslack-0.7.3-html.tar.gz"
-MD5SUM="f6925b8de22b06d4ff60ffa05e8dbc63 \
-	a62cc5e649b5ce98d192ccd2158c4983"
+DOWNLOAD="https://libslack.org/download/libslack-0.7.5.tar.gz \
+	https://libslack.org/download/libslack-0.7.5-html.tar.gz"
+MD5SUM="b9c0fde8dcfffad780841cfdf67ad552 \
+	4d387927d584a7a0e94312bb0a8db57b"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

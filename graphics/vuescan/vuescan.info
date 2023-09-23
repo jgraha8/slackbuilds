@@ -1,14 +1,14 @@
 PRGNAM="vuescan"
-VERSION="9.8.14"
+VERSION="9.8.16"
 HOMEPAGE="https://www.hamrick.com"
 DOWNLOAD="https://d2bwyyzfw77fhf.cloudfront.net/vuex3298.tgz \
           https://d2bwyyzfw77fhf.cloudfront.net/vuea3298.tgz"
-MD5SUM="978090d35bdb3eb01fdf04dc8acbb56f \
-        2023ce2b176e7552afd717c44cccb3c1"
+MD5SUM="dd7d747a8c5a2d048e4aa0ebc849000f \
+        095526186cb874447b3f88e1fd3c5699"
 DOWNLOAD_x86_64="https://d2bwyyzfw77fhf.cloudfront.net/vuex6498.tgz \
                  https://d2bwyyzfw77fhf.cloudfront.net/vuea6498.tgz"
-MD5SUM_x86_64="ad4045f94f3933006d4804b3aaabb9d4 \
-               7907d6752eb52ed0cf73accaae05a0a6"
+MD5SUM_x86_64="cfb4287efb11812a5f3e6e150c5e3f88 \
+               3d4e499df75553583bfd89a8866c2177"
 REQUIRES=""
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

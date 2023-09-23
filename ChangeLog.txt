@@ -1,3 +1,608 @@
+Sat Sep 16 17:17:12 UTC 2023
+academic/FastTree: Added (Infers approximately-ML phylogenetic).
+academic/FigTree: Add (A graphical viewer of phylogenetic trees).
+academic/Gblocks: Update script.
+academic/HMMER: Updated for version 3.4.
+academic/IGV: Updated for version 2.16.2.
+academic/RepeatMasker: Updated for version 4.1.5.
+academic/aline: update source.
+academic/cistrome-MACS: update source.
+academic/fiji: Updated for version 20230801_1717.
+academic/g3data: Fix DOWNLOAD.
+academic/iqtree: Updated for version 2.2.2.7.
+academic/jalview: Updated for version 2.11.2.7.
+academic/kalign: Added (multipelsquence alignment program).
+academic/meme-suite: Updated for version 5.5.4.
+academic/ncbi-blast+: Updated for version 2.14.1.
+academic/ncbi-edirect: Added (Entrez Direct cli utilities).
+academic/sim: Added (local similarity program).
+academic/topdraw: update source.
+academic/treeviewx: update source.
+academic/ugene: Updated for version 48.1.
+academic/wehi-weasel: Updated for version 3.8.0.18.
+audio/aeolus: Updated for version 0.10.4.
+audio/clthreads: Updated for version 2.4.2.
+audio/clxclient: Updated for version 3.9.2.
+audio/musikcube: Updated for version 3.0.2.
+desktop/arandr: Updated for version 0.1.11
+desktop/bashmount: New maintainer, .new config.
+desktop/ufetch: Updated for version 0.3, new maintainer.
+desktop/wofi: Added (launcher program).
+desktop/xwallpaper: New maintainer.
+development/Sphinx: Updated for version 4.5.0, new maintainer.
+development/bbcsdl: Update script.
+development/ciforth: Added (forth builder).
+development/dfu-programmer: Updated for version 1.1.0, new maint.
+development/enki: Updated for version 22.08.0.
+development/md2roff: Updated for version 1.11.
+development/micro: Updated for version 2.0.12, new maint.
+development/nodejs: Updated for version 20.6.1.
+development/postman: Add desktop entry.
+development/reflex: Updated for version 2.5.4.20230523.
+development/scite: Updated for version 5.3.7.
+development/tinyscheme: Fix script.
+development/unicorn: Updated for version 2.0.1.post1.
+development/vasm: Updated for version 1.9d.
+development/vscode-bin: Updated for version 1.82.2.
+development/zope.sqlalchemy: Updated for version 3.1.
+games/LucasChess: Updated for version R2.10.
+games/Mindustry: Updated for version 146.
+games/RMG: Updated for version 0.5.2.
+games/ZEsarUX: Updated for version 10.10.
+games/ags: Updated for version 3.6.0.52.
+games/gltron: Added (3D lightcyle racing game).
+games/mupen64plus-input-raphnetraw: Update dependencies.
+games/sunshine: Added (game stream host).
+games/wise: Added  (Compare protein to DNA sequence).
+gis/OTB: Updated for version 8.1.2.
+gis/OWSLib: Updated for version 0.29.2.
+gis/gdal: Updated for version 3.7.2.
+gis/postgis: Updated for version 3.4.0.
+gis/qgis: Updated for version 3.32.2.
+gis/saga-gis: Updated for version 9.1.2.
+graphics/FotoKilof: Updated for version 4.4.2.
+graphics/farbfeld: New maintainer.
+graphics/graphviz: Updated for version 9.0.0.
+graphics/mozjpeg: Updated for version 4.1.4.
+graphics/mtpaint: Fix man pages.
+graphics/vuescan: Updated MD5SUMs.
+grapphics/converseen: Updated for version 0.11.0.0.
+ham/codec2: Fix download.
+libraries/OptiX-Headers: Update README.
+libraries/html5lib: Updated for version 1.1, new maint.
+libraries/libcoap: Updated for version 4.3.2.
+libraries/libmediainfo: Updated for version 23.09.
+libraries/libsoup3: Updated for version 3.4.3.
+libraries/php-redis: Updated for version 6.0.0.
+libraries/qutepart: Updated for version 3.3.3.
+libraries/spglib: Updated for version 2.1.0.
+libraries/tslib: Added (touchscreen library).
+libraries/zita-resampler: Updated for version 1.11.2.
+misc/binclock: Added (binary terminal clock).
+misc/bitwarden-desktop: Updated for version 2023.8.4.
+misc/discount: Updated for version 2.2.7d, new maintainer.
+misc/dos2unix: Updated for version 7.5.1; new maintainer.
+misc/recode: Updated for version 3.7.13.
+misc/ssss: Updated for version 0.5.7.
+misc/vttest: Updated for version 2.7.20230201.
+multimedia/mediainfo: Updated for version 23.09.
+multimedia/mpv: Require luajit (not lua)
+multimedia/picard: Updated for version 2.9.2.
+network/AdGuardHome: Updated for version 0.107.38.
+network/beegfs: Added (parallel cluster filesystem).
+network/brave-browser: Updated for version 1.58.124.
+network/element-desktop: Updated for version 1.11.42.
+network/microsoft-edge: Updated for version 117.0.2045.31.
+network/nextcloud-desktop: Updated for version 3.9.4.
+network/nyxt: Updated for version 3.7.0.
+network/protonmail-bridge: Updated for version 3.4.2.
+network/rclone: Updated for version 1.64.0.
+network/slack: Updated for version 4.33.115.
+network/telegram: Updated for version 4.9.6.
+network/tnftp: Updated for version 20230507.
+network/tor-browser: Updated for version 12.5.4.
+network/transmission: Updated for version 4.0.4.
+network/unbound: Updated for version 1.18.0.
+network/viber: Script updates, new maintainer.
+network/vivaldi: Updated for version 6.2.3105.48.
+network/ytfzf: Updated for version 2.6.1.
+office/LibreOffice: Updated for version 7.6.1.2
+office/anorack: Updated for version 0.2.8, new maintainer.
+office/featherpad: New maintainer.
+office/neoleo: Updated for version 13.1.
+office/notes: Added (cli and tui note app).
+office/pandoc-bin: Updated for version 3.1.8.
+perl/perl-Mojolicious: Updated for version 9.34.
+python/Flask: Updated for version 2.3.3.
+python/buildbot-badges: Updated for version 3.9.2.
+python/buildbot-worker: Updated for version 3.9.2.
+python/buildbot: Updated for version 3.9.2.
+python/cppy: Updated for version 1.2.1.
+python/pipdeptree: Updated for version 2.13.0, new maintainer.
+python/python-importlib_metadata: New maintainer.
+python/python-zipp: New maintainer.
+python/python3-alembic: Updated for version 1.12.0.
+python/python3-argcomplete: Added (tab completion).
+python/python3-authheaders: Updated for version 0.15.3.
+python/python3-celery: Updated for version 5.3.4.
+python/python3-cffsubr: Added (standalone CFF subroutine).
+python/python3-compreffor: Added (cff tables for fonttools).
+python/python3-dulwich: updated for version 0.21.6
+python/python3-filelock: Updated for version 3.12.4.
+python/python3-fontmake: Added (compile fonts).
+python/python3-fonttools: Added (manipulate font files).
+python/python3-glyphslib: Added (bridge .glyphs to UFOs).
+python/python3-h5py: Build fixes, new maintainer.
+python/python3-kombu: Updated for version 5.3.2.
+python/python3-maturin: Added (python rust tools).
+python/python3-orjson: Added (json library).
+python/python3-pdm: Updated for version 2.9.2.
+python/python3-pipx: Added (install python apps).
+python/python3-setuptools-git-ls-files: Added (setuptools plugin).
+python/python3-setuptools-scm-opt: Added (plugin for setuptools).
+python/python3-soupsieve: Updated for version 2.5.
+python/python3-twisted: Updated for version 23.8.0.
+python/python3-ufo2ft: Added (fonttools).
+python/python3-ufolib2: Updated for version 0.13.1.
+python/python3-userpath: Added (add locations to user path).
+python/python3-validators: Updated for version 0.22.0.
+python/traitlets: Updated for version 5.10.0.
+python/werkzeug: Updated for version 2.3.7.
+system/B-em: Updated for version 086965a.
+system/FreeFileSync: Updated for version 13.0.
+system/Iosevka-aile: Updated for version 26.3.3.
+system/Iosevka-etoile: Updated for version 26.3.3.
+system/Iosevka: Updated for version 26.3.3
+system/apple-fonts-Garamond: update script.
+system/bitrot: Update for 1.0.1; update DEP; new maint.
+system/dosbox-x: Updated for version 2023.09.01.
+system/epson-inkjet-printer-escpr2: Updated for version 1.2.5.
+system/gcn64tools: Added (usb adapter).
+system/netdata: Updated for version 1.42.3.
+system/prometheus: Updated to version 2.47.0.
+system/redis: Updated for version 7.2.1.
+system/sarasa-gothic: Updated for version 0.41.10.
+system/slackrepo-hints: Updated for version 20230916.
+system/slackrepo: Updated for version 20230915.
+system/unicode-character-database: Updated for version 15.1.0.
+system/wezterm: Fix 64bit build.
++--------------------------+
+Sat Sep  9 03:14:59 UTC 2023
+academic/WolframEngine: Updated for version 13.3.0.
+academic/cadabra2: Updated for version 2.4.4.
+accessibility/xzoom: Update man page.
+desktop/fvwm3: Updated for version 1.0.8.
+desktop/idesk: Updated for version 0.7.8.
+desktop/papirus-icon-theme: Updated for version 20230901.
+development/acpica: Fix download link.
+development/bbcsdl: Updated for version 1.37a.
+development/github-cli: Updated for version 2.34.0
+development/mongodb-compass: Updated for version 1.39.4.
+development/mutagen: Updated for version 1.47.0.
+development/neovim: Updated for version 0.9.2.
+development/nodejs: Updated for version 20.6.0.
+development/pre-commit: Updated for version 3.4.0.
+development/sbcl: Updated for version 2.3.8
+development/vscode-bin: Updated for version 1.82.0.
+development/xa: Updated for version 2.3.14.
+development/xxd-standalone: Updated for version 9.0.1861.
+games/RMG: Updated for version 0.5.1.
+games/devilutionx: Updated for version 1.5.1.
+games/jg-cega: Updated for version 0.6.0.
+games/jg-geolith: Added (Neo Geo emulation core).
+games/jg-mgba: Updated for version 0.10.2.
+games/jollygood: Updated for version 1.0.2.
+games/melonds: Added (Nintendo DS Emulator).
+games/open-adventure: Updated for version 1.16.
+games/puzzles: Updated for version 20230828.67496e7.
+games/stepmania: Added (dance and rhythm game).
+games/xroar: Updated for version 1.4.2.
+graphics/Blender: Updated for version 3.3.10
+graphics/birdfont: Updated for version 2.33.1.
+graphics/fyre: Updated for version 1.0.1.
+graphics/implot: Updated for version 0.16.
+graphics/jpegoptim: Updated for version 1.5.5.
+graphics/mcomix: Updated for version 2.3.0.
+graphics/vuescan: Updated for version 9.8.16.
+libraries/OptiX-Headers: Added (NVidia Ray-Tracing API Headers).
+libraries/antlr4: Updated for version 4.13.1.
+libraries/camlpdf: Updated for version 2.6.1.
+libraries/imgui: Updated for version 1.89.8.
+libraries/imlib2_loaders: Updated for version 1.11.1.
+libraries/jsoncpp: Updated for version 1.9.5.
+libraries/libtomcrypt: Updated for version 1.18.2.
+libraries/libtorrent2: Updated for version 2.0.9.
+libraries/libxnvctrl: Updated for version 535.104.05.
+libraries/onevpl: Version bump to 2023.3.1
+libraries/pylast: Updated for version 5.2.0.
+libraries/python3-plumbum: Updated for version 1.8.2.
+libraries/qt-avif-image-plugin: Updated for version 0.6.0.
+misc/bitwarden-desktop: Updated for version 2023.8.3.
+misc/fcitx5-chewing: Updated for version 5.1.0.
+misc/fcitx5-chinese-addons: Updated for version 5.1.0.
+misc/fcitx5-configtool: Updated for version 5.1.0.
+misc/fcitx5-gtk: Updated for version 5.1.0.
+misc/fcitx5-qt: Updated for version 5.1.0.
+misc/fcitx5-table-extra: Updated for version 5.1.0.
+misc/fcitx5-table-other: Updated for version 5.1.0.
+misc/fcitx5: Updated for version 5.1.0.
+misc/libime: Updated for version 1.1.1.
+multimedia/exaile: Updated for version 4.1.3.
+multimedia/filebot: Version bump to 5.1.1
+multimedia/mkvtoolnix: Updated to 79.0
+network/AdGuardHome: Updated for version 0.107.37.
+network/brave-browser: update 1.57.62
+network/dropbox: Updated for version 182.4.6427.
+network/franz: Updated for version 5.10.0.
+network/haproxy: Updated for version 2.8.3.
+network/microsoft-edge: update 116.0.1938.76
+network/protonmail-bridge: Updated for version 3.4.1.
+network/signal-desktop: Updated for version 6.30.1.
+network/squid: Updated for version 6.2.
+network/telegram: Updated for version 4.9.5.
+network/unbound: Updated for version 1.80.0.
+network/viber: Updated for version 20.3.0.1.
+network/vivaldi: Updated for version 6.2.3105.47.
+network/weechat: Updated for version 4.0.4.
+network/yt-dlp: Fix requirements.txt.
+network/zoom-linux: Updated for version 5.15.12.7665
+office/calibre-bin: Updated for version 6.26.0.
+office/cpdf: Updated for version 2.6.1.
+python/asttokens: Updated for version 2.4.0.
+python/ipython: Version bump to 8.15.0
+python/pyfiglet: Support python3 as well.
+python/python3-Flask-Babel: Updated for version 3.1.0.
+python/python3-Flask-Cors: Updated for version 4.0.0.
+python/python3-Flask-RESTful: Updated for version 0.3.10.
+python/python3-aiofiles: Updated for version 23.2.1.
+python/python3-blinker: Updated for version 1.6.2.
+python/python3-build: Updated for version 1.0.3.
+python/python3-cattrs: Updated for version 23.1.2.
+python/python3-cfgv: Updated for version 3.4.0.
+python/python3-cheroot: Updated for version 10.0.0.
+python/python3-docker: Updated for version 6.1.3.
+python/python3-filelock: Version bump to 3.12.3
+python/python3-inflect: Updated for version 7.0.0.
+python/python3-jaraco.classes: Updated for version 3.3.0.
+python/python3-jaraco.collections: Updated for version 4.3.0.
+python/python3-jaraco.functools: Updated for version 3.9.0.
+python/python3-jedi: Version bump to 0.19.0
+python/python3-libtmux: Updated for version 0.23.1.
+python/python3-loguru: Updated for version 0.7.1.
+python/python3-markdown-it-py: Updated for version 3.0.0.
+python/python3-mediafile: Updated for version 0.12.0.
+python/python3-pdm: Version bump to 2.9.1
+python/python3-pluggy: Version bump 1.3.0
+python/python3-portend: Updated for version 3.2.0.
+python/python3-py: Correct homepage address
+python/python3-pyproject-api: Version bump to 1.6.1
+python/python3-pytest: Version bump to 7.4.2
+python/python3-qbittorrent-api: Version bump to 2023.9.53
+python/python3-requests-cache: Updated for version 1.1.0.
+python/python3-rich: Updated for version 13.5.2.
+python/python3-setuptools-rust-opt: Updated for version 1.7.0.
+python/python3-tempora: Updated for version 5.5.0.
+python/python3-threadpoolctl: Version bump to 3.2.0
+python/python3-tornado: Version bump to 6.3.3
+python/python3-ujson: Updated for version 5.8.0.
+python/python3-zxcvbn-python: Update README and SlackBuild.
+python/python3-zxcvbn: Added (Estimate Dropbox pass strength).
+python/scikit-learn: Add why we can't update to README
+python/send2trash: Version bump to 1.8.2
+python/typing-extensions: Version bump to 4.7.1
+ruby/ruby-build: Updated for version 20230904.
+system/Iosevka-slab: Updated for version 26.3.0
+system/Iosevka: Updated for version 26.3.0
+system/bees: Added (btrfs deduplication).
+system/docker-compose: Updated for version 2.21.0
+system/rename.pl: Updated for version 1.14.
+system/slackrepo-hints: Updated for version 20230909.
+system/slackrepo: Updated for version 20230909.
+system/tmuxp: Updated for version 1.29.1.
+system/wezterm: Added (terminal emulator).
+system/yq: generate docs if pandoc is present
++--------------------------+
+Sun Sep  3 02:40:54 UTC 2023
+academic/lammps: Added (molecular simulator).
+audio/cubeb: Updated for version 20230825_3f86a06.
+desktop/UltimateDailyWallpaper: Fix md5sum.
+development/composer: Updated for version 2.6.1
+development/d-tools: Updated for version 2.105.1
+development/dmd: Updated for version 2.105.1
+development/php82: Updated for version 8.2.10
+development/postman: Updated for version 10.17.4.
+development/rstudio-desktop: Updated for version 2023.06.2+561.
+games/mupen64plus-rsp-parallel: Added (RSP Plugin for mupen64plus).
+git/workflows: Checkout code from fork for pr checks.
+graphics/ART: Updated for version 1.20.1.
+libraries/cpp-httplib: Updated for version 0.14.0.
+office/MasterPDFEditor4: Added desktop file.
+office/MasterPDFEditor4: Update script.
+office/wps-office: Updated for version 11.1.0.11704.XA.
+system/apple-fonts-NY: Updated for version 2023.
+system/apple-fonts-SF: Updated for version 2023.
+system/telegraf: Updated for version 1.27.4.
++--------------------------+
+Sat Sep  2 11:09:01 UTC 2023
+academic/qucs-s: Updated for version 2.0.0.
+audio/ncmpc: Updated for version 0.49
+audio/xmms2: Fix conflict with audio/mac.
+desktop/UltimateDailyWallpaper: Updated for version 3.3.6.
+desktop/gnome-clocks: Updated for version 41.0.
+desktop/gromit-mpx: Updated for version 1.4.3.
+desktop/nwg-shell-config: Updated for version 0.5.17.
+development/Catch2: Updated for version 3.4.0.
+development/QtPy: Updated for version 2.4.0.
+development/bbcsdl: Added (BBC BASIC for Linux).
+development/dynarmic: Updated for version 6.5.0.
+development/ebe: Fix doc permission.
+development/gnome-builder: Updated for version 42.1.
+development/hugo: update 0.118.2
+development/icdiff: Updated for version 2.0.7.
+development/mawk: Updated for version 1.3.4_20230808.
+development/mongodb-compass: Updated for version 1.39.3.
+development/mono: Updated for version 6.12.0.199.
+development/muon: New maintainer.
+development/pycharm: Updated for version 2023.2.1.232.9559.58.
+development/sbcl: Updated for version 2.3.7
+development/sysprof: Updated for version 3.44.0.
+development/tfenv: Added (Terraform version manager).
+development/tup: New maintainer, minor fixes.
+development/universal-ctags: Updated for version p6.0.20230827.0
+development/xxd-standalone: Updated for version 9.0.1832.
+games/RMG: Added (emulator).
+games/devilutionx: Updated for version 1.5.0.
+games/dolphin-emu: Updated for version 5.0.20059.
+games/duckstation: Updated for version 0.1.6217.
+games/fceux: Updated for version 2.6.6.
+games/fortune_firefly: Updated for version 20230828bkw.
+games/hedgewars: Updated for version 1.0.2.
+games/mesen-x: Updated for version 0.9.9.3364.
+games/mupen64plus-extraplugins: Added (plugins for mupen64plus).
+games/mupen64plus-input-raphnetraw: Added (emulator plugin).
+games/mupen64plus-nightly: Added (N64 emulator).
+games/mupen64plus-video-angrylionplus: Added (emulator plugin).
+games/mupen64plus-video-parallel: Added (Video Plugin mupen64plus).
+games/sameboy: Added (emulator).
+gis/GMT: Updated for version 6.4.0.
+gis/proj-data: Updated for version 1.15.
+gis/proj: Updated for version 9.3.0.
+github/workflows: Run sbolint as a github PR check.
+graphics/OpenSubdiv: Updated for version 3.5.1
+graphics/entangle: Updated for version 3.0.
+graphics/imv: Updated for version 4.4.0.
+graphics/vuescan: Updated MD5SUMs.
+haskell/hscolour: Updated for version 1.25
+libraries/SDL_audiolib: Updated for version 20230225_b2df2df.
+libraries/cpp-httplib: Updated for version 0.13.3.
+libraries/cpp-jwt: Fix version in cmake.
+libraries/crossguid: Updated for version 20190529_ca1bf4b.
+libraries/double-conversion: Updated for version 3.3.0.
+libraries/exempi: Updated for version 2.6.4.
+libraries/flatbuffers: Updated for version 23.5.26.
+libraries/fmt: Updated for version 10.1.1.
+libraries/fstrcmp: Added (Fuzzy compare Library).
+libraries/imlib2: Updated for version 1.12.0.
+libraries/jsonrpc-glib: Updated for version 3.43.0.
+libraries/libslack: Updated for version 0.7.5
+libraries/libudfread: Added (UDF Reader).
+libraries/libxmlb: Updated for version 0.3.14.
+libraries/miniupnpc: Updated for version 2.2.5.
+libraries/qt6: Updated for version 6.5.2.
+libraries/simpleini: Updated for version 4.20.
+libraries/spdlog: Updated for version 1.12.0.
+libraries/stormlib: Updated for version 9.25.
+libraries/template-glib: Updated for version 3.36.1.
+libraries/xbyak: Updated for version 6.73.
+libraries/zstd-cmake: Updated for version 1.5.5.
+misc/hxtools: Updated for version 20230411.
+multimedia/filebot: Updated for version 5.1.0.
+multimedia/haruna: Updated for version 0.12.1.
+network/armcord: Updated for version 3.2.4.
+network/brave-browser: update 1.57.57
+network/deltachat: Updated for version 1.40.0.
+network/discord: Updated for version 0.0.29.
+network/dokuwiki: Updated for version 2023-04-04a.
+network/element-desktop: Updated for version 1.11.40.
+network/jitsi-meet-desktop: Updated for version 2023.8.0
+network/librewolf: Updated for version 116.0.3
+network/llhttp: Updated for version 9.0.1.
+network/mailspring: Updated for version 1.11.0
+network/microsoft-edge: update 116.0.1938.69
+network/putty: Updated for version 0.79.
+network/qbittorrent: Updated for version 4.5.5.
+network/qutebrowser-bin: Bump pdf.js version.
+network/session: Updated for version 1.11.0.
+network/telegram: Updated for version 4.9.4.
+network/tor-browser: Updated for version 12.5.3.
+network/vivaldi: Updated for version 6.2.3105.45.
+network/zoom-linux: Updated for version 5.15.11.7239
+office/MasterPDFEditor: Updated for version 5.9.61.
+office/lowdown: Install shared library (required by nix).
+office/mu: Updated for version 1.10.6.
+office/pandoc-bin: update 3.1.7
+office/python3-xlsx2csv: Updated for version 0.8.1.
+perl/perl-DBD-Pg: Updated for version 3.17.0.
+perl/perl-GD: Updated for version 2.78.
+perl/perl-Test-Pod-Coverage: Use HTTPS.
+perl/perl-YAML-Syck: Use HTTPS.
+python/PyGreSQL: Updated for version 5.2.5
+python/click-repl: Removed (Use python3-click-repl).
+python/click: Updated for version 8.1.7.
+python/python3-APScheduler: Updated for version 3.10.4.
+python/python3-celery: Update DEP.
+python/python3-click-repl: Added (REPL plugin for Click).
+python/python3-distlib: Updated for version 0.3.7.
+python/python3-editables: Updated for version 0.5.
+python/python3-exceptiongroup: Updated for version 1.1.3.
+python/python3-filelock: Add note to README.
+python/python3-geventhttpclient: Updated for version 2.0.10.
+python/python3-glad: Updated for version 2.0.4
+python/python3-hatchling: Updated for version 1.18.0.
+python/python3-httpcore: Updated for version 0.17.3.
+python/python3-identify: Updated for version 2.5.27.
+python/python3-more-itertools: Updated for version 10.1.0.
+python/python3-pathspec: Updated for version 0.11.2.
+python/python3-pdm-backend: Updated for version 2.1.6.
+python/python3-pdm: Updated for version 2.9.0.
+python/python3-poetry-core: Updated for version 1.7.0.
+python/python3-trove-classifiers: Updated for version 2023.8.7.
+python/python3-websocket-client: Updated for version 1.6.2.
+python/python3-wheel: Updated for version 0.41.2.
+system/FreeFileSync: Added (Cross-platform file sync utility).
+system/Iosevka-aile: Updated for version 26.2.2.
+system/Iosevka-etoile: Updated for version 26.2.2.
+system/borgbackup: Fix conflict with Sphinx.
+system/bottom: Updated for version 0.9.6.
+system/clamav: Updated for version 1.2.0.
+system/docker-compose: Updated for version 2.20.3
+system/earlyoom: New maintainer, various fixes.
+system/fastfetch: Updated for version 2.0.5.
+system/fuse-archive: New maintainer.
+system/jdupes: Updated for version 1.27.3.
+system/mmv: Updated for version 2.5.1.
+system/mount-zip: Updated for version 1.0.9, new maintainer.
+system/netdata: Updated for version 1.42.2.
+system/nvidia-driver: Updated for version 535.104.05.
+system/nvidia-kernel: Updated for version 535.104.05.
+system/nvidia-open-kernel: Updated for version 535.104.05.
+system/sarasa-gothic: Updated for version 0.41.8.
+system/sleuthkit: Updated for version 4.12.1.
+system/usermin: Updated for version 2.002.
+system/webmin: Updated for version 2.102.
+system/yaft: Updated maintainer info.
+system/yq: Added (Portable command line processor).
++--------------------------+
+Sat Aug 26 12:07:46 UTC 2023
+academic/plus42: Updated for version 1.0.21.
+audio/asap: Updated for version 5.3.0.
+audio/mixxx: Updated for version 2.3.6.
+desktop/ctwm: Updated for version 4.1.0.
+desktop/nwg-dock: Updated for version 0.3.7.
+desktop/nwg-panel: Updated for version 0.9.12.
+desktop/nwg-shell: Updated for version 0.5.9.
+desktop/rss-guard: updated for version 4.5.0
+desktop/variety: Update dependencies.
+development/aspnetcore-runtime-7.0: Updated for version 7.0.10.
+development/astyle: Updated for version 3.4.
+development/bless: Updated for version 0.6.3.
+development/cloc: Version bump to 1.98
+development/clojure: Updated for version 1.11.1.1386.
+development/codespell: Updated for version 2.2.5.
+development/dotnet-runtime-6.0: Updated for version 6.0.21.
+development/dotnet-runtime-7.0: Updated for version 7.0.10.
+development/dotnet-sdk-6.0: Updated for version 6.0.413.
+development/dotnet-sdk-7.0: Updated for version 7.0.400.
+development/fasm: Updated for version 1.73.31.
+development/github-cli: Updated for version 2.33.0
+development/idea: Updated for version 2023.2.1.
+development/kotlin: Updated for version 1.9.10.
+development/liberica-jdk-bin: Updated for version 17.0.8.1+1.
+development/mongodb-compass: Updated for version 1.39.2.
+development/qb64: Add Missing files.
+development/qb64: Update script.
+development/qb64pe: Added (Modern QuickBASIC compiler).
+development/squirrel-sql: Updated for version 4.6.0.
+development/universal-ctags: Updated for version p6.0.20230820.0
+development/vstudio: Updated for version 13.3.3.
+development/xmake: Updated for version 2.8.2.
+development/yabasic: Added (Basic interpreter).
+development/zulu-openjdk11: Updated for version 11.0.20.
+development/zulu-openjdk17: Updated for version 17.0.8.
+development/zulu-openjdk8: Updated for version 8.0.382.
+games/burgerspace: Updated for version 1.9.5.
+games/defendguin: Updated for version 0.0.13.
+games/dmagnetic: Updated for version 0.37.
+games/domination: Updated for version 1.2.9.
+games/fceux: Fix building on -current.
+games/golly: Updated for version 4.2.
+games/gottet: Add README note.
+games/protontricks: Updated for version 1.10.3.
+games/vcmi: updated for version 1.3.1
+gis/python3-basemap: Updated for version 1.3.8.
+graphics/libplacebo: Updated for version 5.264.1
+graphics/mcomix: Updated for version 2.2.1.
+graphics/ueberzugpp: Updated for version 2.9.1.
+graphics/vuescan: Updated MD5SUMs.
+graphics/vuescan: Updated for version 9.8.15.
+libraries/aspnetcore-runtime-6.0: Updated for version 6.0.21.
+libraries/libslack: Updated for version 0.7.4
+libraries/libxcrypt: Removed (conflict with Slackware's GLIBC).
+libraries/properties-cpp: Version bump to 0.0.3
+libraries/tclxml: Updated for version 3.3.1.
+libraries/wimlib: Updated for version 1.14.2.
+libraries/xmlsec: Fix DOWNLOAD.
+misc/bdf2psf: Note to self.
+misc/bitwarden-desktop: Updated for version 2023.8.2.
+misc/mosquitto: Updated for version 2.0.17
+misc/open-simh: Updated for version 348f5f2.
+multimedia/haruna: Updated for version 0.12.0.
+multimedia/inputstream.adaptive: Version bump to 20.3.12
+multimedia/picard-plugins: Version bump to 9509b80
+multimedia/picard: Version bump to 2.9.1
+network/anydesk: Updated for version 6.3.0.
+network/armcord: Updated for version 3.2.3.
+network/brave-browser: update 1.57.53
+network/element-desktop: Updated for version 1.11.39.
+network/microsoft-edge: update 116.0.1938.54
+network/nextcloud-desktop: update 3.9.3
+network/nordvpn: Updated for version 3.16.5.
+network/nyxt: Updated for version 3.6.0.
+network/sfeed: Updated for version 1.9, new maintainer.
+network/signal-desktop: Updated for version 6.29.1.
+network/tailscale: update 1.48.1
+network/teamviewer: Updated for version 15.45.3.
+network/telegram: Updated for version 4.9.2.
+network/vnstat: Updated for version 2.11.
+network/windscribe: Updated for version 2.6.14.
+network/wireshark: Updated for version 4.0.8.
+network/zoom-linux: Updated for version 5.15.10.6882
+office/LibreOffice: Updated for version 7.6.0.3
+office/MasterPDFEditor: Updated for version 5.9.60.
+office/homebank: Updated for version 5.6.6.
+office/ledger-live: Updated for version 2.66.0
+office/libreoffice-helppack: Updated for version 7.6.0.
+office/libreoffice-langpack: Updated for version 7.6.0.
+office/libreoffice: Updated for version 7.6.0.
+office/pandoc-bin: update 3.1.6.2
+office/wordtsar: Added (scheme interpreter).
+office/wordtsar: Added (wordstar clone).
+office/xournalpp: Updated for version 1.2.1.
+python/buildbot-badges: updated for version 3.9.0
+python/buildbot-worker: updated for version 3.9.0
+python/buildbot: updated for version 3.9.0
+python/python-msal: Version bump to 1.23.0
+python/python3-PyGithub: Version bump to 1.59.1
+python/python3-alembic: updated for version 1.11.3
+python/python3-cairocffi: updated README
+python/python3-caldav: Version bump to 1.3.6
+python/python3-cloudflare: Updated for version 2.11.7
+python/python3-librosa: Version bump to 0.10.1
+python/python3-pdm-backend: Version bump to 2.1.5
+python/python3-pdm: Version bump to 2.8.2
+python/python3-project-api: Note on README why we can't update
+python/python3-pyzmq: Updated for version 25.1.1
+system/Iosevka-aile: Updated for version 26.2.1.
+system/Iosevka-etoile: Updated for version 26.2.1.
+system/android-udev-rules: Updated for version 2023.06.14.
+system/apache-cassandra: Updated for version 4.1.3.
+system/apg: Fix homepage.
+system/b2: Updated for version 20230710_222352_c78e90b.
+system/cpmtools: Updated for version 2.24.
+system/fastfetch: Updated for version 2.0.1.
+system/jdupes: updated for version 1.27.1
+system/jenkins: Updated for version 2.414.1.
+system/locust: Set PYTHONPATH to use newer setuptools
+system/mucommander: Updated for version 1.3.0_1.
+system/nkf: Updated for version 2.1.5.
+system/nvtop: Added (videocard top).
+system/osquery-bin: Updated for version 5.9.1.
+system/pgbadger: updated for version 12.2
+system/powershell: Updated for version 7.3.6.
+system/sarasa-gothic: Updated for version 0.41.7.
+system/timeshift: Fix build.
+system/yabsm: updated for version 3.15.3
++--------------------------+
 Sat Aug 19 02:16:42 UTC 2023
 academic/arpack-ng: Updated for version 3.9.0
 academic/cdo: Updated for version 2.2.2.

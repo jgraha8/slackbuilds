@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=postman
 SRCDIR=Postman
 SRCNAM=linux
-VERSION=${VERSION:-10.17.0}
+VERSION=${VERSION:-10.17.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -96,6 +96,9 @@ rm -rf Postman
 
 mkdir -p $PKG/opt/$PRGNAM
 cp -a * $PKG/opt/$PRGNAM
+
+mkdir -p $PKG/usr/share/applications
+cat $CWD/$PRGNAM.desktop > $PKG/usr/share/applications/$PRGNAM.desktop
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
