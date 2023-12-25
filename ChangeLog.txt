@@ -1,3 +1,861 @@
+Fri Dec 22 01:01:28 UTC 2023
+academic/PyAMG: Fix redundant deps.
+academic/arpack-ng: Fix redundant deps.
+academic/bppsuite: Fix redundant deps.
+academic/cholmod: Fix redundant deps.
+academic/dakota: Fix redundant deps.
+academic/dakota: Updated for version 6.19.0.
+academic/dwave-neal: Fix redundant deps.
+academic/fityk: Fix redundant deps.
+academic/klu: Fix redundant deps.
+academic/meep: Fix redundant deps.
+academic/pyCRAC: Fix redundant deps.
+academic/python3-ase: Fix redundant deps.
+academic/python3-scipy: Fix for upgraded python3-mesonpy.
+academic/python3-scipy: Fix redundant deps.
+academic/qrupdate: Fix redundant deps.
+academic/spqr: Fix redundant deps.
+academic/umfpack: Fix redundant deps.
+academic/xflr5: Updated for version 6.61.
+audio/ardour: Fix redundant deps.
+audio/bitwig-studio: Updated for version 5.1
+audio/cardinal: Updated for version 23.10
+audio/mixxx: Fix redundant deps.
+audio/ncspot: Updated for version 1.0.0.
+audio/nekobee: Fix redundant deps.
+audio/quodlibet: Fix redundant deps.
+audio/rosegarden: Fix redundant deps.
+audio/sonic-visualiser: Fix redundant deps.
+audio/soundconverter: Fix redundant deps.
+audio/whysynth: Fix redundant deps.
+desktop/azote: Fix redundant deps.
+desktop/conky-manager: Add new dep.
+desktop/ede: Fix redundant deps.
+desktop/foot: Fix redundant deps.
+desktop/fuzzel: Fix redundant deps.
+desktop/gnome-session: Update SlackBuild
+desktop/gnome-shell: Fix redundant deps.
+desktop/mate-control-center: Fix redundant deps.
+desktop/mate-media: Fix redundant deps.
+desktop/numix-icon-theme-circle: Updated for version 23.11.11.
+desktop/numix-icon-theme-square: Updated for version 23.11.11.
+desktop/numix-icon-theme: Updated for version 23.11.20.
+desktop/nwg-dock: Fix redundant deps.
+desktop/nwg-panel: Fix redundant deps.
+desktop/nwg-panel: Updated for version 0.9.19
+desktop/nwg-shell-config: Fix redundant deps.
+desktop/nwg-shell: Fix redundant deps.
+desktop/nwg-wrapper: Fix redundant deps.
+desktop/python3-autotiling: Fix redundant deps.
+desktop/river: Fix redundant deps.
+desktop/skippy-xd: Updated for version 2023.06.25.
+desktop/sway: Fix redundant deps.
+desktop/todoman: Fix redundant deps.
+desktop/yambar: Fix redundant deps.
+desktop/zenity: Updated for version 3.44.3.
+development/bpftrace: Fix redundant deps.
+development/bwbasic: Added (Bywater BASIC Interpreter).
+development/chameleon: Fix redundant deps.
+development/coccinelle: Fix redundant deps.
+development/conan: Fix redundant deps.
+development/github-cli: Updated for version 2.40.1
+development/github-desktop: Updated for version 3.3.6.
+development/golang-googlecode-gotools: Fix redundant deps.
+development/gr-osmosdr: Fix redundant deps.
+development/hare: Fix redundant deps.
+development/jupyter-ipykernel: Fix redundant deps.
+development/jupyter-nbclient: Fix redundant deps.
+development/jupyter-notebook_shim: Fix redundant deps.
+development/jupyter_client: Fix redundant deps.
+development/jupyter_console: Fix redundant deps.
+development/jupyter_core: Fix redundant deps.
+development/jupyter_events: Fix redundant deps.
+development/jupyter_packaging: Fix redundant deps.
+development/jupyter_server: Fix redundant deps.
+development/jupyter_server_terminals: Fix redundant deps.
+development/mongodb-compass: Updated for version 1.41.0.
+development/neovim: Fix redundant deps.
+development/php82: Updated for version 8.2.14
+development/postman: Updated for version 10.21.0
+development/python-sphinx-lv2-theme: Fix redundant deps.
+development/python-sphinx-lv2-theme: Fix redundant deps.
+development/qb64pe: Updated for version 3.10.0.
+development/simavr: Fix redundant deps.
+development/simulavr: Fix redundant deps.
+development/spyder: Updated deps.
+development/universal-ctags: Updated for version p6.0.20231217.0
+games/CorsixTH: Fix redundant deps.
+games/angband: Change license.
+games/devilutionx: Fix redundant deps.
+games/gbrainy: Fix redundant deps.
+games/mupen64plus-input-raphnetraw: Fix redundant deps.
+games/pysolfc-extra-cardsets: Updated for version 2.2.
+games/pysolfc: Updated for version 2.21.0.
+games/scrabbleai: Fix redundant deps.
+games/stepmania: Fix redundant deps.
+games/stone_soup: Removed (use crawl).
+games/vbam: Updated for version 2.1.8.
+games/wadext: Added (extract WAD content).
+gis/openorienteering-mapper: Fix redundant deps.
+gis/pdal: Fix redundant deps.
+gis/python3-cftime: Fix redundant deps.
+gis/pytrainer: Fix redundant deps.
+gis/rasterio: Fix redundant deps.
+graphics/FreeCAD: Fix redundant deps.
+graphics/OpenShadingLanguage: Fix redundant deps.
+graphics/converseen: Updated for version 0.12.0.1.
+graphics/gscan2pdf: Fix redundant deps.
+graphics/inkscape: Fix redundant deps.
+graphics/opentoonz: Fix redundant deps.
+graphics/scrot: Fix redundant deps.
+graphics/synfigstudio: Fix redundant deps.
+graphics/textext: Fix redundant deps.
+ham/tqsl: Updated for version 2.7.2.
+libraries/SDL_audiolib: Fix redundant deps.
+libraries/ceres-solver: Fix redundant deps.
+libraries/dbcsr: Fix redundant deps.
+libraries/gupnp-av add patch for libxml2
+libraries/hypre: Fix redundant deps.
+libraries/libcurl-gnutls: Updated for version 8.5.0.
+libraries/libdart: Fix redundant deps.
+libraries/libde265: Updated for version 1.0.15.
+libraries/libheif: Updated for version 1.17.6.
+libraries/libindi-drivers: Fix redundant deps.
+libraries/libjxl: Fix redundant deps.
+libraries/ocaml-batteries: Fix redundant deps.
+libraries/python3-CherryPy: Updated for version 18.9.0.
+libraries/rhonabwy: Fix redundant deps.
+libraries/scalapack: Fix redundant deps.
+libraries/trilinos: Fix redundant deps.
+libraries/webkit2gtk4.1: Updated for version 2.42.4.
+libraries/webkit2gtk: Updated for version 2.42.4.
+misc/fcitx5-chinese-addons: Fix redundant deps.
+misc/fcitx5-configtool: Fix redundant deps.
+misc/fcitx5-table-extra: Fix redundant deps.
+misc/fcitx5-table-other: Fix redundant deps.
+misc/par2cmdline-turbo: Added (fork of par2cmdline).
+multimedia/farsight2: Fix redundant deps.
+multimedia/gaupol: Updated for version 1.13.
+multimedia/jellyfin-media-player: Fix redundant deps.
+multimedia/obs-studio: Fix redundant deps.
+multimedia/olive: Fix redundant deps.
+multimedia/opera-developer-ffmpeg-codecs: Removed (unmaintained).
+multimedia/opera-ffmpeg-codecs: New Maintainer.
+multimedia/pipe-viewer: Fix redundant deps.
+multimedia/pocketsphinx: Fix redundant deps.
+multimedia/rav1e: Fix redundant deps.
+multimedia/sickchill: Fix redundant deps.
+multimedia/totem: Fix redundant deps.
+multimedia/w_scan2: Added (channel scan tool).
+multimedia/whistle: Fix redundant deps.
+network/ClusterSSH: Fix redundant deps.
+network/ClusterSSH: Fix redundant deps.
+network/Electrum: Fix redundant deps.
+network/awscli-v2: Fix redundant deps.
+network/cinny-desktop: Fix redundant deps.
+network/courier-imap: Fix redundant deps.
+network/curl-quic: Fix redundant deps.
+network/discord: Version bump to 0.0.39
+network/dkimproxy: Fix redundant deps.
+network/gajim: Updated deps.
+network/kismet: Fix redundant deps.
+network/opensmtpd-filter-dkimsign: Fix redundant deps.
+network/opera-developer: Removed (unmaintained).
+network/opera: Updated for version 105.0.4970.48.
+network/opera: Updated for version 106.0.4998.16.
+network/phppgadmin: Fix redundant deps.
+network/putty: Updated for version 0.80.
+network/radicale: Fix redundant deps.
+network/remotebox: Fix redundant deps.
+network/rspamd: Fix redundant deps.
+network/tor-browser: Updated for version 13.0.7.
+network/transmission: Updated for version 4.0.5, fix manpages.
+network/twine: Updated deps & email.
+network/twinkle: Fix redundant deps.
+network/unicornscan: Fix redundant deps.
+network/urlwatch: Updated for version 2.28.
+network/vcspull: Fix redundant deps.
+network/weechat: Updated for version 4.1.2.
+network/yle-dl: Fix redundant deps.
+network/yt-dlp: Updated for version 2023.11.16.
+network/zabbix_agentd: Updated for version 6.4.10.
+network/zabbix_frontend: Updated for version 6.4.10.
+network/zabbix_java_gateway: Updated for version 6.4.10.
+network/zabbix_proxy: Updated for version 6.4.10.
+network/zabbix_server: Updated for version 6.4.10.
+network/zoom-linux: Updated for version 5.17.0.1682
+office/LaTeXML: Fix redundant deps.
+office/khal: Fix redundant deps.
+office/khard: Fix redundant deps.
+office/moneydance: Updated for version 2023.3.5064.
+office/zathura-pdf-mupdf: Fix redundant deps.
+perl/perl-CGI-Application: Fix redundant deps.
+perl/perl-CPANPLUS-Dist-Slackware: Fix redundant deps.
+perl/perl-CPANPLUS: Fix redundant deps.
+perl/perl-Class-Load-XS: Fix redundant deps.
+perl/perl-Coro: Fix redundant deps.
+perl/perl-Crypt-Eksblowfish: Fix redundant deps.
+perl/perl-Crypt-OpenSSL-RSA: Fix redundant deps.
+perl/perl-DateTime-Format-ISO8601: Fix redundant deps.
+perl/perl-DateTime: Fix redundant deps.
+perl/perl-Devel-Declare: Fix redundant deps.
+perl/perl-Devel-OverloadInfo: Fix redundant deps.
+perl/perl-Devel-PartialDump: Fix redundant deps.
+perl/perl-Feature-Compat-Try: Fix redundant deps.
+perl/perl-Geo-Coordinates-OSGB: Fix redundant deps.
+perl/perl-Gnome2-Vte: Fix redundant deps.
+perl/perl-HTML-FormatText-WithLinks-AndTables: Fix redundant deps.
+perl/perl-HTML-FormatText-WithLinks: Fix redundant deps.
+perl/perl-HTML-Tidy: Fix redundant deps.
+perl/perl-HTML-WikiConverter-Markdown: Fix redundant deps.
+perl/perl-HTML-WikiConverter: Fix redundant deps.
+perl/perl-Image-Sane: Fix redundant deps.
+perl/perl-LWP-Protocol-socks: Fix redundant deps.
+perl/perl-Mail-SPF: Fix redundant deps.
+perl/perl-MaxMind-DB-Common: Fix redundant deps.
+perl/perl-MaxMind-DB-Reader-XS: Fix redundant deps.
+perl/perl-MaxMind-DB-Reader: Fix redundant deps.
+perl/perl-Module-Build-Tiny: Fix redundant deps.
+perl/perl-Module-Build-XSUtil: Fix redundant deps.
+perl/perl-MooseX-Types-Structured: Fix redundant deps.
+perl/perl-Package-DeprecationManager: Fix redundant deps.
+perl/perl-Params-Validate: Fix redundant deps.
+perl/perl-Parse-Method-Signatures: Fix redundant deps.
+perl/perl-Parser-MGC: Fix redundant deps.
+perl/perl-PerlIO-via-Timeout: Fix redundant deps.
+perl/perl-Sidef: Fix redundant deps.
+perl/perl-Sub-Exporter-ForMethods: Fix redundant deps.
+perl/perl-Syntax-Keyword-Try: Fix redundant deps.
+perl/perl-Test-CleanNamespaces: Fix redundant deps.
+perl/perl-Test-File-ShareDir-Dist: Fix redundant deps.
+perl/perl-Test-HexDifferences: Fix redundant deps.
+perl/perl-Text-Quoted: Fix redundant deps.
+perl/perl-TryCatch: Fix redundant deps.
+perl/perl-WebService-Gyazo-B: Fix redundant deps.
+perl/perl-XML-TreeBuilder: Fix redundant deps.
+perl/perl-XS-Parse-Keyword: Fix redundant deps.
+perl/perl-data-messagepack: Fix redundant deps.
+perl/perl-file-mimeinfo: Fix redundant deps.
+perl/perl-inc-module-install: Fix redundant deps.
+perl/perl-namespace-autoclean: Fix redundant deps.
+perl/perl-www-mechanize: Fix redundant deps.
+perl/perlbrew: Fix redundant deps.
+python/Kallithea: Fix redundant deps.
+python/apprise: Fix redundant deps.
+python/audible-cli: Fix redundant deps.
+python/blink-qt: Fix redundant deps.
+python/cloudpickle: Fix redundant deps.
+python/colored: Updated for version 2.2.4.
+python/freetype-py: Fix redundant deps.
+python/freetype-py: Fix redundant deps.
+python/npm: Fix redundant deps.
+python/odoo: Fix redundant deps.
+python/plaso: Fix redundant deps.
+python/pygsl: Fix redundant deps.
+python/python-keyring: Removed (replaced by python3-keyring).
+python/python-webpack: Fix redundant deps.
+python/python2-psutil: Updated for version 5.9.7.
+python/python3-Flask-RESTX: Updated for version 1.3.0.
+python/python3-PyPDF2: Fix redundant deps.
+python/python3-aiofiles: Fix redundant deps.
+python/python3-aksharamukha: Fix redundant deps.
+python/python3-black: Fix redundant deps.
+python/python3-celery: Fix redundant deps.
+python/python3-cffsubr: Fix redundant deps.
+python/python3-cinemagoer: Fix redundant deps.
+python/python3-compreffor: Fix redundant deps.
+python/python3-docker: Updated for version 7.0.0.
+python/python3-dogpile.cache: Version bump to 1.3.0
+python/python3-fonttools: Fix redundant deps.
+python/python3-frozenlist: Updated for version 1.4.1
+python/python3-gensim: Fix redundant deps.
+python/python3-guessit: Updated for version 3.8.0.
+python/python3-hatch_vcs: Updated for version 0.4.0.
+python/python3-hatchling: Updated for version 1.21.0.
+python/python3-iniconfig: Fix redundant deps.
+python/python3-jaraco.collections: Updated for version 5.0.0.
+python/python3-jaraco.text: Updated for version 3.12.0.
+python/python3-keyring: Added (python keyring).
+python/python3-kiwisolver: Fix redundant deps.
+python/python3-klein: Fix redundant deps.
+python/python3-language-data: Fix redundant deps.
+python/python3-librosa: Fix redundant deps.
+python/python3-lsp-server: Fix redundant deps.
+python/python3-maturin: Updated for version 1.4.0.
+python/python3-mesonpy: Updated for version 0.15.0.
+python/python3-obspy: Fix redundant deps.
+python/python3-openstep-plist: Fix redundant deps.
+python/python3-paginate_sqlalchemy: Fix redundant deps.
+python/python3-pandas: Fix redundant deps.
+python/python3-pathspec: Updated for version 0.12.1.
+python/python3-pdm-backend: Fix redundant deps.
+python/python3-pooch: Fix redundant deps.
+python/python3-psutil: Updated for version 5.9.7.
+python/python3-pydantic-core: Updated for version 2.14.6.
+python/python3-pydantic: Fix version requirement.
+python/python3-pylint-venv: Fix redundant deps.
+python/python3-pytest-runner: Fix redundant deps.
+python/python3-pytest: Fix redundant deps.
+python/python3-requests-cache: Updated for version 1.1.1.
+python/python3-seaborn: Fix redundant deps.
+python/python3-sipsimple: Fix redundant deps.
+python/python3-svglib: Fix redundant deps.
+python/python3-trove-classifiers: Updated for version 2023.11.29.
+python/python3-ufo2ft: Fix redundant deps.
+python/python3-ufolib2: Fix redundant deps.
+python/python3-ujson: Updated for version 5.9.0.
+python/python3-userpath: Fix redundant deps.
+python/python3-vharfbuzz: Fix redundant deps.
+python/python3-websocket-client: Updated for version 1.7.0.
+python/python3-xdg-base-dirs: Fix redundant deps.
+python/python3-xmldiff: Fix redundant deps.
+python/scikit-umfpack: Fix redundant deps.
+python/testtools: Fix redundant deps.
+python/tqdm: Fix broken build.
+python/ttfautohint-py: Fix redundant deps.
+ruby/rubygem-gtk3: Fix redundant deps.
+system/Iosevka-aile: Updated for version 28.0.0.
+system/Iosevka-etoile: Updated for version 28.0.0.
+system/Type1_to_OTF: Fix redundant deps.
+system/afdko: Fix redundant deps.
+system/ansifilter: Added (ANSI converter).
+system/apache-tomcat: Fix redundant deps.
+system/blocaled: Updated for version 0.5
+system/clamtk: Fix redundant deps.
+system/efitools: Update README.
+system/evolution-data-server: Fix redundant deps.
+system/fastfetch: Updated for version 2.4.0.
+system/fence-agents: Fix redundant deps.
+system/geckodriver: Updated for version 0.33.0.
+system/hivex: Fix redundant deps.
+system/limine: Updated for version 6.20231210.0
+system/pcp: Fix redundant deps.
+system/prometheus: Updated to version 2.48.1
+system/razerCommander: Fix redundant deps.
+system/s6: Fix redundant deps.
+system/slpkg: Updated for version 4.9.6.
+system/sst: Updated for version 1.11.
+system/thefuck: Fix redundant deps.
+system/tilix: Fix redundant deps.
+system/xvfb-run updated to version 21.1.10.
++--------------------------+
+Sat Dec 16 01:58:42 UTC 2023
+academic/FreeFem: Updated for version 4.14.
+academic/R: update 4.3.2
+academic/fet: Update LICENSE on README.
+academic/fet: Updated for version 6.14.1.
+academic/gerbv: Orphaned.
+academic/openboard: Updated for version 1.7.0.
+academic/rpy2: replace setup.py usage
+academic/zotero: update 6.0.30
+audio/ardour: Updated for version 8.1.0.
+desktop/mate-panel: Updated for version 1.26.4.
+desktop/nwg-bar: Updated for version 0.1.5
+desktop/nwg-displays: Updated for version 0.3.10
+development/acc: Updated for version 1.60.
+development/actionlint: Added (GitHub Actions workflow files linter).
+development/aws-cdk: Updated for version 2.115.0.
+development/composer: Updated for version 2.6.6
+development/git-lfs: Updated for version 3.4.1.
+development/github-cli: Updated for version 2.40.0
+development/hugo: update 0.121.1
+development/jupyter-nbconvert: Fix deps.
+development/jupyterlab_server: Fix deps.
+development/kdiff3: Updated for version 1.10.7.
+development/kicad-footprints: Updated for version 7.0.9.
+development/kicad-packages3D: Updated for version 7.0.9.
+development/kicad-symbols: Updated for version 7.0.9.
+development/kicad-templates: Updated for version 7.0.9.
+development/kicad: Updated for version 7.0.9.
+development/perf: Updated for version 5.15.19.
+development/pycharm: Updated for version 2023.3.1.233.11799.298.
+development/python3-numpy: Updated for version 1.26.2
+development/tea: updated for version 62.2.1
+development/uftrace: Updated for version 20231207_4213eb7
+development/universal-ctags: Updated for version p6.0.20231210.0
+development/vscode-bin: Updated for version 1.85.0.
+development/vscode-bin: Updated for version 1.85.1.
+development/vstudio: Updated for version 13.6.1.
+games/crawl: Updated for version 0.30.1.
+games/lbreakouthd: Updated for version 1.1.5.
+games/vcmi: updated for version 1.4.1
+gis/eccodes: Updated for version 2.33.0.
+gis/libspatialite: Updated for version 5.1.0.
+gis/pdal: Updated for version 2.6.2.
+gis/python3-xarray: Updated for version 2023.12.0.
+gis/qmapshack: Updated for version 1.17.1.
+graphics/inkscape: Patch for libxml >= 2.12.x.
+graphics/scrot: Updated for version 1.10.
+graphics/shutter: Fix redundant deps.
+graphics/vuescan: Updated for version 9.8.22.
+ham/SDRPlay: Updated for version 3.07.1.
+ham/aptdec: Added (NOAA APT satellite imagery decoder).
+ham/cm256cc: Added (Fast GF(256) Cauchy MDS Block Erasure Codec).
+ham/dab_lib: Added (DAB decoding library).
+ham/dsdcc: Added (Digital Speech Decoder).
+ham/glrpt: update README
+ham/gridtracker: Updated for version 1.23.1207.
+ham/libsigmf: Added (C++ library for SigMF metadata).
+ham/mbelib: Added (P25 Phase 1 and ProVoice vocoder).
+ham/sdrpp: Added (SDR receiver).
+ham/serialDV: Added (C++ Minimal interface).
+ham/sgp4: Added (Simplified perturbations models).
+libraries/botocore: Updated for version 1.34.1.
+libraries/digimend-kernel-drivers: Fix build on current.
+libraries/freexl: Updated for version 2.0.0. New maintainer.
+libraries/gamemode: Version bump to 1.8.1
+libraries/liblangtag: New maintainer. Updated for version 0.6.4
+libraries/libxnvctrl: Updated for version 535.146.02.
+libraries/nanodbc: Added (C++ wrapper for the native C ODBC API).
+libraries/qt-avif-image-plugin: Updated for version 0.7.0.
+libraries/raptor: Patch for libxml >= 2.11.x.
+libraries/spglib: Updated for version 2.2.0.
+libraries/spread-sheet-widget: Updated for version 0.10.
+libraries/tinygltf: Updated for version 2.8.19.
+libraries/webkit2gtk4.1: Updated for version 2.42.3.
+libraries/webkit2gtk: Updated for version 2.42.3.
+libraries/xmlsec: Add patch for libxml2.
+libraries/xmlsec: Updated for version 1.2.38.
+libraries/zxing-cpp: Updated for version 2.2.1.
+misc/open-simh: Updated for version 625b9e8.
+misc/rdfind: Removed (added to Slackware).
+multimedia/spotify: Updated for version 1.2.26.1187.
+multimedia/strawberry: Updated for version 1.0.22.
+network/AdGuardHome: Updated for version 0.107.43.
+network/awscli: Fix script.
+network/awscli: Updated for version 1.32.1.
+network/brave-browser: update 1.61.104
+network/discord: Version bump to 0.0.38
+network/luakit: Rebuilt.
+network/nexcloud-desktop: update 3.11.0
+network/nordvpn: Updated for version 3.16.9
+network/nyxt: Updated for version 3.10.0.
+network/openconnect: Fix for new libxml2-2.12.2
+network/rclone: update v1.65.0
+network/signal-desktop: Updated for version 6.41.0.
+network/sslscan: Updated for version 2.1.2.
+network/tailscale: update 1.56.1
+network/vivaldi: Updated for version 6.5.3206.39.
+network/webex: Updated for version 43.11.0.27795
+network/xmrig: Updated for version 6.21.0.
+office/LibreOffice: Use internal libxml, system liblangtag
+office/MasterPDFEditor: Updated for version 5.9.81.
+office/calibre-bin: Updated for version 7.2.0.
+office/pandoc: Fix redundant deps.
+office/pandoc: update 3.1.10
+office/python3-xlsx2csv: Updated for version 0.8.2.
+perl/perl-Moose: Fix redundant deps.
+perl/perl-Net-DNS-SEC: Fix redundant deps.
+python/Flask: Fix deps.
+python/asgiref: Update DEP.
+python/cov-core: Removed (not updated anymore).
+python/coverage: Updated for version 7.3.3.
+python/hyperlink: Removed (replaced by python3-hyperlink)
+python/incremental: Removed (replaced by python3-incremental)
+python/ptpython: Updated for version 3.0.24.
+python/ptpython: Updated for version 3.0.25.
+python/pymongo: Switch to new PEP517 and add missing dep.
+python/pytest-cov: Removed (not updated anymore).
+python/python-importlib_metadata: Updated for version 7.0.0.
+python/python-msal: Version bump to 1.26.0
+python/python-zipp: Updated for version 3.17.0.
+python/python3-astroid: Updated for version 3.0.2.
+python/python3-babel: updated for version 2.14.0
+python/python3-build: Remove dep.
+python/python3-caldav: Version bump to 1.3.9
+python/python3-distlib: Version bump to 0.3.8
+python/python3-identify: Updated for version 2.5.33.
+python/python3-lazy-object-proxy: Updated for version 1.10.0.
+python/python3-pandas: Version bump to 2.1.4
+python/python3-pdm: Version bump to 2.11.1
+python/python3-prompt_toolkit: updated for version 3.0.43
+python/python3-socks: Updated for version 2.4.4.
+python/python3-twisted: update REQUIRES
+python/python3-wheel: Updated for version 0.42.0.
+python/s3transfer: Updated for version 0.9.0.
+ruby/ruby-build: Updated for version 20231211.
+system/android-udev-rules: Updated for version 2023.12.07.
+system/bzip3: Updated for version 1.4.0.
+system/docker-buildx: Updated for version 0.12.0.
+system/fastfetch: Fix MD5SUM.
+system/fastfetch: Updated for version 2.3.4.
+system/fzf: Updated for version 0.44.1
+system/jenkins: Updated for version 2.426.2.
+system/locust: Fix redundant deps.
+system/locust: Updated for version 2.20.0.
+system/lxgw-wenkai-fonts: Updated for version 1.312.
+system/makeself: Updated for version 2.5.0.
+system/mongodb: Lower GCC version and support multiple job
+system/netdata: Updated for version 1.44.1.
+system/newLd: Remove comments.
+system/noto-emoji: Updated for version 2.042.
+system/sbsigntools: Updated for version 0.9.5, new maintainer.
+system/slackroll: Updated for version v52.
+system/slpkg: Updated for version 4.9.5.
+system/telegraf: Updated for version 1.29.1
+system/wine-staging: Updated for version 8.21.
+system/xen: Updated for version 4.18.0.
+system/yaft: Fix ARCH.
+system/zramen: Added (Manage zram swap space).
++--------------------------+
+Sat Dec  9 00:53:19 UTC 2023
+academic/fet: Updated for version 6.14.0.
+academic/gdstk: Added (GDSII / OASIS file library).
+academic/python3-scipy: Updated for version 1.11.4.
+academic/sword-data-kjv: Update data file.
+academic/xschem: Update script.
+desktop/fvwm3: Updated for version 1.0.9.
+desktop/hyfetch: Updated for version 1.4.11.
+desktop/nwg-panel: Updated for version 0.9.18
+desktop/nwg-shell-config: Updated for version 0.5.29
+desktop/nwg-shell: Updated for version 0.5.23
+desktop/papirus-icon-theme: Updated for version 20231201
+desktop/rclone-browser: Added (Simple cross platform GUI for rclone).
+development/apache-maven: Updated for version 3.9.6.
+development/aws-cdk: Updated for version 2.113.0.
+development/aws-cdk: Updated for version 2.114.1.
+development/diffoscope: update to version 252.
+development/gedit: Fix -current build (no harm on 15.0).
+development/mongodb-shell: Added (MongoDB Shell).
+development/pycharm: Updated for version 2023.3.233.11799.259.
+development/python3-hylang: Add missing build dependencies.
+development/python3-hylang: Added (lisp dialect).
+development/python3-hylang: Avoid hard-coded python version.
+development/python3-hyrule: Added (utility library for Hy).
+development/python3-hyrule: Avoid hard-coded python version.
+development/rtaudio: Added (C++ classes for Audio).
+development/sublime_text: Updated for version 4.1.69.
+development/tea: updated for version 62.1.2
+development/terraform: Updated for version 1.6.5
+development/uftrace: Updated for version 20231202_00422e2
+development/universal-ctags: Updated for version p6.0.20231203.0
+development/vstudio: Updated for version 13.6.
+games/astromenace: Updated for version 1.4.2.
+games/ezquake: Add missing dependency.
+games/ezquake: Updated for version 3.6.4.
+games/minetest: Updated for version 5.8.0.
+games/rottexpr: Added (Rise Of The Triad prt).
+games/rottexpr: Fix github tarball handling.
+games/vcmi: Updated for version 1.4.0.
+gis/pdal: Updated for version 2.6.1.
+gis/postgis: Updated for version 3.4.1.
+gis/qgis: Updated for version 3.34.1.
+graphics/Blender: Suppress manpage when OSL detected
+graphics/chafa: Updated for version 1.12.5.
+graphics/gqview: Added (image viewer).
+graphics/inkscape: Add new dep.
+graphics/inkscape: Updated for version 1.3.2.
+graphics/openscad-gearbox: Added (OpenSCAD gearbox generator).
+graphics/pd-gears: Update DOWNLOAD.
+graphics/stltools: Added (python stl file module).
+graphics/stltools: Fix github tarball handling.
+ham/SoapyRTLSDR: Update EMAIL.
+ham/glrpt: Updated for version 2.6.1.
+ham/gridtracker: Updated for version 1.23.1202.
+ham/satdump: Added (generic satellite data processing software).
+ham/sdrangel: Added (SDR Rx/Tx software).
+haskell/ghcup: Added (haskell installer).
+libraries/2geom: Added (2D Geometry Library).
+libraries/2geom: Fix build on 32 bit.
+libraries/botocore: Updated for version 1.33.8.
+libraries/gamemode: Updated for version 1.8.
+libraries/gloox: Updated for version 1.0.28.
+libraries/irrlichtmt: Updated for version 1.9.0mt13.
+libraries/libjxl: Updated for version 0.8.2.
+libraries/libmediainfo: Updated for version 23.11.
+libraries/libvhdi: Updated for version 20231127.
+libraries/libyang: Updated for version 2.1.128.
+libraries/mongo-c-driver: Updated for version 1.25.1.
+libraries/nng: Added (Lightweight Messaging Library).
+libraries/pkcs11-helper: Updated for version 1.30.0.
+libraries/rtrlib: Updated for version 0.8.0.
+libraries/wxWidgets: Autodetect NanoSVG.
+misc/bistwarden-desktop: Updated for version 2023.12.0
+multimedia/mediainfo: Updated for version 23.11.
+multimedia/opera-developer-ffmpeg-codecs: Updated for ver 0.82.0.
+multimedia/opera-ffmpeg-codecs: Updated for version 0.82.0.
+multimedia/plexmediaserver: Updated for v 1.32.8.7639_fb6452ebf.
+network/AdGuardHome: Updated for version 0.107.42.
+network/RYMTracks: Removed (unmaintained).
+network/awscli: Updated for version 1.31.8.
+network/bitcoin: Updated for version 26.0
+network/deis: Removed (unmaintained).
+network/discord: Update for version 0.0.37.
+network/dropbox: Updated for version 188.4.6302.
+network/element-desktop: Updated for version 1.11.51
+network/frr: Updated for version 9.0.2.
+network/haproxy: Updated for version 2.8.5.
+network/librewolf: Updated for version 120.0.1.
+network/mullvadvpn-app: Updated for version 2023.6
+network/openresty: Update script.
+network/opensmtpd: Don't include INSTALL in package.
+network/opensmtpd: Updated for version 7.4.0p1.
+network/opera-developer: Updated for version 106.0.4998.0.
+network/opera-legacy: Removed (not updated anymore).
+network/opera: Updated for version 105.0.4970.29.
+network/protonmail-bridge: Updated for version 3.7.1.
+network/qutebrowser-bin: Updated for version 3.1.0.
+network/slack: Updated for version 4.35.131.
+network/thorium-browser: Added (web browser).
+network/tor-browser: Updated for version 13.0.6.
+office/LibreOffice: Updated for version 7.6.4.1
+office/MasterPDFEditor: Updated for version 5.9.80.
+office/libreoffice-helppack: Updated for version 7.6.4.
+office/libreoffice-langpack: Updated for version 7.6.4.
+office/libreoffice: Updated for version 7.6.4.
+office/omegat: Added (translation memory application).
+perl/perl-CGI-Fast: Added (perl module).
+perl/perl-DBD-Pg: Updated for version 3.18.0.
+perl/perl-Date-Manip: Updated for version 6.93.
+python/asttokens: Removed (use python3-asttokens).
+python/buildbot-badges: updated for version 3.10.0
+python/buildbot-worker: updated for version 3.10.0
+python/buildbot: updated for version 3.10.0
+python/ecdsa: Updated for version 0.18.0.
+python/esptool: Add mising extra deps.
+python/ipython: Updated for version 8.18.1.
+python/mypy: Updated for version 1.7.1.
+python/python-wand: Updated for version 0.6.13.
+python/python3-astroid: Updated for version 3.0.1.
+python/python3-django: Updated for version 4.2.8.
+python/python3-dulwich: updated for version 0.21.7
+python/python3-falcon: updated for version 3.1.3
+python/python3-inflate64: Added (deflate64 library).
+python/python3-inflate64: Update DEP.
+python/python3-multivolumefile: Added (file library).
+python/python3-oscrypto: Added (crypto library).
+python/python3-pdm: Updated for version 2.10.4.
+python/python3-platformdirs: Updated for version 4.1.0.
+python/python3-py7zr: Added (7zip in python3).
+python/python3-py7zr: Update DEP.
+python/python3-pybcj: Added (bcj filter library).
+python/python3-pybcj: Update DEP.
+python/python3-pydyf: Added (A low-level PDF generator).
+python/python3-pyphen: Added (Python module to hyphenate text).
+python/python3-pyppmd: Added (PPMd library).
+python/python3-pyppmd: Update DEP.
+python/python3-pytest-runner: Updated for version 6.0.1.
+python/python3-pyzstd: Added (Python bindings to zstd library).
+python/python3-tornado: Updated for version 6.4.0.
+python/python3-tox: Updated for version 4.11.4.
+python/python3-uharfbuzz: Updated for version 0.37.3.
+python/python3-virtualenv: Updated for version 20.25.0.
+python/python3-weasyprint: Added (The Awesome Document Factory).
+python/python3-yarl: Updated for version 1.9.4
+python/s3transfer: Updated for version 0.8.2.
+python/termcolor: Updated for version 2.4.0.
+python/thonny: Updated for version 4.1.4.
+python/veryprettytable: Update script.
+system/borgbackup: Updated for version 1.2.7.
+system/borgmatic: Added (backup software).
+system/borgmatic: Fix github tarball handling.
+system/catatonit: Added (container init).
+system/dell_bios_fan_control: Added (fan control).
+system/fish: Updated for version 3.6.4.
+system/google-chrome-the-latest: Updated for version 3.1.
+system/jenkins: Updated for version 2.426.1.
+system/mongo-tools: Updated for version 100.9.3.
+system/mongodb: Updated for version 7.0.4.
+system/netdata: Updated for version 1.44.0.
+system/nvidia-driver: Updated for version 535.146.02.
+system/nvidia-kernel: Fix permission.
+system/nvidia-kernel: Updated for version 535.146.02.
+system/nvidia-legacy390-kernel: 6.6.x kernel.
+system/nvidia-open-kernel: Updated for version 535.146.02.
+system/openzfs: Updated for version 2.2.2.
+system/powerline-status: Update build number.
+system/readpe: Updated for version 20231128_7f3c136.
+system/slack-utils: Updated for version 0.7.5.
+system/slpkg: Updated for version 4.9.4.
+system/tzupdate: Added (timezone util).
+system/yq: Updated for version 4.40.4.
++--------------------------+
+Sat Dec  2 00:55:28 UTC 2023
+academic/copasi: Updated for version 4.42.284.
+academic/cvc4: Update dependencies.
+academic/fet: Updated for version 6.13.2.
+academic/qhull: Updated for version 8.0.2.
+academic/scmutils: Added (scm utils).
+accessibility/mbrola-voices: Added (speech synth. data).
+audio/audacity: Added the dependencies lilv and suil.
+audio/audacity: Fix VERSION.
+audio/qpwgraph: Updated for version 0.6.0
+audio/spectmorph: Updated for version 0.6.1.
+desktop/nwg-displays: Updated for version 0.3.9
+desktop/nwg-drawer: Updated for version 0.4.3
+desktop/nwg-shell-config: Updated for version 0.5.28
+development/aspnetcore-runtime-7.0: Updated to version 7.0.14
+development/aspnetcore-runtime-8.0: Added (ASP.NET Runtime 8.0).
+development/dotnet-runtime-6.0: Updated to version 6.0.25
+development/dotnet-runtime-7.0: Updated to version 7.0.14
+development/dotnet-runtime-8.0: Added (.NET Runtime 8.0).
+development/dotnet-sdk-6.0: Updated to version 6.0.417
+development/dotnet-sdk-7.0: Updated to version 7.0.404
+development/dotnet-sdk-8.0: Added (.NET SDK 8.0).
+development/github-cli: Updated for version 2.39.2
+development/github-desktop: Updated for version 3.3.5
+development/haxe-bin: Updated for version 4.3.3.
+development/hugo: Updated for version 0.120.4.
+development/kForth-32: Updated for version 2.4.3.
+development/kForth-64: Updated for version 0.4.3.
+development/kforth: Updated for version 1.8.0.
+development/mit-scheme: Updated for version 12.1.
+development/mold: Updated for version 2.4.0.
+development/openjdk8: Updated for version 8u392.
+development/pahole: Updated for version 1.25.
+development/python3-numpy-legacy: Added (Legacy Numpy).
+development/python3-numpy: Updated for version 1.26.0
+games/ace: New maintainer, icon/desktop.
+games/ags: updated for version 3.6.0.54
+games/bzflag: Updated for version 2.4.26.
+games/mrboom: Updated for version 5.3.
+games/warzone2100: updated for version 4.4.2
+gis/librttopo: Added (RT Topology Library).
+gis/librttopo: Support content-disposition DOWNLOAD.
+gis/libspatialite: New maintainer. updated DEPS
+gis/proj-data: Updated for version 1.16.
+gis/proj: Updated for version 9.3.1.
+gis/python3-xarray: Updated for version 2023.11.0.
+graphics/GraphicsMagick: Update optional deps in README.
+graphics/converseen: Updated for version 0.12.0.0.
+graphics/nomacs: Updated for version 3.17.2287.
+graphics/pd-gears: Added (parametrized gear generator).
+graphics/photoqt: Updated for version 3.4.
+ham/SoapyRTLSDR: Added (SoapySDR RTL-SDR Support Module).
+ham/glrpt: Added (decode LRPT images).
+ham/qlog: Updated for version 0.30.0.
+libraries/QDarkStyle: Updated for version 3.2.3
+libraries/aspnetcore-runtime-6.0: Updated to version 6.0.25
+libraries/botocore: Updated for version 1.33.1.
+libraries/field3d: Added (voxel data library).
+libraries/libconfig: Updated for version 1.7.3, new maintainer.
+libraries/libsixel: Updated for version 1.10.3.
+libraries/log4cplus: Updated for version 2.1.0.
+libraries/protobuf-c: Updated for version 1.5.0.
+libraries/pykdtree: Removed (unmaintained).
+libraries/qtermwidget: Updated for version 1.4.0.
+libraries/skalibs: Updated for version 2.14.0.1
+libraries/wimlib: Updated to version 1.14.3.
+misc/fcitx5-chewing: Updated for version 5.1.1.
+misc/fcitx5-chinese-addons: Updated for version 5.1.2.
+misc/fcitx5-configtool: Updated for version 5.1.2.
+misc/fcitx5-qt: Updated for version 5.1.3.
+misc/libime: Updated for version 1.1.3.
+multimedia/beets: fix deps.
+network/awscli-v2: Updated for version 2.14.1.
+network/awscli: Updated for version 1.31.1.
+network/brave-browser: Updated for version 1.60.125.
+network/etherpoke: Update script.
+network/flexget: fix deps.
+network/kea: Updated for version 2.5.3.
+network/mailspring: Updated for version 1.13.1
+network/malheur: Fix download URL.
+network/nordvpn: Updated to version 3.16.8.
+network/openresty: Added (dynamic web platform).
+network/openresty: Remove comment template.
+network/qutebrowser-bin: Update SSL bundle.
+network/remmina: Updated for version 1.4.33.
+network/signal-desktop: Updated for version 6.40.0.
+network/tailscale: Updated for version 1.54.1.
+network/teamviewer: Updated for version 15.48.4.
+network/telegram: Updated for version 4.12.2.
+network/vcspull: Updated for version 1.25.0.
+network/vivaldi: Updated for version 6.4.3160.47.
+network/windscribe: Fix linter.
+network/windscribe: Updated to version 2.7.14.
+office/dspdfviewer: Added (pdf viewer).
+office/homebank: Updated for version 5.7.2.
+office/unaesgcm: Added (omemo decryption).
+perl/perl-SNMP-Info: Updated for version 3.95.
+python/Flask: fix deps.
+python/PyStemmer: Avoid network access during build.
+python/PyStemmer: Updated for version 2.2.0.1.
+python/asttokens: Build python3 only now.
+python/autopep8: Updated for version 2.0.4.
+python/functools-lru-cache: Update dependencies.
+python/gi-docgen: Update dependencies.
+python/importlib-resources: Update dependencies.
+python/jaraco-packaging: Update dependencies.
+python/numexpr: Updated for version 2.8.7
+python/pelican: fix deps.
+python/pymongo: Updated for version 4.6.1.
+python/pyresample: Removed (unmaintained).
+python/python-argopt: Update dependencies.
+python/python-toml: Removed (split to python2 and python3).
+python/python2-toml: Added (Python lib for TOML).
+python/python3-Flask-Dance: fix deps.
+python/python3-Flask-Mail: fix deps.
+python/python3-Flask-Principal: fix deps.
+python/python3-Flask-SQLAlchemy: fix deps.
+python/python3-Flask-WTF: fix deps.
+python/python3-ZEO: updated for version 6.0.0
+python/python3-aiohttp: Updated for version 3.9.1
+python/python3-alembic: Updated for version 1.13.0.
+python/python3-arabic-reshaper: Added (Reconstruct Arabic sentences).
+python/python3-bidi: Added (BiDi Layout Implementation).
+python/python3-blessed: Added (python library).
+python/python3-celery: updated for version 5.3.6
+python/python3-cloudflare: Updated for version 2.14.2
+python/python3-eventlet: Added (concurrent networking library).
+python/python3-funcparserlib: Added (lisp parser).
+python/python3-gensim: Update README
+python/python3-google-api-python-client: Update script.
+python/python3-google-auth-httplib2: Added (Google Authentication Library).
+python/python3-google-python-api-core: Update script.
+python/python3-googleapis-common-protos: Added (Common protobufs).
+python/python3-httpx: fix deps.
+python/python3-inotify-simple: Added (inotify wrapper).
+python/python3-jsonschema: fix deps.
+python/python3-mediafile: fix deps.
+python/python3-pastedeploy: updated for version 3.1.0
+python/python3-pyasn1: updated for version 0.5.1
+python/python3-pydantic-core: fix deps.
+python/python3-pyproject-hooks: fix deps.
+python/python3-requests-cache: fix deps.
+python/python3-setuptools-rust: Update dependencies.
+python/python3-svglib: Added (read SVG).
+python/python3-sysrsync: Update dependencies.
+python/python3-toml: Added (Python lib for TOML).
+python/python3-trove-classifiers: Updated for version 2023.11.22.
+python/python3-uritools: Added (parsing URI library).
+python/python3-vharfbuzz: Added (shaping text tool).
+python/python3-wcwidth: updated for version 0.2.12
+python/python3-xkeysnail: Update dependency.
+python/s3transfer: Updated for version 0.8.0.
+python/snowballstemmer: Updated for version 2.2.0.
+python/tqdm: Updated for version 4.66.1.
+system/CNS11643-font: Updated for version 20231103.
+system/android-udev-rules: Updated to version 2023.11.24.
+system/augeas: Updated for version 1.12.0.
+system/distrobox: Added (fancy wrapper for containers).
+system/docker-compose: Updated for version 2.23.3
+system/duperemove: Updated for version 0.14.1.
+system/far2l: Added (file manager).
+system/fonts-kannada-extra: Updated for version 1.1.
+system/fonts-malayalam-extra: Updated for version 1.2.
+system/fonts-tamil-bharathi: Added (system fonts).
+system/fonts-tamil-libre: Updated for version 1.3.
+system/fonts-tamil-tva: Updated for version 1.1.
+system/fonts-telugu-extra: Updated for version 1.2.
+system/forkstat: Updated for version 0.03.01.
+system/fwupd: Update dependencies.
+system/gpustat: Added (query and monitor GPU).
+system/i8kutils: Updated for version 20210330_c993fb1d.
+system/locust: Updated for version 2.19.1.
+system/lssecret: Added (list secrets).
+system/mpollux-digisign-client: Updated for version 4.2.6.
+system/onefetch: Updated for version 2.19.0.
+system/openzfs: Updated for version 2.2.1.
+system/pgbadger: updated for version 12.3
+system/powerline-status: Updated for version 2.8.3.
+system/powershell: Updated to version 7.4.0.
+system/pv: updated for version 1.8.5
+system/python3-nvidia-ml-py: Added (Python Bindings for NVIDIA ML).
+system/qterminal: Updated for version 1.4.0.
+system/s6: Updated for version 2.12.0.2
+system/squashfuse: Updated for version 0.5.0.
+system/tkinfo: Added (graphical browser).
++--------------------------+
 Sat Nov 25 15:13:24 UTC 2023
 academic/copasi: Updated for version 4.41.283.
 academic/fet: Updated for version 6.13.0.
