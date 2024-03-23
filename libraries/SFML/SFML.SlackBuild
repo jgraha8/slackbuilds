@@ -2,7 +2,7 @@
 
 # Slackware build script for SFML
 
-# Copyright 2014-2019  Dimitris Zlatanidis  Orestiada, Greece
+# Copyright 2014-2024  Dimitris Zlatanidis  Orestiada, Greece
 # Written by Pawel Standowicz (standek@gmail.com)
 # All rights reserved.
 #
@@ -26,8 +26,8 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=SFML
-VERSION=${VERSION:-2.5.1}
-BUILD=${BUILD:-3}
+VERSION=${VERSION:-2.6.1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
 
@@ -88,6 +88,8 @@ cd build
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_SUFFIX=${LIBDIRSUFFIX} \
     -DSFML_INSTALL_PKGCONFIG_FILES=1 \
+    -DSFML_PKGCONFIG_INSTALL_PREFIX=/usr/lib$LIBDIRSUFFIX/pkgconfig \
+    -DCMAKE_INSTALL_DOCDIR=/usr/doc/$PRGNAM-$VERSION \
     -DCMAKE_BUILD_TYPE=Release ..
   make
   make install DESTDIR=$PKG

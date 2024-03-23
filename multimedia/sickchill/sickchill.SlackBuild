@@ -2,7 +2,7 @@
 
 # Slackware build script for sickchill
 
-# Copyright 2023 Jeremy Hansen jebrhansen+SBo@gmail.com
+# Copyright 2023-2024 Jeremy Hansen jebrhansen+SBo@gmail.com
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +24,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=sickchill
-VERSION=${VERSION:-2023.6.27}
+VERSION=${VERSION:-2024.3.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -37,29 +37,45 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi
+
 SICKUSER=${SICKUSER:-sickchill}
 SICKGROUP=${SICKGROUP:-sickchill}
 
 # The user and group accounts need to be created manually.
 # For slackbuilds.org, assigned sickchill uid/gid are 377/377
 # See http://slackbuilds.org/uid_gid.txt
-if ! grep ^$SICKGROUP: /etc/group 2>&1 > /dev/null; then
- echo "  You must have a \"$SICKGROUP\" group to run this script."
- echo "    # groupadd -g 377 $SICKGROUP"
- echo "  If you previously had sickrage installed, change the group using"
- echo "    # groupmod -n sickchill sickrage"
- exit 1
-elif ! grep ^$SICKUSER: /etc/passwd 2>&1 > /dev/null; then
- echo "  You must have a \"$SICKUSER\" user to run this script."
- echo "    # useradd -u 377 -g $SICKGROUP -d /var/lib/sickchill -s /bin/false $SICKUSER"
- echo "  If you previously had sickrage installed, change the user using"
- echo "    # usermod -l sickchill -g sickchill -d /var/lib/sickchill sickrage"
- exit 1
-fi
-
-if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
-  exit 0
+if ! grep -q ^$SICKGROUP: /etc/group > /dev/null; then
+  # Handle older versions of sickrage
+  if grep -q ^sickrage: /etc/group; then
+    echo "  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    echo "  You seem to have sickrage previously installed..."
+    echo "  If you want to switch to sickchill, change the group using:"
+    echo "    # groupmod -n sickchill sickrage"
+    echo "  Otherwise..."
+    echo "  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+  fi
+  echo "  You must have a \"$SICKGROUP\" group to run this script."
+  echo "    # groupadd -g 377 $SICKGROUP"
+  exit 1
+elif ! grep -q ^$SICKUSER: /etc/passwd ; then
+  # Handle older versions of sickrage
+  if grep -q ^sickrage: /etc/passwd; then
+    echo "  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    echo "  You seem to have sickrage previously installed..."
+    echo "  If you want to switch to sickchill, change the user using:"
+    echo "    # groupmod -n sickchill sickrage"
+    echo "  Otherwise..."
+    echo "  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+  fi
+  echo "  You must have a \"$SICKUSER\" user to run this script."
+  echo "    # useradd -u 377 -g $SICKGROUP -d /var/lib/sickchill -s /bin/false $SICKUSER"
+  echo "  If you previously had sickrage installed, change the user using"
+  echo "    # usermod -l sickchill -g sickchill -d /var/lib/sickchill sickrage"
+  exit 1
 fi
 
 TMP=${TMP:-/tmp/SBo}
@@ -83,6 +99,18 @@ find -L . \
 
 # Revert changes that require SQLAlchmey > 2.0 until SBo catches up
 patch -p1 < $CWD/use-older-SQLAlchemy.patch
+sed -i 's|>=2.0.0,<3.0.0|<2.0.0|' pyproject.toml
+
+# Correct python module names and remove version requirements
+sed -i 's|kodipydent-alt.*|kodipydent = "\*"|' pyproject.toml
+sed -i 's|new-rtorrent-python.*|rtorrent-python = "\*"|' pyproject.toml
+sed -i 's|python-twitter.*|twitter = "\*"|' pyproject.toml
+
+# Remove ipaddress module requirement as it's been included in python since 3.3
+sed -i '/ipaddress.*/d' pyproject.toml
+
+# Remove win-inet-pton requirement as it is for Windows
+sed -i '/win-inet-pton.*/d' pyproject.toml
 
 python3 -m build --wheel --no-isolation
 python3 -m installer --destdir=$PKG dist/*.whl
