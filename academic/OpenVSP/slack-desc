@@ -6,7 +6,7 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
        |-----handy-ruler------------------------------------------------------|
-OpenVSP: OpenVSP (3D aircraft modeling tool)
+OpenVSP: OpenVSP (NASA open source 3D aircraft modeling tool)
 OpenVSP:
 OpenVSP: OpenVSP is a parametric aircraft geometry tool that allows the user
 OpenVSP: to create a 3D model of an aircraft defined by common engineering
@@ -15,5 +15,5 @@ OpenVSP: engineering analysis.  OpenVSP was released as an open source project
 OpenVSP: under the NASA Open Source Agreement (NOSA) version 1.3.
 OpenVSP:
 OpenVSP:
-OpenVSP: homepage: http://openvsp.org
+OpenVSP: homepage: https://openvsp.org
 OpenVSP:

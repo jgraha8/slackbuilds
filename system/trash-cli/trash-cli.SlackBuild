@@ -28,7 +28,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=trash-cli
-VERSION=${VERSION:-0.24.4.17}
+VERSION=${VERSION:-0.24.5.26}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -70,6 +70,17 @@ sed 's|share/man/|man/|' -i setup.cfg
 
 python3 setup.py install --root=$PKG
 
+# Add trash-cli shell completions (requires python3-shtab)
+# Reference: https://github.com/zsh-users/zsh-completions/pull/895
+if $(python3 -c 'import pkgutil; exit(not pkgutil.find_loader("shtab"))'); then
+  mkdir -p $PKG/usr/share/bash-completion/completions
+  mkdir -p $PKG/usr/share/zsh/site-functions
+  for CMD in trash-empty trash-list trash-restore trash-put trash; do
+    $CMD --print-completion bash > "$PKG/usr/share/bash-completion/completions/$CMD"
+    $CMD --print-completion zsh >  "$PKG/usr/share/zsh/site-functions/_$CMD"
+  done
+fi
+
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
@@ -78,8 +89,7 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  COPYING CREDITS.txt DONE.txt HISTORY.txt README.rst TODO.txt \
-  bugs.txt requirements-dev.txt docs \
+  COPYING CREDITS.txt HISTORY.txt README.rst requirements-dev.txt docs \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
