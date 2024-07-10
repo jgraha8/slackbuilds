@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Slackware build script for icyque
+# Slackware build script for Qucsator
 
-# Copyright 2020, SlackBuilds.org, David Melik, Spokane, WA, USA
+# Copyright 2024 Fellype do Nascimento, Guaratingueta - Brazil
+#
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,8 +25,8 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PRGNAM=icyque
-VERSION=${VERSION:-20220630_78b90a4}
+PRGNAM=qucsator
+VERSION=${VERSION:-0.0.20}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
@@ -38,11 +39,6 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
-GITVER="$( echo $VERSION | cut -d_ -f2 )"
-
-# If the variable PRINT_PACKAGE_NAME is set, then this script will report what
-# the name of the created package would be, and then exit. This information
-# could be useful to other scripts.
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
@@ -55,15 +51,19 @@ OUTPUT=${OUTPUT:-/tmp}
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
+  SPEC=""
 elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
   LIBDIRSUFFIX=""
+  SPEC=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
+  SPEC="-spec linux-g++-64"
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
+  SPEC=""
 fi
 
 set -e
@@ -71,9 +71,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$GITVER*
-tar xvf $CWD/$PRGNAM-$GITVER*.tar.gz
-cd $PRGNAM-$GITVER*
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -81,16 +81,25 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-make
-make install DESTDIR=$PKG
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+./bootstrap
+./configure --prefix=/usr --libdir=/usr/lib${LIBDIRSUFFIX}
+# for some unknown reason, qucsator only builds when using a single job
+# this is the reason for explicitly passing -j1 to make
+# please, let me know if you manage to build it using multiple jobs
+make -j1
+make install-strip DESTDIR=$PKG
+
+rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
+
+mv $PKG/usr/share/man $PKG/usr
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a \
-  LICENSE README.md \
-  $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS COPYING README $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
