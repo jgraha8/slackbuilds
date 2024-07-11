@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+                  |-----handy-ruler------------------------------------------------------|
+ip2location-apache: ip2location-apache (IP2Location Apache Module)
+ip2location-apache:
+ip2location-apache: This is an IP2Location Apache Module that enables the user to
+ip2location-apache: identify the country, region, city, latitude, longitude, zip code,
+ip2location-apache: time zone, ISP, domain name, connection type, area code, weather,
+ip2location-apache: MCC, MNC, mobile brand name, elevation and usage type by IP address.
+ip2location-apache:
+ip2location-apache: Homepage: https://www.ip2location.com/developers/apache
+ip2location-apache:
+ip2location-apache:
+ip2location-apache:
