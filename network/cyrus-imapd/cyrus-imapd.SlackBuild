@@ -105,7 +105,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --sysconfdir=/etc \
   --localstatedir=/var \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --with-service-path=/usr/libexec/cyrus \
+  --libexecdir=/usr/libexec/cyrus \
   --with-sasl \
   --with-libwrap \
   --with-openssl \
