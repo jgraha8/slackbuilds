@@ -145,8 +145,6 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1 -DU_DEFINE_FALSE_AND_TRUE=1" \
   --with-gmp=shared,/usr \
   --with-iconv=shared \
   --with-imap-ssl=/usr \
-  --with-pdo-pgsql=shared,/usr/bin/pg_config \
-  --with-pgsql=shared,/usr/bin/pg_config \
   --with-ldap=shared \
   --enable-mbstring=shared \
   --enable-mysqlnd=shared \
