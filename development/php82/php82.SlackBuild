@@ -104,7 +104,6 @@ CXXFLAGS="$SLKCFLAGS -DU_USING_ICU_NAMESPACE=1 -DU_DEFINE_FALSE_AND_TRUE=1" \
   --datadir=/usr/share \
   --infodir=/usr/info \
   --mandir=/usr/man \
-  --program-suffix=-$VERSION_SUFFIX \
   --without-apxs2 \
   --enable-fpm \
   --with-fpm-user=apache \
