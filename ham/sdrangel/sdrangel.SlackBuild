@@ -25,11 +25,10 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=sdrangel
-VERSION=${VERSION:-7.22.0}
+VERSION=${VERSION:-7.22.5}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-NUMJOBS=${NUMJOBS:-" -j$(expr $(nproc) + 1) "}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -82,9 +81,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Fix
-zcat $CWD/localsink.diff.gz | patch -p0 || exit
-
 # Fix (ver 3.14 Added RSP1B Support)
 sed 's/case SDRPLAY_RSP1B_ID/case (6)/' -i plugins/samplesource/sdrplayv3/sdrplayv3input.cpp
 sed 's/case SDRPLAY_RSP1B_ID/case (6)/' -i plugins/samplesource/sdrplayv3/sdrplayv3gui.cpp
@@ -103,7 +99,6 @@ cd build
     -DCMAKE_INSTALL_MANDIR=/usr/man \
     -DCMAKE_INSTALL_DOCDIR=/usr/doc/$PRGNAM-$VERSION \
     -DCMAKE_BUILD_TYPE=Release ..
-  make $NUMJOBS
   make install/strip DESTDIR=$PKG
 cd ..
 

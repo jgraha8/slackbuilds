@@ -14,17 +14,17 @@ concurrency:
 
 env:
   # renovate: datasource=docker depName=aclemons/sbo-maintainer-tools versioning=loose
-  SBO_MAINTAINER_TOOLS_IMAGE: aclemons/sbo-maintainer-tools:0.9.2.1-15.0@sha256:189ed00ee0cfc66b5b2c03bf512c02b881519feacd16e0c8d24afd9db4fb9faf
+  SBO_MAINTAINER_TOOLS_IMAGE: aclemons/sbo-maintainer-tools:0.9.3-15.0@sha256:d4982f18cb74aa199ffff65ce53fd373c7dc0424ca865d6924715caaf28ad80b
 
 jobs:
   changes:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           show-progress: false
           fetch-depth: 2
@@ -33,14 +33,13 @@ jobs:
 
       - name: Get slackbuild directories which have changes.
         id: changed-dirs
-        uses: tj-actions/changed-files@c65cd883420fd2eb864698a825fc4162dd94482c # v44.5.7
+        uses: tj-actions/changed-files@bab30c2299617f6615ec02a68b9a40d10bd21366 # v45.0.5
         with:
           base_sha: ${{ github.event.pull_request.base.sha }}
           dir_names: true
           dir_names_exclude_current_dir: true
           dir_names_max_depth: 2
-          json: true
-          quotepath: false
+          matrix: true
           files_ignore: |
             .github/**
             .gitignore
@@ -50,20 +49,25 @@ jobs:
             README
 
       - name: List all changed files
-        run: echo '${{ steps.changed-dirs.outputs.all_changed_files }}'
+        env:
+          CHANGED_FILES: ${{ steps.changed-dirs.outputs.all_changed_files }}
+        run: |
+          printf "%s\n" "$CHANGED_FILES"
 
       - name: Get matrix output
         id: set-matrix
+        env:
+          CHANGED_FILES: ${{ steps.changed-dirs.outputs.all_changed_files }}
         run: |
           {
             printf 'matrix<<SLACKBUILDS\n'
-            jq -r -c 'map({dir: .})' <<< "${{ steps.changed-dirs.outputs.all_changed_files }}"
+            jq -r -c 'map({dir: .})' <<< "$CHANGED_FILES"
             printf 'SLACKBUILDS\n'
           } >> "$GITHUB_OUTPUT"
 
   sbolint:
     name: Checks with sbolint
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pull-requests: write
@@ -72,13 +76,15 @@ jobs:
       matrix:
         include: ${{ fromJSON(needs.changes.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           show-progress: false
           ref: ${{ github.head_ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Run sbolint
+        env:
+          MATRIX_DIR: ${{ matrix.dir }}
         run: |
           docker pull ${{ env.SBO_MAINTAINER_TOOLS_IMAGE }}
 
@@ -86,16 +92,16 @@ jobs:
           tee sbolint-output < pipe &
           set +e
 
-          docker run --rm -v "$(pwd):/work" -w /work ${{ env.SBO_MAINTAINER_TOOLS_IMAGE }} sbolint "${{ matrix.dir }}" > pipe 2>&1
+          docker run --rm -v "$(pwd):/work" -w /work ${{ env.SBO_MAINTAINER_TOOLS_IMAGE }} sbolint "$MATRIX_DIR" > pipe 2>&1
 
           sbolint_status="$?"
           set -e
 
           {
             if [[ "$sbolint_status" -eq 0 ]] ; then
-              printf '#### ✅ sbolint - %s\n\n' "${{ matrix.dir }} ✅"
+              printf '#### ✅ sbolint - %s ✅\n\n' "$MATRIX_DIR"
             else
-              printf '#### ⛔️ sbolint - %s\n\n' "${{ matrix.dir }} ⛔️"
+              printf '#### ⛔️ sbolint - %s ⛔️\n\n' "$MATRIX_DIR"
             fi
 
             printf '```\n'
@@ -124,7 +130,7 @@ jobs:
 
   dependencies:
     name: Compute reverse dependencies
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pull-requests: write
@@ -133,31 +139,36 @@ jobs:
       matrix:
         include: ${{ fromJSON(needs.changes.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           show-progress: false
           ref: ${{ github.head_ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Get short package name
-        run: printf '%s\n' "${{ matrix.dir }}" | cut -d/ -f2 | sed 's/^/PACKAGE_NAME=/' >> "$GITHUB_ENV"
+        run: printf '%s\n' "$MATRIX_DIR" | cut -d/ -f2 | sed 's/^/PACKAGE_NAME=/' >> "$GITHUB_ENV"
+        env:
+          MATRIX_DIR: ${{ matrix.dir }}
 
       - name: Look up dependencies
         id: get_deps
-        uses: fjogeleit/http-request-action@44816be1eabb9c1122d8d775923f39bbe55c67a3 # v1.16.1
+        uses: fjogeleit/http-request-action@23ad54bcd1178fcff6a0d17538fa09de3a7f0a4d # v1.16.4
         with:
           url: 'https://slackbuilds.org/revdeps.php?q=${{ env.PACKAGE_NAME }}'
           method: 'GET'
           preventFailureOnNoResponse: "true"
 
       - name: Build comment
+        env:
+          MATRIX_DIR: ${{ matrix.dir }}
+          DEP_RESPONSE: ${{ steps.get_deps.outputs.response }}
         run: |
           {
-            printf '#### reverse dependencies - %s\n\n' "${{ matrix.dir }}"
-            if [[ ${{ steps.get_deps.outputs.response }} == "" ]] ; then
+            printf '#### reverse dependencies - %s\n\n' "$MATRIX_DIR"
+            if [[ "$DEP_RESPONSE" == '""' ]] ; then
               printf 'None\n'
             else
-              printf '%s' ${{ steps.get_deps.outputs.response }} | sed 's/\\n/\n/g' | sort | sed 's/^/- [ ] /'
+              printf '%s' "$DEP_RESPONSE" | sed 's/\\n/\n/g' | sed 's/^"//' | sort | sed 's/^/- [ ] /'
             fi
           } > comment-output
         shell:

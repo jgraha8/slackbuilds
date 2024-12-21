@@ -1,14 +1,14 @@
 PRGNAM="gitlab-cli"
-VERSION="1.46.1"
+VERSION="1.49.0"
 HOMEPAGE="https://gitlab.com/gitlab-org/cli"
-DOWNLOAD="https://gitlab.com/gitlab-org/cli/-/archive/v1.46.1/cli-v1.46.1.tar.gz \
-          https://gitlab.com/gitlab-org/cli/-/releases/v1.46.1/downloads/glab_1.46.1_Linux_i386.deb"
-MD5SUM="9e3928d629439d381e58af81a1fd1770 \
-        e37a413c0d5b0e899730ac6e805f53b9"
-DOWNLOAD_x86_64="https://gitlab.com/gitlab-org/cli/-/archive/v1.46.1/cli-v1.46.1.tar.gz \
-                 https://gitlab.com/gitlab-org/cli/-/releases/v1.46.1/downloads/glab_1.46.1_Linux_x86_64.deb"
-MD5SUM_x86_64="9e3928d629439d381e58af81a1fd1770 \
-               559882e7f321a58514c0b8ecc41957a4"
+DOWNLOAD="https://gitlab.com/gitlab-org/cli/-/archive/v1.49.0/cli-v1.49.0.tar.gz \
+          https://gitlab.com/gitlab-org/cli/-/releases/v1.49.0/downloads/glab_1.49.0_linux_386.deb"
+MD5SUM="fb7b0e56ea76b320829c41d9477bb751 \
+        b086011435bc251fec52bb46440e1670"
+DOWNLOAD_x86_64="https://gitlab.com/gitlab-org/cli/-/archive/v1.49.0/cli-v1.49.0.tar.gz \
+                 https://gitlab.com/gitlab-org/cli/-/releases/v1.49.0/downloads/glab_1.49.0_linux_amd64.deb"
+MD5SUM_x86_64="fb7b0e56ea76b320829c41d9477bb751 \
+               26edd7b0d47a0353b29d5070bc364589"
 REQUIRES=""
 MAINTAINER="Diniz Bortolotto"
 EMAIL="diniz.bortolotto@gmail.com"

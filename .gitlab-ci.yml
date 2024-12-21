@@ -1,18 +1,18 @@
 variables:
   FF_DISABLE_UMASK_FOR_DOCKER_EXECUTOR: "true"
   # renovate: datasource=gitlab-releases depName=gitlab-org/cli
-  GLAB_VERSION: 1.45.0
-  # renovate: datasource=docker depName=aclemons/sbo-maintainer-tools versioning=docker
-  SBO_MAINTAINER_TOOLS_IMAGE: aclemons/sbo-maintainer-tools:0.9.1-15.0@sha256:7a961b60a487ecd3e6171f4e7e7ee7c8f659fdc6a37aac26ae2dcd5a3cb8414f
+  GLAB_VERSION: 1.51.0
+  # renovate: datasource=docker depName=aclemons/sbo-maintainer-tools versioning=loose
+  SBO_MAINTAINER_TOOLS_IMAGE: aclemons/sbo-maintainer-tools:0.9.3-15.0@sha256:d4982f18cb74aa199ffff65ce53fd373c7dc0424ca865d6924715caaf28ad80b
 
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
 default:
-  image: docker:27.2.0@sha256:f9f72ad901a78f27be922b2d320bbc263174f12919c1b37e6a01f828fa904565
+  image: docker:27.4.0@sha256:b0c1179ea32ad77bdb7b852b037e54b11022304c2f2662af1954ef53869314b2
   services:
-    - docker:27.2.0-dind@sha256:f9f72ad901a78f27be922b2d320bbc263174f12919c1b37e6a01f828fa904565
+    - docker:27.4.0-dind@sha256:b0c1179ea32ad77bdb7b852b037e54b11022304c2f2662af1954ef53869314b2
 
 pr-checks:
   script: |
