@@ -1,10 +1,10 @@
 PRGNAM="python3-pydantic-core"
-VERSION="2.27.2"
+VERSION="2.34.1"
 HOMEPAGE="https://github.com/pydantic/pydantic-core"
-DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pydantic-core/pydantic_core-2.27.2.tar.gz \
-          https://slackware.uk/~fourtysixandtwo/src/pydantic_core-vendored-sources-2.27.2-1.tar.xz"
-MD5SUM="c90633350cda088856cf60c1c87de618 \
-        ea696259b639b27ce7ae7a0ea40df527"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pydantic-core/pydantic_core-2.34.1.tar.gz \
+          https://slackware.uk/~fourtysixandtwo/src/pydantic_core-vendored-sources-2.34.1-1.tar.xz"
+MD5SUM="34d464a2a16b22540edaff749d3e650a \
+        cf6c3071b658b7e7649f233ff4ee8a7f"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3-maturin python3-hatchling"

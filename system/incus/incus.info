@@ -1,10 +1,10 @@
 PRGNAM="incus"
-VERSION="6.8"
+VERSION="6.11"
 HOMEPAGE="https://linuxcontainers.org/incus"
-DOWNLOAD="https://github.com/lxc/incus/releases/download/v6.8.0/incus-6.8.tar.xz \
-	https://pkgs.zabbly.com/incus/stable/pool/main/i/incus/incus-ui-canonical_6.8-ubuntu24.04-202412130713_amd64.deb"
-MD5SUM="d6eede9e52cbc3719d5f751ac78b9924 \
-	e3fa17f5ef075ea8c076635dfbf5be65"
+DOWNLOAD="https://github.com/lxc/incus/releases/download/v6.11.0/incus-6.11.tar.xz \
+	https://pkgs.zabbly.com/incus/stable/pool/main/i/incus/incus-ui-canonical_6.11-ubuntu24.04-202504190250_amd64.deb"
+MD5SUM="c359f598d3c3e73bf269e0c58ec5b09c \
+	f060b28144cbb94df22a9c95170150cb"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="cowsql edk2-ovmf google-go-lang"

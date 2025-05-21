@@ -14,7 +14,7 @@ concurrency:
 
 env:
   # renovate: datasource=docker depName=aclemons/sbo-maintainer-tools versioning=loose
-  SBO_MAINTAINER_TOOLS_IMAGE: aclemons/sbo-maintainer-tools:0.9.3-15.0@sha256:75a5d705957ef4e5ae69dbe403abea8b79f3d99da07ba646176268179e1122a8
+  SBO_MAINTAINER_TOOLS_IMAGE: aclemons/sbo-maintainer-tools:0.9.3-15.0@sha256:e617db2c7de01f7a5778b7139439fc99a69715ba5ea573a7b0e2add34155f455
 
 jobs:
   changes:
@@ -24,40 +24,29 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
+      - name: Calculate clone depth.
+        run: printf "CHECKOUT_FETCH_DEPTH=%s\n" "$(( ${{ github.event.pull_request.commits }} + 1 ))" >> "${GITHUB_ENV}"
+
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           show-progress: false
-          fetch-depth: 2
+          fetch-depth: ${{ env.CHECKOUT_FETCH_DEPTH }}
           ref: ${{ github.head_ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Get slackbuild directories which have changes.
-        id: changed-dirs
-        uses: tj-actions/changed-files@bab30c2299617f6615ec02a68b9a40d10bd21366 # v45.0.5
-        with:
-          base_sha: ${{ github.event.pull_request.base.sha }}
-          dir_names: true
-          dir_names_exclude_current_dir: true
-          dir_names_max_depth: 2
-          matrix: true
-          files_ignore: |
-            .github/**
-            .gitignore
-            .gitlab-ci.yml
-            .mailmap
-            ChangeLog.txt
-            README
-
-      - name: List all changed files
-        env:
-          CHANGED_FILES: ${{ steps.changed-dirs.outputs.all_changed_files }}
         run: |
-          printf "%s\n" "$CHANGED_FILES"
+          CHANGED_FILES="$(git diff-tree --name-only --diff-filter=d --no-commit-id -r ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | sed '/^\./d' | sed -n '/[^\/][^\/]*\/[^\/][^\/]*\//p' | xargs -I xx dirname xx | sort -u | sed '/.github/d' | sed 's/^/"/;s/$/"/g' | paste -d, -s | sed 's/^/[/;s/$/]/')"
+
+          delimiter="$(openssl rand -hex 8)"
+          printf "CHANGED_FILES<<%s\n" "$delimiter" >> "$GITHUB_ENV"
+
+          printf "%s\n" "$CHANGED_FILES" | tee -a "$GITHUB_ENV"
+
+          printf "%s\n" "$delimiter" >> "$GITHUB_ENV"
 
       - name: Get matrix output
         id: set-matrix
-        env:
-          CHANGED_FILES: ${{ steps.changed-dirs.outputs.all_changed_files }}
         run: |
           {
             printf 'matrix<<SLACKBUILDS\n'
