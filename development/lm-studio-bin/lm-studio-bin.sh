@@ -1,3 +1,5 @@
 #!/bin/bash
-cd /opt/lm-studio-bin || exit 1
-LD_LIBRARY_PATH=/opt/lm-studio-bin:$LD_LIBRARY_PATH ./lm-studio --no-sandbox
+
+#LD_LIBRARY_PATH=/opt/lm-studio-bin:$LD_LIBRARY_PATH
+env -i DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY XDG_CURRENT_DESKTOP=GNOME /opt/LM-Studio-*.AppImage
+#--no-sandbox

@@ -26,11 +26,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=notepadqq
-VERSION=${VERSION:-20241111_632be8b}
-BUILD=${BUILD:-2}
+VERSION=${VERSION:-20251218_5d2a96a}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_SBo}
 PKGTYPE=${PKGTYPE:-tgz}
-TARBALL=${TARBALL:-632be8bf8a54934865dab587be761154fd59bfca}
+TARBALL=${TARBALL:-5d2a96a2a828dbc68f4b04c5031150b8a1bcbe8c}
 
 
 if [ -z "$ARCH" ]; then
@@ -83,6 +83,9 @@ CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix /opt/notepadqq \
   --qmake /usr/lib$LIBDIRSUFFIX/qt5/bin/qmake
+
+# addressing https://github.com/notepadqq/notepadqq/issues/1135
+sed -i "s|bool BackupService::s_autosaveEnabled = false;|bool BackupService::s_autosaveEnabled = true;|g" src/ui/Sessions/backupservice.cpp
 
 make
 make install DESTDIR=$PKG INSTALL_ROOT=$PKG
